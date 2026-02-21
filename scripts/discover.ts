@@ -3,6 +3,7 @@
 import { github } from "./lib/github.ts";
 import { DATA_PATH } from "./lib/config.ts";
 import { ProjectsDataSchema } from "./lib/schemas.ts";
+import { detect } from "./detect.ts";
 
 /**
  * Discovers new "Vibe Coded" projects on GitHub.
@@ -19,6 +20,9 @@ async function discover(limit = 5) {
     'path:CLAUDE.md',
     '"vibe coded" in:description',
     'topic:vibe-coded',
+    '"vibe coded" in:message',
+    'claude in:message',
+    'gemini in:message',
   ];
 
   const candidates = new Set<string>();
@@ -32,6 +36,9 @@ async function discover(limit = 5) {
       
       if (q.startsWith('path:')) {
         const res = await github.searchCode(q, 30);
+        items = (res.items || []).map((i: any) => i.repository.full_name);
+      } else if (q.includes('in:message')) {
+        const res = await github.searchCommits(q, 30);
         items = (res.items || []).map((i: any) => i.repository.full_name);
       } else {
         const res = await github.searchRepos(q, 30);
@@ -51,7 +58,27 @@ async function discover(limit = 5) {
     }
   }
 
-  return Array.from(candidates).slice(0, limit);
+  // Verify candidates
+  console.error(`Found ${candidates.size} candidates. Verifying...`);
+  const verified: string[] = [];
+  for (const repo of candidates) {
+    if (verified.length >= limit) break;
+    try {
+      const d = await detect(repo);
+      if (d.aiTools && d.aiTools.length > 0) {
+        console.error(`Verified: ${repo} (Tools: ${d.aiTools.map(t => t.name).join(", ")})`);
+        verified.push(repo);
+      } else {
+        console.error(`Skipped: ${repo} (No AI indicators found)`);
+      }
+    } catch (e) {
+      console.warn(`Verification failed for ${repo}:`, e);
+    }
+    // Be nice to GitHub API
+    await new Promise(r => setTimeout(r, 1000));
+  }
+
+  return verified;
 }
 
 if (import.meta.main) {

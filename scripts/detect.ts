@@ -49,6 +49,14 @@ async function hasCursorOrClaude(fullName: string): Promise<{
         aiTools.push({ name: "claude", detected_via: "commits", evidence_url: url });
         seenTools.add("claude");
       }
+      if (!seenTools.has("gemini") && msg.includes("gemini")) {
+        aiTools.push({ name: "gemini", detected_via: "commits", evidence_url: url });
+        seenTools.add("gemini");
+      }
+      if (!seenTools.has("vibe") && (msg.includes("vibe coded") || msg.includes("vibe-coded"))) {
+        aiTools.push({ name: "vibe", detected_via: "commits", evidence_url: url });
+        seenTools.add("vibe");
+      }
     }
   } catch (e) {
     console.warn(`Failed to fetch commits for ${fullName}:`, e);

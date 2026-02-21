@@ -160,6 +160,18 @@ export class GitHubClient {
   }
 
   /**
+   * Searches for commits using a query string.
+   */
+  async searchCommits(query: string, limit = 5) {
+    const res = await this.fetchWithRetry(`${GITHUB_API_BASE}/search/commits?q=${encodeURIComponent(query)}&per_page=${limit}`, {
+      headers: {
+        Accept: "application/vnd.github.cloak-preview+json",
+      }
+    });
+    return await res.json();
+  }
+
+  /**
    * Fetches recent commits to detect AI usage in messages.
    */
   async getRecentCommits(fullName: string, limit = 30) {
