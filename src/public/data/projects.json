@@ -278,8 +278,266 @@
           "type": "vuln"
         }
       ],
-      "lastUpdated": "2026-02-21T00:25:27.638Z",
-      "emojis": 25
+      "lastUpdated": "2026-02-21T00:25:27.638Z"
+    },
+    {
+      "full_name": "factorialco/shadowdog",
+      "url": "https://github.com/factorialco/shadowdog",
+      "description": null,
+      "stars": 7,
+      "commits": 87,
+      "contributors": 6,
+      "forks": 0,
+      "open_issues": 4,
+      "license": "MIT License",
+      "topics": null,
+      "size": 445,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "beagleknight",
+          "avatar_url": "https://avatars.githubusercontent.com/u/106021?v=4",
+          "url": "https://github.com/beagleknight",
+          "created_at": "2009-07-17T15:11:38Z",
+          "followers": 76,
+          "following": 37
+        },
+        {
+          "login": "github-actions[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "url": "https://github.com/apps/github-actions",
+          "created_at": "2018-07-30T09:30:16Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "fcsonline",
+          "avatar_url": "https://avatars.githubusercontent.com/u/135988?v=4",
+          "url": "https://github.com/fcsonline",
+          "created_at": "2009-10-06T21:04:51Z",
+          "followers": 169,
+          "following": 73
+        },
+        {
+          "login": "MiguelPF",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1163236?v=4",
+          "url": "https://github.com/MiguelPF",
+          "created_at": "2011-10-31T19:10:59Z",
+          "followers": 43,
+          "following": 191
+        },
+        {
+          "login": "nlopin",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1469636?v=4",
+          "url": "https://github.com/nlopin",
+          "created_at": "2012-02-24T13:47:24Z",
+          "followers": 89,
+          "following": 85
+        },
+        {
+          "login": "rogercampos",
+          "avatar_url": "https://avatars.githubusercontent.com/u/275992?v=4",
+          "url": "https://github.com/rogercampos",
+          "created_at": "2010-05-13T22:17:26Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2024-12-02T10:37:13Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 183657,
+        "JavaScript": 29107
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "factorialco",
+        "avatar_url": "https://avatars.githubusercontent.com/u/21041797?v=4",
+        "url": "https://github.com/factorialco",
+        "created_at": "2016-08-15T16:25:14Z",
+        "followers": 102,
+        "following": 0,
+        "bio": "HR Software for small and medium companies",
+        "public_repos": 64,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package.json",
+        "evidence_url": "https://github.com/factorialco/shadowdog/blob/main/package.json"
+      },
+      "aiTools": [
+        {
+          "name": "cursor",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/factorialco/shadowdog/tree/main/.cursorrules"
+        }
+      ],
+      "lastUpdated": "2026-02-21T00:55:35.262Z",
+      "vulnerableDependencies": [
+        "@modelcontextprotocol/sdk@1.19.1 (CVE-2025-66414)",
+        "@modelcontextprotocol/sdk@1.19.1 (CVE-2026-0621)",
+        "@modelcontextprotocol/sdk@1.19.1 (CVE-2026-25536)",
+        "ajv@6.12.6 (CVE-2025-69873)",
+        "body-parser@2.2.0 (CVE-2025-13466)",
+        "brace-expansion@2.0.1 (CVE-2025-5889)",
+        "fast-xml-parser@4.5.0 (CVE-2026-26278)",
+        "glob@10.4.5 (CVE-2025-64756)",
+        "lodash@4.17.21 (CVE-2025-13465)",
+        "minimatch@9.0.5 (CVE-2026-26996)",
+        "qs@6.14.0 (CVE-2025-15284)",
+        "qs@6.14.0 (CVE-2026-2391)",
+        "tar@7.2.0 (CVE-2026-23745)",
+        "tar@7.2.0 (CVE-2026-23950)",
+        "tar@7.2.0 (CVE-2026-24842)",
+        "tar@7.2.0 (CVE-2026-26960)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.19.1",
+          "cve": "CVE-2025-66414",
+          "severity": "HIGH",
+          "title": "Model Context Protocol (MCP) TypeScript SDK does not enable DNS rebinding protection by default",
+          "fixedVersion": "1.24.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.19.1",
+          "cve": "CVE-2026-0621",
+          "severity": "HIGH",
+          "title": "Anthropic's MCP TypeScript SDK has a ReDoS vulnerability",
+          "fixedVersion": "1.25.2",
+          "type": "vuln"
+        },
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.19.1",
+          "cve": "CVE-2026-25536",
+          "severity": "HIGH",
+          "title": "@modelcontextprotocol/sdk: @modelcontextprotocol/sdk cross-client data leak",
+          "fixedVersion": "1.26.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "ajv",
+          "version": "6.12.6",
+          "cve": "CVE-2025-69873",
+          "severity": "MEDIUM",
+          "title": "ajv: ReDoS via $data reference",
+          "fixedVersion": "8.18.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "body-parser",
+          "version": "2.2.0",
+          "cve": "CVE-2025-13466",
+          "severity": "MEDIUM",
+          "title": "body-parser: body-parser denial of service",
+          "fixedVersion": "2.2.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "brace-expansion",
+          "version": "2.0.1",
+          "cve": "CVE-2025-5889",
+          "severity": "LOW",
+          "title": "brace-expansion: juliangruber brace-expansion index.js expand redos",
+          "fixedVersion": "2.0.2, 1.1.12, 3.0.1, 4.0.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "fast-xml-parser",
+          "version": "4.5.0",
+          "cve": "CVE-2026-26278",
+          "severity": "HIGH",
+          "title": "fast-xml-parser: fast-xml-parser: Denial of Service via unlimited XML entity expansion",
+          "fixedVersion": "5.3.6",
+          "type": "vuln"
+        },
+        {
+          "pkg": "glob",
+          "version": "10.4.5",
+          "cve": "CVE-2025-64756",
+          "severity": "HIGH",
+          "title": "glob: glob: Command Injection Vulnerability via Malicious Filenames",
+          "fixedVersion": "11.1.0, 10.5.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "lodash",
+          "version": "4.17.21",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln"
+        },
+        {
+          "pkg": "minimatch",
+          "version": "9.0.5",
+          "cve": "CVE-2026-26996",
+          "severity": "HIGH",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "fixedVersion": "10.2.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2025-15284",
+          "severity": "HIGH",
+          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
+          "fixedVersion": "6.14.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln"
+        },
+        {
+          "pkg": "tar",
+          "version": "7.2.0",
+          "cve": "CVE-2026-23745",
+          "severity": "HIGH",
+          "title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
+          "fixedVersion": "7.5.3",
+          "type": "vuln"
+        },
+        {
+          "pkg": "tar",
+          "version": "7.2.0",
+          "cve": "CVE-2026-23950",
+          "severity": "HIGH",
+          "title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
+          "fixedVersion": "7.5.4",
+          "type": "vuln"
+        },
+        {
+          "pkg": "tar",
+          "version": "7.2.0",
+          "cve": "CVE-2026-24842",
+          "severity": "HIGH",
+          "title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
+          "fixedVersion": "7.5.7",
+          "type": "vuln"
+        },
+        {
+          "pkg": "tar",
+          "version": "7.2.0",
+          "cve": "CVE-2026-26960",
+          "severity": "HIGH",
+          "title": "node-tar is a full-featured Tar for Node.js. When using default option ...",
+          "fixedVersion": "7.5.8",
+          "type": "vuln"
+        }
+      ]
     },
     {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
@@ -323,9 +581,9 @@
       },
       "packageManager": null,
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:29.719Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:29.719Z"
     },
     {
       "full_name": "hyunjun6928-netizen/salmalm",
@@ -376,9 +634,9 @@
         "evidence_url": "https://github.com/hyunjun6928-netizen/salmalm/blob/main/pyproject.toml"
       },
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:29.299Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:29.299Z"
     },
     {
       "full_name": "jetpack3331/ai-chat-history-manager",
@@ -441,9 +699,9 @@
           "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/commit/2292af457bd8a958b47198b91c1dcbbe81b31150"
         }
       ],
-      "lastUpdated": "2026-02-21T00:25:28.165Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:28.165Z"
     },
     {
       "full_name": "porthorian/openchat-backend",
@@ -574,9 +832,9 @@
         "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/package.json"
       },
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:33.096Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:33.096Z"
     }
   ]
 }
