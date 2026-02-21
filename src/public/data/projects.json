@@ -278,8 +278,245 @@
           "type": "vuln"
         }
       ],
-      "lastUpdated": "2026-02-21T00:25:27.638Z",
-      "emojis": 25
+      "lastUpdated": "2026-02-21T00:25:27.638Z"
+    },
+    {
+      "full_name": "dahshury/WinSTT",
+      "url": "https://github.com/dahshury/WinSTT",
+      "description": "A windows app to type by using a customizable hotkey utilizing OpenAI's whisper and a nice GUI",
+      "stars": 20,
+      "commits": 22,
+      "contributors": 1,
+      "forks": 3,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": null,
+      "size": 4445,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "dahshury",
+          "avatar_url": "https://avatars.githubusercontent.com/u/83991104?v=4",
+          "url": "https://github.com/dahshury",
+          "created_at": "2021-05-11T00:05:21Z",
+          "followers": 1,
+          "following": 8
+        }
+      ],
+      "created_at": "2024-01-10T16:29:09Z",
+      "language": "Python",
+      "languages": {
+        "Python": 458386
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "dahshury",
+        "avatar_url": "https://avatars.githubusercontent.com/u/83991104?v=4",
+        "url": "https://github.com/dahshury",
+        "created_at": "2021-05-11T00:05:21Z",
+        "followers": 1,
+        "following": 8,
+        "bio": "An aspiring machine learning engineer",
+        "public_repos": 25,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "poetry",
+        "detected_via": "pyproject.toml",
+        "evidence_url": "https://github.com/dahshury/WinSTT/blob/main/pyproject.toml"
+      },
+      "aiTools": [
+        {
+          "name": "cursor",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/dahshury/WinSTT/tree/main/.cursorrules"
+        }
+      ],
+      "lastUpdated": "2026-02-21T00:55:58.863Z",
+      "vulnerableDependencies": [
+        "cryptography@45.0.5 (CVE-2026-26007)",
+        "filelock@3.18.0 (CVE-2025-68146)",
+        "filelock@3.18.0 (CVE-2026-22701)",
+        "protobuf@6.31.1 (CVE-2026-0994)",
+        "requests@2.31.0 (CVE-2024-35195)",
+        "requests@2.31.0 (CVE-2024-47081)",
+        "torch@2.7.1 (CVE-2025-3730)",
+        "transformers@4.51.0 (CVE-2025-3777)",
+        "transformers@4.51.0 (CVE-2025-3933)",
+        "transformers@4.51.0 (CVE-2025-5197)",
+        "transformers@4.51.0 (CVE-2025-6051)",
+        "transformers@4.51.0 (CVE-2025-6638)",
+        "transformers@4.51.0 (CVE-2025-6921)",
+        "urllib3@2.5.0 (CVE-2025-66418)",
+        "urllib3@2.5.0 (CVE-2025-66471)",
+        "urllib3@2.5.0 (CVE-2026-21441)",
+        "virtualenv@20.32.0 (CVE-2026-22702)",
+        "wheel@0.45.1 (CVE-2026-24049)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "cryptography",
+          "version": "45.0.5",
+          "cve": "CVE-2026-26007",
+          "severity": "HIGH",
+          "title": "cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves",
+          "fixedVersion": "46.0.5",
+          "type": "vuln"
+        },
+        {
+          "pkg": "filelock",
+          "version": "3.18.0",
+          "cve": "CVE-2025-68146",
+          "severity": "MEDIUM",
+          "title": "filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation",
+          "fixedVersion": "3.20.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "filelock",
+          "version": "3.18.0",
+          "cve": "CVE-2026-22701",
+          "severity": "MEDIUM",
+          "title": "filelock: filelock Time-of-Check-Time-of-Use (TOCTOU) in SoftFileLock",
+          "fixedVersion": "3.20.3",
+          "type": "vuln"
+        },
+        {
+          "pkg": "protobuf",
+          "version": "6.31.1",
+          "cve": "CVE-2026-0994",
+          "severity": "HIGH",
+          "title": "python: protobuf: Protobuf: Denial of Service due to recursion depth bypass",
+          "fixedVersion": "6.33.5, 5.29.6",
+          "type": "vuln"
+        },
+        {
+          "pkg": "requests",
+          "version": "2.31.0",
+          "cve": "CVE-2024-35195",
+          "severity": "MEDIUM",
+          "title": "requests: subsequent requests to the same host ignore cert verification",
+          "fixedVersion": "2.32.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "requests",
+          "version": "2.31.0",
+          "cve": "CVE-2024-47081",
+          "severity": "MEDIUM",
+          "title": "requests: Requests vulnerable to .netrc credentials leak via malicious URLs",
+          "fixedVersion": "2.32.4",
+          "type": "vuln"
+        },
+        {
+          "pkg": "torch",
+          "version": "2.7.1",
+          "cve": "CVE-2025-3730",
+          "severity": "MEDIUM",
+          "title": "A vulnerability, which was classified as problematic, was found in PyT ...",
+          "fixedVersion": "2.8.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "transformers",
+          "version": "4.51.0",
+          "cve": "CVE-2025-3933",
+          "severity": "MEDIUM",
+          "title": "transformers: Regular Expression Denial of Service (ReDoS) in huggingface/transformers",
+          "fixedVersion": "4.52.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "transformers",
+          "version": "4.51.0",
+          "cve": "CVE-2025-5197",
+          "severity": "MEDIUM",
+          "title": "transformers: Transformers ReDoS Vulnerability",
+          "fixedVersion": "4.53.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "transformers",
+          "version": "4.51.0",
+          "cve": "CVE-2025-6051",
+          "severity": "MEDIUM",
+          "title": "transformers: Regular Expression Denial of Service (ReDoS) in huggingface/transformers",
+          "fixedVersion": "4.53.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "transformers",
+          "version": "4.51.0",
+          "cve": "CVE-2025-6638",
+          "severity": "MEDIUM",
+          "title": "transformers: Regular Expression Denial of Service (ReDoS) in huggingface/transformers",
+          "fixedVersion": "4.53.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "transformers",
+          "version": "4.51.0",
+          "cve": "CVE-2025-6921",
+          "severity": "MEDIUM",
+          "title": "transformers: Regular Expression Denial of Service (ReDoS) in huggingface/transformers",
+          "fixedVersion": "4.53.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "transformers",
+          "version": "4.51.0",
+          "cve": "CVE-2025-3777",
+          "severity": "LOW",
+          "title": "transformers: Improper Input Validation in huggingface/transformers",
+          "fixedVersion": "4.52.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "urllib3",
+          "version": "2.5.0",
+          "cve": "CVE-2025-66418",
+          "severity": "HIGH",
+          "title": "urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion",
+          "fixedVersion": "2.6.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "urllib3",
+          "version": "2.5.0",
+          "cve": "CVE-2025-66471",
+          "severity": "HIGH",
+          "title": "urllib3: urllib3 Streaming API improperly handles highly compressed data",
+          "fixedVersion": "2.6.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "urllib3",
+          "version": "2.5.0",
+          "cve": "CVE-2026-21441",
+          "severity": "HIGH",
+          "title": "urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)",
+          "fixedVersion": "2.6.3",
+          "type": "vuln"
+        },
+        {
+          "pkg": "virtualenv",
+          "version": "20.32.0",
+          "cve": "CVE-2026-22702",
+          "severity": "MEDIUM",
+          "title": "virtualenv: virtualenv: Local attacker can redirect file operations via TOCTOU race condition",
+          "fixedVersion": "20.36.1",
+          "type": "vuln"
+        },
+        {
+          "pkg": "wheel",
+          "version": "0.45.1",
+          "cve": "CVE-2026-24049",
+          "severity": "HIGH",
+          "title": "wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking",
+          "fixedVersion": "0.46.2",
+          "type": "vuln"
+        }
+      ]
     },
     {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
@@ -323,9 +560,9 @@
       },
       "packageManager": null,
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:29.719Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:29.719Z"
     },
     {
       "full_name": "hyunjun6928-netizen/salmalm",
@@ -376,9 +613,9 @@
         "evidence_url": "https://github.com/hyunjun6928-netizen/salmalm/blob/main/pyproject.toml"
       },
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:29.299Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:29.299Z"
     },
     {
       "full_name": "jetpack3331/ai-chat-history-manager",
@@ -441,9 +678,9 @@
           "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/commit/2292af457bd8a958b47198b91c1dcbbe81b31150"
         }
       ],
-      "lastUpdated": "2026-02-21T00:25:28.165Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:28.165Z"
     },
     {
       "full_name": "porthorian/openchat-backend",
@@ -574,9 +811,9 @@
         "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/package.json"
       },
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:33.096Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:33.096Z"
     }
   ]
 }
