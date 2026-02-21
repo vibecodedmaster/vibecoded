@@ -5,7 +5,21 @@
     <link>https://vibecodedmaster.github.io/vibecoded/</link>
     <description>Open-source registry of Vibe Coded projects</description>
     <atom:link href="https://vibecodedmaster.github.io/vibecoded/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 21 Feb 2026 01:08:37 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Feb 2026 01:16:10 GMT</lastBuildDate>
+  <item>
+    <title><![CDATA[ActiveInferenceInstitute/GEO-INFER]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/ActiveInferenceInstitute/GEO-INFER</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/ActiveInferenceInstitute/GEO-INFER</guid>
+    <description><![CDATA[]]></description>
+    <pubDate>Sat, 21 Feb 2026 01:15:58 GMT</pubDate>
+  </item>
+  <item>
+    <title><![CDATA[pinto-org/interface]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/pinto-org/interface</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/pinto-org/interface</guid>
+    <description><![CDATA[The interface of Pinto at https://pinto.money]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:56:10 GMT</pubDate>
+  </item>
   <item>
     <title><![CDATA[porthorian/openchat-backend]]></title>
     <link>https://vibecodedmaster.github.io/vibecoded/#/project/porthorian/openchat-backend</link>
