@@ -278,8 +278,7 @@
           "type": "vuln"
         }
       ],
-      "lastUpdated": "2026-02-21T00:25:27.638Z",
-      "emojis": 25
+      "lastUpdated": "2026-02-21T00:25:27.638Z"
     },
     {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
@@ -323,9 +322,9 @@
       },
       "packageManager": null,
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:29.719Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:29.719Z"
     },
     {
       "full_name": "hyunjun6928-netizen/salmalm",
@@ -376,9 +375,9 @@
         "evidence_url": "https://github.com/hyunjun6928-netizen/salmalm/blob/main/pyproject.toml"
       },
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:29.299Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:29.299Z"
     },
     {
       "full_name": "jetpack3331/ai-chat-history-manager",
@@ -441,9 +440,9 @@
           "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/commit/2292af457bd8a958b47198b91c1dcbbe81b31150"
         }
       ],
-      "lastUpdated": "2026-02-21T00:25:28.165Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:28.165Z"
     },
     {
       "full_name": "porthorian/openchat-backend",
@@ -574,9 +573,62 @@
         "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/package.json"
       },
       "aiTools": null,
-      "lastUpdated": "2026-02-21T00:25:33.096Z",
       "vulnerableDependencies": [],
-      "vulnerabilities": []
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T00:25:33.096Z"
+    },
+    {
+      "full_name": "stulogy/vibe-prd",
+      "url": "https://github.com/stulogy/vibe-prd",
+      "description": "This is a fork from Ryan Carson's AI Dev Tasks repository, with some code cleanup and refactoring to enable support for PostgreSQL databases.",
+      "stars": 15,
+      "commits": 6,
+      "contributors": 1,
+      "forks": 11,
+      "open_issues": 0,
+      "license": "Apache License 2.0",
+      "topics": [
+        "ai-agents",
+        "cursor",
+        "vibe",
+        "vibe-coding"
+      ],
+      "size": 23,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "stulogy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2089901?v=4",
+          "url": "https://github.com/stulogy",
+          "created_at": "2012-08-03T13:55:12Z",
+          "followers": 5,
+          "following": 0
+        }
+      ],
+      "created_at": "2025-05-27T16:19:36Z",
+      "language": null,
+      "languages": null,
+      "is_archived": false,
+      "owner": {
+        "login": "stulogy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2089901?v=4",
+        "url": "https://github.com/stulogy",
+        "created_at": "2012-08-03T13:55:12Z",
+        "followers": 5,
+        "following": 0,
+        "bio": "Product Builder with two decades of experience in startups, coding and design.",
+        "public_repos": 4,
+        "is_private": false
+      },
+      "packageManager": null,
+      "aiTools": [
+        {
+          "name": "cursor",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/stulogy/vibe-prd/tree/main/.cursorrules"
+        }
+      ],
+      "lastUpdated": "2026-02-21T00:56:04.306Z"
     }
   ]
 }
