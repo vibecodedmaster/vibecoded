@@ -510,9 +510,24 @@ export default function ProjectDetail({
                         </span>
                       </td>
                       <td class="py-4 pr-4 align-top font-mono text-xs text-vibe-fg break-all">
-                        {v.type === "secret"
-                          ? "Repository"
-                          : `${v.pkg}@${v.version}`}
+                        {v.targetUrl && v.target ? (
+                          <a
+                            href={v.targetUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1 underline decoration-dotted hover:decoration-solid"
+                            title="Open detected file path"
+                          >
+                            {v.target}
+                            <ExternalLink size={12} />
+                          </a>
+                        ) : v.target ? (
+                          v.target
+                        ) : v.type === "secret" ? (
+                          "Repository"
+                        ) : (
+                          `${v.pkg}@${v.version}`
+                        )}
                       </td>
                       <td class="py-4 pr-4 align-top">
                         <span class="font-mono text-xs text-vibe-muted group-hover:text-vibe-accent transition">

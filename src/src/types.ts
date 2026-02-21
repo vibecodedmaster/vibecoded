@@ -6,6 +6,8 @@ export interface VulnDetail {
   title: string;
   fixedVersion?: string;
   type: "vuln" | "secret";
+  target?: string;
+  targetUrl?: string;
 }
 
 export interface ContributorInfo {
