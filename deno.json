@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "add": "deno run -A scripts/add.ts",
+    "import": "deno run -A scripts/import.ts",
+    "sync-data": "deno run -A scripts/sync-data.ts"
+  }
+}

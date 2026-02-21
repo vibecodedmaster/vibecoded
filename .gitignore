@@ -1,0 +1,32 @@
+.env
+*.log
+.DS_Store
+node_modules
+node_modules/
+**/node_modules/
+package-lock.json
+dist/
+.deno/
+.vscode/
+.idea/
+.fleet/
+.helix/
+
+# pnpm
+pnpm-debug.log*
+
+# build
+src/dist/
+dist/
+.next/
+.turbo/
+.vercel/
+out/
+
+# coverage
+coverage/
+.nyc_output/
+
+# misc
+.eslintcache
+*.local

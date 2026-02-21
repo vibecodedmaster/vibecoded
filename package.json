@@ -1,0 +1,7 @@
+{
+  "name": "vibecoded",
+  "private": true,
+  "scripts": {
+    "build": "deno run -A scripts/sync-data.ts && deno run -A scripts/generate-feed.ts && pnpm --filter vibecoded-web run build"
+  }
+}

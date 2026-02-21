@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "ancsemi/Haven",
+      "url": "https://github.com/ancsemi/Haven",
+      "description": "Self-hosted private chat — No cloud, no telemetry, no Big Tech. Discord alternative that runs on your own machine.",
+      "stars": 161,
+      "commits": 154,
+      "contributors": 4,
+      "forks": 10,
+      "open_issues": 9,
+      "license": "Other",
+      "topics": [
+        "android-application",
+        "browser",
+        "chat",
+        "discord",
+        "discord-alternative",
+        "docker",
+        "encryption",
+        "messaging",
+        "migration",
+        "nodejs",
+        "picture-in-picture",
+        "privacy",
+        "self-hosted",
+        "selfhosted",
+        "selfhosted-apps",
+        "soundcloud",
+        "streaming",
+        "voice-chat",
+        "websocket",
+        "youtube"
+      ],
+      "size": 2338,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "ancsemi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/249465243?v=4",
+          "url": "https://github.com/ancsemi",
+          "created_at": "2025-12-13T15:36:55Z",
+          "followers": 3,
+          "following": 2
+        },
+        {
+          "login": "anmire",
+          "avatar_url": "https://avatars.githubusercontent.com/u/99765883?v=4",
+          "url": "https://github.com/anmire",
+          "created_at": "2022-02-15T21:02:20Z",
+          "followers": 1,
+          "following": 0
+        },
+        {
+          "login": "mike1237",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12839275?v=4",
+          "url": "https://github.com/mike1237",
+          "created_at": "2015-06-11T03:14:49Z",
+          "followers": 2,
+          "following": 1
+        },
+        {
+          "login": "tylerobara",
+          "avatar_url": "https://avatars.githubusercontent.com/u/49762914?v=4",
+          "url": "https://github.com/tylerobara",
+          "created_at": "2019-04-18T17:35:59Z",
+          "followers": 6,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-02-11T05:16:20Z",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 1033724,
+        "CSS": 304551,
+        "HTML": 183961,
+        "Shell": 6325,
+        "Batchfile": 6143,
+        "PowerShell": 2508,
+        "Dockerfile": 1986
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "ancsemi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/249465243?v=4",
+        "url": "https://github.com/ancsemi",
+        "created_at": "2025-12-13T15:36:55Z",
+        "followers": 3,
+        "following": 2,
+        "bio": "Just an average dude. I like games and guns. ",
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package.json",
+        "evidence_url": "https://github.com/ancsemi/Haven/blob/main/package.json"
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/ancsemi/Haven/commit/430b3deea2fa9ab686e9ca7f01fb9855bf8a10fc"
+        }
+      ],
+      "vulnerableDependencies": [
+        "axios@0.21.4 (CVE-2023-45857)",
+        "axios@0.21.4 (CVE-2025-27152)",
+        "axios@0.21.4 (CVE-2026-25639)",
+        "qs@6.14.1 (CVE-2026-2391)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2025-27152",
+          "severity": "HIGH",
+          "title": "axios: Possible SSRF and Credential Leakage via Absolute URL in axios Requests",
+          "fixedVersion": "1.8.2, 0.30.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2026-25639",
+          "severity": "HIGH",
+          "title": "axios: Axios affected by Denial of Service via __proto__ Key in mergeConfig",
+          "fixedVersion": "1.13.5, 0.30.3",
+          "type": "vuln"
+        },
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2023-45857",
+          "severity": "MEDIUM",
+          "title": "axios: exposure of confidential data stored in cookies",
+          "fixedVersion": "1.6.0, 0.28.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.1",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln"
+        }
+      ],
+      "lastUpdated": "2026-02-21T00:02:23.827Z",
+      "emojis": 25
+    }
+  ]
+}
