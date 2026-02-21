@@ -3,8 +3,10 @@
 import { scan } from "./scan.ts";
 import { detect } from "./detect.ts";
 import { github } from "./lib/github.ts";
-import { DATA_PATH, PUBLIC_DATA_PATH, MAX_CONCURRENCY } from "./lib/config.ts";
-import { GitHubRepoSchema, GitHubUserSchema, ProjectsDataSchema, Project } from "./lib/schemas.ts";
+import { MAX_CONCURRENCY } from "./lib/config.ts";
+import { GitHubRepoSchema, GitHubUserSchema, Project } from "./lib/schemas.ts";
+import { readAllShards, upsertProject, migrateFromLegacyIfNeeded } from "./lib/shard.ts";
+import { syncData } from "./sync-data.ts";
 
 /**
  * Updates a single project's metadata, AI detection, and security scan.
@@ -95,6 +97,10 @@ async function updateProject(p: Project): Promise<Project> {
     let commitSizeSignals = p.commitSizeSignals;
     let contributorSignals = p.contributorSignals;
     let detectionSummary = p.detectionSummary;
+    let hasSAST = p.hasSAST;
+    let hasLinting = p.hasLinting;
+    let sastEvidenceUrl = p.sastEvidenceUrl;
+    let lintEvidenceUrl = p.lintEvidenceUrl;
     try {
       const d = await detect(fullName);
       aiTools = d.aiTools.length > 0 ? d.aiTools : aiTools;
@@ -104,6 +110,10 @@ async function updateProject(p: Project): Promise<Project> {
       commitSizeSignals = d.commitSizeSignals;
       contributorSignals = d.contributorSignals;
       detectionSummary = d.detectionSummary;
+      hasSAST = d.hasSAST;
+      hasLinting = d.hasLinting;
+      sastEvidenceUrl = d.sastEvidenceUrl ?? null;
+      lintEvidenceUrl = d.lintEvidenceUrl ?? null;
     } catch (e) {
       console.warn(`Detection failed for ${fullName}:`, e);
     }
@@ -143,6 +153,10 @@ async function updateProject(p: Project): Promise<Project> {
       commitSizeSignals,
       contributorSignals,
       detectionSummary,
+      hasSAST: hasSAST || undefined,
+      hasLinting: hasLinting || undefined,
+      sastEvidenceUrl: sastEvidenceUrl ?? undefined,
+      lintEvidenceUrl: lintEvidenceUrl ?? undefined,
       vulnerableDependencies,
       vulnerabilities,
       lastUpdated: new Date().toISOString(),
@@ -157,16 +171,13 @@ async function updateProject(p: Project): Promise<Project> {
  * Updates all projects in the registry with concurrency control.
  */
 async function updateAll() {
-  const content = await Deno.readTextFile(DATA_PATH).catch(() => '{"schemaVersion":1,"projects":[]}');
-  const data = ProjectsDataSchema.parse(JSON.parse(content));
+  await migrateFromLegacyIfNeeded();
+  const data = await readAllShards();
   const projects = data.projects;
-  
+
   console.log(`Updating ${projects.length} projects with concurrency limit ${MAX_CONCURRENCY}...`);
-  
-  const updatedProjects: Project[] = [];
+
   const queue = [...projects];
-  
-  // Simple concurrency-limited processor
   const workers = Array(Math.min(MAX_CONCURRENCY, queue.length))
     .fill(null)
     .map(async () => {
@@ -174,18 +185,12 @@ async function updateAll() {
         const p = queue.shift();
         if (!p) break;
         const updated = await updateProject(p);
-        updatedProjects.push(updated);
+        await upsertProject(updated);
       }
     });
-    
+
   await Promise.all(workers);
-  
-  // Sort by full_name
-  updatedProjects.sort((a, b) => a.full_name.localeCompare(b.full_name));
-  
-  const finalData = { schemaVersion: 1, projects: updatedProjects };
-  await Deno.writeTextFile(DATA_PATH, JSON.stringify(finalData, null, 2));
-  await Deno.writeTextFile(PUBLIC_DATA_PATH, JSON.stringify(finalData, null, 2));
+  await syncData();
   console.log("Updated all projects.");
 }
 

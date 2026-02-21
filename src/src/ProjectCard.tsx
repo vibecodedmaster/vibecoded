@@ -37,6 +37,7 @@ interface Project {
   languages?: Record<string, number> | null;
   is_archived?: boolean;
   hasSAST?: boolean;
+  hasLinting?: boolean;
   aiTools?: Array<{
     name: string;
     detected_via: "file" | "commits";
@@ -204,6 +205,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               {project.hasSAST && (
                 <span class="text-xs px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-600 dark:text-emerald-400">
                   SAST
+                </span>
+              )}
+              {project.hasLinting && (
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-sky-500/20 text-sky-600 dark:text-sky-400">
+                  Lint
                 </span>
               )}
               {project.hasTests && (

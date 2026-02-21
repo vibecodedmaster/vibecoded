@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "hyunjun6928-netizen/salmalm",
+      "url": "https://github.com/hyunjun6928-netizen/salmalm",
+      "description": "🧠 Personal AI Gateway — Single-file Python AI agent with multi-LLM, tools, vision, TTS, encrypted vault. Your own ChatGPT on localhost.",
+      "stars": 6,
+      "commits": 336,
+      "contributors": 1,
+      "forks": 1,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": null,
+      "size": 3451,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "hyunjun6928-netizen",
+          "avatar_url": "https://avatars.githubusercontent.com/u/253926759?v=4",
+          "url": "https://github.com/hyunjun6928-netizen",
+          "created_at": "2026-01-09T12:27:19Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-02-18T04:46:00Z",
+      "language": "Python",
+      "languages": {
+        "Python": 2176648,
+        "HTML": 294737,
+        "Shell": 1608,
+        "Dockerfile": 1415
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "hyunjun6928-netizen",
+        "avatar_url": "https://avatars.githubusercontent.com/u/253926759?v=4",
+        "url": "https://github.com/hyunjun6928-netizen",
+        "created_at": "2026-01-09T12:27:19Z",
+        "followers": 0,
+        "following": 0,
+        "bio": null,
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "poetry",
+        "detected_via": "pyproject.toml",
+        "evidence_url": "https://github.com/hyunjun6928-netizen/salmalm/blob/main/pyproject.toml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 398,
+        "emDashCount": 19,
+        "enDashCount": 0,
+        "aiMentionCount": 0
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 35,
+        "medianChanges": 16,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 1,
+        "level": "low",
+        "reasons": [
+          "dash punctuation pattern present in commits"
+        ]
+      },
+      "aiTools": null,
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:34.107Z"
+    }
+  ]
+}

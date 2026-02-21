@@ -1,13 +1,17 @@
 #!/usr/bin/env -S deno run -A
 
 import { DATA_PATH, PUBLIC_DATA_PATH } from "./lib/config.ts";
+import { readAllShards, migrateFromLegacyIfNeeded } from "./lib/shard.ts";
 
 /**
- * Synchronizes the master projects.json data file to the web application's public data directory.
+ * Merges shards into combined JSON and writes to DATA_PATH and PUBLIC_DATA_PATH.
  */
-async function syncData() {
+export async function syncData() {
   try {
-    const content = await Deno.readTextFile(DATA_PATH);
+    await migrateFromLegacyIfNeeded();
+    const data = await readAllShards();
+    const content = JSON.stringify(data, null, 2);
+    await Deno.writeTextFile(DATA_PATH, content);
     await Deno.writeTextFile(PUBLIC_DATA_PATH, content);
     console.log("Synced data to public");
   } catch (e) {

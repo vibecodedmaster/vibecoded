@@ -130,6 +130,22 @@ export class GitHubClient {
   }
 
   /**
+   * Lists directory contents. Returns empty array on error or if not a directory.
+   */
+  async listDir(fullName: string, path: string): Promise<Array<{ name: string; type: string }>> {
+    try {
+      const res = await this.fetchWithRetry(
+        `${GITHUB_API_BASE}/repos/${fullName}/contents/${path}`,
+      );
+      const data = (await res.json()) as Array<{ name?: string; type?: string }>;
+      if (!Array.isArray(data)) return [];
+      return data.map((e) => ({ name: e.name ?? "", type: e.type ?? "file" }));
+    } catch {
+      return [];
+    }
+  }
+
+  /**
    * Checks if a file or directory exists in the repository.
    */
   async hasPath(fullName: string, path: string): Promise<boolean> {

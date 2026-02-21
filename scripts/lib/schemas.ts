@@ -90,6 +90,10 @@ export const ProjectSchema = z.object({
   language: z.string().nullable().optional(),
   languages: z.record(z.number()).nullable().optional(),
   is_archived: z.boolean().default(false),
+  hasSAST: z.boolean().optional(),
+  hasLinting: z.boolean().optional(),
+  sastEvidenceUrl: z.string().nullable().optional(),
+  lintEvidenceUrl: z.string().nullable().optional(),
   owner: z.object({
     login: z.string(),
     avatar_url: z.string(),

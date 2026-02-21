@@ -1,8 +1,9 @@
 #!/usr/bin/env -S deno run -A
 
 import { github } from "./lib/github.ts";
-import { DATA_PATH, DENIED_PATH } from "./lib/config.ts";
-import { ProjectsDataSchema, DeniedDataSchema } from "./lib/schemas.ts";
+import { DENIED_PATH } from "./lib/config.ts";
+import { DeniedDataSchema } from "./lib/schemas.ts";
+import { readAllShards, migrateFromLegacyIfNeeded } from "./lib/shard.ts";
 import { detect, shouldCreateDiscoveryPr } from "./detect.ts";
 
 /**
@@ -52,8 +53,8 @@ interface DiscoveryCandidate {
  * @returns A list of discovered project objects.
  */
 async function discover(limit = 5) {
-  const content = await Deno.readTextFile(DATA_PATH).catch(() => '{"schemaVersion":1,"projects":[]}');
-  const data = ProjectsDataSchema.parse(JSON.parse(content));
+  await migrateFromLegacyIfNeeded();
+  const data = await readAllShards();
   const existingRepos = new Set(data.projects.map((p) => p.full_name.toLowerCase()));
 
   const deniedContent = await Deno.readTextFile(DENIED_PATH).catch(() => '{"schemaVersion":1,"denied":[]}');

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "jetpack3331/ai-chat-history-manager",
+      "url": "https://github.com/jetpack3331/ai-chat-history-manager",
+      "description": "A local AI chat history manager with SQLite full‑text search and Next.js UI (Gemini/OpenAI/Claude exports).",
+      "stars": 0,
+      "commits": 15,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 2,
+      "license": "MIT License",
+      "topics": null,
+      "size": 225,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "jetpack3331",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3585148?v=4",
+          "url": "https://github.com/jetpack3331",
+          "created_at": "2013-02-13T14:50:37Z",
+          "followers": 11,
+          "following": 27
+        }
+      ],
+      "created_at": "2026-02-18T18:30:33Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 48251,
+        "Python": 22079,
+        "JavaScript": 642,
+        "CSS": 488,
+        "Dockerfile": 458
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "jetpack3331",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3585148?v=4",
+        "url": "https://github.com/jetpack3331",
+        "created_at": "2013-02-13T14:50:37Z",
+        "followers": 11,
+        "following": 27,
+        "bio": "Full-stack developer with passion into JavaScript (React, Next.js, node.js), React Native, Blockchain, Ethereum, Python, PHP",
+        "public_repos": 26,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pip",
+        "detected_via": "requirements.txt",
+        "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/requirements.txt"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 15,
+        "avgMessageLength": 294,
+        "emDashCount": 0,
+        "enDashCount": 1,
+        "aiMentionCount": 14
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 179,
+        "medianChanges": 60,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 14,
+        "level": "high",
+        "reasons": [
+          "2 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "gemini",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/GEMINI.md"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/commit/2292af457bd8a958b47198b91c1dcbbe81b31150"
+        }
+      ],
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:35.829Z"
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "ActiveInferenceInstitute/GEO-INFER",
+      "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
+      "description": null,
+      "stars": 9,
+      "commits": 169,
+      "contributors": 2,
+      "forks": 1,
+      "open_issues": 0,
+      "license": "Other",
+      "topics": null,
+      "size": 427520,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "docxology",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6911384?v=4",
+          "url": "https://github.com/docxology",
+          "created_at": "2014-03-10T19:49:16Z",
+          "followers": 57,
+          "following": 44
+        },
+        {
+          "login": "ActiveInferenceInstitute",
+          "avatar_url": "https://avatars.githubusercontent.com/u/79860900?v=4",
+          "url": "https://github.com/ActiveInferenceInstitute",
+          "created_at": "2021-03-01T16:11:33Z",
+          "followers": 107,
+          "following": 15
+        }
+      ],
+      "created_at": "2025-05-13T14:17:56Z",
+      "language": "HTML",
+      "languages": {
+        "HTML": 52068264,
+        "Python": 16990642,
+        "Shell": 19807,
+        "JavaScript": 9925,
+        "Dockerfile": 4684
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "ActiveInferenceInstitute",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79860900?v=4",
+        "url": "https://github.com/ActiveInferenceInstitute",
+        "created_at": "2021-03-01T16:11:33Z",
+        "followers": 107,
+        "following": 15,
+        "bio": "activeinference.institute/\r\nhttps://activities.activeinference.institute/",
+        "public_repos": 46,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "poetry",
+        "detected_via": "pyproject.toml",
+        "evidence_url": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/pyproject.toml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 8,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 0
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 1852494,
+        "medianChanges": 91477,
+        "largeCommitCount": 8
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 9,
+        "level": "high",
+        "reasons": [
+          "2 file-based AI signal(s)",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "cursor",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/.cursorrules"
+        },
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/CLAUDE.md"
+        }
+      ],
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:29.911Z"
+    },
+    {
+      "full_name": "aha-hyeong/kumiho",
+      "url": "https://github.com/aha-hyeong/kumiho",
+      "description": "kumiho is self-hosting web media server.",
+      "stars": 27,
+      "commits": 638,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 6,
+      "license": "Apache License 2.0",
+      "topics": [
+        "comics",
+        "ebook",
+        "library",
+        "manga",
+        "self-hosted",
+        "web-viewer",
+        "webtoon"
+      ],
+      "size": 63973,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "aha-hyeong",
+          "avatar_url": "https://avatars.githubusercontent.com/u/206205627?v=4",
+          "url": "https://github.com/aha-hyeong",
+          "created_at": "2025-04-04T10:44:47Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-01-13T09:37:10Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 479665,
+        "Go": 405469,
+        "CSS": 128106,
+        "Dockerfile": 1965,
+        "JavaScript": 632,
+        "HTML": 410
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "aha-hyeong",
+        "avatar_url": "https://avatars.githubusercontent.com/u/206205627?v=4",
+        "url": "https://github.com/aha-hyeong",
+        "created_at": "2025-04-04T10:44:47Z",
+        "followers": 0,
+        "following": 0,
+        "bio": null,
+        "public_repos": 2,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 105,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 1
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 5,
+        "medianChanges": 6,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 4,
+        "level": "low",
+        "reasons": [
+          "1 file-based AI signal(s)"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "copilot",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/aha-hyeong/kumiho/blob/main/.github/copilot-instructions.md"
+        }
+      ],
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:29.555Z"
+    },
+    {
+      "full_name": "ancsemi/Haven",
+      "url": "https://github.com/ancsemi/Haven",
+      "description": "Self-hosted private chat — No cloud, no telemetry, no Big Tech. Discord alternative that runs on your own machine.",
+      "stars": 161,
+      "commits": 154,
+      "contributors": 4,
+      "forks": 10,
+      "open_issues": 10,
+      "license": "Other",
+      "topics": [
+        "android-application",
+        "browser",
+        "chat",
+        "discord",
+        "discord-alternative",
+        "docker",
+        "encryption",
+        "messaging",
+        "migration",
+        "nodejs",
+        "picture-in-picture",
+        "privacy",
+        "self-hosted",
+        "selfhosted",
+        "selfhosted-apps",
+        "soundcloud",
+        "streaming",
+        "voice-chat",
+        "websocket",
+        "youtube"
+      ],
+      "size": 2338,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "ancsemi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/249465243?v=4",
+          "url": "https://github.com/ancsemi",
+          "created_at": "2025-12-13T15:36:55Z",
+          "followers": 3,
+          "following": 2
+        },
+        {
+          "login": "anmire",
+          "avatar_url": "https://avatars.githubusercontent.com/u/99765883?v=4",
+          "url": "https://github.com/anmire",
+          "created_at": "2022-02-15T21:02:20Z",
+          "followers": 1,
+          "following": 0
+        },
+        {
+          "login": "mike1237",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12839275?v=4",
+          "url": "https://github.com/mike1237",
+          "created_at": "2015-06-11T03:14:49Z",
+          "followers": 2,
+          "following": 1
+        },
+        {
+          "login": "tylerobara",
+          "avatar_url": "https://avatars.githubusercontent.com/u/49762914?v=4",
+          "url": "https://github.com/tylerobara",
+          "created_at": "2019-04-18T17:35:59Z",
+          "followers": 6,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-02-11T05:16:20Z",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 1033724,
+        "CSS": 304551,
+        "HTML": 183961,
+        "Shell": 6325,
+        "Batchfile": 6143,
+        "PowerShell": 2508,
+        "Dockerfile": 1986
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "ancsemi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/249465243?v=4",
+        "url": "https://github.com/ancsemi",
+        "created_at": "2025-12-13T15:36:55Z",
+        "followers": 3,
+        "following": 2,
+        "bio": "Just an average dude. I like games and guns. ",
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package-lock.json",
+        "evidence_url": "https://github.com/ancsemi/Haven/blob/main/package-lock.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 312,
+        "emDashCount": 1,
+        "enDashCount": 0,
+        "aiMentionCount": 1
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 69,
+        "medianChanges": 13,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 3,
+        "level": "low",
+        "reasons": [
+          "1 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/ancsemi/Haven/commit/430b3deea2fa9ab686e9ca7f01fb9855bf8a10fc"
+        }
+      ],
+      "vulnerableDependencies": [
+        "axios@0.21.4 (CVE-2023-45857)",
+        "axios@0.21.4 (CVE-2025-27152)",
+        "axios@0.21.4 (CVE-2026-25639)",
+        "qs@6.14.1 (CVE-2026-2391)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2025-27152",
+          "severity": "HIGH",
+          "title": "axios: Possible SSRF and Credential Leakage via Absolute URL in axios Requests",
+          "fixedVersion": "1.8.2, 0.30.0",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        },
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2026-25639",
+          "severity": "HIGH",
+          "title": "axios: Axios affected by Denial of Service via __proto__ Key in mergeConfig",
+          "fixedVersion": "1.13.5, 0.30.3",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        },
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2023-45857",
+          "severity": "MEDIUM",
+          "title": "axios: exposure of confidential data stored in cookies",
+          "fixedVersion": "1.6.0, 0.28.0",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.1",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:31:25.285Z"
+    }
+  ]
+}

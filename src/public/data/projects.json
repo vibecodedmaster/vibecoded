@@ -95,598 +95,9 @@
           "evidence_url": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/CLAUDE.md"
         }
       ],
-      "vulnerableDependencies": [
-        "aiohttp@3.12.15 (CVE-2025-69223)",
-        "aiohttp@3.12.15 (CVE-2025-69224)",
-        "aiohttp@3.12.15 (CVE-2025-69225)",
-        "aiohttp@3.12.15 (CVE-2025-69226)",
-        "aiohttp@3.12.15 (CVE-2025-69227)",
-        "aiohttp@3.12.15 (CVE-2025-69228)",
-        "aiohttp@3.12.15 (CVE-2025-69229)",
-        "aiohttp@3.12.15 (CVE-2025-69230)",
-        "astropy@5.3.2 (CVE-2023-41334)",
-        "biopython@1.85 (CVE-2025-68463)",
-        "bokeh@3.4.3 (CVE-2026-21883)",
-        "bokeh@3.7.3 (CVE-2026-21883)",
-        "distributed@2024.8.0 (CVE-2026-23528)",
-        "distributed@2025.7.0 (CVE-2026-23528)",
-        "filelock@3.18.0 (CVE-2025-68146)",
-        "filelock@3.18.0 (CVE-2026-22701)",
-        "filelock@3.19.1 (CVE-2025-68146)",
-        "filelock@3.19.1 (CVE-2026-22701)",
-        "fonttools@4.59.0 (CVE-2025-66034)",
-        "fonttools@4.60.0 (CVE-2025-66034)",
-        "geopandas@1.0.1 (CVE-2025-69662)",
-        "geopandas@1.1.1 (CVE-2025-69662)",
-        "keras@3.10.0 (CVE-2025-12058)",
-        "keras@3.10.0 (CVE-2025-12060)",
-        "keras@3.10.0 (CVE-2025-8747)",
-        "keras@3.10.0 (CVE-2025-9905)",
-        "keras@3.10.0 (CVE-2025-9906)",
-        "keras@3.10.0 (CVE-2026-0897)",
-        "keras@3.10.0 (CVE-2026-1669)",
-        "keras@3.11.1 (CVE-2025-12058)",
-        "keras@3.11.1 (CVE-2025-12060)",
-        "keras@3.11.1 (CVE-2025-49655)",
-        "keras@3.11.1 (CVE-2025-9905)",
-        "keras@3.11.1 (CVE-2026-0897)",
-        "keras@3.11.1 (CVE-2026-1669)",
-        "nbconvert@7.16.6 (CVE-2025-53000)",
-        "pillow@11.3.0 (CVE-2026-25990)",
-        "pillow@12.1.0 (CVE-2026-25990)",
-        "protobuf@5.29.5 (CVE-2026-0994)",
-        "python-multipart@0.0.20 (CVE-2026-24486)",
-        "python-multipart@0.0.21 (CVE-2026-24486)",
-        "starlette@0.47.2 (CVE-2025-62727)",
-        "urllib3@2.5.0 (CVE-2025-66418)",
-        "urllib3@2.5.0 (CVE-2025-66471)",
-        "urllib3@2.5.0 (CVE-2026-21441)",
-        "werkzeug@3.1.3 (CVE-2025-66221)",
-        "werkzeug@3.1.3 (CVE-2026-21860)",
-        "werkzeug@3.1.3 (CVE-2026-27199)",
-        "wheel@0.45.1 (CVE-2026-24049)"
-      ],
-      "vulnerabilities": [
-        {
-          "pkg": "filelock",
-          "version": "3.19.1",
-          "cve": "CVE-2025-68146",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation",
-          "fixedVersion": "3.20.1",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-ACT/uv.lock"
-        },
-        {
-          "pkg": "filelock",
-          "version": "3.19.1",
-          "cve": "CVE-2026-22701",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock Time-of-Check-Time-of-Use (TOCTOU) in SoftFileLock",
-          "fixedVersion": "3.20.3",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-ACT/uv.lock"
-        },
-        {
-          "pkg": "nbconvert",
-          "version": "7.16.6",
-          "cve": "CVE-2025-53000",
-          "severity": "HIGH",
-          "title": "nbconvert: nbconvert: Arbitrary code execution via malicious SVG to PDF conversion on Windows",
-          "fixedVersion": "7.17.0",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-ACT/uv.lock"
-        },
-        {
-          "pkg": "pillow",
-          "version": "11.3.0",
-          "cve": "CVE-2026-25990",
-          "severity": "HIGH",
-          "title": "pillow: Pillow: Out-of-bounds Write via Specially Crafted PSD Image",
-          "fixedVersion": "12.1.1",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-ACT/uv.lock"
-        },
-        {
-          "pkg": "pillow",
-          "version": "12.1.0",
-          "cve": "CVE-2026-25990",
-          "severity": "HIGH",
-          "title": "pillow: Pillow: Out-of-bounds Write via Specially Crafted PSD Image",
-          "fixedVersion": "12.1.1",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-ACT/uv.lock"
-        },
-        {
-          "pkg": "fonttools",
-          "version": "4.60.0",
-          "cve": "CVE-2025-66034",
-          "severity": "MEDIUM",
-          "title": "fonttools: fontTools: Arbitrary file write leading to remote code execution via malicious .designspace file",
-          "fixedVersion": "4.60.2",
-          "type": "vuln",
-          "target": "GEO-INFER-PLACE/locations/cascadia/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-PLACE/locations/cascadia/uv.lock"
-        },
-        {
-          "pkg": "geopandas",
-          "version": "1.1.1",
-          "cve": "CVE-2025-69662",
-          "severity": "HIGH",
-          "title": "SQL injection vulnerability in geopandas before v.1.1.2 allows an atta ...",
-          "fixedVersion": "1.1.2",
-          "type": "vuln",
-          "target": "GEO-INFER-PLACE/locations/cascadia/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-PLACE/locations/cascadia/uv.lock"
-        },
-        {
-          "pkg": "geopandas",
-          "version": "1.0.1",
-          "cve": "CVE-2025-69662",
-          "severity": "HIGH",
-          "title": "SQL injection vulnerability in geopandas before v.1.1.2 allows an atta ...",
-          "fixedVersion": "1.1.2",
-          "type": "vuln",
-          "target": "GEO-INFER-PLACE/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-PLACE/uv.lock"
-        },
-        {
-          "pkg": "python-multipart",
-          "version": "0.0.20",
-          "cve": "CVE-2026-24486",
-          "severity": "HIGH",
-          "title": "python-multipart: Python-Multipart: Arbitrary file write via path traversal vulnerability",
-          "fixedVersion": "0.0.22",
-          "type": "vuln",
-          "target": "GEO-INFER-SPACE/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-SPACE/uv.lock"
-        },
-        {
-          "pkg": "python-multipart",
-          "version": "0.0.21",
-          "cve": "CVE-2026-24486",
-          "severity": "HIGH",
-          "title": "python-multipart: Python-Multipart: Arbitrary file write via path traversal vulnerability",
-          "fixedVersion": "0.0.22",
-          "type": "vuln",
-          "target": "GEO-INFER-SPACE/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/GEO-INFER-SPACE/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69223",
-          "severity": "HIGH",
-          "title": "aiohttp: AIOHTTP's HTTP Parser auto_decompress feature is vulnerable to zip bomb",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69227",
-          "severity": "MEDIUM",
-          "title": "aiohttp: aiohttp: Denial of Service via specially crafted POST request",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69228",
-          "severity": "MEDIUM",
-          "title": "aiohttp: aiohttp: Denial of Service via memory exhaustion from crafted POST request",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69229",
-          "severity": "MEDIUM",
-          "title": "aiohttp: AIOHTTP: Denial of Service via excessive CPU usage in chunked message handling",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69224",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Request smuggling via non-ASCII characters in HTTP parser",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69225",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Request smuggling vulnerability via non-ASCII decimals in Range header",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69226",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Information disclosure of path components via static file path normalization",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69230",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Denial of Service via specially crafted invalid cookies",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "astropy",
-          "version": "5.3.2",
-          "cve": "CVE-2023-41334",
-          "severity": "HIGH",
-          "title": "Astropy is a project for astronomy in Python that fosters interoperabi ...",
-          "fixedVersion": "5.3.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "biopython",
-          "version": "1.85",
-          "cve": "CVE-2025-68463",
-          "severity": "MEDIUM",
-          "title": "python-biopython: python-biopython: Information disclosure via XML External Entity (XXE) vulnerability in Bio.Entrez",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "bokeh",
-          "version": "3.4.3",
-          "cve": "CVE-2026-21883",
-          "severity": "MEDIUM",
-          "title": "Bokeh: Bokeh: Information disclosure and unauthorized actions via flawed WebSocket origin validation",
-          "fixedVersion": "3.8.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "bokeh",
-          "version": "3.7.3",
-          "cve": "CVE-2026-21883",
-          "severity": "MEDIUM",
-          "title": "Bokeh: Bokeh: Information disclosure and unauthorized actions via flawed WebSocket origin validation",
-          "fixedVersion": "3.8.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "distributed",
-          "version": "2024.8.0",
-          "cve": "CVE-2026-23528",
-          "severity": "MEDIUM",
-          "title": "Dask distributed is a distributed task scheduler for Dask. Prior to 20 ...",
-          "fixedVersion": "2026.1.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "distributed",
-          "version": "2025.7.0",
-          "cve": "CVE-2026-23528",
-          "severity": "MEDIUM",
-          "title": "Dask distributed is a distributed task scheduler for Dask. Prior to 20 ...",
-          "fixedVersion": "2026.1.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "filelock",
-          "version": "3.18.0",
-          "cve": "CVE-2025-68146",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation",
-          "fixedVersion": "3.20.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "filelock",
-          "version": "3.18.0",
-          "cve": "CVE-2026-22701",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock Time-of-Check-Time-of-Use (TOCTOU) in SoftFileLock",
-          "fixedVersion": "3.20.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "fonttools",
-          "version": "4.59.0",
-          "cve": "CVE-2025-66034",
-          "severity": "MEDIUM",
-          "title": "fonttools: fontTools: Arbitrary file write leading to remote code execution via malicious .designspace file",
-          "fixedVersion": "4.60.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-12060",
-          "severity": "HIGH",
-          "title": "keras: Keras Path Traversal Vulnerability",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-8747",
-          "severity": "HIGH",
-          "title": "CVE-2025-8747 affecting package keras for versions less than 3.3.3-3",
-          "fixedVersion": "3.11.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-9905",
-          "severity": "HIGH",
-          "title": "keras: Arbitary Code execution in Keras load_model()",
-          "fixedVersion": "3.11.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-9906",
-          "severity": "HIGH",
-          "title": "keras: Arbitrary Code execution in Keras Safe Mode",
-          "fixedVersion": "3.11.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2026-0897",
-          "severity": "HIGH",
-          "title": "Keras: Keras: Denial of Service via crafted HDF5 weight loading file",
-          "fixedVersion": "3.12.1, 3.13.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2026-1669",
-          "severity": "HIGH",
-          "title": "keras: Keras: Information disclosure via arbitrary file read in model loading mechanism",
-          "fixedVersion": "3.13.2, 3.12.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-12058",
-          "severity": "MEDIUM",
-          "title": "keras: Keras Model.load_model Arbitrary Local File Loading and SSRF",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-49655",
-          "severity": "CRITICAL",
-          "title": "keras: Keras deserialization of untrusted data",
-          "fixedVersion": "3.11.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-12060",
-          "severity": "HIGH",
-          "title": "keras: Keras Path Traversal Vulnerability",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-9905",
-          "severity": "HIGH",
-          "title": "keras: Arbitary Code execution in Keras load_model()",
-          "fixedVersion": "3.11.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2026-0897",
-          "severity": "HIGH",
-          "title": "Keras: Keras: Denial of Service via crafted HDF5 weight loading file",
-          "fixedVersion": "3.12.1, 3.13.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2026-1669",
-          "severity": "HIGH",
-          "title": "keras: Keras: Information disclosure via arbitrary file read in model loading mechanism",
-          "fixedVersion": "3.13.2, 3.12.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-12058",
-          "severity": "MEDIUM",
-          "title": "keras: Keras Model.load_model Arbitrary Local File Loading and SSRF",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "protobuf",
-          "version": "5.29.5",
-          "cve": "CVE-2026-0994",
-          "severity": "HIGH",
-          "title": "python: protobuf: Protobuf: Denial of Service due to recursion depth bypass",
-          "fixedVersion": "6.33.5, 5.29.6",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "starlette",
-          "version": "0.47.2",
-          "cve": "CVE-2025-62727",
-          "severity": "HIGH",
-          "title": "starlette: Starlette DoS via Range header merging",
-          "fixedVersion": "0.49.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "urllib3",
-          "version": "2.5.0",
-          "cve": "CVE-2025-66418",
-          "severity": "HIGH",
-          "title": "urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion",
-          "fixedVersion": "2.6.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "urllib3",
-          "version": "2.5.0",
-          "cve": "CVE-2025-66471",
-          "severity": "HIGH",
-          "title": "urllib3: urllib3 Streaming API improperly handles highly compressed data",
-          "fixedVersion": "2.6.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "urllib3",
-          "version": "2.5.0",
-          "cve": "CVE-2026-21441",
-          "severity": "HIGH",
-          "title": "urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)",
-          "fixedVersion": "2.6.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "werkzeug",
-          "version": "3.1.3",
-          "cve": "CVE-2025-66221",
-          "severity": "MEDIUM",
-          "title": "Werkzeug: Werkzeug: Denial of service via Windows device names in path segments",
-          "fixedVersion": "3.1.4",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "werkzeug",
-          "version": "3.1.3",
-          "cve": "CVE-2026-21860",
-          "severity": "MEDIUM",
-          "title": " Werkzeug safe_join() allows Windows special device names with compound extensions",
-          "fixedVersion": "3.1.5",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "werkzeug",
-          "version": "3.1.3",
-          "cve": "CVE-2026-27199",
-          "severity": "MEDIUM",
-          "title": " Werkzeug safe_join() allows Windows special device names",
-          "fixedVersion": "3.1.6",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        },
-        {
-          "pkg": "wheel",
-          "version": "0.45.1",
-          "cve": "CVE-2026-24049",
-          "severity": "HIGH",
-          "title": "wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking",
-          "fixedVersion": "0.46.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/uv.lock"
-        }
-      ],
-      "lastUpdated": "2026-02-21T01:46:59.801Z"
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:29.911Z"
     },
     {
       "full_name": "aha-hyeong/kumiho",
@@ -773,94 +184,9 @@
           "evidence_url": "https://github.com/aha-hyeong/kumiho/blob/main/.github/copilot-instructions.md"
         }
       ],
-      "vulnerableDependencies": [
-        "axios@1.13.2 (CVE-2026-25639)",
-        "github.com/disintegration/imaging@v1.6.2 (CVE-2023-36308)",
-        "github.com/gofiber/fiber/v2@v2.52.10 (CVE-2025-66630)",
-        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2022-41727)",
-        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2023-29407)",
-        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2023-29408)",
-        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2024-24792)"
-      ],
-      "vulnerabilities": [
-        {
-          "pkg": "github.com/disintegration/imaging",
-          "version": "v1.6.2",
-          "cve": "CVE-2023-36308",
-          "severity": "LOW",
-          "title": "disintegration Imaging 1.6.2 allows attackers to cause a panic (becaus ...",
-          "type": "vuln",
-          "target": "backend/go.mod",
-          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/main/backend/go.mod"
-        },
-        {
-          "pkg": "github.com/gofiber/fiber/v2",
-          "version": "v2.52.10",
-          "cve": "CVE-2025-66630",
-          "severity": "CRITICAL",
-          "title": "github.com/gofiber/fiber/v2: Fiber: Predictable UUIDs from randomness source errors can lead to security bypasses",
-          "fixedVersion": "2.52.11",
-          "type": "vuln",
-          "target": "backend/go.mod",
-          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/main/backend/go.mod"
-        },
-        {
-          "pkg": "golang.org/x/image",
-          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
-          "cve": "CVE-2024-24792",
-          "severity": "HIGH",
-          "title": "Parsing a corrupt or malicious image with invalid color indices can ca ...",
-          "fixedVersion": "0.18.0",
-          "type": "vuln",
-          "target": "backend/go.mod",
-          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/main/backend/go.mod"
-        },
-        {
-          "pkg": "golang.org/x/image",
-          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
-          "cve": "CVE-2022-41727",
-          "severity": "MEDIUM",
-          "title": "golang.org/x/image: Uncontrolled Resource Consumption",
-          "fixedVersion": "0.5.0",
-          "type": "vuln",
-          "target": "backend/go.mod",
-          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/main/backend/go.mod"
-        },
-        {
-          "pkg": "golang.org/x/image",
-          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
-          "cve": "CVE-2023-29407",
-          "severity": "MEDIUM",
-          "title": "golang.org/x/image/tiff: excessive CPU consumption in decoding",
-          "fixedVersion": "0.10.0",
-          "type": "vuln",
-          "target": "backend/go.mod",
-          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/main/backend/go.mod"
-        },
-        {
-          "pkg": "golang.org/x/image",
-          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
-          "cve": "CVE-2023-29408",
-          "severity": "MEDIUM",
-          "title": "golang.org/x/image/tiff: TIFF decoder does not place a limit on the size of compressed tile data",
-          "fixedVersion": "0.10.0",
-          "type": "vuln",
-          "target": "backend/go.mod",
-          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/main/backend/go.mod"
-        },
-        {
-          "pkg": "axios",
-          "version": "1.13.2",
-          "cve": "CVE-2026-25639",
-          "severity": "HIGH",
-          "title": "axios: Axios affected by Denial of Service via __proto__ Key in mergeConfig",
-          "fixedVersion": "1.13.5, 0.30.3",
-          "type": "vuln",
-          "target": "web/package-lock.json",
-          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/main/web/package-lock.json"
-        }
-      ],
-      "lastUpdated": "2026-02-21T01:46:49.880Z"
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:29.555Z"
     },
     {
       "full_name": "ancsemi/Haven",
@@ -1006,7 +332,8 @@
           "fixedVersion": "1.8.2, 0.30.0",
           "type": "vuln",
           "target": "package-lock.json",
-          "targetUrl": "https://github.com/ancsemi/Haven/blob/main/package-lock.json"
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
         },
         {
           "pkg": "axios",
@@ -1017,7 +344,8 @@
           "fixedVersion": "1.13.5, 0.30.3",
           "type": "vuln",
           "target": "package-lock.json",
-          "targetUrl": "https://github.com/ancsemi/Haven/blob/main/package-lock.json"
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
         },
         {
           "pkg": "axios",
@@ -1028,7 +356,8 @@
           "fixedVersion": "1.6.0, 0.28.0",
           "type": "vuln",
           "target": "package-lock.json",
-          "targetUrl": "https://github.com/ancsemi/Haven/blob/main/package-lock.json"
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
         },
         {
           "pkg": "qs",
@@ -1039,11 +368,11 @@
           "fixedVersion": "6.14.2",
           "type": "vuln",
           "target": "package-lock.json",
-          "targetUrl": "https://github.com/ancsemi/Haven/blob/main/package-lock.json"
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
         }
       ],
-      "lastUpdated": "2026-02-21T01:46:45.007Z",
-      "emojis": 25
+      "lastUpdated": "2026-02-21T02:31:25.285Z"
     },
     {
       "full_name": "cloudflare/vibesdk",
@@ -1158,12 +487,14 @@
         "HTML": 1098
       },
       "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/cloudflare/vibesdk/blob/main/eslint.config.js",
       "owner": {
         "login": "cloudflare",
         "avatar_url": "https://avatars.githubusercontent.com/u/314135?v=4",
         "url": "https://github.com/cloudflare",
         "created_at": "2010-06-25T01:24:59Z",
-        "followers": 11620,
+        "followers": 11621,
         "following": 0,
         "bio": null,
         "public_repos": 547,
@@ -1251,7 +582,8 @@
           "fixedVersion": "1.25.2",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "@modelcontextprotocol/sdk",
@@ -1262,7 +594,8 @@
           "fixedVersion": "1.26.0",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "agents",
@@ -1273,7 +606,8 @@
           "fixedVersion": "0.3.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "agents",
@@ -1284,7 +618,8 @@
           "fixedVersion": "0.3.10",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "agents",
@@ -1295,7 +630,8 @@
           "fixedVersion": "0.3.10",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "ajv",
@@ -1306,7 +642,8 @@
           "fixedVersion": "8.18.0",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "diff",
@@ -1317,7 +654,8 @@
           "fixedVersion": "8.0.3, 5.2.2, 4.0.4, 3.5.1",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1328,7 +666,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1339,7 +678,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1350,7 +690,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1361,7 +702,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1372,7 +714,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1383,7 +726,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1394,7 +738,8 @@
           "fixedVersion": "4.11.10",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "lodash",
@@ -1405,7 +750,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "minimatch",
@@ -1416,7 +762,8 @@
           "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "qs",
@@ -1427,7 +774,8 @@
           "fixedVersion": "6.14.1",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "qs",
@@ -1438,7 +786,8 @@
           "fixedVersion": "6.14.2",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "react-router",
@@ -1449,7 +798,8 @@
           "fixedVersion": "7.12.0",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "react-router",
@@ -1460,7 +810,8 @@
           "fixedVersion": "7.12.0",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "react-router",
@@ -1471,7 +822,8 @@
           "fixedVersion": "7.12.0",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "@remix-run/router",
@@ -1482,7 +834,8 @@
           "fixedVersion": "1.23.2",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1493,7 +846,8 @@
           "fixedVersion": "4.10.2",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1504,7 +858,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1515,7 +870,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1526,7 +882,8 @@
           "fixedVersion": "4.9.7",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1537,7 +894,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1548,7 +906,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1559,7 +918,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1570,7 +930,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1581,7 +942,8 @@
           "fixedVersion": "4.10.3",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "hono",
@@ -1592,7 +954,8 @@
           "fixedVersion": "4.11.10",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         },
         {
           "pkg": "react-router",
@@ -1603,11 +966,11 @@
           "fixedVersion": "6.30.2, 7.9.6",
           "type": "vuln",
           "target": "container/packages-cache/bun.lock",
-          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/main/container/packages-cache/bun.lock"
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         }
       ],
-      "lastUpdated": "2026-02-21T01:46:48.134Z",
-      "emojis": 20
+      "lastUpdated": "2026-02-21T02:31:36.315Z"
     },
     {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
@@ -1675,7 +1038,7 @@
       "aiTools": null,
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-02-21T01:46:45.465Z"
+      "lastUpdated": "2026-02-21T02:31:24.134Z"
     },
     {
       "full_name": "hyunjun6928-netizen/salmalm",
@@ -1725,10 +1088,6 @@
         "detected_via": "pyproject.toml",
         "evidence_url": "https://github.com/hyunjun6928-netizen/salmalm/blob/main/pyproject.toml"
       },
-      "aiTools": null,
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-21T01:46:52.611Z",
       "commitMessageSignals": {
         "sampleSize": 30,
         "avgMessageLength": 398,
@@ -1752,7 +1111,11 @@
         "reasons": [
           "dash punctuation pattern present in commits"
         ]
-      }
+      },
+      "aiTools": null,
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:34.107Z"
     },
     {
       "full_name": "jetpack3331/ai-chat-history-manager",
@@ -1803,26 +1166,6 @@
         "detected_via": "requirements.txt",
         "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/requirements.txt"
       },
-      "aiTools": [
-        {
-          "name": "claude",
-          "detected_via": "file",
-          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/CLAUDE.md"
-        },
-        {
-          "name": "gemini",
-          "detected_via": "file",
-          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/GEMINI.md"
-        },
-        {
-          "name": "cursor",
-          "detected_via": "commits",
-          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/commit/2292af457bd8a958b47198b91c1dcbbe81b31150"
-        }
-      ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-21T01:46:53.099Z",
       "commitMessageSignals": {
         "sampleSize": 15,
         "avgMessageLength": 294,
@@ -1850,7 +1193,27 @@
           "multiple AI mentions in commit messages",
           "large commits detected"
         ]
-      }
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "gemini",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/GEMINI.md"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/commit/2292af457bd8a958b47198b91c1dcbbe81b31150"
+        }
+      ],
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:35.829Z"
     },
     {
       "full_name": "pinto-org/interface",
@@ -1957,6 +1320,8 @@
         "Shell": 423
       },
       "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/pinto-org/interface/blob/main/biome.json",
       "owner": {
         "login": "pinto-org",
         "avatar_url": "https://avatars.githubusercontent.com/u/188717414?v=4",
@@ -1972,6 +1337,35 @@
         "name": "yarn",
         "detected_via": "yarn.lock",
         "evidence_url": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 137,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 3
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 112,
+        "medianChanges": 45,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": true,
+        "matchedBots": [
+          "claude[bot]"
+        ]
+      },
+      "detectionSummary": {
+        "score": 18,
+        "level": "high",
+        "reasons": [
+          "3 file-based AI signal(s)",
+          "claude bot contributor detected",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
       },
       "aiTools": [
         {
@@ -2021,7 +1415,8 @@
           "fixedVersion": "0.33.1",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "@metamask/sdk-communication-layer",
@@ -2032,7 +1427,8 @@
           "fixedVersion": "0.33.1",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "@remix-run/router",
@@ -2043,7 +1439,8 @@
           "fixedVersion": "1.23.2",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "glob",
@@ -2054,7 +1451,8 @@
           "fixedVersion": "11.1.0, 10.5.0",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "h3",
@@ -2065,7 +1463,8 @@
           "fixedVersion": "1.15.5",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "lodash",
@@ -2076,7 +1475,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "mdast-util-to-hast",
@@ -2087,7 +1487,8 @@
           "fixedVersion": "13.2.1",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "minimatch",
@@ -2098,7 +1499,8 @@
           "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "nanoid",
@@ -2109,7 +1511,8 @@
           "fixedVersion": "5.0.9, 3.3.8",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "node-forge",
@@ -2120,7 +1523,8 @@
           "fixedVersion": "1.3.2",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "node-forge",
@@ -2131,7 +1535,8 @@
           "fixedVersion": "1.3.2",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "node-forge",
@@ -2142,7 +1547,8 @@
           "fixedVersion": "1.3.2",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "preact",
@@ -2153,7 +1559,8 @@
           "fixedVersion": "10.26.10, 10.27.3, 10.28.2",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "react-router",
@@ -2164,7 +1571,8 @@
           "fixedVersion": "6.30.2, 7.9.6",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "sha.js",
@@ -2175,7 +1583,8 @@
           "fixedVersion": "2.4.12",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "tar",
@@ -2186,7 +1595,8 @@
           "fixedVersion": "7.5.3",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "tar",
@@ -2197,7 +1607,8 @@
           "fixedVersion": "7.5.4",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "tar",
@@ -2208,7 +1619,8 @@
           "fixedVersion": "7.5.7",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         },
         {
           "pkg": "tar",
@@ -2219,39 +1631,11 @@
           "fixedVersion": "7.5.8",
           "type": "vuln",
           "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         }
       ],
-      "lastUpdated": "2026-02-21T01:47:04.568Z",
-      "commitMessageSignals": {
-        "sampleSize": 30,
-        "avgMessageLength": 137,
-        "emDashCount": 0,
-        "enDashCount": 0,
-        "aiMentionCount": 3
-      },
-      "commitSizeSignals": {
-        "sampledCommits": 8,
-        "avgChanges": 112,
-        "medianChanges": 45,
-        "largeCommitCount": 1
-      },
-      "contributorSignals": {
-        "hasClaudeBotContributor": true,
-        "matchedBots": [
-          "claude[bot]"
-        ]
-      },
-      "detectionSummary": {
-        "score": 18,
-        "level": "high",
-        "reasons": [
-          "3 file-based AI signal(s)",
-          "claude bot contributor detected",
-          "multiple AI mentions in commit messages",
-          "large commits detected"
-        ]
-      }
+      "lastUpdated": "2026-02-21T02:31:42.072Z"
     },
     {
       "full_name": "porthorian/openchat-backend",
@@ -2300,16 +1684,6 @@
         "detected_via": "go.mod",
         "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/go.mod"
       },
-      "aiTools": [
-        {
-          "name": "claude",
-          "detected_via": "file",
-          "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/AGENTS.md"
-        }
-      ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-21T01:47:00.914Z",
       "commitMessageSignals": {
         "sampleSize": 26,
         "avgMessageLength": 30,
@@ -2334,7 +1708,32 @@
           "1 file-based AI signal(s)",
           "large commits detected"
         ]
-      }
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/AGENTS.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "github.com/go-chi/chi/v5@v5.2.0 (GHSA-vrw8-fxc6-2r93)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "github.com/go-chi/chi/v5",
+          "version": "v5.2.0",
+          "cve": "GHSA-vrw8-fxc6-2r93",
+          "severity": "MEDIUM",
+          "title": "chi Allows Host Header Injection which Leads to Open Redirect in RedirectSlashes",
+          "fixedVersion": "5.2.2",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/c9130dfbe7e4029e297fe12a458af60a87aaaf84/go.mod",
+          "scannedRef": "c9130dfbe7e4029e297fe12a458af60a87aaaf84"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:31:38.599Z"
     },
     {
       "full_name": "porthorian/openchat-client",
@@ -2400,16 +1799,6 @@
         "detected_via": "yarn.lock",
         "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/yarn.lock"
       },
-      "aiTools": [
-        {
-          "name": "claude",
-          "detected_via": "file",
-          "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/AGENTS.md"
-        }
-      ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-21T01:47:00.916Z",
       "commitMessageSignals": {
         "sampleSize": 30,
         "avgMessageLength": 46,
@@ -2434,7 +1823,17 @@
           "1 file-based AI signal(s)",
           "large commits detected"
         ]
-      }
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/AGENTS.md"
+        }
+      ],
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:43.427Z"
     }
   ]
 }

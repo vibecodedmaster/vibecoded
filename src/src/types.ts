@@ -40,6 +40,9 @@ export interface Project {
   languages?: Record<string, number> | null;
   is_archived?: boolean;
   hasSAST?: boolean;
+  hasLinting?: boolean;
+  sastEvidenceUrl?: string | null;
+  lintEvidenceUrl?: string | null;
   aiTools?: Array<{
     name: string;
     detected_via: "file" | "commits";

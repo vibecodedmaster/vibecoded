@@ -13,7 +13,7 @@ build:
 
 test:
     cd src && pnpm run test
-    deno test -A scripts/lib/github_test.ts scripts/lib/logic_test.ts
+    deno test -A scripts/lib/github_test.ts scripts/lib/logic_test.ts scripts/lib/shard_test.ts scripts/scan_test.ts
 
 lint:
     cd src && pnpm run lint

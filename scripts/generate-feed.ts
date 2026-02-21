@@ -1,5 +1,4 @@
-import { DATA_PATH } from "./lib/config.ts";
-import { ProjectsDataSchema } from "./lib/schemas.ts";
+import { readAllShards, migrateFromLegacyIfNeeded } from "./lib/shard.ts";
 import { dirname, join, fromFileUrl } from "https://deno.land/std@0.224.0/path/mod.ts";
 
 /**
@@ -10,8 +9,8 @@ async function generateFeed() {
   const feedPath = new URL("../src/public/feed.xml", import.meta.url);
   
   try {
-    const content = await Deno.readTextFile(DATA_PATH);
-    const data = ProjectsDataSchema.parse(JSON.parse(content));
+    await migrateFromLegacyIfNeeded();
+    const data = await readAllShards();
     const projects = data.projects;
     
     const sorted = [...projects].sort((a, b) => {

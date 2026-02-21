@@ -82,14 +82,13 @@ jobs:
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
             
-            # Check if there are changes
-            if git diff --quiet data/projects.json; then
+            if [ -z "$(git status --porcelain data/ src/public/data/)" ]; then
               echo "No changes for $REPO, skipping."
               continue
             fi
 
             git checkout -B "$BRANCH_NAME"
-            git add data/projects.json src/public/data/projects.json
+            git add data/projects.json data/projects src/public/data/projects.json
             git commit -m "feat: auto-discover $REPO"
             git push origin "$BRANCH_NAME" --force
             

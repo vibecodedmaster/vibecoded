@@ -308,6 +308,93 @@ async function fetchEmojiCount(fullName: string): Promise<number> {
   return total;
 }
 
+const SAST_PATHS: Array<{ path: string; label: string }> = [
+  { path: ".github/workflows/codeql.yml", label: "CodeQL" },
+  { path: ".github/workflows/codeql-analysis.yml", label: "CodeQL" },
+  { path: ".github/workflows/codeql.yaml", label: "CodeQL" },
+  { path: ".semgrep.yml", label: "Semgrep" },
+  { path: ".semgrepconfig", label: "Semgrep" },
+  { path: "sonar-project.properties", label: "Sonar" },
+  { path: ".sonarcloud.properties", label: "SonarCloud" },
+  { path: ".gitleaks.toml", label: "Gitleaks" },
+  { path: ".bandit", label: "Bandit" },
+  { path: "bandit.yaml", label: "Bandit" },
+];
+
+const LINT_PATHS: Array<{ path: string; label: string }> = [
+  { path: ".eslintrc", label: "ESLint" },
+  { path: ".eslintrc.js", label: "ESLint" },
+  { path: ".eslintrc.json", label: "ESLint" },
+  { path: ".eslintrc.yml", label: "ESLint" },
+  { path: ".eslintrc.yaml", label: "ESLint" },
+  { path: "eslint.config.js", label: "ESLint" },
+  { path: ".prettierrc", label: "Prettier" },
+  { path: ".prettierrc.js", label: "Prettier" },
+  { path: ".prettierrc.json", label: "Prettier" },
+  { path: ".prettierrc.yml", label: "Prettier" },
+  { path: ".ruff.toml", label: "Ruff" },
+  { path: ".pylintrc", label: "Pylint" },
+  { path: ".golangci.yml", label: "golangci-lint" },
+  { path: ".golangci.yaml", label: "golangci-lint" },
+  { path: "biome.json", label: "Biome" },
+  { path: "biome.jsonc", label: "Biome" },
+];
+
+async function detectSAST(fullName: string): Promise<{ hasSAST: boolean; evidenceUrl?: string }> {
+  const repoInfo = await github.getRepo(fullName).catch(() => null);
+  const defaultBranch = typeof repoInfo?.default_branch === "string" && repoInfo.default_branch.length > 0
+    ? repoInfo.default_branch
+    : "main";
+
+  for (const { path } of SAST_PATHS) {
+    if (await github.hasPath(fullName, path)) {
+      const mode = path.includes(".github/workflows") ? "blob" : "blob";
+      return {
+        hasSAST: true,
+        evidenceUrl: `https://github.com/${fullName}/blob/${defaultBranch}/${path}`,
+      };
+    }
+  }
+
+  const workflows = await github.listDir(fullName, ".github/workflows");
+  for (const w of workflows) {
+    if (w.type === "file" && /codeql|semgrep|sonar|trivy|gitleaks|bandit/i.test(w.name)) {
+      return {
+        hasSAST: true,
+        evidenceUrl: `https://github.com/${fullName}/blob/${defaultBranch}/.github/workflows/${w.name}`,
+      };
+    }
+  }
+  return { hasSAST: false };
+}
+
+async function detectLinting(fullName: string): Promise<{ hasLinting: boolean; evidenceUrl?: string }> {
+  const repoInfo = await github.getRepo(fullName).catch(() => null);
+  const defaultBranch = typeof repoInfo?.default_branch === "string" && repoInfo.default_branch.length > 0
+    ? repoInfo.default_branch
+    : "main";
+
+  for (const { path } of LINT_PATHS) {
+    if (await github.hasPath(fullName, path)) {
+      return {
+        hasLinting: true,
+        evidenceUrl: `https://github.com/${fullName}/blob/${defaultBranch}/${path}`,
+      };
+    }
+  }
+
+  const workflows = await github.listDir(fullName, ".github/workflows");
+  for (const w of workflows) {
+    if (w.type === "file" && /lint|eslint|ruff|prettier|golangci|biome/i.test(w.name)) {
+      return {
+        hasLinting: true,
+        evidenceUrl: `https://github.com/${fullName}/blob/${defaultBranch}/.github/workflows/${w.name}`,
+      };
+    }
+  }
+  return { hasLinting: false };
+}
+
 /**
  * Detects the project's package manager based on presence of specific lock files.
  * @param fullName The GitHub repository's full name (owner/repo).
@@ -369,10 +456,19 @@ export async function detect(fullName: string): Promise<{
   commitSizeSignals: CommitSizeSignals;
   contributorSignals: ContributorSignals;
   detectionSummary: DetectionSummary;
+  hasSAST: boolean;
+  hasLinting: boolean;
+  sastEvidenceUrl?: string | null;
+  lintEvidenceUrl?: string | null;
 }> {
-  const { aiTools, commits } = await hasCursorOrClaude(fullName);
-  const emojis = await fetchEmojiCount(fullName);
-  const packageManager = await detectPackageManager(fullName);
+  const [aiResult, emojis, packageManager, sastResult, lintResult] = await Promise.all([
+    hasCursorOrClaude(fullName),
+    fetchEmojiCount(fullName),
+    detectPackageManager(fullName),
+    detectSAST(fullName),
+    detectLinting(fullName),
+  ]);
+  const { aiTools, commits } = aiResult;
   const commitMessageSignals = analyzeCommitMessages(commits);
   const commitSizeSignals = await analyzeCommitSizes(fullName, commits);
   const contributorSignals = await detectContributorSignals(fullName);
@@ -390,6 +486,10 @@ export async function detect(fullName: string): Promise<{
     commitSizeSignals,
     contributorSignals,
     detectionSummary,
+    hasSAST: sastResult.hasSAST,
+    hasLinting: lintResult.hasLinting,
+    sastEvidenceUrl: sastResult.evidenceUrl ?? null,
+    lintEvidenceUrl: lintResult.evidenceUrl ?? null,
   };
 }
 

@@ -1,8 +1,10 @@
 #!/usr/bin/env -S deno run -A
 
-import { GITHUB_RE, DATA_PATH, PUBLIC_DATA_PATH } from "./lib/config.ts";
+import { GITHUB_RE } from "./lib/config.ts";
 import { github } from "./lib/github.ts";
-import { VulnDetail, VulnDetailSchema, ProjectsDataSchema } from "./lib/schemas.ts";
+import { VulnDetail, VulnDetailSchema } from "./lib/schemas.ts";
+import { readAllShards, upsertProject, migrateFromLegacyIfNeeded } from "./lib/shard.ts";
+import { syncData } from "./sync-data.ts";
 
 interface TrivyResult {
   Target?: string;
@@ -136,33 +138,22 @@ export async function scan(fullName: string): Promise<{ summary: string[]; detai
   return extractVulnerabilityDetails(report, fullName, scanRef);
 }
 
-/**
- * Updates a project's vulnerability data in the registry.
- * @param fullName The GitHub repository's full name (owner/repo).
- * @param vulns List of vulnerability summaries.
- * @param vulnDetails List of detailed vulnerability objects.
- */
-async function updateProject(
+async function updateProjectVulns(
   fullName: string,
   vulns: string[],
-  vulnDetails?: VulnDetail[]
+  vulnDetails?: VulnDetail[],
 ) {
-  const content = await Deno.readTextFile(DATA_PATH).catch(() => '{"schemaVersion":1,"projects":[]}');
-  const data = ProjectsDataSchema.parse(JSON.parse(content));
-  const projects = data.projects;
-  
-  const idx = projects.findIndex((p) => p.full_name === fullName);
-  if (idx < 0) return;
-  
-  projects[idx].vulnerableDependencies = vulns;
+  await migrateFromLegacyIfNeeded();
+  const data = await readAllShards();
+  const project = data.projects.find((p) => p.full_name === fullName);
+  if (!project) return;
+  project.vulnerableDependencies = vulns;
   if (vulnDetails && vulnDetails.length > 0) {
-    projects[idx].vulnerabilities = vulnDetails;
+    project.vulnerabilities = vulnDetails;
   }
-  projects[idx].lastUpdated = new Date().toISOString();
-  
-  const out = { schemaVersion: 1, projects };
-  await Deno.writeTextFile(DATA_PATH, JSON.stringify(out, null, 2));
-  await Deno.writeTextFile(PUBLIC_DATA_PATH, JSON.stringify(out, null, 2));
+  project.lastUpdated = new Date().toISOString();
+  await upsertProject(project);
+  await syncData();
 }
 
 if (import.meta.main) {
@@ -186,7 +177,7 @@ if (import.meta.main) {
       for (const v of summary) console.log("  ", v);
     }
     if (update) {
-      await updateProject(fullName!, summary, details);
+      await updateProjectVulns(fullName!, summary, details);
       console.log("Updated projects.json");
     }
   } catch (e) {

@@ -1,6 +1,8 @@
 #!/usr/bin/env -S deno run -A
 
-import { GITHUB_RE, DATA_PATH, PUBLIC_DATA_PATH } from "./lib/config.ts";
+import { GITHUB_RE } from "./lib/config.ts";
+import { readAllShards, upsertProject, migrateFromLegacyIfNeeded } from "./lib/shard.ts";
+import { syncData } from "./sync-data.ts";
 import { github } from "./lib/github.ts";
 import { 
   GitHubRepoSchema, 
@@ -35,8 +37,8 @@ export async function add(input: string, force = false): Promise<boolean> {
     throw new Error("Invalid: expected owner/repo or GitHub URL");
   }
   
-  const content = await Deno.readTextFile(DATA_PATH).catch(() => '{"schemaVersion":1,"projects":[]}');
-  const data = ProjectsDataSchema.parse(JSON.parse(content));
+  await migrateFromLegacyIfNeeded();
+  const data = await readAllShards();
   const projects = data.projects;
   
   const existingIdx = projects.findIndex((x) => x.full_name === p.full_name);
@@ -89,6 +91,10 @@ export async function add(input: string, force = false): Promise<boolean> {
       level: "low" | "medium" | "high";
       reasons: string[];
     } | null = null;
+    let hasSAST = false;
+    let hasLinting = false;
+    let sastEvidenceUrl: string | null = null;
+    let lintEvidenceUrl: string | null = null;
     try {
       const { detect } = await import("./detect.ts");
       const d = await detect(p.full_name);
@@ -99,6 +105,10 @@ export async function add(input: string, force = false): Promise<boolean> {
       commitSizeSignals = d.commitSizeSignals;
       contributorSignals = d.contributorSignals;
       detectionSummary = d.detectionSummary;
+      hasSAST = d.hasSAST;
+      hasLinting = d.hasLinting;
+      sastEvidenceUrl = d.sastEvidenceUrl ?? null;
+      lintEvidenceUrl = d.lintEvidenceUrl ?? null;
     } catch { /* ignore */ }
     
     // Owner details
@@ -181,6 +191,10 @@ export async function add(input: string, force = false): Promise<boolean> {
       commitSizeSignals,
       contributorSignals,
       detectionSummary,
+      hasSAST: hasSAST || undefined,
+      hasLinting: hasLinting || undefined,
+      sastEvidenceUrl: sastEvidenceUrl ?? undefined,
+      lintEvidenceUrl: lintEvidenceUrl ?? undefined,
       lastUpdated: now,
     });
     
@@ -193,24 +207,19 @@ export async function add(input: string, force = false): Promise<boolean> {
   } else {
     projects.push(project);
   }
-  projects.sort((a, b) => a.full_name.localeCompare(b.full_name));
-  
-  const finalData = { schemaVersion: 1, projects };
-  await Deno.writeTextFile(DATA_PATH, JSON.stringify(finalData, null, 2));
-  await Deno.writeTextFile(PUBLIC_DATA_PATH, JSON.stringify(finalData, null, 2));
-  
+  await upsertProject(project);
+  await syncData();
+
   if (import.meta.main) {
     console.log("Added:", p.full_name);
     try {
       const { scan } = await import("./scan.ts");
       const { summary, details } = await scan(p.full_name);
-      const idx = projects.findIndex((x) => x.full_name === p.full_name);
-      if (idx >= 0 && summary.length > 0) {
-        projects[idx].vulnerableDependencies = summary;
-        projects[idx].vulnerabilities = details;
-        const updatedData = { schemaVersion: 1, projects };
-        await Deno.writeTextFile(DATA_PATH, JSON.stringify(updatedData, null, 2));
-        await Deno.writeTextFile(PUBLIC_DATA_PATH, JSON.stringify(updatedData, null, 2));
+      if (summary.length > 0) {
+        project.vulnerableDependencies = summary;
+        project.vulnerabilities = details;
+        await upsertProject(project);
+        await syncData();
         console.log(`Scanned: ${summary.length} vulnerable dependencies`);
       }
     } catch (e) {

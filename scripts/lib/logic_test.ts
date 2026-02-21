@@ -5,6 +5,7 @@ import {
   shouldCreateDiscoveryPr,
   VIBE_SCORE_PR_THRESHOLD,
 } from "../detect.ts";
+import { ProjectSchema } from "./schemas.ts";
 
 Deno.test("parse() correctly handles various GitHub URL formats", () => {
   assertEquals(parse("owner/repo"), "owner/repo");
@@ -122,4 +123,20 @@ Deno.test("PR gating accepts claude bot contributor signal at threshold", () => 
   });
 
   assertEquals(shouldCreate, true);
+});
+
+Deno.test("ProjectSchema accepts hasSAST and hasLinting with evidence URLs", () => {
+  const project = {
+    full_name: "owner/repo",
+    url: "https://github.com/owner/repo",
+    hasSAST: true,
+    sastEvidenceUrl: "https://github.com/owner/repo/blob/main/.github/workflows/codeql.yml",
+    hasLinting: true,
+    lintEvidenceUrl: "https://github.com/owner/repo/blob/main/.eslintrc.json",
+  };
+  const parsed = ProjectSchema.parse(project);
+  assertEquals(parsed.hasSAST, true);
+  assertEquals(parsed.hasLinting, true);
+  assertEquals(parsed.sastEvidenceUrl, "https://github.com/owner/repo/blob/main/.github/workflows/codeql.yml");
+  assertEquals(parsed.lintEvidenceUrl, "https://github.com/owner/repo/blob/main/.eslintrc.json");
 });

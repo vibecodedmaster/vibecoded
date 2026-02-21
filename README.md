@@ -1,6 +1,13 @@
 # Vibe Coded
 
-Open-source registry of AI Vibe Coded projects.
+Open-source registry of AI Vibe Coded projects for research and awareness.
+
+## TODO
+
+- Archiving sources.
+- SAST/Linting detection.
+- Generative AI policies.
+- Better AI detection.
 
 ## Stack
 

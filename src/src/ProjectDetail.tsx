@@ -274,6 +274,55 @@ export default function ProjectDetail({
                 </div>
                 <div class="p-4 rounded-xl bg-vibe-bg border border-vibe-border space-y-3">
                   <div class="text-xs font-semibold text-vibe-muted uppercase">
+                    SAST / Linting
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    {project.hasSAST ? (
+                      project.sastEvidenceUrl ? (
+                        <a
+                          href={project.sastEvidenceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20 hover:bg-emerald-500/20 transition flex items-center gap-1.5"
+                        >
+                          SAST
+                          <ExternalLink size={12} />
+                        </a>
+                      ) : (
+                        <span class="px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20">
+                          SAST
+                        </span>
+                      )
+                    ) : (
+                      <span class="text-xs text-vibe-muted italic">
+                        No SAST detected
+                      </span>
+                    )}
+                    {project.hasLinting ? (
+                      project.lintEvidenceUrl ? (
+                        <a
+                          href={project.lintEvidenceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="px-3 py-1.5 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 font-bold border border-sky-500/20 hover:bg-sky-500/20 transition flex items-center gap-1.5"
+                        >
+                          Lint
+                          <ExternalLink size={12} />
+                        </a>
+                      ) : (
+                        <span class="px-3 py-1.5 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 font-bold border border-sky-500/20">
+                          Lint
+                        </span>
+                      )
+                    ) : (
+                      <span class="text-xs text-vibe-muted italic">
+                        No lint config detected
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <div class="p-4 rounded-xl bg-vibe-bg border border-vibe-border space-y-3">
+                  <div class="text-xs font-semibold text-vibe-muted uppercase">
                     AI Tools Used
                   </div>
                   <div class="flex flex-wrap gap-2">

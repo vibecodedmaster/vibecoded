@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "pinto-org/interface",
+      "url": "https://github.com/pinto-org/interface",
+      "description": "The interface of Pinto at https://pinto.money",
+      "stars": 7,
+      "commits": 3224,
+      "contributors": 13,
+      "forks": 4,
+      "open_issues": 2,
+      "license": "MIT License",
+      "topics": null,
+      "size": 36893,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "burr-nim",
+          "avatar_url": "https://avatars.githubusercontent.com/u/185858518?v=4",
+          "url": "https://github.com/burr-nim",
+          "created_at": "2024-10-21T22:41:25Z",
+          "followers": 2,
+          "following": 4
+        },
+        {
+          "login": "JOHNDEERE420",
+          "avatar_url": "https://avatars.githubusercontent.com/u/176664213?v=4",
+          "url": "https://github.com/JOHNDEERE420",
+          "created_at": "2024-07-26T08:54:09Z",
+          "followers": 1,
+          "following": 1
+        },
+        {
+          "login": "fr1jo",
+          "avatar_url": "https://avatars.githubusercontent.com/u/188723729?v=4",
+          "url": "https://github.com/fr1jo",
+          "created_at": "2024-11-17T00:34:31Z",
+          "followers": 3,
+          "following": 2
+        },
+        {
+          "login": "feyyazcigim",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52748261?v=4",
+          "url": "https://github.com/feyyazcigim",
+          "created_at": "2019-07-10T13:10:47Z",
+          "followers": 26,
+          "following": 25
+        },
+        {
+          "login": "sageofthesilos",
+          "avatar_url": "https://avatars.githubusercontent.com/u/198279735?v=4",
+          "url": "https://github.com/sageofthesilos",
+          "created_at": "2025-02-07T22:35:59Z",
+          "followers": 2,
+          "following": 0
+        },
+        {
+          "login": "PintoPirate",
+          "avatar_url": "https://avatars.githubusercontent.com/u/189064953?v=4",
+          "url": "https://github.com/PintoPirate",
+          "created_at": "2024-11-20T01:45:22Z",
+          "followers": 4,
+          "following": 0
+        },
+        {
+          "login": "pintoorg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/188717296?v=4",
+          "url": "https://github.com/pintoorg",
+          "created_at": "2024-11-16T21:45:04Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "pintoprinter",
+          "avatar_url": "https://avatars.githubusercontent.com/u/188380490?v=4",
+          "url": "https://github.com/pintoprinter",
+          "created_at": "2024-11-13T19:20:47Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "github-actions[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "url": "https://github.com/apps/github-actions",
+          "created_at": "2018-07-30T09:30:16Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "claude[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/1236702?v=4",
+          "url": "https://github.com/apps/claude",
+          "created_at": "2025-04-30T17:54:24Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2025-03-14T05:00:55Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 6815952,
+        "JavaScript": 12898,
+        "CSS": 5163,
+        "HTML": 2665,
+        "Shell": 423
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/pinto-org/interface/blob/main/biome.json",
+      "owner": {
+        "login": "pinto-org",
+        "avatar_url": "https://avatars.githubusercontent.com/u/188717414?v=4",
+        "url": "https://github.com/pinto-org",
+        "created_at": "2024-11-16T21:47:50Z",
+        "followers": 11,
+        "following": 0,
+        "bio": "A Scalable Leviathan-Free Low-Volatility Money Protocol.",
+        "public_repos": 19,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "yarn",
+        "detected_via": "yarn.lock",
+        "evidence_url": "https://github.com/pinto-org/interface/blob/main/yarn.lock"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 137,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 3
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 112,
+        "medianChanges": 45,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": true,
+        "matchedBots": [
+          "claude[bot]"
+        ]
+      },
+      "detectionSummary": {
+        "score": 18,
+        "level": "high",
+        "reasons": [
+          "3 file-based AI signal(s)",
+          "claude bot contributor detected",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "cursor",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/pinto-org/interface/blob/main/.cursorrules"
+        },
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/pinto-org/interface/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "gemini",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/pinto-org/interface/blob/main/GEMINI.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "@metamask/sdk-communication-layer@0.32.0 (GHSA-qj3p-xc97-xw74)",
+        "@metamask/sdk@0.32.0 (GHSA-qj3p-xc97-xw74)",
+        "@remix-run/router@1.18.0 (CVE-2026-22029)",
+        "glob@10.4.5 (CVE-2025-64756)",
+        "h3@1.12.0 (CVE-2026-23527)",
+        "lodash@4.17.21 (CVE-2025-13465)",
+        "mdast-util-to-hast@13.2.0 (CVE-2025-66400)",
+        "minimatch@9.0.5 (CVE-2026-26996)",
+        "nanoid@3.3.7 (CVE-2024-55565)",
+        "node-forge@1.3.1 (CVE-2025-12816)",
+        "node-forge@1.3.1 (CVE-2025-66030)",
+        "node-forge@1.3.1 (CVE-2025-66031)",
+        "preact@10.27.2 (CVE-2026-22028)",
+        "react-router@6.25.1 (CVE-2025-68470)",
+        "sha.js@2.4.11 (CVE-2025-9288)",
+        "tar@6.2.1 (CVE-2026-23745)",
+        "tar@6.2.1 (CVE-2026-23950)",
+        "tar@6.2.1 (CVE-2026-24842)",
+        "tar@6.2.1 (CVE-2026-26960)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "@metamask/sdk",
+          "version": "0.32.0",
+          "cve": "GHSA-qj3p-xc97-xw74",
+          "severity": "MEDIUM",
+          "title": "MetaMask SDK indirectly exposed via malicious debug@4.4.2 dependency",
+          "fixedVersion": "0.33.1",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "@metamask/sdk-communication-layer",
+          "version": "0.32.0",
+          "cve": "GHSA-qj3p-xc97-xw74",
+          "severity": "MEDIUM",
+          "title": "MetaMask SDK indirectly exposed via malicious debug@4.4.2 dependency",
+          "fixedVersion": "0.33.1",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "@remix-run/router",
+          "version": "1.18.0",
+          "cve": "CVE-2026-22029",
+          "severity": "HIGH",
+          "title": "@remix-run/router: react-router: React Router vulnerable to XSS via Open Redirects",
+          "fixedVersion": "1.23.2",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "glob",
+          "version": "10.4.5",
+          "cve": "CVE-2025-64756",
+          "severity": "HIGH",
+          "title": "glob: glob: Command Injection Vulnerability via Malicious Filenames",
+          "fixedVersion": "11.1.0, 10.5.0",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "h3",
+          "version": "1.12.0",
+          "cve": "CVE-2026-23527",
+          "severity": "HIGH",
+          "title": "h3: h3: HTTP Request Smuggling due to improper case-sensitive parsing of Transfer-Encoding header",
+          "fixedVersion": "1.15.5",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "lodash",
+          "version": "4.17.21",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "mdast-util-to-hast",
+          "version": "13.2.0",
+          "cve": "CVE-2025-66400",
+          "severity": "MEDIUM",
+          "title": "mdast-util-to-hast: mdast-util-to-hast: Markdown code elements can appear as regular page content",
+          "fixedVersion": "13.2.1",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "minimatch",
+          "version": "9.0.5",
+          "cve": "CVE-2026-26996",
+          "severity": "HIGH",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "fixedVersion": "10.2.1",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "nanoid",
+          "version": "3.3.7",
+          "cve": "CVE-2024-55565",
+          "severity": "MEDIUM",
+          "title": "nanoid: nanoid mishandles non-integer values",
+          "fixedVersion": "5.0.9, 3.3.8",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "node-forge",
+          "version": "1.3.1",
+          "cve": "CVE-2025-12816",
+          "severity": "HIGH",
+          "title": "node-forge: node-forge: Interpretation conflict vulnerability allows bypassing cryptographic verifications",
+          "fixedVersion": "1.3.2",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "node-forge",
+          "version": "1.3.1",
+          "cve": "CVE-2025-66031",
+          "severity": "HIGH",
+          "title": "node-forge: node-forge ASN.1 Unbounded Recursion",
+          "fixedVersion": "1.3.2",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "node-forge",
+          "version": "1.3.1",
+          "cve": "CVE-2025-66030",
+          "severity": "MEDIUM",
+          "title": "node-forge: node-forge: Integer Overflow allows OID-based security bypass",
+          "fixedVersion": "1.3.2",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "preact",
+          "version": "10.27.2",
+          "cve": "CVE-2026-22028",
+          "severity": "HIGH",
+          "title": "preact: Preact: Arbitrary script execution via JSON serialization protection bypass",
+          "fixedVersion": "10.26.10, 10.27.3, 10.28.2",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "react-router",
+          "version": "6.25.1",
+          "cve": "CVE-2025-68470",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router unexpected external redirect",
+          "fixedVersion": "6.30.2, 7.9.6",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "sha.js",
+          "version": "2.4.11",
+          "cve": "CVE-2025-9288",
+          "severity": "CRITICAL",
+          "title": "sha.js: Missing type checks leading to hash rewind and passing on crafted data",
+          "fixedVersion": "2.4.12",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "tar",
+          "version": "6.2.1",
+          "cve": "CVE-2026-23745",
+          "severity": "HIGH",
+          "title": "node-tar: tar: node-tar: Arbitrary file overwrite and symlink poisoning via unsanitized linkpaths in archives",
+          "fixedVersion": "7.5.3",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "tar",
+          "version": "6.2.1",
+          "cve": "CVE-2026-23950",
+          "severity": "HIGH",
+          "title": "node-tar: tar: node-tar: Arbitrary file overwrite via Unicode path collision race condition",
+          "fixedVersion": "7.5.4",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "tar",
+          "version": "6.2.1",
+          "cve": "CVE-2026-24842",
+          "severity": "HIGH",
+          "title": "node-tar: tar: node-tar: Arbitrary file creation via path traversal bypass in hardlink security check",
+          "fixedVersion": "7.5.7",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        },
+        {
+          "pkg": "tar",
+          "version": "6.2.1",
+          "cve": "CVE-2026-26960",
+          "severity": "HIGH",
+          "title": "node-tar is a full-featured Tar for Node.js. When using default option ...",
+          "fixedVersion": "7.5.8",
+          "type": "vuln",
+          "target": "yarn.lock",
+          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
+          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:31:42.072Z"
+    },
+    {
+      "full_name": "porthorian/openchat-backend",
+      "url": "https://github.com/porthorian/openchat-backend",
+      "description": null,
+      "stars": 11,
+      "commits": 26,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 3,
+      "license": "GNU General Public License v2.0",
+      "topics": null,
+      "size": 19559,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "porthorian",
+          "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+          "url": "https://github.com/porthorian",
+          "created_at": "2017-12-05T06:59:54Z",
+          "followers": 16,
+          "following": 31
+        }
+      ],
+      "created_at": "2026-02-09T18:24:21Z",
+      "language": "Go",
+      "languages": {
+        "Go": 135375,
+        "Go Template": 1816,
+        "Dockerfile": 1371
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "porthorian",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+        "url": "https://github.com/porthorian",
+        "created_at": "2017-12-05T06:59:54Z",
+        "followers": 16,
+        "following": 31,
+        "bio": "Code does stuff",
+        "public_repos": 23,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "go",
+        "detected_via": "go.mod",
+        "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/go.mod"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 26,
+        "avgMessageLength": 30,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 0
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 222,
+        "medianChanges": 121,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 5,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/AGENTS.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "github.com/go-chi/chi/v5@v5.2.0 (GHSA-vrw8-fxc6-2r93)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "github.com/go-chi/chi/v5",
+          "version": "v5.2.0",
+          "cve": "GHSA-vrw8-fxc6-2r93",
+          "severity": "MEDIUM",
+          "title": "chi Allows Host Header Injection which Leads to Open Redirect in RedirectSlashes",
+          "fixedVersion": "5.2.2",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/c9130dfbe7e4029e297fe12a458af60a87aaaf84/go.mod",
+          "scannedRef": "c9130dfbe7e4029e297fe12a458af60a87aaaf84"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:31:38.599Z"
+    },
+    {
+      "full_name": "porthorian/openchat-client",
+      "url": "https://github.com/porthorian/openchat-client",
+      "description": "OpenChat is a discord alternative that is designed to be self hostable.",
+      "stars": 38,
+      "commits": 108,
+      "contributors": 2,
+      "forks": 0,
+      "open_issues": 5,
+      "license": "GNU General Public License v2.0",
+      "topics": [
+        "chat",
+        "discord",
+        "messaging",
+        "screenshare",
+        "video",
+        "voice"
+      ],
+      "size": 4811,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "porthorian",
+          "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+          "url": "https://github.com/porthorian",
+          "created_at": "2017-12-05T06:59:54Z",
+          "followers": 16,
+          "following": 31
+        },
+        {
+          "login": "dependabot[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+          "url": "https://github.com/apps/dependabot",
+          "created_at": "2019-04-16T22:34:25Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-02-09T18:36:27Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 325511,
+        "Vue": 220841,
+        "CSS": 89572,
+        "JavaScript": 7299,
+        "HTML": 532
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "porthorian",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+        "url": "https://github.com/porthorian",
+        "created_at": "2017-12-05T06:59:54Z",
+        "followers": 16,
+        "following": 31,
+        "bio": "Code does stuff",
+        "public_repos": 23,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "yarn",
+        "detected_via": "yarn.lock",
+        "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/yarn.lock"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 46,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 0
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 248,
+        "medianChanges": 59,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 5,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/AGENTS.md"
+        }
+      ],
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:43.427Z"
+    }
+  ]
+}

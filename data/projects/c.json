@@ -1,0 +1,603 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "cloudflare/vibesdk",
+      "url": "https://github.com/cloudflare/vibesdk",
+      "description": "An open-source vibe coding platform that helps you build your own vibe-coding platform, built entirely on Cloudflare stack ",
+      "stars": 4787,
+      "commits": 861,
+      "contributors": 12,
+      "forks": 1121,
+      "open_issues": 40,
+      "license": "MIT License",
+      "topics": [
+        "ai",
+        "cloudflare-workers",
+        "coding-agent",
+        "durable-objects",
+        "text-to-app",
+        "vibe-coding"
+      ],
+      "size": 3794,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "AshishKumar4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10579975?v=4",
+          "url": "https://github.com/AshishKumar4",
+          "created_at": "2015-01-18T03:47:06Z",
+          "followers": 184,
+          "following": 65
+        },
+        {
+          "login": "karishnu",
+          "avatar_url": "https://avatars.githubusercontent.com/u/5600938?v=4",
+          "url": "https://github.com/karishnu",
+          "created_at": "2013-10-03T06:03:12Z",
+          "followers": 54,
+          "following": 25
+        },
+        {
+          "login": "palashgo",
+          "avatar_url": "https://avatars.githubusercontent.com/u/25306110?v=4",
+          "url": "https://github.com/palashgo",
+          "created_at": "2017-01-23T18:44:00Z",
+          "followers": 51,
+          "following": 26
+        },
+        {
+          "login": "github-actions[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "url": "https://github.com/apps/github-actions",
+          "created_at": "2018-07-30T09:30:16Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "mysticrenji",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10666267?v=4",
+          "url": "https://github.com/mysticrenji",
+          "created_at": "2015-01-23T06:52:34Z",
+          "followers": 31,
+          "following": 13
+        },
+        {
+          "login": "roerohan",
+          "avatar_url": "https://avatars.githubusercontent.com/u/42958812?v=4",
+          "url": "https://github.com/roerohan",
+          "created_at": "2018-09-04T07:01:00Z",
+          "followers": 158,
+          "following": 72
+        },
+        {
+          "login": "justingray0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/237828886?v=4",
+          "url": "https://github.com/justingray0",
+          "created_at": "2025-10-13T16:57:47Z",
+          "followers": 2,
+          "following": 2
+        },
+        {
+          "login": "timekone",
+          "avatar_url": "https://avatars.githubusercontent.com/u/24816604?v=4",
+          "url": "https://github.com/timekone",
+          "created_at": "2016-12-28T21:49:36Z",
+          "followers": 5,
+          "following": 20
+        },
+        {
+          "login": "0xkohe",
+          "avatar_url": "https://avatars.githubusercontent.com/u/17563192?v=4",
+          "url": "https://github.com/0xkohe",
+          "created_at": "2016-03-01T06:47:49Z",
+          "followers": 7,
+          "following": 7
+        },
+        {
+          "login": "dhanushPatel112",
+          "avatar_url": "https://avatars.githubusercontent.com/u/62982439?v=4",
+          "url": "https://github.com/dhanushPatel112",
+          "created_at": "2020-04-01T06:29:16Z",
+          "followers": 5,
+          "following": 0
+        }
+      ],
+      "created_at": "2025-08-25T15:07:31Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 3705617,
+        "JavaScript": 171028,
+        "Python": 106842,
+        "CSS": 17581,
+        "Shell": 1830,
+        "HTML": 1098
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/cloudflare/vibesdk/blob/main/eslint.config.js",
+      "owner": {
+        "login": "cloudflare",
+        "avatar_url": "https://avatars.githubusercontent.com/u/314135?v=4",
+        "url": "https://github.com/cloudflare",
+        "created_at": "2010-06-25T01:24:59Z",
+        "followers": 11621,
+        "following": 0,
+        "bio": null,
+        "public_repos": 547,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "bun",
+        "detected_via": "bun.lock",
+        "evidence_url": "https://github.com/cloudflare/vibesdk/blob/main/bun.lock"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 100,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 0
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 208,
+        "medianChanges": 104,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 5,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/cloudflare/vibesdk/blob/main/CLAUDE.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "@modelcontextprotocol/sdk@1.24.3 (CVE-2026-0621)",
+        "@modelcontextprotocol/sdk@1.24.3 (CVE-2026-25536)",
+        "@remix-run/router@1.23.0 (CVE-2026-22029)",
+        "agents@0.2.32 (CVE-2026-1664)",
+        "agents@0.2.32 (CVE-2026-1721)",
+        "agents@0.2.32 (GHSA-w5cr-2qhr-jqc5)",
+        "ajv@6.12.6 (CVE-2025-69873)",
+        "diff@8.0.2 (CVE-2026-24001)",
+        "hono@4.11.0 (CVE-2026-22817)",
+        "hono@4.11.0 (CVE-2026-22818)",
+        "hono@4.11.0 (CVE-2026-24398)",
+        "hono@4.11.0 (CVE-2026-24472)",
+        "hono@4.11.0 (CVE-2026-24473)",
+        "hono@4.11.0 (CVE-2026-24771)",
+        "hono@4.11.0 (GHSA-gq3j-xvxp-8hrf)",
+        "hono@4.9.6 (CVE-2025-59139)",
+        "hono@4.9.6 (CVE-2025-62610)",
+        "hono@4.9.6 (CVE-2026-22817)",
+        "hono@4.9.6 (CVE-2026-22818)",
+        "hono@4.9.6 (CVE-2026-24398)",
+        "hono@4.9.6 (CVE-2026-24472)",
+        "hono@4.9.6 (CVE-2026-24473)",
+        "hono@4.9.6 (CVE-2026-24771)",
+        "hono@4.9.6 (GHSA-gq3j-xvxp-8hrf)",
+        "hono@4.9.6 (GHSA-q7jf-gf43-6x6p)",
+        "lodash@4.17.21 (CVE-2025-13465)",
+        "minimatch@3.1.2 (CVE-2026-26996)",
+        "qs@6.14.0 (CVE-2025-15284)",
+        "qs@6.14.0 (CVE-2026-2391)",
+        "react-router@6.30.0 (CVE-2025-68470)",
+        "react-router@7.10.1 (CVE-2026-21884)",
+        "react-router@7.10.1 (CVE-2026-22029)",
+        "react-router@7.10.1 (CVE-2026-22030)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.24.3",
+          "cve": "CVE-2026-0621",
+          "severity": "HIGH",
+          "title": "Anthropic's MCP TypeScript SDK has a ReDoS vulnerability",
+          "fixedVersion": "1.25.2",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.24.3",
+          "cve": "CVE-2026-25536",
+          "severity": "HIGH",
+          "title": "@modelcontextprotocol/sdk: @modelcontextprotocol/sdk cross-client data leak",
+          "fixedVersion": "1.26.0",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "agents",
+          "version": "0.2.32",
+          "cve": "CVE-2026-1664",
+          "severity": "MEDIUM",
+          "title": "Cloudflare Agents SDK has Insecure Direct Object Reference (IDOR) via Header-Based Email Routing",
+          "fixedVersion": "0.3.7",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "agents",
+          "version": "0.2.32",
+          "cve": "CVE-2026-1721",
+          "severity": "MEDIUM",
+          "title": "Cloudflare Agents is Vulnerable to Reflected Cross-Site Scripting in the AI Playground's OAuth callback handler",
+          "fixedVersion": "0.3.10",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "agents",
+          "version": "0.2.32",
+          "cve": "GHSA-w5cr-2qhr-jqc5",
+          "severity": "MEDIUM",
+          "title": "Cloudflare Agents has a Reflected Cross-Site Scripting (XSS) vulnerability in AI Playground site",
+          "fixedVersion": "0.3.10",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "ajv",
+          "version": "6.12.6",
+          "cve": "CVE-2025-69873",
+          "severity": "MEDIUM",
+          "title": "ajv: ReDoS via $data reference",
+          "fixedVersion": "8.18.0",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "diff",
+          "version": "8.0.2",
+          "cve": "CVE-2026-24001",
+          "severity": "LOW",
+          "title": "jsdiff: denial of service vulnerability in parsePatch and applyPatch",
+          "fixedVersion": "8.0.3, 5.2.2, 4.0.4, 3.5.1",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.11.0",
+          "cve": "CVE-2026-22817",
+          "severity": "HIGH",
+          "title": "Hono JWT Middleware's JWT Algorithm Confusion via Unsafe Default (HS256) Allows Token Forgery and Auth Bypass",
+          "fixedVersion": "4.11.4",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.11.0",
+          "cve": "CVE-2026-22818",
+          "severity": "HIGH",
+          "title": "Hono JWK Auth Middleware has JWT algorithm confusion when JWK lacks \"alg\" (untrusted header.alg fallback)",
+          "fixedVersion": "4.11.4",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.11.0",
+          "cve": "CVE-2026-24398",
+          "severity": "MEDIUM",
+          "title": "Hono IPv4 address validation bypass in IP Restriction Middleware allows IP spoofing",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.11.0",
+          "cve": "CVE-2026-24472",
+          "severity": "MEDIUM",
+          "title": "Hono cache middleware ignores \"Cache-Control: private\" leading to Web Cache Deception",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.11.0",
+          "cve": "CVE-2026-24473",
+          "severity": "MEDIUM",
+          "title": "Hono has an Arbitrary Key Read in Serve static Middleware (Cloudflare Workers Adapter)",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.11.0",
+          "cve": "CVE-2026-24771",
+          "severity": "MEDIUM",
+          "title": "Hono vulnerable to XSS through ErrorBoundary component ",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.11.0",
+          "cve": "GHSA-gq3j-xvxp-8hrf",
+          "severity": "LOW",
+          "title": "Hono added timing comparison hardening in basicAuth and bearerAuth",
+          "fixedVersion": "4.11.10",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "lodash",
+          "version": "4.17.21",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "minimatch",
+          "version": "3.1.2",
+          "cve": "CVE-2026-26996",
+          "severity": "HIGH",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "fixedVersion": "10.2.1",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2025-15284",
+          "severity": "HIGH",
+          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
+          "fixedVersion": "6.14.1",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.10.1",
+          "cve": "CVE-2026-21884",
+          "severity": "HIGH",
+          "title": "react-router: @remix-run/react: React Router SSR XSS in ScrollRestoration",
+          "fixedVersion": "7.12.0",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.10.1",
+          "cve": "CVE-2026-22029",
+          "severity": "HIGH",
+          "title": "@remix-run/router: react-router: React Router vulnerable to XSS via Open Redirects",
+          "fixedVersion": "7.12.0",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.10.1",
+          "cve": "CVE-2026-22030",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router CSRF in Action/Server Action Request Processing",
+          "fixedVersion": "7.12.0",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "@remix-run/router",
+          "version": "1.23.0",
+          "cve": "CVE-2026-22029",
+          "severity": "HIGH",
+          "title": "@remix-run/router: react-router: React Router vulnerable to XSS via Open Redirects",
+          "fixedVersion": "1.23.2",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2025-62610",
+          "severity": "HIGH",
+          "title": "Hono Improper Authorization vulnerability",
+          "fixedVersion": "4.10.2",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2026-22817",
+          "severity": "HIGH",
+          "title": "Hono JWT Middleware's JWT Algorithm Confusion via Unsafe Default (HS256) Allows Token Forgery and Auth Bypass",
+          "fixedVersion": "4.11.4",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2026-22818",
+          "severity": "HIGH",
+          "title": "Hono JWK Auth Middleware has JWT algorithm confusion when JWK lacks \"alg\" (untrusted header.alg fallback)",
+          "fixedVersion": "4.11.4",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2025-59139",
+          "severity": "MEDIUM",
+          "title": "Hono has Body Limit Middleware Bypass",
+          "fixedVersion": "4.9.7",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2026-24398",
+          "severity": "MEDIUM",
+          "title": "Hono IPv4 address validation bypass in IP Restriction Middleware allows IP spoofing",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2026-24472",
+          "severity": "MEDIUM",
+          "title": "Hono cache middleware ignores \"Cache-Control: private\" leading to Web Cache Deception",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2026-24473",
+          "severity": "MEDIUM",
+          "title": "Hono has an Arbitrary Key Read in Serve static Middleware (Cloudflare Workers Adapter)",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "CVE-2026-24771",
+          "severity": "MEDIUM",
+          "title": "Hono vulnerable to XSS through ErrorBoundary component ",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "GHSA-q7jf-gf43-6x6p",
+          "severity": "MEDIUM",
+          "title": "Hono vulnerable to Vary Header Injection leading to potential CORS Bypass",
+          "fixedVersion": "4.10.3",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.9.6",
+          "cve": "GHSA-gq3j-xvxp-8hrf",
+          "severity": "LOW",
+          "title": "Hono added timing comparison hardening in basicAuth and bearerAuth",
+          "fixedVersion": "4.11.10",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        },
+        {
+          "pkg": "react-router",
+          "version": "6.30.0",
+          "cve": "CVE-2025-68470",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router unexpected external redirect",
+          "fixedVersion": "6.30.2, 7.9.6",
+          "type": "vuln",
+          "target": "container/packages-cache/bun.lock",
+          "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/container/packages-cache/bun.lock",
+          "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:31:36.315Z"
+    }
+  ]
+}
