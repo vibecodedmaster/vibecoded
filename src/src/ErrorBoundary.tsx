@@ -1,4 +1,4 @@
-import { Component, ComponentChildren, h } from "preact";
+import { Component, ComponentChildren } from "preact";
 
 interface Props {
   children: ComponentChildren;
@@ -19,7 +19,7 @@ export class ErrorBoundary extends Component<Props, State> {
     return { hasError: true };
   }
 
-  componentDidCatch(error: any, errorInfo: any) {
+  componentDidCatch(error: unknown, errorInfo: unknown) {
     console.error("ErrorBoundary caught an error:", error, errorInfo);
   }
 

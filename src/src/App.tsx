@@ -41,7 +41,6 @@ function filterProjects(projects: Project[], filters: {
 
 function sortProjects(projects: Project[], sort: SortKey): Project[] {
   const arr = [...projects];
-  const now = Date.now();
   switch (sort) {
     case "stars":
       return arr.sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));

@@ -12,7 +12,7 @@ describe("App", () => {
       clear: () => {},
       length: 0,
       key: () => null,
-    } as any;
+    } as unknown as Storage;
   });
 
   it("renders title", async () => {
