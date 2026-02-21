@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'data/projects.json'
+  workflow_dispatch:
 
 jobs:
   sync-prs:

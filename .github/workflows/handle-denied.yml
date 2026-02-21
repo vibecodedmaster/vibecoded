@@ -4,10 +4,15 @@ on:
   pull_request:
     types: [closed]
     branches: [main]
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo name to deny (e.g. owner/repo)'
+        required: true
 
 jobs:
   handle-deny:
-    if: github.event.pull_request.merged == false && contains(github.event.pull_request.labels.*.name, 'discovery')
+    if: (github.event_name == 'workflow_dispatch') || (github.event.pull_request.merged == false && contains(github.event.pull_request.labels.*.name, 'discovery'))
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,8 +27,12 @@ jobs:
       - name: Extract Repo Name
         id: extract
         run: |
-          TITLE="${{ github.event.pull_request.title }}"
-          REPO=$(echo "$TITLE" | sed 's/^Auto-discover: //')
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            REPO="${{ github.event.inputs.repo }}"
+          else
+            TITLE="${{ github.event.pull_request.title }}"
+            REPO=$(echo "$TITLE" | sed 's/^Auto-discover: //')
+          fi
           echo "repo=$REPO" >> $GITHUB_OUTPUT
           echo "Found repo: $REPO"
 
@@ -31,6 +40,7 @@ jobs:
         run: deno run -A scripts/deny.ts "${{ steps.extract.outputs.repo }}"
 
       - name: Delete Branch
+        if: github.event_name == 'pull_request'
         run: |
           BRANCH="${{ github.event.pull_request.head.ref }}"
           git push origin --delete "$BRANCH" || echo "Branch already deleted"
