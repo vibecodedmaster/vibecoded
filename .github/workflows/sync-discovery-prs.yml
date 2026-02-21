@@ -27,48 +27,44 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
 
           # Get all open PRs with the discovery label
           PRS=$(gh pr list --label "discovery" --state open --json number,title,headRefName)
           
           echo "Found $(echo "$PRS" | jq '. | length') open discovery PRs"
           
-          # Iterate through each PR and sync with main
-          # This resolves conflicts by re-running the add script against current main
+          # Iterate through each PR and rebuild branch on top of current main.
+          # This guarantees a conflict-free branch state.
           echo "$PRS" | jq -c '.[]' | while read -r pr; do
             PR_NUM=$(echo "$pr" | jq -r '.number')
             PR_BRANCH=$(echo "$pr" | jq -r '.headRefName')
             PR_TITLE=$(echo "$pr" | jq -r '.title')
             REPO_NAME=$(echo "$PR_TITLE" | sed 's/^Auto-discover: //')
             
-            echo "Syncing PR #$PR_NUM ($REPO_NAME) on branch $PR_BRANCH..."
+            echo "Rebuilding PR #$PR_NUM ($REPO_NAME) on branch $PR_BRANCH..."
             
-            # Fetch the PR branch
             git fetch origin "$PR_BRANCH"
-            git checkout "$PR_BRANCH"
-            
-            # Merge main to see if it's clean
-            if git merge origin/main --no-edit; then
-              echo "Clean merge for $REPO_NAME"
-            else
-              echo "Conflict detected for $REPO_NAME, resolving using scripts/add.ts..."
-              git merge --abort || true
-              
-              # Resolve by re-running the add script on the new main state
-              git checkout origin/main -- data/projects.json src/public/data/projects.json
-              
-              # Re-run add script to incorporate changes into the sorted list
-              deno run -A scripts/add.ts "$REPO_NAME"
-              deno run -A scripts/sync-data.ts
-              
-              git add data/projects.json src/public/data/projects.json
-              git commit -m "chore: resolve merge conflict for $REPO_NAME"
+            git checkout -B "$PR_BRANCH" "origin/$PR_BRANCH"
+
+            # Rebase-by-rebuild: reset branch to latest main, then regenerate single-repo change.
+            git reset --hard origin/main
+            deno run -A scripts/add.ts "$REPO_NAME"
+            deno run -A scripts/sync-data.ts
+
+            git add data/projects.json src/public/data/projects.json
+            if git diff --cached --quiet; then
+              echo "No delta for $REPO_NAME after rebuild; already present on main."
+              git checkout main
+              continue
             fi
+            git commit -m "chore: sync discovery branch for $REPO_NAME"
             
-            # Push updates
-            git push origin "$PR_BRANCH"
+            # Force-push rebuilt branch so PR is always conflict-free against main.
+            git push --force-with-lease origin "$PR_BRANCH"
             
             # Back to main
             git checkout main
