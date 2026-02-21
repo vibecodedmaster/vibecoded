@@ -6,6 +6,6 @@ import "./styles.css";
 render(
   <ErrorBoundary>
     <App />
-  </ErrorBoundary>, 
+  </ErrorBoundary>,
   document.getElementById("root")!
 );

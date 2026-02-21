@@ -17,6 +17,8 @@ describe("App", () => {
 
   it("renders title", async () => {
     render(<App />);
-    expect(await screen.findByText("Open-source Vibe Coded projects")).toBeDefined();
+    expect(
+      await screen.findByText("Open-source Vibe Coded projects")
+    ).toBeDefined();
   });
 });

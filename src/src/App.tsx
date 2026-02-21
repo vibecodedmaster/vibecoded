@@ -1,5 +1,11 @@
 import { useState, useEffect, useMemo } from "preact/hooks";
-import { Search, ChevronLeft, ChevronRight, Download, Rss } from "lucide-preact";
+import {
+  Search,
+  ChevronLeft,
+  ChevronRight,
+  Download,
+  Rss,
+} from "lucide-preact";
 import ThemeToggle from "./ThemeToggle";
 import ProjectCard from "./ProjectCard";
 import ProjectDetail from "./ProjectDetail";
@@ -15,24 +21,40 @@ function searchProjects(projects: Project[], q: string): Project[] {
   const lower = q.toLowerCase().trim();
   const terms = lower.split(/\s+/);
   return projects.filter((p) => {
-    const aiToolsStr = (p.aiTools || []).map((t) => (typeof t === "string" ? t : t.name)).join(" ");
-    const pmStr = p.packageManager ? (typeof p.packageManager === "string" ? p.packageManager : p.packageManager.name) : "";
-    const text = `${p.full_name} ${p.description || ""} ${aiToolsStr} ${pmStr} ${(p.vulnerableDependencies || []).join(" ")} ${p.emojis ?? ""}`.toLowerCase();
+    const aiToolsStr = (p.aiTools || [])
+      .map((t) => (typeof t === "string" ? t : t.name))
+      .join(" ");
+    const pmStr = p.packageManager
+      ? typeof p.packageManager === "string"
+        ? p.packageManager
+        : p.packageManager.name
+      : "";
+    const text =
+      `${p.full_name} ${p.description || ""} ${aiToolsStr} ${pmStr} ${(p.vulnerableDependencies || []).join(" ")} ${p.emojis ?? ""}`.toLowerCase();
     return terms.every((t) => text.includes(t));
   });
 }
 
-function filterProjects(projects: Project[], filters: {
-  language: string;
-  archived: "all" | "yes" | "no";
-  aiTool: string;
-  hasTests: "all" | "yes" | "no";
-}): Project[] {
+function filterProjects(
+  projects: Project[],
+  filters: {
+    language: string;
+    archived: "all" | "yes" | "no";
+    aiTool: string;
+    hasTests: "all" | "yes" | "no";
+  }
+): Project[] {
   return projects.filter((p) => {
     if (filters.language && p.language !== filters.language) return false;
     if (filters.archived === "yes" && !p.is_archived) return false;
     if (filters.archived === "no" && p.is_archived) return false;
-    if (filters.aiTool && !(p.aiTools || []).some((t) => (typeof t === "string" ? t === filters.aiTool : t.name === filters.aiTool))) return false;
+    if (
+      filters.aiTool &&
+      !(p.aiTools || []).some((t) =>
+        typeof t === "string" ? t === filters.aiTool : t.name === filters.aiTool
+      )
+    )
+      return false;
     if (filters.hasTests === "yes" && !p.hasTests) return false;
     if (filters.hasTests === "no" && p.hasTests) return false;
     return true;
@@ -74,8 +96,14 @@ function ProjectList({ projects }: { projects: Project[] }) {
     hasTests: "all" as "all" | "yes" | "no",
   });
 
-  const searched = useMemo(() => searchProjects(projects, query), [projects, query]);
-  const filtered = useMemo(() => filterProjects(searched, filters), [searched, filters]);
+  const searched = useMemo(
+    () => searchProjects(projects, query),
+    [projects, query]
+  );
+  const filtered = useMemo(
+    () => filterProjects(searched, filters),
+    [searched, filters]
+  );
   const sorted = useMemo(() => sortProjects(filtered, sort), [filtered, sort]);
   const totalPages = Math.ceil(sorted.length / PAGE_SIZE) || 1;
   const pageClamped = Math.max(1, Math.min(page, totalPages));
@@ -115,13 +143,23 @@ function ProjectList({ projects }: { projects: Project[] }) {
   };
 
   const exportCsv = () => {
-    const headers = ["full_name", "url", "description", "stars", "commits", "contributors", "language"];
+    const headers = [
+      "full_name",
+      "url",
+      "description",
+      "stars",
+      "commits",
+      "contributors",
+      "language",
+    ];
     const rows = sorted.map((p) =>
       headers
         .map((h) => {
           const v = (p as Record<string, unknown>)[h];
           const s = String(v ?? "");
-          return s.includes(",") || s.includes('"') ? `"${s.replace(/"/g, '""')}"` : s;
+          return s.includes(",") || s.includes('"')
+            ? `"${s.replace(/"/g, '""')}"`
+            : s;
         })
         .join(",")
     );
@@ -194,20 +232,31 @@ function ProjectList({ projects }: { projects: Project[] }) {
         <select
           value={filters.language}
           onChange={(e) => {
-            setFilters((f) => ({ ...f, language: (e.target as HTMLSelectElement).value }));
+            setFilters((f) => ({
+              ...f,
+              language: (e.target as HTMLSelectElement).value,
+            }));
             setPage(1);
           }}
           class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
         >
           <option value="">All languages</option>
           {languages.map((l) => (
-            <option key={l} value={l}>{l}</option>
+            <option key={l} value={l}>
+              {l}
+            </option>
           ))}
         </select>
         <select
           value={filters.archived}
           onChange={(e) => {
-            setFilters((f) => ({ ...f, archived: (e.target as HTMLSelectElement).value as "all" | "yes" | "no" }));
+            setFilters((f) => ({
+              ...f,
+              archived: (e.target as HTMLSelectElement).value as
+                | "all"
+                | "yes"
+                | "no",
+            }));
             setPage(1);
           }}
           class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
@@ -219,20 +268,31 @@ function ProjectList({ projects }: { projects: Project[] }) {
         <select
           value={filters.aiTool}
           onChange={(e) => {
-            setFilters((f) => ({ ...f, aiTool: (e.target as HTMLSelectElement).value }));
+            setFilters((f) => ({
+              ...f,
+              aiTool: (e.target as HTMLSelectElement).value,
+            }));
             setPage(1);
           }}
           class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
         >
           <option value="">All AI tools</option>
           {aiTools.map((t) => (
-            <option key={t} value={t}>{t}</option>
+            <option key={t} value={t}>
+              {t}
+            </option>
           ))}
         </select>
         <select
           value={filters.hasTests}
           onChange={(e) => {
-            setFilters((f) => ({ ...f, hasTests: (e.target as HTMLSelectElement).value as "all" | "yes" | "no" }));
+            setFilters((f) => ({
+              ...f,
+              hasTests: (e.target as HTMLSelectElement).value as
+                | "all"
+                | "yes"
+                | "no",
+            }));
             setPage(1);
           }}
           class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
@@ -244,7 +304,11 @@ function ProjectList({ projects }: { projects: Project[] }) {
       </div>
       {sorted.length === 0 ? (
         <p class="mt-8 text-vibe-muted">
-          {query || filters.language || filters.archived !== "all" || filters.aiTool || filters.hasTests !== "all"
+          {query ||
+          filters.language ||
+          filters.archived !== "all" ||
+          filters.aiTool ||
+          filters.hasTests !== "all"
             ? "No projects match your filters."
             : "No projects yet."}
         </p>
@@ -298,21 +362,31 @@ function AppContent({ projects }: { projects: Project[] }) {
   const [route, setRoute] = useState(() => {
     const hash = window.location.hash.slice(1) || "/";
     const m = hash.match(/^\/project\/([^/]+)\/([^/]+)/);
-    return m ? { type: "detail" as const, owner: m[1], repo: m[2] } : { type: "list" as const };
+    return m
+      ? { type: "detail" as const, owner: m[1], repo: m[2] }
+      : { type: "list" as const };
   });
 
   useEffect(() => {
     const onHashChange = () => {
       const hash = window.location.hash.slice(1) || "/";
       const m = hash.match(/^\/project\/([^/]+)\/([^/]+)/);
-      setRoute(m ? { type: "detail", owner: m[1], repo: m[2] } : { type: "list" });
+      setRoute(
+        m ? { type: "detail", owner: m[1], repo: m[2] } : { type: "list" }
+      );
     };
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
 
   if (route.type === "detail") {
-    return <ProjectDetail projects={projects} owner={route.owner} repo={route.repo} />;
+    return (
+      <ProjectDetail
+        projects={projects}
+        owner={route.owner}
+        repo={route.repo}
+      />
+    );
   }
   return <ProjectList projects={projects} />;
 }

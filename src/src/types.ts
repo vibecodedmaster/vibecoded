@@ -37,19 +37,27 @@ export interface Project {
   languages?: Record<string, number> | null;
   is_archived?: boolean;
   hasSAST?: boolean;
-  aiTools?: Array<{ name: string; detected_via: "file" | "commits"; evidence_url?: string }> | null;
+  aiTools?: Array<{
+    name: string;
+    detected_via: "file" | "commits";
+    evidence_url?: string;
+  }> | null;
   hasTests?: boolean;
   vulnerableDependencies?: string[];
   vulnerabilities?: VulnDetail[];
   proof_sources?: Array<{ label: string; url: string }> | null;
   emojis?: number;
-  packageManager?: { name: string; detected_via: string; evidence_url?: string } | null;
-  owner?: { 
-    login: string; 
-    avatar_url: string; 
-    url: string; 
-    created_at?: string | null; 
-    followers?: number | null; 
+  packageManager?: {
+    name: string;
+    detected_via: string;
+    evidence_url?: string;
+  } | null;
+  owner?: {
+    login: string;
+    avatar_url: string;
+    url: string;
+    created_at?: string | null;
+    followers?: number | null;
     following?: number | null;
     bio?: string | null;
     public_repos?: number | null;

@@ -2,6 +2,136 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "aha-hyeong/kumiho",
+      "url": "https://github.com/aha-hyeong/kumiho",
+      "description": "kumiho is self-hosting web media server.",
+      "stars": 26,
+      "commits": 638,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 6,
+      "license": "Apache License 2.0",
+      "topics": [
+        "comics",
+        "ebook",
+        "library",
+        "manga",
+        "self-hosted",
+        "web-viewer",
+        "webtoon"
+      ],
+      "size": 63973,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "aha-hyeong",
+          "avatar_url": "https://avatars.githubusercontent.com/u/206205627?v=4",
+          "url": "https://github.com/aha-hyeong",
+          "created_at": "2025-04-04T10:44:47Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-01-13T09:37:10Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 479665,
+        "Go": 405469,
+        "CSS": 128106,
+        "Dockerfile": 1965,
+        "JavaScript": 632,
+        "HTML": 410
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "aha-hyeong",
+        "avatar_url": "https://avatars.githubusercontent.com/u/206205627?v=4",
+        "url": "https://github.com/aha-hyeong",
+        "created_at": "2025-04-04T10:44:47Z",
+        "followers": 0,
+        "following": 0,
+        "bio": null,
+        "public_repos": 2,
+        "is_private": false
+      },
+      "packageManager": null,
+      "aiTools": null,
+      "vulnerableDependencies": [
+        "axios@1.13.2 (CVE-2026-25639)",
+        "github.com/disintegration/imaging@v1.6.2 (CVE-2023-36308)",
+        "github.com/gofiber/fiber/v2@v2.52.10 (CVE-2025-66630)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2022-41727)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2023-29407)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2023-29408)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2024-24792)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "github.com/disintegration/imaging",
+          "version": "v1.6.2",
+          "cve": "CVE-2023-36308",
+          "severity": "LOW",
+          "title": "disintegration Imaging 1.6.2 allows attackers to cause a panic (becaus ...",
+          "type": "vuln"
+        },
+        {
+          "pkg": "github.com/gofiber/fiber/v2",
+          "version": "v2.52.10",
+          "cve": "CVE-2025-66630",
+          "severity": "CRITICAL",
+          "title": "github.com/gofiber/fiber/v2: Fiber: Predictable UUIDs from randomness source errors can lead to security bypasses",
+          "fixedVersion": "2.52.11",
+          "type": "vuln"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2024-24792",
+          "severity": "HIGH",
+          "title": "Parsing a corrupt or malicious image with invalid color indices can ca ...",
+          "fixedVersion": "0.18.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2022-41727",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image: Uncontrolled Resource Consumption",
+          "fixedVersion": "0.5.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2023-29407",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/tiff: excessive CPU consumption in decoding",
+          "fixedVersion": "0.10.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2023-29408",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/tiff: TIFF decoder does not place a limit on the size of compressed tile data",
+          "fixedVersion": "0.10.0",
+          "type": "vuln"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.13.2",
+          "cve": "CVE-2026-25639",
+          "severity": "HIGH",
+          "title": "axios: Axios affected by Denial of Service via __proto__ Key in mergeConfig",
+          "fixedVersion": "1.13.5, 0.30.3",
+          "type": "vuln"
+        }
+      ],
+      "lastUpdated": "2026-02-21T00:25:31.936Z"
+    },
+    {
       "full_name": "ancsemi/Haven",
       "url": "https://github.com/ancsemi/Haven",
       "description": "Self-hosted private chat — No cloud, no telemetry, no Big Tech. Discord alternative that runs on your own machine.",
@@ -148,8 +278,305 @@
           "type": "vuln"
         }
       ],
-      "lastUpdated": "2026-02-21T00:02:23.827Z",
+      "lastUpdated": "2026-02-21T00:25:27.638Z",
       "emojis": 25
+    },
+    {
+      "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
+      "url": "https://github.com/FractumSeraph/Vibecoded-Vibe-Code-Detector",
+      "description": "This vibe coded tool scans github repos to help determine if the code was AI generated. ",
+      "stars": 0,
+      "commits": 3,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": null,
+      "topics": null,
+      "size": 7,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "FractumSeraph",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8539982?v=4",
+          "url": "https://github.com/FractumSeraph",
+          "created_at": "2014-08-24T22:40:58Z",
+          "followers": 6,
+          "following": 10
+        }
+      ],
+      "created_at": "2026-01-21T00:57:43Z",
+      "language": "Python",
+      "languages": {
+        "Python": 7151
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "FractumSeraph",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8539982?v=4",
+        "url": "https://github.com/FractumSeraph",
+        "created_at": "2014-08-24T22:40:58Z",
+        "followers": 6,
+        "following": 10,
+        "bio": "A friend",
+        "public_repos": 7,
+        "is_private": false
+      },
+      "packageManager": null,
+      "aiTools": null,
+      "lastUpdated": "2026-02-21T00:25:29.719Z",
+      "vulnerableDependencies": [],
+      "vulnerabilities": []
+    },
+    {
+      "full_name": "hyunjun6928-netizen/salmalm",
+      "url": "https://github.com/hyunjun6928-netizen/salmalm",
+      "description": "🧠 Personal AI Gateway — Single-file Python AI agent with multi-LLM, tools, vision, TTS, encrypted vault. Your own ChatGPT on localhost.",
+      "stars": 6,
+      "commits": 336,
+      "contributors": 1,
+      "forks": 1,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": null,
+      "size": 3451,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "hyunjun6928-netizen",
+          "avatar_url": "https://avatars.githubusercontent.com/u/253926759?v=4",
+          "url": "https://github.com/hyunjun6928-netizen",
+          "created_at": "2026-01-09T12:27:19Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-02-18T04:46:00Z",
+      "language": "Python",
+      "languages": {
+        "Python": 2176648,
+        "HTML": 294737,
+        "Shell": 1608,
+        "Dockerfile": 1415
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "hyunjun6928-netizen",
+        "avatar_url": "https://avatars.githubusercontent.com/u/253926759?v=4",
+        "url": "https://github.com/hyunjun6928-netizen",
+        "created_at": "2026-01-09T12:27:19Z",
+        "followers": 0,
+        "following": 0,
+        "bio": null,
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "poetry",
+        "detected_via": "pyproject.toml",
+        "evidence_url": "https://github.com/hyunjun6928-netizen/salmalm/blob/main/pyproject.toml"
+      },
+      "aiTools": null,
+      "lastUpdated": "2026-02-21T00:25:29.299Z",
+      "vulnerableDependencies": [],
+      "vulnerabilities": []
+    },
+    {
+      "full_name": "jetpack3331/ai-chat-history-manager",
+      "url": "https://github.com/jetpack3331/ai-chat-history-manager",
+      "description": "A local AI chat history manager with SQLite full‑text search and Next.js UI (Gemini/OpenAI/Claude exports).",
+      "stars": 0,
+      "commits": 15,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 2,
+      "license": "MIT License",
+      "topics": null,
+      "size": 225,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "jetpack3331",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3585148?v=4",
+          "url": "https://github.com/jetpack3331",
+          "created_at": "2013-02-13T14:50:37Z",
+          "followers": 11,
+          "following": 27
+        }
+      ],
+      "created_at": "2026-02-18T18:30:33Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 48251,
+        "Python": 22079,
+        "JavaScript": 642,
+        "CSS": 488,
+        "Dockerfile": 458
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "jetpack3331",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3585148?v=4",
+        "url": "https://github.com/jetpack3331",
+        "created_at": "2013-02-13T14:50:37Z",
+        "followers": 11,
+        "following": 27,
+        "bio": "Full-stack developer with passion into JavaScript (React, Next.js, node.js), React Native, Blockchain, Ethereum, Python, PHP",
+        "public_repos": 26,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pip",
+        "detected_via": "requirements.txt",
+        "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/blob/main/requirements.txt"
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/tree/main/CLAUDE.md"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/jetpack3331/ai-chat-history-manager/commit/2292af457bd8a958b47198b91c1dcbbe81b31150"
+        }
+      ],
+      "lastUpdated": "2026-02-21T00:25:28.165Z",
+      "vulnerableDependencies": [],
+      "vulnerabilities": []
+    },
+    {
+      "full_name": "porthorian/openchat-backend",
+      "url": "https://github.com/porthorian/openchat-backend",
+      "description": null,
+      "stars": 11,
+      "commits": 26,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 3,
+      "license": "GNU General Public License v2.0",
+      "topics": null,
+      "size": 19559,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "porthorian",
+          "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+          "url": "https://github.com/porthorian",
+          "created_at": "2017-12-05T06:59:54Z",
+          "followers": 16,
+          "following": 31
+        }
+      ],
+      "created_at": "2026-02-09T18:24:21Z",
+      "language": "Go",
+      "languages": {
+        "Go": 135375,
+        "Go Template": 1816,
+        "Dockerfile": 1371
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "porthorian",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+        "url": "https://github.com/porthorian",
+        "created_at": "2017-12-05T06:59:54Z",
+        "followers": 16,
+        "following": 31,
+        "bio": "Code does stuff",
+        "public_repos": 23,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "go",
+        "detected_via": "go.mod",
+        "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/go.mod"
+      },
+      "aiTools": null,
+      "vulnerableDependencies": [
+        "github.com/go-chi/chi/v5@v5.2.0 (GHSA-vrw8-fxc6-2r93)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "github.com/go-chi/chi/v5",
+          "version": "v5.2.0",
+          "cve": "GHSA-vrw8-fxc6-2r93",
+          "severity": "MEDIUM",
+          "title": "chi Allows Host Header Injection which Leads to Open Redirect in RedirectSlashes",
+          "fixedVersion": "5.2.2",
+          "type": "vuln"
+        }
+      ],
+      "lastUpdated": "2026-02-21T00:25:34.585Z"
+    },
+    {
+      "full_name": "porthorian/openchat-client",
+      "url": "https://github.com/porthorian/openchat-client",
+      "description": "OpenChat is a discord alternative that is designed to be self hostable.",
+      "stars": 38,
+      "commits": 108,
+      "contributors": 2,
+      "forks": 0,
+      "open_issues": 5,
+      "license": "GNU General Public License v2.0",
+      "topics": [
+        "chat",
+        "discord",
+        "messaging",
+        "screenshare",
+        "video",
+        "voice"
+      ],
+      "size": 4811,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "porthorian",
+          "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+          "url": "https://github.com/porthorian",
+          "created_at": "2017-12-05T06:59:54Z",
+          "followers": 16,
+          "following": 31
+        },
+        {
+          "login": "dependabot[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+          "url": "https://github.com/apps/dependabot",
+          "created_at": "2019-04-16T22:34:25Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-02-09T18:36:27Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 325511,
+        "Vue": 220841,
+        "CSS": 89572,
+        "JavaScript": 7299,
+        "HTML": 532
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "porthorian",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34264214?v=4",
+        "url": "https://github.com/porthorian",
+        "created_at": "2017-12-05T06:59:54Z",
+        "followers": 16,
+        "following": 31,
+        "bio": "Code does stuff",
+        "public_repos": 23,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package.json",
+        "evidence_url": "https://github.com/porthorian/openchat-client/blob/main/package.json"
+      },
+      "aiTools": null,
+      "lastUpdated": "2026-02-21T00:25:33.096Z",
+      "vulnerableDependencies": [],
+      "vulnerabilities": []
     }
   ]
 }

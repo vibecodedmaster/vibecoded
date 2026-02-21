@@ -1,0 +1,79 @@
+name: Discover Projects
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # Daily at 12:00 UTC
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Install Trivy
+        run: |
+          sudo apt-get install wget apt-transport-https gnupg lsb-release -y
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/trivy.gpg > /dev/null
+          echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install trivy -y
+
+      - name: Discover and Add
+        id: discover
+        run: |
+          FOUND_REPOS=$(deno run -A scripts/discover.ts 5)
+          echo "found_repos=$FOUND_REPOS" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # Process Found Repos
+    - name: Process Found Repos
+      run: |
+        REPOS='${{ steps.discover.outputs.found_repos }}'
+        echo "Found: $REPOS"
+        echo "$REPOS" | jq -r '.[]' | while read -r repo; do
+          if [ -z "$repo" ]; then continue; fi
+          echo "Processing $repo..."
+          # Clean up repo name for branch name
+          CLEAN_REPO=$(echo "$repo" | tr '/' '-')
+          BRANCH_NAME="auto-discover-$CLEAN_REPO"
+          
+          # Add the project
+          deno run -A scripts/add.ts "$repo"
+          
+          # Sync data to public folder for consistency
+          deno run -A scripts/sync-data.ts
+          
+          # Commit and push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if there are changes
+          if git diff --quiet data/projects.json; then
+            echo "No changes for $repo, skipping."
+            continue
+          fi
+
+          git checkout -b "$BRANCH_NAME"
+          git add data/projects.json src/public/data/projects.json
+          git commit -m "feat: auto-discover $repo"
+          git push origin "$BRANCH_NAME"
+          
+          # Create PR
+          gh pr create --title "Auto-discover: $repo" --body "Automatically discovered Vibe Coded project: $repo" --base main --head "$BRANCH_NAME" --label "automated pr,discovery"
+          
+          # Switch back to main for next iteration
+          git checkout main
+        done
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

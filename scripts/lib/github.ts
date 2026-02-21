@@ -144,6 +144,22 @@ export class GitHubClient {
   }
 
   /**
+   * Searches for repositories using a query string.
+   */
+  async searchRepos(query: string, limit = 5) {
+    const res = await this.fetchWithRetry(`${GITHUB_API_BASE}/search/repositories?q=${encodeURIComponent(query)}&per_page=${limit}`);
+    return await res.json();
+  }
+
+  /**
+   * Searches for code/files. Note: This API has stricter rate limits.
+   */
+  async searchCode(query: string, limit = 5) {
+    const res = await this.fetchWithRetry(`${GITHUB_API_BASE}/search/code?q=${encodeURIComponent(query)}&per_page=${limit}`);
+    return await res.json();
+  }
+
+  /**
    * Fetches recent commits to detect AI usage in messages.
    */
   async getRecentCommits(fullName: string, limit = 30) {

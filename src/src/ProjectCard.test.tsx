@@ -36,20 +36,31 @@ describe("ProjectCard", () => {
   });
 
   it("handles many AI tools without breaking layout", () => {
-    const multiToolProject = {
+    const multiToolProject: Project = {
       ...mockProject,
-      aiTools: ["cursor", "claude", "gpt-4", "copilot", "vibe", "deepseek", "llama"],
+      aiTools: [
+        { name: "cursor", detected_via: "file" },
+        { name: "claude", detected_via: "file" },
+        { name: "gpt-4", detected_via: "file" },
+        { name: "copilot", detected_via: "file" },
+        { name: "vibe", detected_via: "file" },
+        { name: "deepseek", detected_via: "file" },
+        { name: "llama", detected_via: "file" },
+      ],
     };
     render(<ProjectCard project={multiToolProject} />);
-    for (const tool of multiToolProject.aiTools) {
-      expect(screen.getByText(tool)).toBeDefined();
+    if (multiToolProject.aiTools) {
+      for (const tool of multiToolProject.aiTools) {
+        expect(screen.getByText(tool.name)).toBeDefined();
+      }
     }
   });
 
   it("handles long repository names correctly", () => {
     const longRepoProject = {
       ...mockProject,
-      full_name: "a-very-long-owner-name/a-very-long-repository-name-that-might-overflow-the-card-container",
+      full_name:
+        "a-very-long-owner-name/a-very-long-repository-name-that-might-overflow-the-card-container",
     };
     const { container } = render(<ProjectCard project={longRepoProject} />);
     const nameSpan = container.querySelector("span.font-mono");
@@ -68,7 +79,7 @@ describe("ProjectCard", () => {
           severity: "HIGH",
           title: "A vuln",
           type: "vuln" as const,
-        }
+        },
       ],
     };
     render(<ProjectCard project={vulnerableProject} />);
