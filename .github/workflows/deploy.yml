@@ -30,10 +30,15 @@ jobs:
           node-version: 23
           cache: "pnpm"
 
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
       - name: Sync data
-        run: node scripts/sync-data.mjs
+        run: deno run -A scripts/sync-data.ts
       - name: Generate feed
-        run: node scripts/generate-feed.mjs
+        run: deno run -A scripts/generate-feed.ts
       - name: Install
         run: pnpm install
 
@@ -41,10 +46,7 @@ jobs:
         run: pnpm --filter vibecoded-web run test
 
       - name: Deno Tests
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-      - run: deno test -A scripts/lib/github_test.ts
+        run: deno test -A scripts/lib/github_test.ts
 
       - name: Install and build
         run: VITE_BASE="/vibecoded/" pnpm --filter vibecoded-web run build

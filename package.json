@@ -3,5 +3,11 @@
   "private": true,
   "scripts": {
     "build": "deno run -A scripts/sync-data.ts && deno run -A scripts/generate-feed.ts && pnpm --filter vibecoded-web run build"
+  },
+  "pnpm": {
+    "overrides": {
+      "minimatch": ">=10.2.1",
+      "esbuild": ">=0.25.0"
+    }
   }
 }

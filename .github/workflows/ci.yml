@@ -23,8 +23,13 @@ jobs:
           node-version: 23
           cache: "pnpm"
 
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
       - name: Sync data
-        run: node scripts/sync-data.mjs
+        run: deno run -A scripts/sync-data.ts
 
       - name: Install
         run: pnpm install
