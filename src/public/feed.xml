@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vibe Coded - New Projects</title>
+    <link>https://vibecodedmaster.github.io/vibecoded/</link>
+    <description>Open-source registry of Vibe Coded projects</description>
+    <atom:link href="https://vibecodedmaster.github.io/vibecoded/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 21 Feb 2026 01:08:37 GMT</lastBuildDate>
+  <item>
+    <title><![CDATA[porthorian/openchat-backend]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/porthorian/openchat-backend</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/porthorian/openchat-backend</guid>
+    <description><![CDATA[]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:25:34 GMT</pubDate>
+  </item>
+  <item>
+    <title><![CDATA[porthorian/openchat-client]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/porthorian/openchat-client</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/porthorian/openchat-client</guid>
+    <description><![CDATA[OpenChat is a discord alternative that is designed to be self hostable.]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:25:33 GMT</pubDate>
+  </item>
+  <item>
+    <title><![CDATA[aha-hyeong/kumiho]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/aha-hyeong/kumiho</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/aha-hyeong/kumiho</guid>
+    <description><![CDATA[kumiho is self-hosting web media server.]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:25:31 GMT</pubDate>
+  </item>
+  <item>
+    <title><![CDATA[FractumSeraph/Vibecoded-Vibe-Code-Detector]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/FractumSeraph/Vibecoded-Vibe-Code-Detector</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/FractumSeraph/Vibecoded-Vibe-Code-Detector</guid>
+    <description><![CDATA[This vibe coded tool scans github repos to help determine if the code was AI generated. ]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:25:29 GMT</pubDate>
+  </item>
+  <item>
+    <title><![CDATA[hyunjun6928-netizen/salmalm]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/hyunjun6928-netizen/salmalm</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/hyunjun6928-netizen/salmalm</guid>
+    <description><![CDATA[🧠 Personal AI Gateway — Single-file Python AI agent with multi-LLM, tools, vision, TTS, encrypted vault. Your own ChatGPT on localhost.]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:25:29 GMT</pubDate>
+  </item>
+  <item>
+    <title><![CDATA[jetpack3331/ai-chat-history-manager]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/jetpack3331/ai-chat-history-manager</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/jetpack3331/ai-chat-history-manager</guid>
+    <description><![CDATA[A local AI chat history manager with SQLite full‑text search and Next.js UI (Gemini/OpenAI/Claude exports).]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:25:28 GMT</pubDate>
+  </item>
+  <item>
+    <title><![CDATA[ancsemi/Haven]]></title>
+    <link>https://vibecodedmaster.github.io/vibecoded/#/project/ancsemi/Haven</link>
+    <guid isPermaLink="true">https://vibecodedmaster.github.io/vibecoded/#/project/ancsemi/Haven</guid>
+    <description><![CDATA[Self-hosted private chat — No cloud, no telemetry, no Big Tech. Discord alternative that runs on your own machine.]]></description>
+    <pubDate>Sat, 21 Feb 2026 00:25:27 GMT</pubDate>
+  </item>
+  </channel>
+</rss>

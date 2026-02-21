@@ -1,0 +1,44 @@
+name: Handle Denied Discovery
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  handle-deny:
+    if: github.event.pull_request.merged == false && contains(github.event.pull_request.labels.*.name, 'discovery')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Extract Repo Name
+        id: extract
+        run: |
+          TITLE="${{ github.event.pull_request.title }}"
+          REPO=$(echo "$TITLE" | sed 's/^Auto-discover: //')
+          echo "repo=$REPO" >> $GITHUB_OUTPUT
+          echo "Found repo: $REPO"
+
+      - name: Deny Project
+        run: deno run -A scripts/deny.ts "${{ steps.extract.outputs.repo }}"
+
+      - name: Delete Branch
+        run: |
+          BRANCH="${{ github.event.pull_request.head.ref }}"
+          git push origin --delete "$BRANCH" || echo "Branch already deleted"
+
+      - name: Commit Denylist
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/denied.json
+          git commit -m "chore: add ${{ steps.extract.outputs.repo }} to denylist (PR closed)" || exit 0
+          git push

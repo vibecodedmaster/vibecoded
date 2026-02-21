@@ -1,0 +1,74 @@
+name: Sync Open Discovery PRs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/projects.json'
+
+jobs:
+  sync-prs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Sync Open Discovery PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Get all open PRs with the discovery label
+          PRS=$(gh pr list --label "discovery" --state open --json number,title,headRefName)
+          
+          echo "Found $(echo "$PRS" | jq '. | length') open discovery PRs"
+          
+          # Iterate through each PR and sync with main
+          # This resolves conflicts by re-running the add script against current main
+          echo "$PRS" | jq -c '.[]' | while read -r pr; do
+            PR_NUM=$(echo "$pr" | jq -r '.number')
+            PR_BRANCH=$(echo "$pr" | jq -r '.headRefName')
+            PR_TITLE=$(echo "$pr" | jq -r '.title')
+            REPO_NAME=$(echo "$PR_TITLE" | sed 's/^Auto-discover: //')
+            
+            echo "Syncing PR #$PR_NUM ($REPO_NAME) on branch $PR_BRANCH..."
+            
+            # Fetch the PR branch
+            git fetch origin "$PR_BRANCH"
+            git checkout "$PR_BRANCH"
+            
+            # Merge main to see if it's clean
+            if git merge origin/main --no-edit; then
+              echo "Clean merge for $REPO_NAME"
+            else
+              echo "Conflict detected for $REPO_NAME, resolving using scripts/add.ts..."
+              git merge --abort || true
+              
+              # Resolve by re-running the add script on the new main state
+              git checkout origin/main -- data/projects.json src/public/data/projects.json
+              
+              # Re-run add script to incorporate changes into the sorted list
+              deno run -A scripts/add.ts "$REPO_NAME"
+              deno run -A scripts/sync-data.ts
+              
+              git add data/projects.json src/public/data/projects.json
+              git commit -m "chore: resolve merge conflict for $REPO_NAME"
+            fi
+            
+            # Push updates
+            git push origin "$PR_BRANCH"
+            
+            # Back to main
+            git checkout main
+          done
