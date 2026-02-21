@@ -67,6 +67,16 @@ export default function ProjectDetail({
         : [];
 
   const totalBytes = langs.reduce((acc, [, b]) => acc + b, 0);
+  const repoApiBase = `https://api.github.com/repos/${project.full_name}`;
+  const sourceLinks = [
+    { label: "Repository", url: project.url },
+    { label: "Stars, forks, issues, topics", url: repoApiBase },
+    { label: "Commit history", url: `${repoApiBase}/commits` },
+    { label: "Contributors", url: `${repoApiBase}/contributors` },
+    { label: "Languages", url: `${repoApiBase}/languages` },
+    { label: "Package manager evidence", url: project.packageManager?.evidence_url },
+    { label: "AI tool evidence", url: project.aiTools?.find((t) => t.evidence_url)?.evidence_url },
+  ].filter((item): item is { label: string; url: string } => Boolean(item.url));
 
   return (
     <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-6">
@@ -300,6 +310,30 @@ export default function ProjectDetail({
                 </div>
               </section>
             )}
+            <section>
+              <h2 class="text-sm font-bold uppercase tracking-wider text-vibe-muted mb-4">
+                Data Sources
+              </h2>
+              <div class="space-y-2">
+                {sourceLinks.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-between p-3 rounded-xl bg-vibe-bg border border-vibe-border hover:bg-vibe-accent/5 transition text-sm group"
+                  >
+                    <span class="text-vibe-fg font-medium truncate mr-2">
+                      {item.label}
+                    </span>
+                    <ExternalLink
+                      size={14}
+                      class="text-vibe-muted group-hover:text-vibe-accent transition"
+                    />
+                  </a>
+                ))}
+              </div>
+            </section>
           </div>
 
           {/* Right Column: Author & Contributors */}

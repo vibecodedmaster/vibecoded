@@ -14,6 +14,8 @@ import type { Project } from "./types";
 
 const SOURCE_URL = "https://github.com/vibecodedmaster/vibecoded";
 const SUBMIT_URL = `${SOURCE_URL}/issues/new`;
+const REMOVE_PROJECT_URL =
+  `${SOURCE_URL}/issues/new?labels=removal-request&title=Remove%20my%20project%20from%20Vibe%20Coded`;
 const PAGE_SIZE = 20;
 
 type SortKey = "stars" | "commits" | "age" | "vulns";
@@ -457,9 +459,11 @@ export default function App() {
         <AppContent projects={projects} />
       )}
       <footer class="border-t border-vibe-border bg-vibe-elevated mt-auto">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-          <p class="text-[10px] text-vibe-muted max-w-[280px] sm:max-w-none">
-            No warranty. Data may be wrong. We list projects; we don't run them.{" "}
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center justify-between gap-3 text-center sm:text-left">
+          <p class="text-[10px] text-vibe-muted max-w-[380px] sm:max-w-none">
+            Vibe Coded is an independent public index and is not affiliated with,
+            endorsed by, or sponsored by any listed project, maintainer, or AI vendor.
+            No warranty. Data may be wrong. We list projects; we do not run them.{" "}
             <a
               href={`${import.meta.env.BASE_URL}policies.html`}
               target="_blank"
@@ -469,14 +473,24 @@ export default function App() {
               Policies & Disclaimer
             </a>
           </p>
+          <div class="flex items-center gap-4">
+            <a
+              href={`${import.meta.env.BASE_URL}feed.xml`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-vibe-muted hover:text-vibe-fg transition"
+              aria-label="RSS feed"
+            >
+              <Rss size={16} strokeWidth={2} />
+            </a>
+          </div>
           <a
-            href={`${import.meta.env.BASE_URL}feed.xml`}
+            href={REMOVE_PROJECT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            class="text-vibe-muted hover:text-vibe-fg transition"
-            aria-label="RSS feed"
+            class="text-[11px] text-red-500 hover:text-red-400 font-semibold underline underline-offset-2 transition"
           >
-            <Rss size={16} strokeWidth={2} />
+            Remove my project
           </a>
         </div>
       </footer>
