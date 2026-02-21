@@ -103,6 +103,28 @@ export const ProjectSchema = z.object({
     detected_via: z.string(),
     evidence_url: z.string().optional(),
   }).nullable().optional(),
+  commitMessageSignals: z.object({
+    sampleSize: z.number(),
+    avgMessageLength: z.number(),
+    emDashCount: z.number(),
+    enDashCount: z.number(),
+    aiMentionCount: z.number(),
+  }).nullable().optional(),
+  commitSizeSignals: z.object({
+    sampledCommits: z.number(),
+    avgChanges: z.number(),
+    medianChanges: z.number(),
+    largeCommitCount: z.number(),
+  }).nullable().optional(),
+  contributorSignals: z.object({
+    hasClaudeBotContributor: z.boolean(),
+    matchedBots: z.array(z.string()),
+  }).nullable().optional(),
+  detectionSummary: z.object({
+    score: z.number(),
+    level: z.enum(["low", "medium", "high"]),
+    reasons: z.array(z.string()),
+  }).nullable().optional(),
   aiTools: z.array(z.object({
     name: z.string(),
     detected_via: z.enum(["file", "commits"]),

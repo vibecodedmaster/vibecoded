@@ -52,6 +52,28 @@ export interface Project {
     detected_via: string;
     evidence_url?: string;
   } | null;
+  commitMessageSignals?: {
+    sampleSize: number;
+    avgMessageLength: number;
+    emDashCount: number;
+    enDashCount: number;
+    aiMentionCount: number;
+  } | null;
+  commitSizeSignals?: {
+    sampledCommits: number;
+    avgChanges: number;
+    medianChanges: number;
+    largeCommitCount: number;
+  } | null;
+  contributorSignals?: {
+    hasClaudeBotContributor: boolean;
+    matchedBots: string[];
+  } | null;
+  detectionSummary?: {
+    score: number;
+    level: "low" | "medium" | "high";
+    reasons: string[];
+  } | null;
   owner?: {
     login: string;
     avatar_url: string;

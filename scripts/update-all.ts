@@ -91,11 +91,19 @@ async function updateProject(p: Project): Promise<Project> {
     let aiTools = p.aiTools;
     let emojis = p.emojis;
     let packageManager = p.packageManager;
+    let commitMessageSignals = p.commitMessageSignals;
+    let commitSizeSignals = p.commitSizeSignals;
+    let contributorSignals = p.contributorSignals;
+    let detectionSummary = p.detectionSummary;
     try {
       const d = await detect(fullName);
       aiTools = d.aiTools.length > 0 ? d.aiTools : aiTools;
       emojis = d.emojis > 0 ? d.emojis : emojis;
       packageManager = d.packageManager ?? packageManager;
+      commitMessageSignals = d.commitMessageSignals;
+      commitSizeSignals = d.commitSizeSignals;
+      contributorSignals = d.contributorSignals;
+      detectionSummary = d.detectionSummary;
     } catch (e) {
       console.warn(`Detection failed for ${fullName}:`, e);
     }
@@ -131,6 +139,10 @@ async function updateProject(p: Project): Promise<Project> {
       aiTools,
       emojis,
       packageManager,
+      commitMessageSignals,
+      commitSizeSignals,
+      contributorSignals,
+      detectionSummary,
       vulnerableDependencies,
       vulnerabilities,
       lastUpdated: new Date().toISOString(),

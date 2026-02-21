@@ -67,12 +67,38 @@ export async function add(input: string, force = false): Promise<boolean> {
     let aiTools: Array<{ name: string; detected_via: "file" | "commits"; evidence_url: string }> = [];
     let emojis = 0;
     let packageManager: { name: string; detected_via: string; evidence_url: string } | null = null;
+    let commitMessageSignals: {
+      sampleSize: number;
+      avgMessageLength: number;
+      emDashCount: number;
+      enDashCount: number;
+      aiMentionCount: number;
+    } | null = null;
+    let commitSizeSignals: {
+      sampledCommits: number;
+      avgChanges: number;
+      medianChanges: number;
+      largeCommitCount: number;
+    } | null = null;
+    let contributorSignals: {
+      hasClaudeBotContributor: boolean;
+      matchedBots: string[];
+    } | null = null;
+    let detectionSummary: {
+      score: number;
+      level: "low" | "medium" | "high";
+      reasons: string[];
+    } | null = null;
     try {
       const { detect } = await import("./detect.ts");
       const d = await detect(p.full_name);
       aiTools = d.aiTools;
       emojis = d.emojis;
       packageManager = d.packageManager;
+      commitMessageSignals = d.commitMessageSignals;
+      commitSizeSignals = d.commitSizeSignals;
+      contributorSignals = d.contributorSignals;
+      detectionSummary = d.detectionSummary;
     } catch { /* ignore */ }
     
     // Owner details
@@ -151,6 +177,10 @@ export async function add(input: string, force = false): Promise<boolean> {
       aiTools: aiTools.length > 0 ? aiTools : null,
       emojis: emojis > 0 ? emojis : null,
       packageManager: packageManager,
+      commitMessageSignals,
+      commitSizeSignals,
+      contributorSignals,
+      detectionSummary,
       lastUpdated: now,
     });
     

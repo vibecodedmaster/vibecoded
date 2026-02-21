@@ -3,6 +3,36 @@
 import { GITHUB_RE } from "./lib/config.ts";
 import { github } from "./lib/github.ts";
 
+type DetectionEvidence = { name: string; detected_via: "file" | "commits"; evidence_url: string };
+
+export interface CommitMessageSignals {
+  sampleSize: number;
+  avgMessageLength: number;
+  emDashCount: number;
+  enDashCount: number;
+  aiMentionCount: number;
+}
+
+export interface CommitSizeSignals {
+  sampledCommits: number;
+  avgChanges: number;
+  medianChanges: number;
+  largeCommitCount: number;
+}
+
+export interface ContributorSignals {
+  hasClaudeBotContributor: boolean;
+  matchedBots: string[];
+}
+
+export interface DetectionSummary {
+  score: number;
+  level: "low" | "medium" | "high";
+  reasons: string[];
+}
+
+export const VIBE_SCORE_PR_THRESHOLD = 7;
+
 /**
  * Parses a GitHub owner/repo string or URL into a simple owner/repo string.
  * @param input The GitHub URL or owner/repo string.
@@ -22,22 +52,45 @@ export function parse(input: string): string | null {
  * @returns An object containing flags for detected tools and a list of tool names.
  */
 async function hasCursorOrClaude(fullName: string): Promise<{
-  aiTools: Array<{ name: string; detected_via: "file" | "commits"; evidence_url: string }>;
+  aiTools: DetectionEvidence[];
+  commits: Array<{ commit?: { message?: string }; html_url: string; sha: string }>;
 }> {
-  const paths = [".cursor", ".cursorrules", ".cursor/rules", "CLAUDE.md", "claude.md"];
-  const aiTools: Array<{ name: string; detected_via: "file" | "commits"; evidence_url: string }> = [];
-  
-  for (const p of paths) {
-    if (await github.hasPath(fullName, p)) {
-      const url = `https://github.com/${fullName}/tree/main/${p}`;
-      if (p.includes("cursor")) aiTools.push({ name: "cursor", detected_via: "file", evidence_url: url });
-      if (p.toLowerCase().includes("claude")) aiTools.push({ name: "claude", detected_via: "file", evidence_url: url });
-    }
+  const aiTools: DetectionEvidence[] = [];
+  const seenTools = new Set<string>();
+
+  const repoInfo = await github.getRepo(fullName).catch(() => null);
+  const defaultBranch = typeof repoInfo?.default_branch === "string" && repoInfo.default_branch.length > 0
+    ? repoInfo.default_branch
+    : "main";
+
+  const fileSignals: Array<{ tool: string; path: string; isDirectory?: boolean }> = [
+    { tool: "cursor", path: ".cursor", isDirectory: true },
+    { tool: "cursor", path: ".cursorrules" },
+    { tool: "cursor", path: ".cursor/rules", isDirectory: true },
+    { tool: "claude", path: "CLAUDE.md" },
+    { tool: "claude", path: "claude.md" },
+    { tool: "claude", path: "AGENTS.md" },
+    { tool: "copilot", path: ".github/copilot-instructions.md" },
+    { tool: "windsurf", path: ".windsurfrules" },
+    { tool: "gemini", path: "GEMINI.md" },
+    { tool: "aider", path: ".aider.conf.yml" },
+  ];
+
+  for (const signal of fileSignals) {
+    if (!(await github.hasPath(fullName, signal.path))) continue;
+    if (seenTools.has(signal.tool)) continue;
+    const mode = signal.isDirectory ? "tree" : "blob";
+    aiTools.push({
+      name: signal.tool,
+      detected_via: "file",
+      evidence_url: `https://github.com/${fullName}/${mode}/${defaultBranch}/${signal.path}`,
+    });
+    seenTools.add(signal.tool);
   }
-  
+
+  let commits: Array<{ commit?: { message?: string }; html_url: string; sha: string }> = [];
   try {
-    const commits = await github.getRecentCommits(fullName);
-    const seenTools = new Set(aiTools.map(t => t.name));
+    commits = await github.getRecentCommits(fullName);
     for (const c of (commits as Array<{ commit?: { message?: string }; html_url: string }>)) {
       const msg = (c.commit?.message ?? "").toLowerCase();
       const url = c.html_url;
@@ -53,6 +106,18 @@ async function hasCursorOrClaude(fullName: string): Promise<{
         aiTools.push({ name: "gemini", detected_via: "commits", evidence_url: url });
         seenTools.add("gemini");
       }
+      if (!seenTools.has("copilot") && msg.includes("copilot")) {
+        aiTools.push({ name: "copilot", detected_via: "commits", evidence_url: url });
+        seenTools.add("copilot");
+      }
+      if (!seenTools.has("windsurf") && msg.includes("windsurf")) {
+        aiTools.push({ name: "windsurf", detected_via: "commits", evidence_url: url });
+        seenTools.add("windsurf");
+      }
+      if (!seenTools.has("aider") && msg.includes("aider")) {
+        aiTools.push({ name: "aider", detected_via: "commits", evidence_url: url });
+        seenTools.add("aider");
+      }
       if (!seenTools.has("vibe") && (msg.includes("vibe coded") || msg.includes("vibe-coded"))) {
         aiTools.push({ name: "vibe", detected_via: "commits", evidence_url: url });
         seenTools.add("vibe");
@@ -62,7 +127,158 @@ async function hasCursorOrClaude(fullName: string): Promise<{
     console.warn(`Failed to fetch commits for ${fullName}:`, e);
   }
   
-  return { aiTools };
+  return { aiTools, commits };
+}
+
+function analyzeCommitMessages(
+  commits: Array<{ commit?: { message?: string } }>,
+): CommitMessageSignals {
+  let totalLength = 0;
+  let emDashCount = 0;
+  let enDashCount = 0;
+  let aiMentionCount = 0;
+  const aiMentions = [
+    "cursor",
+    "claude",
+    "claude code",
+    "copilot",
+    "gemini",
+    "windsurf",
+    "aider",
+    "vibe coded",
+    "vibe-coded",
+  ];
+
+  for (const c of commits) {
+    const msg = c.commit?.message ?? "";
+    const lower = msg.toLowerCase();
+    totalLength += msg.length;
+    emDashCount += (msg.match(/—/g) || []).length;
+    enDashCount += (msg.match(/–/g) || []).length;
+    if (aiMentions.some((term) => lower.includes(term))) aiMentionCount++;
+  }
+
+  const sampleSize = commits.length;
+  return {
+    sampleSize,
+    avgMessageLength: sampleSize > 0 ? Math.round(totalLength / sampleSize) : 0,
+    emDashCount,
+    enDashCount,
+    aiMentionCount,
+  };
+}
+
+async function analyzeCommitSizes(
+  fullName: string,
+  commits: Array<{ sha?: string }>,
+): Promise<CommitSizeSignals> {
+  const sample = commits
+    .map((c) => c.sha)
+    .filter((sha): sha is string => typeof sha === "string")
+    .slice(0, 8);
+
+  if (sample.length === 0) {
+    return { sampledCommits: 0, avgChanges: 0, medianChanges: 0, largeCommitCount: 0 };
+  }
+
+  const totals: number[] = [];
+  for (const sha of sample) {
+    try {
+      const commit = await github.getCommit(fullName, sha);
+      const total = Number(commit?.stats?.total ?? 0);
+      totals.push(Number.isFinite(total) ? total : 0);
+    } catch {
+      totals.push(0);
+    }
+  }
+
+  const sampledCommits = totals.length;
+  const sorted = [...totals].sort((a, b) => a - b);
+  const sum = totals.reduce((acc, n) => acc + n, 0);
+  const medianChanges = sampledCommits % 2 === 1
+    ? sorted[Math.floor(sampledCommits / 2)]
+    : Math.round((sorted[sampledCommits / 2 - 1] + sorted[sampledCommits / 2]) / 2);
+  const largeCommitCount = totals.filter((n) => n >= 500).length;
+
+  return {
+    sampledCommits,
+    avgChanges: Math.round(sum / sampledCommits),
+    medianChanges,
+    largeCommitCount,
+  };
+}
+
+async function detectContributorSignals(fullName: string): Promise<ContributorSignals> {
+  try {
+    const contributors = await github.getContributors(fullName, 100);
+    const logins = (Array.isArray(contributors) ? contributors : [])
+      .map((c: { login?: string }) => c.login || "")
+      .filter(Boolean);
+    const matchedBots = logins.filter((login) => /claude(\-code)?\[bot\]/i.test(login));
+    return {
+      hasClaudeBotContributor: matchedBots.length > 0,
+      matchedBots,
+    };
+  } catch {
+    return {
+      hasClaudeBotContributor: false,
+      matchedBots: [],
+    };
+  }
+}
+
+export function calculateDetectionSummary(
+  aiTools: DetectionEvidence[],
+  commitMessageSignals: CommitMessageSignals,
+  commitSizeSignals: CommitSizeSignals,
+  contributorSignals: ContributorSignals,
+): DetectionSummary {
+  let score = 0;
+  const reasons: string[] = [];
+  const fileSignals = aiTools.filter((t) => t.detected_via === "file").length;
+  const commitSignals = aiTools.filter((t) => t.detected_via === "commits").length;
+
+  if (fileSignals > 0) {
+    score += fileSignals * 4;
+    reasons.push(`${fileSignals} file-based AI signal(s)`);
+  }
+  if (commitSignals > 0) {
+    score += commitSignals * 2;
+    reasons.push(`${commitSignals} commit-message AI signal(s)`);
+  }
+  if (contributorSignals.hasClaudeBotContributor) {
+    score += 3;
+    reasons.push("claude bot contributor detected");
+  }
+  if (commitMessageSignals.emDashCount > 0 || commitMessageSignals.enDashCount > 0) {
+    score += 1;
+    reasons.push("dash punctuation pattern present in commits");
+  }
+  if (commitMessageSignals.aiMentionCount >= 2) {
+    score += 2;
+    reasons.push("multiple AI mentions in commit messages");
+  }
+  if (commitSizeSignals.largeCommitCount > 0) {
+    score += 1;
+    reasons.push("large commits detected");
+  }
+
+  const level = score >= 9 ? "high" : score >= 5 ? "medium" : "low";
+  return { score, level, reasons };
+}
+
+export function shouldCreateDiscoveryPr(
+  summary: DetectionSummary,
+  signals: {
+    aiTools: DetectionEvidence[];
+    contributorSignals: ContributorSignals;
+    commitMessageSignals: CommitMessageSignals;
+  },
+): boolean {
+  if (summary.score < VIBE_SCORE_PR_THRESHOLD) return false;
+  const fileSignals = signals.aiTools.filter((t) => t.detected_via === "file").length;
+  const hasCommitAiPattern = signals.commitMessageSignals.aiMentionCount >= 2;
+  return fileSignals > 0 || hasCommitAiPattern || signals.contributorSignals.hasClaudeBotContributor;
 }
 
 /**
@@ -99,10 +315,13 @@ async function fetchEmojiCount(fullName: string): Promise<number> {
  */
 async function detectPackageManager(fullName: string): Promise<{ name: string; detected_via: string; evidence_url: string } | null> {
   const mapping: Record<string, string> = {
-    "package.json": "npm",
-    "yarn.lock": "yarn",
     "pnpm-lock.yaml": "pnpm",
     "bun.lockb": "bun",
+    "bun.lock": "bun",
+    "yarn.lock": "yarn",
+    "package-lock.json": "npm",
+    "npm-shrinkwrap.json": "npm",
+    "package.json": "npm",
     "go.mod": "go",
     "Cargo.toml": "cargo",
     "requirements.txt": "pip",
@@ -115,14 +334,22 @@ async function detectPackageManager(fullName: string): Promise<{ name: string; d
     "deno.jsonc": "deno",
     "pom.xml": "maven",
     "build.gradle": "gradle",
+    "build.gradle.kts": "gradle",
+    "uv.lock": "uv",
+    "poetry.lock": "poetry",
   };
-  
+
+  const repoInfo = await github.getRepo(fullName).catch(() => null);
+  const defaultBranch = typeof repoInfo?.default_branch === "string" && repoInfo.default_branch.length > 0
+    ? repoInfo.default_branch
+    : "main";
+
   for (const [file, pm] of Object.entries(mapping)) {
     if (await github.hasPath(fullName, file)) {
-      return { 
-        name: pm, 
-        detected_via: file, 
-        evidence_url: `https://github.com/${fullName}/blob/main/${file}` 
+      return {
+        name: pm,
+        detected_via: file,
+        evidence_url: `https://github.com/${fullName}/blob/${defaultBranch}/${file}`,
       };
     }
   }
@@ -135,14 +362,35 @@ async function detectPackageManager(fullName: string): Promise<{ name: string; d
  * @returns An object containing the detection results.
  */
 export async function detect(fullName: string): Promise<{
-  aiTools: Array<{ name: string; detected_via: "file" | "commits"; evidence_url: string }>;
+  aiTools: DetectionEvidence[];
   emojis: number;
   packageManager: { name: string; detected_via: string; evidence_url: string } | null;
+  commitMessageSignals: CommitMessageSignals;
+  commitSizeSignals: CommitSizeSignals;
+  contributorSignals: ContributorSignals;
+  detectionSummary: DetectionSummary;
 }> {
-  const { aiTools } = await hasCursorOrClaude(fullName);
+  const { aiTools, commits } = await hasCursorOrClaude(fullName);
   const emojis = await fetchEmojiCount(fullName);
   const packageManager = await detectPackageManager(fullName);
-  return { aiTools, emojis, packageManager };
+  const commitMessageSignals = analyzeCommitMessages(commits);
+  const commitSizeSignals = await analyzeCommitSizes(fullName, commits);
+  const contributorSignals = await detectContributorSignals(fullName);
+  const detectionSummary = calculateDetectionSummary(
+    aiTools,
+    commitMessageSignals,
+    commitSizeSignals,
+    contributorSignals,
+  );
+  return {
+    aiTools,
+    emojis,
+    packageManager,
+    commitMessageSignals,
+    commitSizeSignals,
+    contributorSignals,
+    detectionSummary,
+  };
 }
 
 if (import.meta.main) {
@@ -156,7 +404,7 @@ if (import.meta.main) {
     console.error("Invalid: expected owner/repo or GitHub URL");
     Deno.exit(1);
   }
-  const { aiTools, emojis } = await detect(fullName);
-  console.log("aiTools:", aiTools.join(", ") || "none");
+  const { aiTools, emojis } = await detect(fullName!);
+  console.log("aiTools:", aiTools.map((tool) => tool.name).join(", ") || "none");
   console.log("emojis:", emojis);
 }

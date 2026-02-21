@@ -160,6 +160,17 @@ export class GitHubClient {
   }
 
   /**
+   * Searches code scoped to a specific repository.
+   */
+  async searchCodeInRepo(fullName: string, query: string, limit = 5) {
+    const scopedQuery = `repo:${fullName} ${query}`;
+    const res = await this.fetchWithRetry(
+      `${GITHUB_API_BASE}/search/code?q=${encodeURIComponent(scopedQuery)}&per_page=${limit}`,
+    );
+    return await res.json();
+  }
+
+  /**
    * Searches for commits using a query string.
    */
   async searchCommits(query: string, limit = 5) {
@@ -176,6 +187,14 @@ export class GitHubClient {
    */
   async getRecentCommits(fullName: string, limit = 30) {
     const res = await this.fetchWithRetry(`${GITHUB_API_BASE}/repos/${fullName}/commits?per_page=${limit}`);
+    return await res.json();
+  }
+
+  /**
+   * Fetches one commit with full stats.
+   */
+  async getCommit(fullName: string, sha: string) {
+    const res = await this.fetchWithRetry(`${GITHUB_API_BASE}/repos/${fullName}/commits/${sha}`);
     return await res.json();
   }
 }

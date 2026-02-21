@@ -3,7 +3,7 @@
 import { github } from "./lib/github.ts";
 import { DATA_PATH, DENIED_PATH } from "./lib/config.ts";
 import { ProjectsDataSchema, DeniedDataSchema } from "./lib/schemas.ts";
-import { detect } from "./detect.ts";
+import { detect, shouldCreateDiscoveryPr } from "./detect.ts";
 
 /**
  * Discovered project metadata.
@@ -13,6 +13,37 @@ interface DiscoveredProject {
   description: string | null;
   stars: number;
   aiTools: Array<{ name: string; detected_via: string; evidence_url?: string }>;
+  emojis: number;
+  packageManager?: { name: string; detected_via: string; evidence_url?: string } | null;
+  commitMessageSignals: {
+    sampleSize: number;
+    avgMessageLength: number;
+    emDashCount: number;
+    enDashCount: number;
+    aiMentionCount: number;
+  };
+  commitSizeSignals: {
+    sampledCommits: number;
+    avgChanges: number;
+    medianChanges: number;
+    largeCommitCount: number;
+  };
+  contributorSignals: {
+    hasClaudeBotContributor: boolean;
+    matchedBots: string[];
+  };
+  detectionSummary: {
+    score: number;
+    level: "low" | "medium" | "high";
+    reasons: string[];
+  };
+}
+
+interface DiscoveryCandidate {
+  description?: string;
+  stars?: number;
+  score: number;
+  matchedQueries: string[];
 }
 
 /**
@@ -30,40 +61,88 @@ async function discover(limit = 5) {
   const deniedRepos = new Set(deniedData.denied.map((r) => r.toLowerCase()));
 
   const queries = [
-    'path:.cursorrules',
-    'path:CLAUDE.md',
-    '"vibe coded" in:description',
-    'topic:vibe-coded',
-    '"vibe coded" in:message',
-    'claude in:message',
-    'gemini in:message',
+    {
+      query: "archived:false fork:false path:.cursorrules",
+      type: "code" as const,
+      score: 4,
+    },
+    {
+      query: "archived:false fork:false path:.cursor/rules",
+      type: "code" as const,
+      score: 4,
+    },
+    {
+      query: "archived:false fork:false path:CLAUDE.md",
+      type: "code" as const,
+      score: 4,
+    },
+    {
+      query: "archived:false fork:false path:AGENTS.md",
+      type: "code" as const,
+      score: 3,
+    },
+    {
+      query: "archived:false fork:false path:.windsurfrules",
+      type: "code" as const,
+      score: 3,
+    },
+    {
+      query: 'topic:vibe-coded archived:false fork:false',
+      type: "repo" as const,
+      score: 5,
+    },
+    {
+      query: '"vibe coded" in:description archived:false fork:false',
+      type: "repo" as const,
+      score: 4,
+    },
+    {
+      query: 'cursor in:message archived:false fork:false',
+      type: "commit" as const,
+      score: 2,
+    },
+    {
+      query: 'claude in:message archived:false fork:false',
+      type: "commit" as const,
+      score: 2,
+    },
+    {
+      query: 'copilot in:message archived:false fork:false',
+      type: "commit" as const,
+      score: 2,
+    },
+    {
+      query: 'gemini in:message archived:false fork:false',
+      type: "commit" as const,
+      score: 2,
+    },
   ];
 
-  const candidates = new Map<string, { description?: string; stars?: number }>();
+  const candidates = new Map<string, DiscoveryCandidate>();
 
-  for (const q of queries) {
+  for (const search of queries) {
     try {
-      if (candidates.size >= limit * 3) break; // Get a few more than we need to account for existing ones
-      
-      console.error(`Searching for: ${q}`);
+      if (candidates.size >= limit * 8) break;
+
+      console.error(`Searching for: ${search.query}`);
       let items: any[] = [];
-      
-      if (q.startsWith('path:')) {
-        const res = await github.searchCode(q, 30);
+
+      if (search.type === "code") {
+        const res = await github.searchCode(search.query, 30);
         items = (res.items || []).map((i: any) => ({
           full_name: i.repository.full_name,
           description: i.repository.description,
           stars: i.repository.stargazers_count,
         }));
-      } else if (q.includes('in:message')) {
-        const res = await github.searchCommits(q, 30);
+      } else if (search.type === "commit") {
+        const res = await github.searchCommits(search.query, 30);
         items = (res.items || []).map((i: any) => ({
           full_name: i.repository.full_name,
           description: i.repository.description,
           stars: i.repository.stargazers_count,
         }));
       } else {
-        const res = await github.searchRepos(q, 30);
+        const res = await github.searchRepos(search.query, 30);
         items = (res.items || []).map((i: any) => ({
           full_name: i.full_name,
           description: i.description,
@@ -74,37 +153,69 @@ async function discover(limit = 5) {
       for (const item of items) {
         const lowerName = item.full_name.toLowerCase();
         if (!existingRepos.has(lowerName) && !deniedRepos.has(lowerName)) {
-          candidates.set(item.full_name, {
-            description: item.description,
-            stars: item.stars,
-          });
+          const existing = candidates.get(item.full_name);
+          const stars = item.stars ?? existing?.stars ?? 0;
+          const starScore = Math.min(3, Math.floor(stars / 25));
+          const baseScore = search.score + starScore;
+          if (!existing) {
+            candidates.set(item.full_name, {
+              description: item.description,
+              stars,
+              score: baseScore,
+              matchedQueries: [search.query],
+            });
+            continue;
+          }
+          existing.description = existing.description ?? item.description;
+          existing.stars = Math.max(existing.stars ?? 0, stars);
+          existing.score += baseScore;
+          if (!existing.matchedQueries.includes(search.query)) {
+            existing.matchedQueries.push(search.query);
+          }
         }
       }
-      
-      // Be nice to GitHub Search API
-      await new Promise(r => setTimeout(r, 2000));
+
+      await new Promise((r) => setTimeout(r, 1500));
     } catch (e) {
-      console.warn(`Search failed for query "${q}":`, e);
+      console.warn(`Search failed for query "${search.query}":`, e);
     }
   }
 
-  // Verify candidates
-  console.error(`Found ${candidates.size} candidates. Verifying...`);
+  const prioritizedCandidates = Array.from(candidates.entries()).sort((a, b) => {
+    const scoreDiff = b[1].score - a[1].score;
+    if (scoreDiff !== 0) return scoreDiff;
+    return (b[1].stars ?? 0) - (a[1].stars ?? 0);
+  }).slice(0, limit * 12);
+
+  console.error(`Found ${candidates.size} candidates. Verifying top ${prioritizedCandidates.length}...`);
   const verified: DiscoveredProject[] = [];
-  for (const [fullName, info] of candidates.entries()) {
+  for (const [fullName, info] of prioritizedCandidates) {
     if (verified.length >= limit) break;
     try {
       const d = await detect(fullName);
-      if (d.aiTools && d.aiTools.length > 0) {
+      const shouldCreatePr = shouldCreateDiscoveryPr(d.detectionSummary, {
+        aiTools: d.aiTools,
+        contributorSignals: d.contributorSignals,
+        commitMessageSignals: d.commitMessageSignals,
+      });
+      if (shouldCreatePr) {
         console.error(`Verified: ${fullName} (Tools: ${d.aiTools.map(t => t.name).join(", ")})`);
         verified.push({
           full_name: fullName,
           description: info.description ?? null,
           stars: info.stars ?? 0,
           aiTools: d.aiTools,
+          emojis: d.emojis,
+          packageManager: d.packageManager,
+          commitMessageSignals: d.commitMessageSignals,
+          commitSizeSignals: d.commitSizeSignals,
+          contributorSignals: d.contributorSignals,
+          detectionSummary: d.detectionSummary,
         });
       } else {
-        console.error(`Skipped: ${fullName} (No AI indicators found)`);
+        console.error(
+          `Skipped: ${fullName} (score=${d.detectionSummary.score}, level=${d.detectionSummary.level})`,
+        );
       }
     } catch (e) {
       console.warn(`Verification failed for ${fullName}:`, e);
