@@ -5,13 +5,15 @@ import {
   ChevronRight,
   Download,
   Rss,
+  Github,
 } from "lucide-preact";
 import ThemeToggle from "./ThemeToggle";
 import ProjectCard from "./ProjectCard";
 import ProjectDetail from "./ProjectDetail";
 import type { Project } from "./types";
 
-const SUBMIT_URL = "https://github.com/vibecodedmaster/vibecoded/issues/new";
+const SOURCE_URL = "https://github.com/vibecodedmaster/vibecoded";
+const SUBMIT_URL = `${SOURCE_URL}/issues/new`;
 const PAGE_SIZE = 20;
 
 type SortKey = "stars" | "commits" | "age" | "vulns";
@@ -155,7 +157,7 @@ function ProjectList({ projects }: { projects: Project[] }) {
     const rows = sorted.map((p) =>
       headers
         .map((h) => {
-          const v = (p as Record<string, unknown>)[h];
+          const v = (p as unknown as Record<string, unknown>)[h];
           const s = String(v ?? "");
           return s.includes(",") || s.includes('"')
             ? `"${s.replace(/"/g, '""')}"`
@@ -433,6 +435,15 @@ export default function App() {
               class="text-sm text-vibe-muted hover:text-vibe-fg transition"
             >
               Data
+            </a>
+            <a
+              href={SOURCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-vibe-muted hover:text-vibe-fg transition flex items-center"
+              aria-label="GitHub repository"
+            >
+              <Github size={20} strokeWidth={2} />
             </a>
             <ThemeToggle />
           </nav>

@@ -1,19 +1,33 @@
 #!/usr/bin/env -S deno run -A
 
 import { github } from "./lib/github.ts";
-import { DATA_PATH } from "./lib/config.ts";
-import { ProjectsDataSchema } from "./lib/schemas.ts";
+import { DATA_PATH, DENIED_PATH } from "./lib/config.ts";
+import { ProjectsDataSchema, DeniedDataSchema } from "./lib/schemas.ts";
 import { detect } from "./detect.ts";
+
+/**
+ * Discovered project metadata.
+ */
+interface DiscoveredProject {
+  full_name: string;
+  description: string | null;
+  stars: number;
+  aiTools: Array<{ name: string; detected_via: string; evidence_url?: string }>;
+}
 
 /**
  * Discovers new "Vibe Coded" projects on GitHub.
  * @param limit Maximum number of projects to discover.
- * @returns A list of repository full names.
+ * @returns A list of discovered project objects.
  */
 async function discover(limit = 5) {
   const content = await Deno.readTextFile(DATA_PATH).catch(() => '{"schemaVersion":1,"projects":[]}');
   const data = ProjectsDataSchema.parse(JSON.parse(content));
   const existingRepos = new Set(data.projects.map((p) => p.full_name.toLowerCase()));
+
+  const deniedContent = await Deno.readTextFile(DENIED_PATH).catch(() => '{"schemaVersion":1,"denied":[]}');
+  const deniedData = DeniedDataSchema.parse(JSON.parse(deniedContent));
+  const deniedRepos = new Set(deniedData.denied.map((r) => r.toLowerCase()));
 
   const queries = [
     'path:.cursorrules',
@@ -25,7 +39,7 @@ async function discover(limit = 5) {
     'gemini in:message',
   ];
 
-  const candidates = new Set<string>();
+  const candidates = new Map<string, { description?: string; stars?: number }>();
 
   for (const q of queries) {
     try {
@@ -36,18 +50,34 @@ async function discover(limit = 5) {
       
       if (q.startsWith('path:')) {
         const res = await github.searchCode(q, 30);
-        items = (res.items || []).map((i: any) => i.repository.full_name);
+        items = (res.items || []).map((i: any) => ({
+          full_name: i.repository.full_name,
+          description: i.repository.description,
+          stars: i.repository.stargazers_count,
+        }));
       } else if (q.includes('in:message')) {
         const res = await github.searchCommits(q, 30);
-        items = (res.items || []).map((i: any) => i.repository.full_name);
+        items = (res.items || []).map((i: any) => ({
+          full_name: i.repository.full_name,
+          description: i.repository.description,
+          stars: i.repository.stargazers_count,
+        }));
       } else {
         const res = await github.searchRepos(q, 30);
-        items = (res.items || []).map((i: any) => i.full_name);
+        items = (res.items || []).map((i: any) => ({
+          full_name: i.full_name,
+          description: i.description,
+          stars: i.stargazers_count,
+        }));
       }
 
-      for (const repo of items) {
-        if (!existingRepos.has(repo.toLowerCase())) {
-          candidates.add(repo);
+      for (const item of items) {
+        const lowerName = item.full_name.toLowerCase();
+        if (!existingRepos.has(lowerName) && !deniedRepos.has(lowerName)) {
+          candidates.set(item.full_name, {
+            description: item.description,
+            stars: item.stars,
+          });
         }
       }
       
@@ -60,19 +90,24 @@ async function discover(limit = 5) {
 
   // Verify candidates
   console.error(`Found ${candidates.size} candidates. Verifying...`);
-  const verified: string[] = [];
-  for (const repo of candidates) {
+  const verified: DiscoveredProject[] = [];
+  for (const [fullName, info] of candidates.entries()) {
     if (verified.length >= limit) break;
     try {
-      const d = await detect(repo);
+      const d = await detect(fullName);
       if (d.aiTools && d.aiTools.length > 0) {
-        console.error(`Verified: ${repo} (Tools: ${d.aiTools.map(t => t.name).join(", ")})`);
-        verified.push(repo);
+        console.error(`Verified: ${fullName} (Tools: ${d.aiTools.map(t => t.name).join(", ")})`);
+        verified.push({
+          full_name: fullName,
+          description: info.description ?? null,
+          stars: info.stars ?? 0,
+          aiTools: d.aiTools,
+        });
       } else {
-        console.error(`Skipped: ${repo} (No AI indicators found)`);
+        console.error(`Skipped: ${fullName} (No AI indicators found)`);
       }
     } catch (e) {
-      console.warn(`Verification failed for ${repo}:`, e);
+      console.warn(`Verification failed for ${fullName}:`, e);
     }
     // Be nice to GitHub API
     await new Promise(r => setTimeout(r, 1000));

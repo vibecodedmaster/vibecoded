@@ -2,6 +2,7 @@
  * Shared configuration and paths for the registry scripts.
  */
 export const DATA_PATH = new URL("../../data/projects.json", import.meta.url);
+export const DENIED_PATH = new URL("../../data/denied.json", import.meta.url);
 export const PUBLIC_DATA_PATH = new URL("../../src/public/data/projects.json", import.meta.url);
 
 export const GITHUB_API_BASE = "https://api.github.com";

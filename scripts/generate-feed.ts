@@ -1,13 +1,13 @@
 import { DATA_PATH } from "./lib/config.ts";
 import { ProjectsDataSchema } from "./lib/schemas.ts";
-import { dirname, join } from "https://deno.land/std@0.224.0/path/mod.ts";
+import { dirname, join, fromFileUrl } from "https://deno.land/std@0.224.0/path/mod.ts";
 
 /**
  * Generates an RSS feed (feed.xml) for the registry from the latest projects.
  */
 async function generateFeed() {
   const baseUrl = "https://vibecodedmaster.github.io/vibecoded/";
-  const feedPath = new URL("../../src/public/feed.xml", import.meta.url);
+  const feedPath = new URL("../src/public/feed.xml", import.meta.url);
   
   try {
     const content = await Deno.readTextFile(DATA_PATH);
@@ -47,18 +47,14 @@ ${items}
   </channel>
 </rss>`;
     
-    await Deno.mkdir(dirname(fileURLToPath(feedPath)), { recursive: true });
-    await Deno.writeTextFile(feedPath, feed);
-    console.log("Generated feed.xml");
+    const pathStr = fromFileUrl(feedPath);
+    await Deno.mkdir(dirname(pathStr), { recursive: true });
+    await Deno.writeTextFile(pathStr, feed);
+    console.log("Generated feed.xml at", pathStr);
   } catch (e) {
     console.error("Failed to generate feed:", e);
     Deno.exit(1);
   }
-}
-
-// Helper for fileURLToPath in Deno
-function fileURLToPath(url: URL): string {
-  return url.protocol === "file:" ? decodeURIComponent(url.pathname) : url.toString();
 }
 
 if (import.meta.main) {

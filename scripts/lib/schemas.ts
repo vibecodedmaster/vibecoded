@@ -128,3 +128,13 @@ export const ProjectsDataSchema = z.object({
 });
 
 export type ProjectsData = z.infer<typeof ProjectsDataSchema>;
+
+/**
+ * Schema for the denied.json file.
+ */
+export const DeniedDataSchema = z.object({
+  schemaVersion: z.number(),
+  denied: z.array(z.string()),
+});
+
+export type DeniedData = z.infer<typeof DeniedDataSchema>;
