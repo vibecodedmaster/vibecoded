@@ -27,7 +27,7 @@ async function discover(limit = 5) {
     try {
       if (candidates.size >= limit * 3) break; // Get a few more than we need to account for existing ones
       
-      console.log(`Searching for: ${q}`);
+      console.error(`Searching for: ${q}`);
       let items: any[] = [];
       
       if (q.startsWith('path:')) {
@@ -57,5 +57,5 @@ async function discover(limit = 5) {
 if (import.meta.main) {
   const limit = parseInt(Deno.args[0] || "5", 10);
   const found = await discover(limit);
-  console.log(JSON.stringify(found, null, 2));
+  console.log(JSON.stringify(found));
 }
