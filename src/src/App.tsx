@@ -14,8 +14,7 @@ import type { Project } from "./types";
 
 const SOURCE_URL = "https://github.com/vibecodedmaster/vibecoded";
 const SUBMIT_URL = `${SOURCE_URL}/issues/new`;
-const REMOVE_PROJECT_URL =
-  `${SOURCE_URL}/issues/new?labels=removal-request&title=Remove%20my%20project%20from%20Vibe%20Coded`;
+const REMOVE_PROJECT_URL = `${SOURCE_URL}/issues/new?labels=removal-request&title=Remove%20my%20project%20from%20Vibe%20Coded`;
 const PAGE_SIZE = 20;
 
 type SortKey = "stars" | "commits" | "age" | "vulns";
@@ -461,9 +460,10 @@ export default function App() {
       <footer class="border-t border-vibe-border bg-vibe-elevated mt-auto">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center justify-between gap-3 text-center sm:text-left">
           <p class="text-[10px] text-vibe-muted max-w-[380px] sm:max-w-none">
-            Vibe Coded is an independent public index and is not affiliated with,
-            endorsed by, or sponsored by any listed project, maintainer, or AI vendor.
-            No warranty. Data may be wrong. We list projects; we do not run them.{" "}
+            Vibe Coded is an independent public index and is not affiliated
+            with, endorsed by, or sponsored by any listed project, maintainer,
+            or AI vendor. No warranty. Data may be wrong. We list projects; we
+            do not run them.{" "}
             <a
               href={`${import.meta.env.BASE_URL}policies.html`}
               target="_blank"

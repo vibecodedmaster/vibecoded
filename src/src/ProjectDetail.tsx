@@ -67,7 +67,9 @@ export default function ProjectDetail({
         : [];
 
   const totalBytes = langs.reduce((acc, [, b]) => acc + b, 0);
-  const scanRef = project.vulnerabilities?.find((v) => v.scannedRef)?.scannedRef;
+  const scanRef = project.vulnerabilities?.find(
+    (v) => v.scannedRef
+  )?.scannedRef;
   const repoApiBase = `https://api.github.com/repos/${project.full_name}`;
   const sourceLinks = [
     { label: "Repository", url: project.url },
@@ -75,8 +77,14 @@ export default function ProjectDetail({
     { label: "Commit history", url: `${repoApiBase}/commits` },
     { label: "Contributors", url: `${repoApiBase}/contributors` },
     { label: "Languages", url: `${repoApiBase}/languages` },
-    { label: "Package manager evidence", url: project.packageManager?.evidence_url },
-    { label: "AI tool evidence", url: project.aiTools?.find((t) => t.evidence_url)?.evidence_url },
+    {
+      label: "Package manager evidence",
+      url: project.packageManager?.evidence_url,
+    },
+    {
+      label: "AI tool evidence",
+      url: project.aiTools?.find((t) => t.evidence_url)?.evidence_url,
+    },
   ].filter((item): item is { label: string; url: string } => Boolean(item.url));
 
   return (
@@ -502,9 +510,7 @@ export default function ProjectDetail({
               <div class="text-xs text-vibe-muted italic flex flex-col items-end">
                 <span>Scanned using Trivy</span>
                 {scanRef && (
-                  <span class="font-mono">
-                    Ref: {scanRef.slice(0, 12)}
-                  </span>
+                  <span class="font-mono">Ref: {scanRef.slice(0, 12)}</span>
                 )}
                 <span>Last updated: {formatDate(project.lastUpdated!)}</span>
               </div>
