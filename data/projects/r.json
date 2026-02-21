@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "rdumasia303/deepseek_ocr_app",
+      "url": "https://github.com/rdumasia303/deepseek_ocr_app",
+      "description": "A quick vibe coded app for deepseek OCR",
+      "stars": 1722,
+      "commits": 17,
+      "contributors": 3,
+      "forks": 298,
+      "open_issues": 10,
+      "license": "MIT License",
+      "topics": null,
+      "size": 3517,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "rdumasia303",
+          "avatar_url": "https://avatars.githubusercontent.com/u/120988431?v=4",
+          "url": "https://github.com/rdumasia303",
+          "created_at": "2022-12-18T20:40:14Z",
+          "followers": 26,
+          "following": 1
+        },
+        {
+          "login": "claude",
+          "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+          "url": "https://github.com/claude",
+          "created_at": "2009-05-07T00:15:43Z",
+          "followers": 33422,
+          "following": 0
+        },
+        {
+          "login": "dnnspaul",
+          "avatar_url": "https://avatars.githubusercontent.com/u/4589085?v=4",
+          "url": "https://github.com/dnnspaul",
+          "created_at": "2013-06-01T18:58:06Z",
+          "followers": 9,
+          "following": 3
+        }
+      ],
+      "created_at": "2025-10-21T00:26:39Z",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 51552,
+        "Python": 37848,
+        "CSS": 1608,
+        "TypeScript": 1294,
+        "Dockerfile": 997,
+        "HTML": 647
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "rdumasia303",
+        "avatar_url": "https://avatars.githubusercontent.com/u/120988431?v=4",
+        "url": "https://github.com/rdumasia303",
+        "created_at": "2022-12-18T20:40:14Z",
+        "followers": 26,
+        "following": 1,
+        "bio": null,
+        "public_repos": 16,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 17,
+        "avgMessageLength": 151,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 1
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 358,
+        "medianChanges": 34,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 3,
+        "level": "low",
+        "reasons": [
+          "1 commit-message AI signal(s)",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/rdumasia303/deepseek_ocr_app/commit/e82cd2abf010c94dd788cb669fc9cd685aeef6c3"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:38:57.959Z"
+    }
+  ]
+}
