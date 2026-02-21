@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "Dokhacgiakhoa/antigravity-ide",
+      "url": "https://github.com/Dokhacgiakhoa/antigravity-ide",
+      "description": "Google AntiGravity IDE for Vibe Coding",
+      "stars": 338,
+      "commits": 152,
+      "contributors": 6,
+      "forks": 89,
+      "open_issues": 0,
+      "license": "Other",
+      "topics": [
+        "ai-agents",
+        "cli",
+        "developer-tools",
+        "google-antigravity",
+        "prompt-engineering",
+        "scaffolding",
+        "vibe-coding"
+      ],
+      "size": 30102,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "Dokhacgiakhoa",
+          "avatar_url": "https://avatars.githubusercontent.com/u/129754311?v=4",
+          "url": "https://github.com/Dokhacgiakhoa",
+          "created_at": "2023-04-03T12:13:32Z",
+          "followers": 20,
+          "following": 5
+        },
+        {
+          "login": "vudovn",
+          "avatar_url": "https://avatars.githubusercontent.com/u/116963762?v=4",
+          "url": "https://github.com/vudovn",
+          "created_at": "2022-10-29T14:50:21Z",
+          "followers": 174,
+          "following": 0
+        },
+        {
+          "login": "KanzuXHorizon",
+          "avatar_url": "https://avatars.githubusercontent.com/u/125113101?v=4",
+          "url": "https://github.com/KanzuXHorizon",
+          "created_at": "2023-02-11T05:43:52Z",
+          "followers": 23,
+          "following": 0
+        },
+        {
+          "login": "Lucaszmv",
+          "avatar_url": "https://avatars.githubusercontent.com/u/47159295?v=4",
+          "url": "https://github.com/Lucaszmv",
+          "created_at": "2019-01-29T20:43:19Z",
+          "followers": 13,
+          "following": 4
+        },
+        {
+          "login": "lucasgab2230",
+          "avatar_url": "https://avatars.githubusercontent.com/u/195384212?v=4",
+          "url": "https://github.com/lucasgab2230",
+          "created_at": "2025-01-16T23:19:04Z",
+          "followers": 21,
+          "following": 43
+        },
+        {
+          "login": "simbaTmotsi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/21256624?v=4",
+          "url": "https://github.com/simbaTmotsi",
+          "created_at": "2016-08-26T06:50:47Z",
+          "followers": 56,
+          "following": 35
+        }
+      ],
+      "created_at": "2026-01-27T21:22:16Z",
+      "language": "Python",
+      "languages": {
+        "Python": 1456063,
+        "JavaScript": 369589,
+        "Shell": 264656,
+        "TypeScript": 45487,
+        "HTML": 40516,
+        "MDX": 31368,
+        "C#": 29255,
+        "CSS": 12238
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "Dokhacgiakhoa",
+        "avatar_url": "https://avatars.githubusercontent.com/u/129754311?v=4",
+        "url": "https://github.com/Dokhacgiakhoa",
+        "created_at": "2023-04-03T12:13:32Z",
+        "followers": 20,
+        "following": 5,
+        "bio": "Code less, Build more.",
+        "public_repos": 28,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package-lock.json",
+        "evidence_url": "https://github.com/Dokhacgiakhoa/antigravity-ide/blob/main/package-lock.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 56,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 1
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 34,
+        "medianChanges": 25,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 4,
+        "level": "low",
+        "reasons": [
+          "1 file-based AI signal(s)"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "gemini",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/Dokhacgiakhoa/antigravity-ide/blob/main/GEMINI.md"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:38:42.244Z"
+    }
+  ]
+}
