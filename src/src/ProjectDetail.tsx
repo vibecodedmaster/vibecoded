@@ -67,6 +67,7 @@ export default function ProjectDetail({
         : [];
 
   const totalBytes = langs.reduce((acc, [, b]) => acc + b, 0);
+  const scanRef = project.vulnerabilities?.find((v) => v.scannedRef)?.scannedRef;
   const repoApiBase = `https://api.github.com/repos/${project.full_name}`;
   const sourceLinks = [
     { label: "Repository", url: project.url },
@@ -500,6 +501,11 @@ export default function ProjectDetail({
               </h2>
               <div class="text-xs text-vibe-muted italic flex flex-col items-end">
                 <span>Scanned using Trivy</span>
+                {scanRef && (
+                  <span class="font-mono">
+                    Ref: {scanRef.slice(0, 12)}
+                  </span>
+                )}
                 <span>Last updated: {formatDate(project.lastUpdated!)}</span>
               </div>
             </div>

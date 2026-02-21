@@ -29,19 +29,19 @@ function parse(input: string): string | null {
 
 export function buildTargetUrl(
   fullName: string,
-  defaultBranch: string,
+  ref: string,
   target: string | undefined,
 ): string | undefined {
   if (!target) return undefined;
   const normalized = target.replace(/^\.\/+/, "");
   if (!normalized || normalized.includes("://")) return undefined;
-  return `https://github.com/${fullName}/blob/${defaultBranch}/${normalized}`;
+  return `https://github.com/${fullName}/blob/${ref}/${normalized}`;
 }
 
 export function extractVulnerabilityDetails(
   report: TrivyReport,
   fullName: string,
-  defaultBranch: string,
+  scanRef: string,
 ): { summary: string[]; details: VulnDetail[] } {
   const seen = new Set<string>();
   const summary: string[] = [];
@@ -58,7 +58,8 @@ export function extractVulnerabilityDetails(
         fixedVersion: v.FixedVersion,
         type: "vuln",
         target: r.Target ?? "",
-        targetUrl: buildTargetUrl(fullName, defaultBranch, r.Target),
+        targetUrl: buildTargetUrl(fullName, scanRef, r.Target),
+        scannedRef: scanRef,
       });
 
       const key = `vuln:${detail.pkg}@${detail.version}:${detail.cve}`;
@@ -79,7 +80,8 @@ export function extractVulnerabilityDetails(
         title: s.Title ?? "Secret Found",
         type: "secret",
         target: secretTarget ?? "",
-        targetUrl: buildTargetUrl(fullName, defaultBranch, secretTarget),
+        targetUrl: buildTargetUrl(fullName, scanRef, secretTarget),
+        scannedRef: scanRef,
       });
 
       const key = `secret:${detail.cve}:${detail.title}`;
@@ -101,9 +103,13 @@ export function extractVulnerabilityDetails(
  */
 export async function scan(fullName: string): Promise<{ summary: string[]; details: VulnDetail[] }> {
   const repoUrl = `https://github.com/${fullName}`;
-  const defaultBranch = await github.getRepo(fullName)
-    .then((repo: { default_branch?: string }) => repo.default_branch || "main")
-    .catch(() => "main");
+  const repoMeta = await github.getRepo(fullName).catch(() => null);
+  const defaultBranch = repoMeta?.default_branch || "main";
+  const scanRef = await github
+    .fetchWithRetry(`https://api.github.com/repos/${fullName}/branches/${defaultBranch}`)
+    .then((res) => res.json())
+    .then((branch: { commit?: { sha?: string } }) => branch.commit?.sha || defaultBranch)
+    .catch(() => defaultBranch);
   
   // Use spawn to safely execute the command with arguments array.
   const command = new Deno.Command("trivy", {
@@ -127,7 +133,7 @@ export async function scan(fullName: string): Promise<{ summary: string[]; detai
     return { summary: [], details: [] };
   }
 
-  return extractVulnerabilityDetails(report, fullName, defaultBranch);
+  return extractVulnerabilityDetails(report, fullName, scanRef);
 }
 
 /**

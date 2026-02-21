@@ -28,6 +28,7 @@ interface Project {
   url: string;
   description?: string | null;
   stars?: number;
+  license?: string | null;
   commits?: number | null;
   contributors?: number | null;
   created_at?: string | null;
@@ -111,7 +112,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const [owner, repo] = project.full_name.split("/");
 
   return (
-    <div class="group relative block p-4 sm:p-5 rounded-xl bg-vibe-elevated border border-vibe-border hover:border-vibe-muted/60 transition-all touch-manipulation min-h-[160px] flex flex-col">
+    <div class="group relative isolate block p-4 sm:p-5 rounded-xl bg-vibe-elevated border border-vibe-border hover:border-vibe-muted/60 transition-all touch-manipulation min-h-[160px] flex flex-col">
       <a
         href={`#/project/${owner}/${repo}`}
         class="absolute inset-0 z-[5] rounded-xl cursor-pointer"

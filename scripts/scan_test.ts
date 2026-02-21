@@ -34,14 +34,19 @@ Deno.test("extractVulnerabilityDetails attaches target and targetUrl", () => {
     ],
   };
 
-  const { summary, details } = extractVulnerabilityDetails(report, "acme/repo", "master");
+  const { summary, details } = extractVulnerabilityDetails(
+    report,
+    "acme/repo",
+    "abcdef1234567890",
+  );
   assertEquals(summary, ["lodash@4.17.20 (CVE-2021-23337)"]);
   assertEquals(details.length, 1);
   assertEquals(details[0].target, "pnpm-lock.yaml");
   assertEquals(
     details[0].targetUrl,
-    "https://github.com/acme/repo/blob/master/pnpm-lock.yaml",
+    "https://github.com/acme/repo/blob/abcdef1234567890/pnpm-lock.yaml",
   );
+  assertEquals(details[0].scannedRef, "abcdef1234567890");
 });
 
 Deno.test("extractVulnerabilityDetails uses secret target fallback", () => {
@@ -60,9 +65,17 @@ Deno.test("extractVulnerabilityDetails uses secret target fallback", () => {
     ],
   };
 
-  const { details } = extractVulnerabilityDetails(report, "acme/repo", "main");
+  const { details } = extractVulnerabilityDetails(
+    report,
+    "acme/repo",
+    "deadbeefcafebabe",
+  );
   assertEquals(details.length, 1);
   assertEquals(details[0].type, "secret");
   assertEquals(details[0].target, ".env");
-  assertEquals(details[0].targetUrl, "https://github.com/acme/repo/blob/main/.env");
+  assertEquals(
+    details[0].targetUrl,
+    "https://github.com/acme/repo/blob/deadbeefcafebabe/.env",
+  );
+  assertEquals(details[0].scannedRef, "deadbeefcafebabe");
 });

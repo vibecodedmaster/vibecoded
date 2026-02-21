@@ -8,6 +8,7 @@ export interface VulnDetail {
   type: "vuln" | "secret";
   target?: string;
   targetUrl?: string;
+  scannedRef?: string;
 }
 
 export interface ContributorInfo {

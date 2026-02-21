@@ -57,6 +57,7 @@ export const VulnDetailSchema = z.object({
   type: z.enum(["vuln", "secret"]).default("vuln"),
   target: z.string().optional(),
   targetUrl: z.string().optional(),
+  scannedRef: z.string().optional(),
 });
 
 export type VulnDetail = z.infer<typeof VulnDetailSchema>;
