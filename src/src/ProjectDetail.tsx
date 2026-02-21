@@ -85,7 +85,7 @@ export default function ProjectDetail({
               <h1 class="text-2xl sm:text-3xl font-bold font-mono text-vibe-fg break-all">
                 {project.full_name}
               </h1>
-              <p class="text-sm text-vibe-muted font-mono">{project.url}</p>
+              <p class="text-sm text-vibe-muted font-mono break-all">{project.url}</p>
             </div>
             <a
               href={project.url}
@@ -230,18 +230,18 @@ export default function ProjectDetail({
                     Package Manager
                   </div>
                   {project.packageManager ? (
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
                       <a
                         href={project.packageManager.evidence_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="px-3 py-1.5 rounded-lg bg-orange-500/10 text-orange-600 dark:text-orange-400 font-bold border border-orange-500/20 hover:bg-orange-500/20 transition flex items-center gap-1.5"
+                        class="px-3 py-1.5 rounded-lg bg-orange-500/10 text-orange-600 dark:text-orange-400 font-bold border border-orange-500/20 hover:bg-orange-500/20 transition flex items-center gap-1.5 whitespace-nowrap"
                         title={`Detected via ${project.packageManager.detected_via} (Click to verify)`}
                       >
                         {project.packageManager.name}
                         <ExternalLink size={12} />
                       </a>
-                      <div class="text-[10px] text-vibe-muted leading-tight italic">
+                      <div class="text-[10px] text-vibe-muted leading-tight italic break-all">
                         via {project.packageManager.detected_via}
                       </div>
                     </div>
@@ -438,7 +438,7 @@ export default function ProjectDetail({
                       rel="noopener noreferrer"
                       class="flex items-center justify-between p-3 rounded-xl bg-vibe-bg border border-vibe-border hover:bg-vibe-accent/5 transition text-sm group"
                     >
-                      <span class="text-vibe-fg font-medium">{s.label}</span>
+                      <span class="text-vibe-fg font-medium truncate mr-2">{s.label}</span>
                       <ExternalLink
                         size={14}
                         class="text-vibe-muted group-hover:text-vibe-accent transition"
@@ -505,7 +505,7 @@ export default function ProjectDetail({
                           {v.severity}
                         </span>
                       </td>
-                      <td class="py-4 pr-4 align-top font-mono text-xs text-vibe-fg">
+                      <td class="py-4 pr-4 align-top font-mono text-xs text-vibe-fg break-all">
                         {v.type === "secret"
                           ? "Repository"
                           : `${v.pkg}@${v.version}`}

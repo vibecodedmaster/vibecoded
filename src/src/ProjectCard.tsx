@@ -245,9 +245,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                             </span>
                           </div>
                           <ul class="space-y-2 max-h-48 overflow-y-auto">
-                            {project.vulnerabilities.map((v) => (
+                            {project.vulnerabilities.map((v, i) => (
                               <li
-                                key={`${v.pkg}-${v.cve}-${v.type}`}
+                                key={`${v.pkg}-${v.cve}-${v.type}-${i}`}
                                 class="text-xs"
                               >
                                 {v.type === "secret" ? (
