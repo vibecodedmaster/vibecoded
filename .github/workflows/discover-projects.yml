@@ -64,16 +64,17 @@ jobs:
               continue
             fi
 
-            git checkout -b "$BRANCH_NAME"
+            git checkout -B "$BRANCH_NAME"
             git add data/projects.json src/public/data/projects.json
             git commit -m "feat: auto-discover $repo"
-            git push origin "$BRANCH_NAME"
+            git push origin "$BRANCH_NAME" --force
             
-          # Create PR
-          gh pr create --title "Auto-discover: $repo" --body "Automatically discovered Vibe Coded project: $repo" --base main --head "$BRANCH_NAME" --label "automated pr,discovery" || \
-          gh pr create --title "Auto-discover: $repo" --body "Automatically discovered Vibe Coded project: $repo" --base main --head "$BRANCH_NAME"
-          
-          # Switch back to main for next iteration
+            # Create PR
+            gh pr create --title "Auto-discover: $repo" --body "Automatically discovered Vibe Coded project: $repo" --base main --head "$BRANCH_NAME" --label "automated pr,discovery" || \
+            gh pr create --title "Auto-discover: $repo" --body "Automatically discovered Vibe Coded project: $repo" --base main --head "$BRANCH_NAME" || \
+            echo "PR already exists or could not be created for $repo"
+            
+            # Switch back to main for next iteration
             git checkout main
           done
         env:
