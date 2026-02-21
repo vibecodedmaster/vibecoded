@@ -85,7 +85,9 @@ export default function ProjectDetail({
               <h1 class="text-2xl sm:text-3xl font-bold font-mono text-vibe-fg break-all">
                 {project.full_name}
               </h1>
-              <p class="text-sm text-vibe-muted font-mono break-all">{project.url}</p>
+              <p class="text-sm text-vibe-muted font-mono break-all">
+                {project.url}
+              </p>
             </div>
             <a
               href={project.url}
@@ -438,7 +440,9 @@ export default function ProjectDetail({
                       rel="noopener noreferrer"
                       class="flex items-center justify-between p-3 rounded-xl bg-vibe-bg border border-vibe-border hover:bg-vibe-accent/5 transition text-sm group"
                     >
-                      <span class="text-vibe-fg font-medium truncate mr-2">{s.label}</span>
+                      <span class="text-vibe-fg font-medium truncate mr-2">
+                        {s.label}
+                      </span>
                       <ExternalLink
                         size={14}
                         class="text-vibe-muted group-hover:text-vibe-accent transition"
