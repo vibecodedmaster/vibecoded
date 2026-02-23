@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "wrtnlabs/autobe",
+      "url": "https://github.com/wrtnlabs/autobe",
+      "description": "AI Vibe Coding Agent of TS backend server, enhanced by compiler skills, generating 100% working code",
+      "stars": 766,
+      "commits": 1463,
+      "contributors": 12,
+      "forks": 92,
+      "open_issues": 19,
+      "license": "GNU Affero General Public License v3.0",
+      "topics": [
+        "ai-coding-agent",
+        "all-in-one",
+        "automation",
+        "backend",
+        "generated-api",
+        "llm",
+        "nestia",
+        "nestjs",
+        "no-coding",
+        "no-coding-app",
+        "no-coding-tools",
+        "prisma",
+        "server",
+        "vibe-coding"
+      ],
+      "size": 2699512,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "samchon",
+          "avatar_url": "https://avatars.githubusercontent.com/u/13158709?v=4",
+          "url": "https://github.com/samchon",
+          "created_at": "2015-07-03T01:06:56Z",
+          "followers": 2180,
+          "following": 57
+        },
+        {
+          "login": "sunrabbit123",
+          "avatar_url": "https://avatars.githubusercontent.com/u/64676070?v=4",
+          "url": "https://github.com/sunrabbit123",
+          "created_at": "2020-05-02T04:31:28Z",
+          "followers": 232,
+          "following": 117
+        },
+        {
+          "login": "kakasoo",
+          "avatar_url": "https://avatars.githubusercontent.com/u/55487286?v=4",
+          "url": "https://github.com/kakasoo",
+          "created_at": "2019-09-18T09:51:00Z",
+          "followers": 310,
+          "following": 251
+        },
+        {
+          "login": "8471919",
+          "avatar_url": "https://avatars.githubusercontent.com/u/27190776?v=4",
+          "url": "https://github.com/8471919",
+          "created_at": "2017-04-10T06:14:06Z",
+          "followers": 112,
+          "following": 121
+        },
+        {
+          "login": "k08200",
+          "avatar_url": "https://avatars.githubusercontent.com/u/78528865?v=4",
+          "url": "https://github.com/k08200",
+          "created_at": "2021-02-04T07:18:08Z",
+          "followers": 0,
+          "following": 2
+        },
+        {
+          "login": "WrtnSky",
+          "avatar_url": "https://avatars.githubusercontent.com/u/214756947?v=4",
+          "url": "https://github.com/WrtnSky",
+          "created_at": "2025-06-04T02:29:51Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "Owen-RL",
+          "avatar_url": "https://avatars.githubusercontent.com/u/193849380?v=4",
+          "url": "https://github.com/Owen-RL",
+          "created_at": "2025-01-06T03:07:41Z",
+          "followers": 1,
+          "following": 1
+        },
+        {
+          "login": "ryoppippi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1560508?v=4",
+          "url": "https://github.com/ryoppippi",
+          "created_at": "2012-03-21T10:34:16Z",
+          "followers": 639,
+          "following": 121
+        },
+        {
+          "login": "wrtn-sam",
+          "avatar_url": "https://avatars.githubusercontent.com/u/251290087?v=4",
+          "url": "https://github.com/wrtn-sam",
+          "created_at": "2025-12-24T07:19:17Z",
+          "followers": 0,
+          "following": 1
+        },
+        {
+          "login": "kdy1",
+          "avatar_url": "https://avatars.githubusercontent.com/u/29931815?v=4",
+          "url": "https://github.com/kdy1",
+          "created_at": "2017-07-05T21:38:44Z",
+          "followers": 4417,
+          "following": 34
+        }
+      ],
+      "created_at": "2025-04-28T09:57:52Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 3775328,
+        "MDX": 372882,
+        "JavaScript": 26873,
+        "Shell": 20074,
+        "HTML": 4839,
+        "CSS": 84
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/wrtnlabs/autobe/blob/main/biome.json",
+      "owner": {
+        "login": "wrtnlabs",
+        "avatar_url": "https://avatars.githubusercontent.com/u/142796018?v=4",
+        "url": "https://github.com/wrtnlabs",
+        "created_at": "2023-08-21T10:39:54Z",
+        "followers": 191,
+        "following": 0,
+        "bio": null,
+        "public_repos": 56,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pnpm",
+        "detected_via": "pnpm-lock.yaml",
+        "evidence_url": "https://github.com/wrtnlabs/autobe/blob/main/pnpm-lock.yaml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 336,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 1913,
+        "medianChanges": 213,
+        "largeCommitCount": 3
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 9,
+        "level": "high",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/wrtnlabs/autobe/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "copilot",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/wrtnlabs/autobe/commit/dd455792ccbfdb9f7cb8ce70b44489c6bd643fc8"
+        }
+      ],
+      "vulnerableDependencies": [
+        "@isaacs/brace-expansion@5.0.0 (CVE-2026-25547)",
+        "ajv@6.12.6 (CVE-2025-69873)",
+        "diff@4.0.2 (CVE-2026-24001)",
+        "hono@4.10.6 (CVE-2026-22817)",
+        "hono@4.10.6 (CVE-2026-22818)",
+        "hono@4.10.6 (CVE-2026-24398)",
+        "hono@4.10.6 (CVE-2026-24472)",
+        "hono@4.10.6 (CVE-2026-24473)",
+        "hono@4.10.6 (CVE-2026-24771)",
+        "hono@4.10.6 (GHSA-gq3j-xvxp-8hrf)",
+        "lodash-es@4.17.21 (CVE-2025-13465)",
+        "lodash-es@4.17.22 (CVE-2025-13465)",
+        "lodash@4.17.21 (CVE-2025-13465)",
+        "minimatch@10.1.1 (CVE-2026-26996)",
+        "minimatch@3.1.2 (CVE-2026-26996)",
+        "minimatch@9.0.5 (CVE-2026-26996)",
+        "next@15.5.9 (CVE-2025-59471)",
+        "next@15.5.9 (GHSA-h25m-26qc-wcjf)",
+        "qs@6.14.0 (CVE-2025-15284)",
+        "qs@6.14.0 (CVE-2026-2391)",
+        "tar@7.5.7 (CVE-2026-26960)",
+        "tmp@0.0.33 (CVE-2025-54798)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "@isaacs/brace-expansion",
+          "version": "5.0.0",
+          "cve": "CVE-2026-25547",
+          "severity": "HIGH",
+          "title": "brace-expansion: brace-expansion: Denial of Service via unbounded brace range expansion",
+          "fixedVersion": "5.0.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "ajv",
+          "version": "6.12.6",
+          "cve": "CVE-2025-69873",
+          "severity": "MEDIUM",
+          "title": "ajv: ReDoS via $data reference",
+          "fixedVersion": "8.18.0, 6.14.0",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "diff",
+          "version": "4.0.2",
+          "cve": "CVE-2026-24001",
+          "severity": "LOW",
+          "title": "jsdiff: denial of service vulnerability in parsePatch and applyPatch",
+          "fixedVersion": "8.0.3, 5.2.2, 4.0.4, 3.5.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.10.6",
+          "cve": "CVE-2026-22817",
+          "severity": "HIGH",
+          "title": "Hono JWT Middleware's JWT Algorithm Confusion via Unsafe Default (HS256) Allows Token Forgery and Auth Bypass",
+          "fixedVersion": "4.11.4",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.10.6",
+          "cve": "CVE-2026-22818",
+          "severity": "HIGH",
+          "title": "Hono JWK Auth Middleware has JWT algorithm confusion when JWK lacks \"alg\" (untrusted header.alg fallback)",
+          "fixedVersion": "4.11.4",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.10.6",
+          "cve": "CVE-2026-24398",
+          "severity": "MEDIUM",
+          "title": "Hono IPv4 address validation bypass in IP Restriction Middleware allows IP spoofing",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.10.6",
+          "cve": "CVE-2026-24472",
+          "severity": "MEDIUM",
+          "title": "Hono cache middleware ignores \"Cache-Control: private\" leading to Web Cache Deception",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.10.6",
+          "cve": "CVE-2026-24473",
+          "severity": "MEDIUM",
+          "title": "Hono has an Arbitrary Key Read in Serve static Middleware (Cloudflare Workers Adapter)",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.10.6",
+          "cve": "CVE-2026-24771",
+          "severity": "MEDIUM",
+          "title": "Hono vulnerable to XSS through ErrorBoundary component ",
+          "fixedVersion": "4.11.7",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "hono",
+          "version": "4.10.6",
+          "cve": "GHSA-gq3j-xvxp-8hrf",
+          "severity": "LOW",
+          "title": "Hono added timing comparison hardening in basicAuth and bearerAuth",
+          "fixedVersion": "4.11.10",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "lodash",
+          "version": "4.17.21",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "lodash-es",
+          "version": "4.17.21",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "lodash-es",
+          "version": "4.17.22",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "minimatch",
+          "version": "10.1.1",
+          "cve": "CVE-2026-26996",
+          "severity": "HIGH",
+          "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
+          "fixedVersion": "10.2.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "minimatch",
+          "version": "3.1.2",
+          "cve": "CVE-2026-26996",
+          "severity": "HIGH",
+          "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
+          "fixedVersion": "10.2.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "minimatch",
+          "version": "9.0.5",
+          "cve": "CVE-2026-26996",
+          "severity": "HIGH",
+          "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
+          "fixedVersion": "10.2.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "next",
+          "version": "15.5.9",
+          "cve": "GHSA-h25m-26qc-wcjf",
+          "severity": "HIGH",
+          "title": "Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components",
+          "fixedVersion": "15.0.8, 15.1.12, 15.2.9, 15.3.9, 15.4.11, 15.5.10, 15.6.0-canary.61, 16.0.11, 16.1.5",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "next",
+          "version": "15.5.9",
+          "cve": "CVE-2025-59471",
+          "severity": "MEDIUM",
+          "title": "next: NextJS Denial of Service in Image Optimizer",
+          "fixedVersion": "15.5.10, 16.1.5",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2025-15284",
+          "severity": "HIGH",
+          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
+          "fixedVersion": "6.14.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "tar",
+          "version": "7.5.7",
+          "cve": "CVE-2026-26960",
+          "severity": "HIGH",
+          "title": "tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
+          "fixedVersion": "7.5.8",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        },
+        {
+          "pkg": "tmp",
+          "version": "0.0.33",
+          "cve": "CVE-2025-54798",
+          "severity": "LOW",
+          "title": "tmp: tmp Symbolic Link Write Vulnerability",
+          "fixedVersion": "0.2.4",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
+        }
+      ],
+      "lastUpdated": "2026-02-23T14:44:12.378Z"
+    }
+  ]
+}
