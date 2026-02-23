@@ -2,6 +2,117 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "feiskyer/claude-code-settings",
+      "url": "https://github.com/feiskyer/claude-code-settings",
+      "description": "Claude Code settings, commands and agents for vibe coding",
+      "stars": 1223,
+      "commits": 67,
+      "contributors": 3,
+      "forks": 185,
+      "open_issues": 1,
+      "license": "MIT License",
+      "topics": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "copilot",
+        "kiro",
+        "litellm",
+        "spec-driven-development",
+        "vibe-coding"
+      ],
+      "size": 187,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "feiskyer",
+          "avatar_url": "https://avatars.githubusercontent.com/u/676637?v=4",
+          "url": "https://github.com/feiskyer",
+          "created_at": "2011-03-18T07:45:58Z",
+          "followers": 2713,
+          "following": 21
+        },
+        {
+          "login": "imbajin",
+          "avatar_url": "https://avatars.githubusercontent.com/u/17706099?v=4",
+          "url": "https://github.com/imbajin",
+          "created_at": "2016-03-07T15:24:16Z",
+          "followers": 109,
+          "following": 2
+        },
+        {
+          "login": "Kamalnrf",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12810203?v=4",
+          "url": "https://github.com/Kamalnrf",
+          "created_at": "2015-06-09T07:52:10Z",
+          "followers": 105,
+          "following": 105
+        }
+      ],
+      "created_at": "2025-07-18T06:22:12Z",
+      "language": "Shell",
+      "languages": {
+        "Shell": 49351,
+        "Python": 9446
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "feiskyer",
+        "avatar_url": "https://avatars.githubusercontent.com/u/676637?v=4",
+        "url": "https://github.com/feiskyer",
+        "created_at": "2011-03-18T07:45:58Z",
+        "followers": 2713,
+        "following": 21,
+        "bio": null,
+        "public_repos": 101,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 68,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 9
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 584,
+        "medianChanges": 22,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 9,
+        "level": "high",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "copilot",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/feiskyer/claude-code-settings/blob/main/.github/copilot-instructions.md"
+        },
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/feiskyer/claude-code-settings/commit/b78c98509c24e7b689ae742382ebde0087e55061"
+        }
+      ],
+      "lastUpdated": "2026-02-23T14:44:00.288Z"
+    },
+    {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
       "url": "https://github.com/FractumSeraph/Vibecoded-Vibe-Code-Detector",
       "description": "This vibe coded tool scans github repos to help determine if the code was AI generated. ",
