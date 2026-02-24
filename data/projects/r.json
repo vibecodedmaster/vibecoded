@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "run-llama/vibe-llama",
+      "url": "https://github.com/run-llama/vibe-llama",
+      "description": "Vibe-coding tools for the LlamaIndex ecosystem",
+      "stars": 175,
+      "commits": 39,
+      "contributors": 5,
+      "forks": 26,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": null,
+      "size": 253,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "AstraBert",
+          "avatar_url": "https://avatars.githubusercontent.com/u/133636879?v=4",
+          "url": "https://github.com/AstraBert",
+          "created_at": "2023-05-15T07:27:49Z",
+          "followers": 402,
+          "following": 62
+        },
+        {
+          "login": "adrianlyjak",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2024018?v=4",
+          "url": "https://github.com/adrianlyjak",
+          "created_at": "2012-07-23T00:15:30Z",
+          "followers": 24,
+          "following": 4
+        },
+        {
+          "login": "TuanaCelik",
+          "avatar_url": "https://avatars.githubusercontent.com/u/15802862?v=4",
+          "url": "https://github.com/TuanaCelik",
+          "created_at": "2015-11-11T16:11:59Z",
+          "followers": 461,
+          "following": 24
+        },
+        {
+          "login": "jerryjliu",
+          "avatar_url": "https://avatars.githubusercontent.com/u/4858925?v=4",
+          "url": "https://github.com/jerryjliu",
+          "created_at": "2013-06-28T01:46:57Z",
+          "followers": 4184,
+          "following": 2
+        },
+        {
+          "login": "logan-markewich",
+          "avatar_url": "https://avatars.githubusercontent.com/u/22285038?v=4",
+          "url": "https://github.com/logan-markewich",
+          "created_at": "2016-09-19T02:42:19Z",
+          "followers": 632,
+          "following": 4
+        }
+      ],
+      "created_at": "2025-08-19T12:17:16Z",
+      "language": "Python",
+      "languages": {
+        "Python": 290939
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/run-llama/vibe-llama/blob/main/.github/workflows/lint.yml",
+      "owner": {
+        "login": "run-llama",
+        "avatar_url": "https://avatars.githubusercontent.com/u/130722866?v=4",
+        "url": "https://github.com/run-llama",
+        "created_at": "2023-04-14T02:40:56Z",
+        "followers": 3399,
+        "following": 0,
+        "bio": null,
+        "public_repos": 106,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "poetry",
+        "detected_via": "pyproject.toml",
+        "evidence_url": "https://github.com/run-llama/vibe-llama/blob/main/pyproject.toml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 143,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 377,
+        "medianChanges": 87,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/run-llama/vibe-llama/commit/43deec7e27f3a64b06015c957affccc76fc3abdb"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/run-llama/vibe-llama/commit/4b447f987b0d6704b5a07408e2e5e8ee8c24ec5d"
+        }
+      ],
+      "vulnerableDependencies": [
+        "aiohttp@3.12.15 (CVE-2025-69223)",
+        "aiohttp@3.12.15 (CVE-2025-69224)",
+        "aiohttp@3.12.15 (CVE-2025-69225)",
+        "aiohttp@3.12.15 (CVE-2025-69226)",
+        "aiohttp@3.12.15 (CVE-2025-69227)",
+        "aiohttp@3.12.15 (CVE-2025-69228)",
+        "aiohttp@3.12.15 (CVE-2025-69229)",
+        "aiohttp@3.12.15 (CVE-2025-69230)",
+        "authlib@1.6.3 (CVE-2025-59420)",
+        "authlib@1.6.3 (CVE-2025-61920)",
+        "authlib@1.6.3 (CVE-2025-62706)",
+        "authlib@1.6.3 (CVE-2025-68158)",
+        "copier@9.10.2 (CVE-2026-23968)",
+        "copier@9.10.2 (CVE-2026-23986)",
+        "cryptography@45.0.6 (CVE-2026-26007)",
+        "fastmcp@2.12.0 (CVE-2025-62800)",
+        "fastmcp@2.12.0 (CVE-2025-62801)",
+        "fastmcp@2.12.0 (GHSA-c2jp-c369-7pvx)",
+        "fastmcp@2.12.0 (GHSA-rcfx-77hg-w2wv)",
+        "marshmallow@3.26.1 (CVE-2025-68480)",
+        "mcp@1.13.1 (CVE-2025-66416)",
+        "nltk@3.9.1 (CVE-2025-14009)",
+        "pillow@11.3.0 (CVE-2026-25990)",
+        "pyasn1@0.6.1 (CVE-2026-23490)",
+        "python-multipart@0.0.20 (CVE-2026-24486)",
+        "starlette@0.47.3 (CVE-2025-62727)",
+        "urllib3@2.5.0 (CVE-2025-66418)",
+        "urllib3@2.5.0 (CVE-2025-66471)",
+        "urllib3@2.5.0 (CVE-2026-21441)",
+        "werkzeug@3.1.1 (CVE-2025-66221)",
+        "werkzeug@3.1.1 (CVE-2026-21860)",
+        "werkzeug@3.1.1 (CVE-2026-27199)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69223",
+          "severity": "HIGH",
+          "title": "aiohttp: AIOHTTP's HTTP Parser auto_decompress feature is vulnerable to zip bomb",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69227",
+          "severity": "MEDIUM",
+          "title": "aiohttp: aiohttp: Denial of Service via specially crafted POST request",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69228",
+          "severity": "MEDIUM",
+          "title": "aiohttp: aiohttp: Denial of Service via memory exhaustion from crafted POST request",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69229",
+          "severity": "MEDIUM",
+          "title": "aiohttp: AIOHTTP: Denial of Service via excessive CPU usage in chunked message handling",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69224",
+          "severity": "LOW",
+          "title": "aiohttp: aiohttp: Request smuggling via non-ASCII characters in HTTP parser",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69225",
+          "severity": "LOW",
+          "title": "aiohttp: aiohttp: Request smuggling vulnerability via non-ASCII decimals in Range header",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69226",
+          "severity": "LOW",
+          "title": "aiohttp: aiohttp: Information disclosure of path components via static file path normalization",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "aiohttp",
+          "version": "3.12.15",
+          "cve": "CVE-2025-69230",
+          "severity": "LOW",
+          "title": "aiohttp: aiohttp: Denial of Service via specially crafted invalid cookies",
+          "fixedVersion": "3.13.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "authlib",
+          "version": "1.6.3",
+          "cve": "CVE-2025-59420",
+          "severity": "HIGH",
+          "title": "authlib: Authlib RFC violation",
+          "fixedVersion": "1.6.4",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "authlib",
+          "version": "1.6.3",
+          "cve": "CVE-2025-61920",
+          "severity": "HIGH",
+          "title": "authlib: Authlib Denial of Service",
+          "fixedVersion": "1.6.5",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "authlib",
+          "version": "1.6.3",
+          "cve": "CVE-2025-62706",
+          "severity": "MEDIUM",
+          "title": "authlib: Authlib : JWE zip=DEF decompression bomb enables DoS",
+          "fixedVersion": "1.6.5",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "authlib",
+          "version": "1.6.3",
+          "cve": "CVE-2025-68158",
+          "severity": "MEDIUM",
+          "title": "Authlib: Authlib: Cross-Site Request Forgery due to improper session management in state storage",
+          "fixedVersion": "1.6.6",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "copier",
+          "version": "9.10.2",
+          "cve": "CVE-2026-23968",
+          "severity": "MEDIUM",
+          "title": "Copier safe template has arbitrary filesystem read access via symlinks when _preserve_symlinks: false",
+          "fixedVersion": "9.11.2",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "copier",
+          "version": "9.10.2",
+          "cve": "CVE-2026-23986",
+          "severity": "MEDIUM",
+          "title": "Copier safe template has arbitrary filesystem write access via directory symlinks when _preserve_symlinks: true ",
+          "fixedVersion": "9.11.2",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "cryptography",
+          "version": "45.0.6",
+          "cve": "CVE-2026-26007",
+          "severity": "HIGH",
+          "title": "cryptography: cryptography Subgroup Attack Due to Missing Subgroup Validation for SECT Curves",
+          "fixedVersion": "46.0.5",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "fastmcp",
+          "version": "2.12.0",
+          "cve": "GHSA-c2jp-c369-7pvx",
+          "severity": "HIGH",
+          "title": "FastMCP Auth Integration Allows for Confused Deputy Account Takeover",
+          "fixedVersion": "2.13.0",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "fastmcp",
+          "version": "2.12.0",
+          "cve": "GHSA-rcfx-77hg-w2wv",
+          "severity": "HIGH",
+          "title": "FastMCP updated to MCP 1.23+ due to CVE-2025-66416",
+          "fixedVersion": "2.14.0",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "fastmcp",
+          "version": "2.12.0",
+          "cve": "CVE-2025-62800",
+          "severity": "MEDIUM",
+          "title": "FastMCP vulnerable to reflected XSS in client's callback page",
+          "fixedVersion": "2.13.0",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "fastmcp",
+          "version": "2.12.0",
+          "cve": "CVE-2025-62801",
+          "severity": "MEDIUM",
+          "title": "FastMCP vulnerable to windows command injection in FastMCP Cursor installer via server_name",
+          "fixedVersion": "2.13.0",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "marshmallow",
+          "version": "3.26.1",
+          "cve": "CVE-2025-68480",
+          "severity": "MEDIUM",
+          "title": "github.com/marshmallow-code/marshmallow: Marshmallow: Denial of Service via crafted request to Schema.load function",
+          "fixedVersion": "3.26.2, 4.1.2",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "mcp",
+          "version": "1.13.1",
+          "cve": "CVE-2025-66416",
+          "severity": "HIGH",
+          "title": "mcp: DNS Rebinding Protection Disabled by Default in Model Context Protocol Python SDK",
+          "fixedVersion": "1.23.0",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "nltk",
+          "version": "3.9.1",
+          "cve": "CVE-2025-14009",
+          "severity": "CRITICAL",
+          "title": "nltk: Zip Slip Vulnerability in nltk Leading to Code Execution",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "pillow",
+          "version": "11.3.0",
+          "cve": "CVE-2026-25990",
+          "severity": "HIGH",
+          "title": "pillow: Pillow: Out-of-bounds Write via Specially Crafted PSD Image",
+          "fixedVersion": "12.1.1",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "pyasn1",
+          "version": "0.6.1",
+          "cve": "CVE-2026-23490",
+          "severity": "HIGH",
+          "title": "pyasn1: pyasn1: Denial of Service due to memory exhaustion from malformed RELATIVE-OID",
+          "fixedVersion": "0.6.2",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "python-multipart",
+          "version": "0.0.20",
+          "cve": "CVE-2026-24486",
+          "severity": "HIGH",
+          "title": "python-multipart: Python-Multipart: Arbitrary file write via path traversal vulnerability",
+          "fixedVersion": "0.0.22",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "starlette",
+          "version": "0.47.3",
+          "cve": "CVE-2025-62727",
+          "severity": "HIGH",
+          "title": "starlette: Starlette DoS via Range header merging",
+          "fixedVersion": "0.49.1",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "urllib3",
+          "version": "2.5.0",
+          "cve": "CVE-2025-66418",
+          "severity": "HIGH",
+          "title": "urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion",
+          "fixedVersion": "2.6.0",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "urllib3",
+          "version": "2.5.0",
+          "cve": "CVE-2025-66471",
+          "severity": "HIGH",
+          "title": "urllib3: urllib3 Streaming API improperly handles highly compressed data",
+          "fixedVersion": "2.6.0",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "urllib3",
+          "version": "2.5.0",
+          "cve": "CVE-2026-21441",
+          "severity": "HIGH",
+          "title": "urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)",
+          "fixedVersion": "2.6.3",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "werkzeug",
+          "version": "3.1.1",
+          "cve": "CVE-2025-66221",
+          "severity": "MEDIUM",
+          "title": "Werkzeug: Werkzeug: Denial of service via Windows device names in path segments",
+          "fixedVersion": "3.1.4",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "werkzeug",
+          "version": "3.1.1",
+          "cve": "CVE-2026-21860",
+          "severity": "MEDIUM",
+          "title": " Werkzeug safe_join() allows Windows special device names with compound extensions",
+          "fixedVersion": "3.1.5",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        },
+        {
+          "pkg": "werkzeug",
+          "version": "3.1.1",
+          "cve": "CVE-2026-27199",
+          "severity": "MEDIUM",
+          "title": " Werkzeug safe_join() allows Windows special device names",
+          "fixedVersion": "3.1.6",
+          "type": "vuln",
+          "target": "uv.lock",
+          "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
+          "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
+        }
+      ],
+      "lastUpdated": "2026-02-24T15:15:25.605Z"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "Nickqiaoo/chatcode",
+      "url": "https://github.com/Nickqiaoo/chatcode",
+      "description": "A vibe coding telegram bot.",
+      "stars": 68,
+      "commits": 14,
+      "contributors": 1,
+      "forks": 10,
+      "open_issues": 2,
+      "license": null,
+      "topics": null,
+      "size": 335,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "Nickqiaoo",
+          "avatar_url": "https://avatars.githubusercontent.com/u/16211196?v=4",
+          "url": "https://github.com/Nickqiaoo",
+          "created_at": "2015-12-08T16:41:16Z",
+          "followers": 36,
+          "following": 50
+        }
+      ],
+      "created_at": "2025-07-31T10:59:22Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 195680,
+        "Python": 120233,
+        "HTML": 15292,
+        "JavaScript": 5796
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/Nickqiaoo/chatcode/blob/main/eslint.config.js",
+      "owner": {
+        "login": "Nickqiaoo",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16211196?v=4",
+        "url": "https://github.com/Nickqiaoo",
+        "created_at": "2015-12-08T16:41:16Z",
+        "followers": 36,
+        "following": 50,
+        "bio": null,
+        "public_repos": 41,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pnpm",
+        "detected_via": "pnpm-lock.yaml",
+        "evidence_url": "https://github.com/Nickqiaoo/chatcode/blob/main/pnpm-lock.yaml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 14,
+        "avgMessageLength": 368,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 11
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 534,
+        "medianChanges": 185,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/Nickqiaoo/chatcode/blob/main/CLAUDE.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "@modelcontextprotocol/sdk@1.17.0 (CVE-2025-66414)",
+        "@modelcontextprotocol/sdk@1.17.0 (CVE-2026-0621)",
+        "@modelcontextprotocol/sdk@1.17.0 (CVE-2026-25536)",
+        "ajv@6.12.6 (CVE-2025-69873)",
+        "body-parser@2.2.0 (CVE-2025-13466)",
+        "diff@8.0.2 (CVE-2026-24001)",
+        "markdown-it@14.1.0 (CVE-2026-2327)",
+        "qs@6.13.0 (CVE-2025-15284)",
+        "qs@6.13.0 (CVE-2026-2391)",
+        "qs@6.14.0 (CVE-2025-15284)",
+        "qs@6.14.0 (CVE-2026-2391)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.17.0",
+          "cve": "CVE-2025-66414",
+          "severity": "HIGH",
+          "title": "Model Context Protocol (MCP) TypeScript SDK does not enable DNS rebinding protection by default",
+          "fixedVersion": "1.24.0",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.17.0",
+          "cve": "CVE-2026-0621",
+          "severity": "HIGH",
+          "title": "Anthropic's MCP TypeScript SDK has a ReDoS vulnerability",
+          "fixedVersion": "1.25.2",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "@modelcontextprotocol/sdk",
+          "version": "1.17.0",
+          "cve": "CVE-2026-25536",
+          "severity": "HIGH",
+          "title": "@modelcontextprotocol/sdk: @modelcontextprotocol/sdk cross-client data leak",
+          "fixedVersion": "1.26.0",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "ajv",
+          "version": "6.12.6",
+          "cve": "CVE-2025-69873",
+          "severity": "MEDIUM",
+          "title": "ajv: ReDoS via $data reference",
+          "fixedVersion": "8.18.0, 6.14.0",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "body-parser",
+          "version": "2.2.0",
+          "cve": "CVE-2025-13466",
+          "severity": "MEDIUM",
+          "title": "body-parser: body-parser denial of service",
+          "fixedVersion": "2.2.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "diff",
+          "version": "8.0.2",
+          "cve": "CVE-2026-24001",
+          "severity": "LOW",
+          "title": "jsdiff: denial of service vulnerability in parsePatch and applyPatch",
+          "fixedVersion": "8.0.3, 5.2.2, 4.0.4, 3.5.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "markdown-it",
+          "version": "14.1.0",
+          "cve": "CVE-2026-2327",
+          "severity": "MEDIUM",
+          "title": "markdown-it: markdown-it: Denial of Service via Regular Expression Denial of Service in linkify function",
+          "fixedVersion": "14.1.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.13.0",
+          "cve": "CVE-2025-15284",
+          "severity": "HIGH",
+          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
+          "fixedVersion": "6.14.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.13.0",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2025-15284",
+          "severity": "HIGH",
+          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
+          "fixedVersion": "6.14.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.0",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
+          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
+        }
+      ],
+      "lastUpdated": "2026-02-24T15:15:46.853Z"
+    }
+  ]
+}

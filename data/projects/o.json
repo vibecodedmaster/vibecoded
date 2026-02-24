@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "oisee/vibing-steampunk",
+      "url": "https://github.com/oisee/vibing-steampunk",
+      "description": "vs-punk: ADT to MCP bridge - Vibe code in ABAP / AMDP",
+      "stars": 122,
+      "commits": 198,
+      "contributors": 3,
+      "forks": 32,
+      "open_issues": 15,
+      "license": null,
+      "topics": [
+        "abap",
+        "adt",
+        "mcp",
+        "vibe-coding"
+      ],
+      "size": 22268,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "oisee",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
+          "url": "https://github.com/oisee",
+          "created_at": "2009-02-10T17:29:21Z",
+          "followers": 163,
+          "following": 53
+        },
+        {
+          "login": "vitalratel",
+          "avatar_url": "https://avatars.githubusercontent.com/u/184561610?v=4",
+          "url": "https://github.com/vitalratel",
+          "created_at": "2024-10-10T20:12:19Z",
+          "followers": 12,
+          "following": 2
+        },
+        {
+          "login": "kts982",
+          "avatar_url": "https://avatars.githubusercontent.com/u/47891579?v=4",
+          "url": "https://github.com/kts982",
+          "created_at": "2019-02-22T13:13:50Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2025-12-01T18:40:26Z",
+      "language": "Go",
+      "languages": {
+        "Go": 1318259,
+        "ABAP": 343084,
+        "Shell": 6969,
+        "Makefile": 5807,
+        "Lua": 1697
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/oisee/vibing-steampunk/blob/main/.golangci.yml",
+      "owner": {
+        "login": "oisee",
+        "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
+        "url": "https://github.com/oisee",
+        "created_at": "2009-02-10T17:29:21Z",
+        "followers": 163,
+        "following": 53,
+        "bio": null,
+        "public_repos": 311,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "go",
+        "detected_via": "go.mod",
+        "evidence_url": "https://github.com/oisee/vibing-steampunk/blob/main/go.mod"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 388,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 24
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 989,
+        "medianChanges": 145,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/oisee/vibing-steampunk/blob/main/CLAUDE.md"
+        }
+      ],
+      "lastUpdated": "2026-02-24T15:15:35.471Z"
+    }
+  ]
+}
