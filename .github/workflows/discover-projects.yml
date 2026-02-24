@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -36,116 +35,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Process Found Repos
-      - name: Process Found Repos
+      - name: Add to data
         run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           REPOS='${{ steps.discover.outputs.found_repos }}'
-          echo "Found metadata for $(echo "$REPOS" | jq '. | length') repos"
-          
+          COUNT=$(echo "$REPOS" | jq '. | length')
+          echo "Adding $COUNT discovered repos to data..."
           echo "$REPOS" | jq -c '.[]' | while read -r project; do
             if [ -z "$project" ]; then continue; fi
-            
             REPO=$(echo "$project" | jq -r '.full_name')
-            DESC=$(echo "$project" | jq -r '.description // "No description"')
-            STARS=$(echo "$project" | jq -r '.stars')
-            TOOLS_MD=$(echo "$project" | jq -r '.aiTools | if length == 0 then "- None detected" else map("- **\(.name)** (via \(.detected_via))\(if .evidence_url then " [Evidence](\(.evidence_url))" else "" end)") | join("\n") end')
-            PACKAGE_MANAGER=$(echo "$project" | jq -r '.packageManager.name // "unknown"')
-            PACKAGE_MANAGER_VIA=$(echo "$project" | jq -r '.packageManager.detected_via // "unknown"')
-            EMOJIS=$(echo "$project" | jq -r '.emojis // 0')
-            COMMIT_SAMPLE=$(echo "$project" | jq -r '.commitMessageSignals.sampleSize // 0')
-            COMMIT_AVG_MSG_LEN=$(echo "$project" | jq -r '.commitMessageSignals.avgMessageLength // 0')
-            COMMIT_EM_DASH=$(echo "$project" | jq -r '.commitMessageSignals.emDashCount // 0')
-            COMMIT_EN_DASH=$(echo "$project" | jq -r '.commitMessageSignals.enDashCount // 0')
-            COMMIT_AI_MENTIONS=$(echo "$project" | jq -r '.commitMessageSignals.aiMentionCount // 0')
-            SIZE_SAMPLED=$(echo "$project" | jq -r '.commitSizeSignals.sampledCommits // 0')
-            SIZE_AVG=$(echo "$project" | jq -r '.commitSizeSignals.avgChanges // 0')
-            SIZE_MEDIAN=$(echo "$project" | jq -r '.commitSizeSignals.medianChanges // 0')
-            SIZE_LARGE=$(echo "$project" | jq -r '.commitSizeSignals.largeCommitCount // 0')
-            HAS_CLAUDE_BOT=$(echo "$project" | jq -r '.contributorSignals.hasClaudeBotContributor // false')
-            CLAUDE_BOTS=$(echo "$project" | jq -r '.contributorSignals.matchedBots | if length == 0 then "none" else join(", ") end')
-            DETECTION_SCORE=$(echo "$project" | jq -r '.detectionSummary.score // 0')
-            DETECTION_LEVEL=$(echo "$project" | jq -r '.detectionSummary.level // "low"')
-            DETECTION_REASONS=$(echo "$project" | jq -r '.detectionSummary.reasons | if length == 0 then "- none" else map("- " + .) | join("\n") end')
-            
-            echo "Processing $REPO..."
-            # Clean up repo name for branch name
-            CLEAN_REPO=$(echo "$REPO" | tr '/' '-')
-            BRANCH_NAME="auto-discover-$CLEAN_REPO"
-            
-            # Add the project
+            echo "Adding $REPO..."
             deno run -A scripts/add.ts "$REPO"
-            
-            # Sync data to public folder for consistency
-            deno run -A scripts/sync-data.ts
-            
-            # Commit and push
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            
-            if [ -z "$(git status --porcelain data/ src/public/data/)" ]; then
-              echo "No changes for $REPO, skipping."
-              continue
-            fi
-
-            git checkout -B "$BRANCH_NAME"
-            git add data/projects.json data/projects src/public/data/projects.json
-            git commit -m "feat: auto-discover $REPO"
-            git push origin "$BRANCH_NAME" --force
-            
-            # Ensure labels exist
-            gh label create "discovery" --color "0E8A16" --description "Automatically discovered projects" || echo "Label exists"
-            gh label create "automated pr" --color "FBCA04" --description "PRs created by automation" || echo "Label exists"
-
-            # Create rich PR body
-            PR_BODY=$(cat <<EOF
-          ## Auto-discovery: $REPO
-
-          A new "Vibe Coded" project has been discovered.
-
-          - **Description**: $DESC
-          - **Stars**: ⭐ $STARS
-          - **Detection Confidence**: **$DETECTION_LEVEL** (score: $DETECTION_SCORE)
-          - **Package Manager**: $PACKAGE_MANAGER (via \`$PACKAGE_MANAGER_VIA\`)
-          - **Emoji Reactions (issues/PRs)**: $EMOJIS
-
-          ### Why it was flagged
-          $DETECTION_REASONS
-
-          - **Detected AI Tools**:
-          $TOOLS_MD
-
-          ### Commit Message Signals
-          - Sampled commits: $COMMIT_SAMPLE
-          - Avg message length: $COMMIT_AVG_MSG_LEN chars
-          - em dash count (—): $COMMIT_EM_DASH
-          - en dash count (–): $COMMIT_EN_DASH
-          - AI mentions in messages: $COMMIT_AI_MENTIONS
-
-          ### Commit Size Signals
-          - Sampled commit stats: $SIZE_SAMPLED
-          - Avg total changes per commit: $SIZE_AVG
-          - Median total changes per commit: $SIZE_MEDIAN
-          - Large commits (>=500 changes): $SIZE_LARGE
-
-          ### Contributor Signals
-          - Claude bot contributor detected: $HAS_CLAUDE_BOT
-          - Matched bot logins: $CLAUDE_BOTS
-
-          ### Review Instructions
-          - **Approve**: Merge this PR to add the project to the registry.
-          - **Deny**: Close this PR without merging. This will automatically add the repository to the denylist so it isn't discovered again.
-
-          _Automatically generated by Vibe Coded Discovery_
-          EOF
-          )
-
-            # Create PR
-            gh pr create --title "Auto-discover: $REPO" --body "$PR_BODY" --base main --head "$BRANCH_NAME" --label "automated pr,discovery" || \
-            gh pr create --title "Auto-discover: $REPO" --body "$PR_BODY" --base main --head "$BRANCH_NAME" || \
-            echo "PR already exists or could not be created for $REPO"
-            
-            # Switch back to main for next iteration
-            git checkout main
           done
+          deno run -A scripts/sync-data.ts
+          if [ -n "$(git status --porcelain data/ src/public/data/)" ]; then
+            git add data/projects.json data/projects src/public/data/projects.json
+            git commit -m "chore: auto-discover $COUNT repos (direct add)"
+            git push origin main
+          else
+            echo "No changes to commit."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -63,27 +63,27 @@ async function discover(limit = 5) {
 
   const queries = [
     {
-      query: "archived:false fork:false path:.cursorrules",
+      query: "cursor archived:false fork:false path:.cursorrules",
       type: "code" as const,
       score: 4,
     },
     {
-      query: "archived:false fork:false path:.cursor/rules",
+      query: "cursor archived:false fork:false path:.cursor/rules",
       type: "code" as const,
       score: 4,
     },
     {
-      query: "archived:false fork:false path:CLAUDE.md",
+      query: "claude archived:false fork:false path:CLAUDE.md",
       type: "code" as const,
       score: 4,
     },
     {
-      query: "archived:false fork:false path:AGENTS.md",
+      query: "agent archived:false fork:false path:AGENTS.md",
       type: "code" as const,
       score: 3,
     },
     {
-      query: "archived:false fork:false path:.windsurfrules",
+      query: "windsurf archived:false fork:false path:.windsurfrules",
       type: "code" as const,
       score: 3,
     },
@@ -196,13 +196,13 @@ async function discover(limit = 5) {
     if (verified.length >= limit) break;
     try {
       const d = await detect(fullName);
-      const shouldCreatePr = shouldCreateDiscoveryPr(d.detectionSummary, {
+      const shouldAdd = shouldCreateDiscoveryPr(d.detectionSummary, {
         aiTools: d.aiTools,
         contributorSignals: d.contributorSignals,
         commitMessageSignals: d.commitMessageSignals,
-      });
-      if (shouldCreatePr) {
-        console.error(`Verified: ${fullName} (Tools: ${d.aiTools.map(t => t.name).join(", ")})`);
+      }) && d.detectionSummary.reasons.length > 1;
+      if (shouldAdd) {
+        console.error(`Verified: ${fullName} (${d.detectionSummary.reasons.length} indications: ${d.detectionSummary.reasons.join("; ")})`);
         verified.push({
           full_name: fullName,
           description: info.description ?? null,
@@ -217,7 +217,7 @@ async function discover(limit = 5) {
         });
       } else {
         console.error(
-          `Skipped: ${fullName} (score=${d.detectionSummary.score}, level=${d.detectionSummary.level})`,
+          `Skipped: ${fullName} (score=${d.detectionSummary.score}, reasons=${d.detectionSummary.reasons.length})`,
         );
       }
     } catch (e) {
