@@ -176,9 +176,11 @@ async function discover(limit = 5) {
         }
       }
 
-      await new Promise((r) => setTimeout(r, 1500));
+      const delayMs = search.type === "code" ? 3500 : 1500;
+      await new Promise((r) => setTimeout(r, delayMs));
     } catch (e) {
       console.warn(`Search failed for query "${search.query}":`, e);
+      await new Promise((r) => setTimeout(r, 10000));
     }
   }
 

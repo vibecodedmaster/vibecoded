@@ -35,10 +35,12 @@ export class GitHubClient {
   }
 
   /**
-   * Performs a fetch with retry logic for rate limits.
+   * Performs a fetch with retry logic for rate limits (including secondary limits).
    */
   async fetchWithRetry(url: string, options: RequestInit = {}): Promise<Response> {
-    const maxRetries = 3;
+    const maxRetries = 5;
+    const maxWaitMs = 5 * 60 * 1000;
+    const defaultSecondaryWaitMs = 90 * 1000;
     let attempt = 0;
 
     while (attempt < maxRetries) {
@@ -51,18 +53,29 @@ export class GitHubClient {
       });
 
       if (response.status === 403 || response.status === 429) {
-        const rateLimitReset = response.headers.get("x-ratelimit-reset");
-        if (rateLimitReset) {
-          const resetTime = parseInt(rateLimitReset, 10) * 1000;
-          const waitTime = Math.max(resetTime - Date.now(), 1000) + 1000; // Add 1s buffer
-          
-          if (waitTime < 60000) { // Only wait if less than a minute
-            console.warn(`Rate limit hit, waiting ${waitTime}ms...`);
-            await new Promise((resolve) => setTimeout(resolve, waitTime));
-            attempt++;
-            continue;
+        let waitMs = 0;
+        const retryAfter = response.headers.get("Retry-After");
+        if (retryAfter) {
+          const secs = parseInt(retryAfter, 10);
+          waitMs = Number.isNaN(secs) ? defaultSecondaryWaitMs : Math.min(secs * 1000, maxWaitMs);
+        }
+        if (waitMs === 0) {
+          const rateLimitReset = response.headers.get("x-ratelimit-reset");
+          if (rateLimitReset) {
+            const resetTime = parseInt(rateLimitReset, 10) * 1000;
+            waitMs = Math.min(
+              Math.max(resetTime - Date.now(), 1000) + 1000,
+              maxWaitMs
+            );
           }
         }
+        if (waitMs === 0) {
+          waitMs = defaultSecondaryWaitMs;
+        }
+        console.warn(`Rate limit hit (${response.status}), waiting ${Math.round(waitMs / 1000)}s...`);
+        await new Promise((resolve) => setTimeout(resolve, waitMs));
+        attempt++;
+        continue;
       }
 
       if (!response.ok) {
