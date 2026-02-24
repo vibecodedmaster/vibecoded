@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "sahithvibudhi/vibe-tree",
+      "url": "https://github.com/sahithvibudhi/vibe-tree",
+      "description": "Vibe code with Claude in parallel git worktrees",
+      "stars": 241,
+      "commits": 209,
+      "contributors": 6,
+      "forks": 26,
+      "open_issues": 12,
+      "license": "MIT License",
+      "topics": [
+        "claude",
+        "claude-code",
+        "desktop-app",
+        "gemini-cli",
+        "git-worktree",
+        "typescript",
+        "vibe-coding"
+      ],
+      "size": 12645,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "phuongnd08",
+          "avatar_url": "https://avatars.githubusercontent.com/u/184037?v=4",
+          "url": "https://github.com/phuongnd08",
+          "created_at": "2010-01-17T14:30:25Z",
+          "followers": 43,
+          "following": 1
+        },
+        {
+          "login": "sahithvibudhi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/16933521?v=4",
+          "url": "https://github.com/sahithvibudhi",
+          "created_at": "2016-01-28T07:44:00Z",
+          "followers": 20,
+          "following": 4
+        },
+        {
+          "login": "sathvik-palley",
+          "avatar_url": "https://avatars.githubusercontent.com/u/204773335?v=4",
+          "url": "https://github.com/sathvik-palley",
+          "created_at": "2025-03-24T19:10:48Z",
+          "followers": 2,
+          "following": 3
+        },
+        {
+          "login": "nithish08",
+          "avatar_url": "https://avatars.githubusercontent.com/u/17748489?v=4",
+          "url": "https://github.com/nithish08",
+          "created_at": "2016-03-09T17:02:11Z",
+          "followers": 7,
+          "following": 16
+        },
+        {
+          "login": "Krishnachaitanyakc",
+          "avatar_url": "https://avatars.githubusercontent.com/u/22275437?v=4",
+          "url": "https://github.com/Krishnachaitanyakc",
+          "created_at": "2016-09-18T12:53:25Z",
+          "followers": 3,
+          "following": 1
+        },
+        {
+          "login": "phamvmnhut",
+          "avatar_url": "https://avatars.githubusercontent.com/u/47932988?v=4",
+          "url": "https://github.com/phamvmnhut",
+          "created_at": "2019-02-24T02:20:03Z",
+          "followers": 4,
+          "following": 4
+        }
+      ],
+      "created_at": "2025-07-29T07:18:49Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 868094,
+        "HTML": 35682,
+        "JavaScript": 10837,
+        "Shell": 9756,
+        "CSS": 7556,
+        "Dockerfile": 2793
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/sahithvibudhi/vibe-tree/blob/main/.eslintrc.js",
+      "owner": {
+        "login": "sahithvibudhi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16933521?v=4",
+        "url": "https://github.com/sahithvibudhi",
+        "created_at": "2016-01-28T07:44:00Z",
+        "followers": 20,
+        "following": 4,
+        "bio": null,
+        "public_repos": 39,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pnpm",
+        "detected_via": "pnpm-lock.yaml",
+        "evidence_url": "https://github.com/sahithvibudhi/vibe-tree/blob/main/pnpm-lock.yaml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 2616,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 29
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 467,
+        "medianChanges": 164,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/sahithvibudhi/vibe-tree/blob/main/CLAUDE.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "@remix-run/router@1.23.0 (CVE-2026-22029)",
+        "jws@3.2.2 (CVE-2025-65945)",
+        "qs@6.13.0 (CVE-2025-15284)",
+        "qs@6.13.0 (CVE-2026-2391)",
+        "react-router@6.30.1 (CVE-2025-68470)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "@remix-run/router",
+          "version": "1.23.0",
+          "cve": "CVE-2026-22029",
+          "severity": "HIGH",
+          "title": "@remix-run/router: react-router: React Router vulnerable to XSS via Open Redirects",
+          "fixedVersion": "1.23.2",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/sahithvibudhi/vibe-tree/blob/638e9c57262179871efad98a073846583ae7cb05/pnpm-lock.yaml",
+          "scannedRef": "638e9c57262179871efad98a073846583ae7cb05"
+        },
+        {
+          "pkg": "jws",
+          "version": "3.2.2",
+          "cve": "CVE-2025-65945",
+          "severity": "HIGH",
+          "title": "node-jws: auth0/node-jws: Improper signature verification in HS256 algorithm",
+          "fixedVersion": "3.2.3, 4.0.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/sahithvibudhi/vibe-tree/blob/638e9c57262179871efad98a073846583ae7cb05/pnpm-lock.yaml",
+          "scannedRef": "638e9c57262179871efad98a073846583ae7cb05"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.13.0",
+          "cve": "CVE-2025-15284",
+          "severity": "HIGH",
+          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
+          "fixedVersion": "6.14.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/sahithvibudhi/vibe-tree/blob/638e9c57262179871efad98a073846583ae7cb05/pnpm-lock.yaml",
+          "scannedRef": "638e9c57262179871efad98a073846583ae7cb05"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.13.0",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/sahithvibudhi/vibe-tree/blob/638e9c57262179871efad98a073846583ae7cb05/pnpm-lock.yaml",
+          "scannedRef": "638e9c57262179871efad98a073846583ae7cb05"
+        },
+        {
+          "pkg": "react-router",
+          "version": "6.30.1",
+          "cve": "CVE-2025-68470",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router unexpected external redirect",
+          "fixedVersion": "6.30.2, 7.9.6",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/sahithvibudhi/vibe-tree/blob/638e9c57262179871efad98a073846583ae7cb05/pnpm-lock.yaml",
+          "scannedRef": "638e9c57262179871efad98a073846583ae7cb05"
+        }
+      ],
+      "lastUpdated": "2026-02-24T01:55:52.680Z"
+    }
+  ]
+}
