@@ -278,6 +278,180 @@
         }
       ],
       "lastUpdated": "2026-02-24T15:15:51.508Z"
+    },
+    {
+      "full_name": "datawhalechina/easy-vibe",
+      "url": "https://github.com/datawhalechina/easy-vibe",
+      "description": "Vibe coding from 0 to 1 ｜深入浅出 AI 编程",
+      "stars": 2801,
+      "commits": 298,
+      "contributors": 6,
+      "forks": 242,
+      "open_issues": 17,
+      "license": null,
+      "topics": [
+        "agent",
+        "ai",
+        "coding",
+        "course",
+        "gemini",
+        "genai",
+        "gpt",
+        "gpt-4",
+        "llm",
+        "low-code",
+        "mcp",
+        "nextjs",
+        "no-code",
+        "openai",
+        "programming",
+        "tutorial",
+        "vibe-coding",
+        "vibecoding",
+        "vscode",
+        "workflow"
+      ],
+      "size": 332428,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "sanbuphy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/96160062?v=4",
+          "url": "https://github.com/sanbuphy",
+          "created_at": "2021-12-15T03:40:55Z",
+          "followers": 265,
+          "following": 285
+        },
+        {
+          "login": "GeoDaoyu",
+          "avatar_url": "https://avatars.githubusercontent.com/u/34641603?v=4",
+          "url": "https://github.com/GeoDaoyu",
+          "created_at": "2017-12-18T06:37:49Z",
+          "followers": 26,
+          "following": 14
+        },
+        {
+          "login": "luahan77m",
+          "avatar_url": "https://avatars.githubusercontent.com/u/107054996?v=4",
+          "url": "https://github.com/luahan77m",
+          "created_at": "2022-06-07T14:12:57Z",
+          "followers": 3,
+          "following": 0
+        },
+        {
+          "login": "liulx25xx",
+          "avatar_url": "https://avatars.githubusercontent.com/u/234879698?v=4",
+          "url": "https://github.com/liulx25xx",
+          "created_at": "2025-09-28T05:41:15Z",
+          "followers": 2,
+          "following": 1
+        },
+        {
+          "login": "yli000",
+          "avatar_url": "https://avatars.githubusercontent.com/u/180618336?v=4",
+          "url": "https://github.com/yli000",
+          "created_at": "2024-09-06T04:23:27Z",
+          "followers": 1,
+          "following": 2
+        },
+        {
+          "login": "FuTseYi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/131243303?v=4",
+          "url": "https://github.com/FuTseYi",
+          "created_at": "2023-04-19T07:39:59Z",
+          "followers": 16,
+          "following": 11
+        }
+      ],
+      "created_at": "2025-12-28T16:45:28Z",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 4684,
+        "Shell": 1012
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/datawhalechina/easy-vibe/blob/main/eslint.config.js",
+      "owner": {
+        "login": "datawhalechina",
+        "avatar_url": "https://avatars.githubusercontent.com/u/46047812?v=4",
+        "url": "https://github.com/datawhalechina",
+        "created_at": "2018-12-21T11:17:27Z",
+        "followers": 21826,
+        "following": 0,
+        "bio": "for the learner，和学习者一起成长",
+        "public_repos": 183,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package-lock.json",
+        "evidence_url": "https://github.com/datawhalechina/easy-vibe/blob/main/package-lock.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 333,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 3
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 5661,
+        "medianChanges": 3349,
+        "largeCommitCount": 5
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/datawhalechina/easy-vibe/blob/main/CLAUDE.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "lodash-es@4.17.22 (CVE-2025-13465)",
+        "lodash@4.17.21 (CVE-2025-13465)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "lodash",
+          "version": "4.17.21",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/datawhalechina/easy-vibe/blob/48f2e60f7cd503ee26c50ff2797874d0ce0962a3/package-lock.json",
+          "scannedRef": "48f2e60f7cd503ee26c50ff2797874d0ce0962a3"
+        },
+        {
+          "pkg": "lodash-es",
+          "version": "4.17.22",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/datawhalechina/easy-vibe/blob/48f2e60f7cd503ee26c50ff2797874d0ce0962a3/package-lock.json",
+          "scannedRef": "48f2e60f7cd503ee26c50ff2797874d0ce0962a3"
+        }
+      ],
+      "lastUpdated": "2026-02-25T15:18:03.033Z"
     }
   ]
 }

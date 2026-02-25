@@ -204,6 +204,103 @@
         }
       ],
       "lastUpdated": "2026-02-24T01:55:52.680Z"
+    },
+    {
+      "full_name": "statico/meshtastic-cli",
+      "url": "https://github.com/statico/meshtastic-cli",
+      "description": "🌌 Terminal UI for monitoring Meshtastic mesh networks - view packets, nodes, and chat in real-time",
+      "stars": 7,
+      "commits": 316,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 7,
+      "license": "MIT License",
+      "topics": [
+        "bun",
+        "claude",
+        "cli",
+        "ink",
+        "lora",
+        "mesh-network",
+        "meshtastic",
+        "meshtastic-addon",
+        "monitoring",
+        "react",
+        "terminal",
+        "tui",
+        "vibe-coded",
+        "vibe-coding"
+      ],
+      "size": 729,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "statico",
+          "avatar_url": "https://avatars.githubusercontent.com/u/137158?v=4",
+          "url": "https://github.com/statico",
+          "created_at": "2009-10-09T02:49:55Z",
+          "followers": 315,
+          "following": 171
+        }
+      ],
+      "created_at": "2025-12-18T16:40:39Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 488999,
+        "Dockerfile": 415
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "statico",
+        "avatar_url": "https://avatars.githubusercontent.com/u/137158?v=4",
+        "url": "https://github.com/statico",
+        "created_at": "2009-10-09T02:49:55Z",
+        "followers": 315,
+        "following": 171,
+        "bio": "🐁➡➡⬇⬇⬇⬆⬅⬇⬇⬇\r\n➡➡⬇➡⬅➡⬇⬅⬆⬆⬇\r\n⬇⬅⬇⬇⬇⬆➡⬅➡➡⬇\r\n⬅➡➡⬇⬇➡⬆➡⬆⬇⬇\r\n➡⬆⬇⬅⬅⬅⬆⬅⬇⬅⬆\r\n⬅⬆⬇➡➡➡⬆⬅➡➡🧀\r\n",
+        "public_repos": 232,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pnpm",
+        "detected_via": "pnpm-lock.yaml",
+        "evidence_url": "https://github.com/statico/meshtastic-cli/blob/main/pnpm-lock.yaml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 255,
+        "emDashCount": 2,
+        "enDashCount": 0,
+        "aiMentionCount": 4
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 461,
+        "medianChanges": 41,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 8,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/statico/meshtastic-cli/blob/main/CLAUDE.md"
+        }
+      ],
+      "lastUpdated": "2026-02-25T15:18:54.638Z"
     }
   ]
 }

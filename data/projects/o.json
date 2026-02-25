@@ -107,6 +107,103 @@
         }
       ],
       "lastUpdated": "2026-02-24T15:15:35.471Z"
+    },
+    {
+      "full_name": "oisee/zork-abap",
+      "url": "https://github.com/oisee/zork-abap",
+      "description": "Z-Machine V3, play Zork or something else. Vibe coded with vs-punk",
+      "stars": 13,
+      "commits": 47,
+      "contributors": 2,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": [
+        "abap",
+        "adventure",
+        "adventure-game",
+        "interactive-fiction",
+        "sap",
+        "vibe-coded",
+        "zork"
+      ],
+      "size": 433,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "larshp",
+          "avatar_url": "https://avatars.githubusercontent.com/u/5888506?v=4",
+          "url": "https://github.com/larshp",
+          "created_at": "2013-11-08T13:03:32Z",
+          "followers": 970,
+          "following": 72
+        },
+        {
+          "login": "oisee",
+          "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
+          "url": "https://github.com/oisee",
+          "created_at": "2009-02-10T17:29:21Z",
+          "followers": 164,
+          "following": 53
+        }
+      ],
+      "created_at": "2025-12-09T13:11:18Z",
+      "language": "ABAP",
+      "languages": {
+        "ABAP": 154092,
+        "JavaScript": 404
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "oisee",
+        "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
+        "url": "https://github.com/oisee",
+        "created_at": "2009-02-10T17:29:21Z",
+        "followers": 164,
+        "following": 53,
+        "bio": null,
+        "public_repos": 312,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package.json",
+        "evidence_url": "https://github.com/oisee/zork-abap/blob/main/package.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 90,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 172,
+        "medianChanges": 14,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/oisee/zork-abap/blob/main/CLAUDE.md"
+        }
+      ],
+      "lastUpdated": "2026-02-25T15:18:37.860Z"
     }
   ]
 }
