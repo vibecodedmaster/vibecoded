@@ -6,13 +6,13 @@
       "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
       "description": null,
       "stars": 9,
-      "commits": 173,
+      "commits": 169,
       "contributors": 2,
       "forks": 1,
       "open_issues": 0,
       "license": "Other",
       "topics": null,
-      "size": 428528,
+      "size": 427520,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -20,7 +20,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/6911384?v=4",
           "url": "https://github.com/docxology",
           "created_at": "2014-03-10T19:49:16Z",
-          "followers": 58,
+          "followers": 57,
           "following": 44
         },
         {
@@ -36,8 +36,8 @@
       "language": "HTML",
       "languages": {
         "HTML": 52068264,
-        "Python": 17341025,
-        "Shell": 20147,
+        "Python": 16990642,
+        "Shell": 19807,
         "JavaScript": 9925,
         "Dockerfile": 4684
       },
@@ -60,16 +60,16 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 38,
+        "avgMessageLength": 8,
         "emDashCount": 0,
         "enDashCount": 0,
         "aiMentionCount": 0
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 166907,
-        "medianChanges": 65603,
-        "largeCommitCount": 6
+        "avgChanges": 1852494,
+        "medianChanges": 91477,
+        "largeCommitCount": 8
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
@@ -95,657 +95,19 @@
           "evidence_url": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/main/CLAUDE.md"
         }
       ],
-      "vulnerableDependencies": [
-        "aiohttp@3.12.15 (CVE-2025-69223)",
-        "aiohttp@3.12.15 (CVE-2025-69224)",
-        "aiohttp@3.12.15 (CVE-2025-69225)",
-        "aiohttp@3.12.15 (CVE-2025-69226)",
-        "aiohttp@3.12.15 (CVE-2025-69227)",
-        "aiohttp@3.12.15 (CVE-2025-69228)",
-        "aiohttp@3.12.15 (CVE-2025-69229)",
-        "aiohttp@3.12.15 (CVE-2025-69230)",
-        "astropy@5.3.2 (CVE-2023-41334)",
-        "biopython@1.85 (CVE-2025-68463)",
-        "bokeh@3.4.3 (CVE-2026-21883)",
-        "bokeh@3.7.3 (CVE-2026-21883)",
-        "distributed@2024.8.0 (CVE-2026-23528)",
-        "distributed@2025.7.0 (CVE-2026-23528)",
-        "filelock@3.18.0 (CVE-2025-68146)",
-        "filelock@3.18.0 (CVE-2026-22701)",
-        "filelock@3.19.1 (CVE-2025-68146)",
-        "filelock@3.19.1 (CVE-2026-22701)",
-        "fonttools@4.59.0 (CVE-2025-66034)",
-        "fonttools@4.60.0 (CVE-2025-66034)",
-        "geopandas@1.0.1 (CVE-2025-69662)",
-        "geopandas@1.1.1 (CVE-2025-69662)",
-        "keras@3.10.0 (CVE-2025-12058)",
-        "keras@3.10.0 (CVE-2025-12060)",
-        "keras@3.10.0 (CVE-2025-8747)",
-        "keras@3.10.0 (CVE-2025-9905)",
-        "keras@3.10.0 (CVE-2025-9906)",
-        "keras@3.10.0 (CVE-2026-0897)",
-        "keras@3.10.0 (CVE-2026-1669)",
-        "keras@3.11.1 (CVE-2025-12058)",
-        "keras@3.11.1 (CVE-2025-12060)",
-        "keras@3.11.1 (CVE-2025-49655)",
-        "keras@3.11.1 (CVE-2025-9905)",
-        "keras@3.11.1 (CVE-2026-0897)",
-        "keras@3.11.1 (CVE-2026-1669)",
-        "nbconvert@7.16.6 (CVE-2025-53000)",
-        "pillow@11.3.0 (CVE-2026-25990)",
-        "pillow@12.1.0 (CVE-2026-25990)",
-        "protobuf@5.29.5 (CVE-2026-0994)",
-        "python-multipart@0.0.20 (CVE-2026-24486)",
-        "python-multipart@0.0.21 (CVE-2026-24486)",
-        "starlette@0.47.2 (CVE-2025-62727)",
-        "urllib3@2.5.0 (CVE-2025-66418)",
-        "urllib3@2.5.0 (CVE-2025-66471)",
-        "urllib3@2.5.0 (CVE-2026-21441)",
-        "werkzeug@3.1.3 (CVE-2025-66221)",
-        "werkzeug@3.1.3 (CVE-2026-21860)",
-        "werkzeug@3.1.3 (CVE-2026-27199)",
-        "wheel@0.45.1 (CVE-2026-24049)"
-      ],
-      "vulnerabilities": [
-        {
-          "pkg": "filelock",
-          "version": "3.19.1",
-          "cve": "CVE-2025-68146",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation",
-          "fixedVersion": "3.20.1",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-ACT/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "filelock",
-          "version": "3.19.1",
-          "cve": "CVE-2026-22701",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock Time-of-Check-Time-of-Use (TOCTOU) in SoftFileLock",
-          "fixedVersion": "3.20.3",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-ACT/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "nbconvert",
-          "version": "7.16.6",
-          "cve": "CVE-2025-53000",
-          "severity": "HIGH",
-          "title": "nbconvert: nbconvert: Arbitrary code execution via malicious SVG to PDF conversion on Windows",
-          "fixedVersion": "7.17.0",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-ACT/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "pillow",
-          "version": "11.3.0",
-          "cve": "CVE-2026-25990",
-          "severity": "HIGH",
-          "title": "pillow: Pillow: Out-of-bounds Write via Specially Crafted PSD Image",
-          "fixedVersion": "12.1.1",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-ACT/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "pillow",
-          "version": "12.1.0",
-          "cve": "CVE-2026-25990",
-          "severity": "HIGH",
-          "title": "pillow: Pillow: Out-of-bounds Write via Specially Crafted PSD Image",
-          "fixedVersion": "12.1.1",
-          "type": "vuln",
-          "target": "GEO-INFER-ACT/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-ACT/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "fonttools",
-          "version": "4.60.0",
-          "cve": "CVE-2025-66034",
-          "severity": "MEDIUM",
-          "title": "fonttools: fontTools: Arbitrary file write leading to remote code execution via malicious .designspace file",
-          "fixedVersion": "4.60.2",
-          "type": "vuln",
-          "target": "GEO-INFER-PLACE/locations/cascadia/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-PLACE/locations/cascadia/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "geopandas",
-          "version": "1.1.1",
-          "cve": "CVE-2025-69662",
-          "severity": "HIGH",
-          "title": "SQL injection vulnerability in geopandas before v.1.1.2 allows an atta ...",
-          "fixedVersion": "1.1.2",
-          "type": "vuln",
-          "target": "GEO-INFER-PLACE/locations/cascadia/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-PLACE/locations/cascadia/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "geopandas",
-          "version": "1.0.1",
-          "cve": "CVE-2025-69662",
-          "severity": "HIGH",
-          "title": "SQL injection vulnerability in geopandas before v.1.1.2 allows an atta ...",
-          "fixedVersion": "1.1.2",
-          "type": "vuln",
-          "target": "GEO-INFER-PLACE/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-PLACE/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "python-multipart",
-          "version": "0.0.20",
-          "cve": "CVE-2026-24486",
-          "severity": "HIGH",
-          "title": "python-multipart: Python-Multipart: Arbitrary file write via path traversal vulnerability",
-          "fixedVersion": "0.0.22",
-          "type": "vuln",
-          "target": "GEO-INFER-SPACE/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-SPACE/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "python-multipart",
-          "version": "0.0.21",
-          "cve": "CVE-2026-24486",
-          "severity": "HIGH",
-          "title": "python-multipart: Python-Multipart: Arbitrary file write via path traversal vulnerability",
-          "fixedVersion": "0.0.22",
-          "type": "vuln",
-          "target": "GEO-INFER-SPACE/uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/GEO-INFER-SPACE/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69223",
-          "severity": "HIGH",
-          "title": "aiohttp: AIOHTTP's HTTP Parser auto_decompress feature is vulnerable to zip bomb",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69227",
-          "severity": "MEDIUM",
-          "title": "aiohttp: aiohttp: Denial of Service via specially crafted POST request",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69228",
-          "severity": "MEDIUM",
-          "title": "aiohttp: aiohttp: Denial of Service via memory exhaustion from crafted POST request",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69229",
-          "severity": "MEDIUM",
-          "title": "aiohttp: AIOHTTP: Denial of Service via excessive CPU usage in chunked message handling",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69224",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Request smuggling via non-ASCII characters in HTTP parser",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69225",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Request smuggling vulnerability via non-ASCII decimals in Range header",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69226",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Information disclosure of path components via static file path normalization",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "aiohttp",
-          "version": "3.12.15",
-          "cve": "CVE-2025-69230",
-          "severity": "LOW",
-          "title": "aiohttp: aiohttp: Denial of Service via specially crafted invalid cookies",
-          "fixedVersion": "3.13.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "astropy",
-          "version": "5.3.2",
-          "cve": "CVE-2023-41334",
-          "severity": "HIGH",
-          "title": "Astropy is a project for astronomy in Python that fosters interoperabi ...",
-          "fixedVersion": "5.3.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "biopython",
-          "version": "1.85",
-          "cve": "CVE-2025-68463",
-          "severity": "MEDIUM",
-          "title": "python-biopython: python-biopython: Information disclosure via XML External Entity (XXE) vulnerability in Bio.Entrez",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "bokeh",
-          "version": "3.4.3",
-          "cve": "CVE-2026-21883",
-          "severity": "MEDIUM",
-          "title": "Bokeh: Bokeh: Information disclosure and unauthorized actions via flawed WebSocket origin validation",
-          "fixedVersion": "3.8.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "bokeh",
-          "version": "3.7.3",
-          "cve": "CVE-2026-21883",
-          "severity": "MEDIUM",
-          "title": "Bokeh: Bokeh: Information disclosure and unauthorized actions via flawed WebSocket origin validation",
-          "fixedVersion": "3.8.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "distributed",
-          "version": "2024.8.0",
-          "cve": "CVE-2026-23528",
-          "severity": "MEDIUM",
-          "title": "Dask distributed is a distributed task scheduler for Dask. Prior to 20 ...",
-          "fixedVersion": "2026.1.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "distributed",
-          "version": "2025.7.0",
-          "cve": "CVE-2026-23528",
-          "severity": "MEDIUM",
-          "title": "Dask distributed is a distributed task scheduler for Dask. Prior to 20 ...",
-          "fixedVersion": "2026.1.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "filelock",
-          "version": "3.18.0",
-          "cve": "CVE-2025-68146",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock: Time-of-Check-Time-of-Use (TOCTOU) race condition and symlink attack allows arbitrary file corruption or truncation",
-          "fixedVersion": "3.20.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "filelock",
-          "version": "3.18.0",
-          "cve": "CVE-2026-22701",
-          "severity": "MEDIUM",
-          "title": "filelock: filelock Time-of-Check-Time-of-Use (TOCTOU) in SoftFileLock",
-          "fixedVersion": "3.20.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "fonttools",
-          "version": "4.59.0",
-          "cve": "CVE-2025-66034",
-          "severity": "MEDIUM",
-          "title": "fonttools: fontTools: Arbitrary file write leading to remote code execution via malicious .designspace file",
-          "fixedVersion": "4.60.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-12060",
-          "severity": "HIGH",
-          "title": "keras: Keras Path Traversal Vulnerability",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-8747",
-          "severity": "HIGH",
-          "title": "CVE-2025-8747 affecting package keras for versions less than 3.3.3-3",
-          "fixedVersion": "3.11.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-9905",
-          "severity": "HIGH",
-          "title": "keras: Arbitary Code execution in Keras load_model()",
-          "fixedVersion": "3.11.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-9906",
-          "severity": "HIGH",
-          "title": "keras: Arbitrary Code execution in Keras Safe Mode",
-          "fixedVersion": "3.11.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2026-0897",
-          "severity": "HIGH",
-          "title": "Keras: Keras: Denial of Service via crafted HDF5 weight loading file",
-          "fixedVersion": "3.12.1, 3.13.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2026-1669",
-          "severity": "HIGH",
-          "title": "keras: Keras: Information disclosure via arbitrary file read in model loading mechanism",
-          "fixedVersion": "3.13.2, 3.12.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.10.0",
-          "cve": "CVE-2025-12058",
-          "severity": "MEDIUM",
-          "title": "keras: Keras Model.load_model Arbitrary Local File Loading and SSRF",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-49655",
-          "severity": "CRITICAL",
-          "title": "keras: Keras deserialization of untrusted data",
-          "fixedVersion": "3.11.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-12060",
-          "severity": "HIGH",
-          "title": "keras: Keras Path Traversal Vulnerability",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-9905",
-          "severity": "HIGH",
-          "title": "keras: Arbitary Code execution in Keras load_model()",
-          "fixedVersion": "3.11.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2026-0897",
-          "severity": "HIGH",
-          "title": "Keras: Keras: Denial of Service via crafted HDF5 weight loading file",
-          "fixedVersion": "3.12.1, 3.13.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2026-1669",
-          "severity": "HIGH",
-          "title": "keras: Keras: Information disclosure via arbitrary file read in model loading mechanism",
-          "fixedVersion": "3.13.2, 3.12.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "keras",
-          "version": "3.11.1",
-          "cve": "CVE-2025-12058",
-          "severity": "MEDIUM",
-          "title": "keras: Keras Model.load_model Arbitrary Local File Loading and SSRF",
-          "fixedVersion": "3.12.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "protobuf",
-          "version": "5.29.5",
-          "cve": "CVE-2026-0994",
-          "severity": "HIGH",
-          "title": "python: protobuf: Protobuf: Denial of Service due to recursion depth bypass",
-          "fixedVersion": "6.33.5, 5.29.6",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "starlette",
-          "version": "0.47.2",
-          "cve": "CVE-2025-62727",
-          "severity": "HIGH",
-          "title": "starlette: Starlette DoS via Range header merging",
-          "fixedVersion": "0.49.1",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "urllib3",
-          "version": "2.5.0",
-          "cve": "CVE-2025-66418",
-          "severity": "HIGH",
-          "title": "urllib3: urllib3: Unbounded decompression chain leads to resource exhaustion",
-          "fixedVersion": "2.6.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "urllib3",
-          "version": "2.5.0",
-          "cve": "CVE-2025-66471",
-          "severity": "HIGH",
-          "title": "urllib3: urllib3 Streaming API improperly handles highly compressed data",
-          "fixedVersion": "2.6.0",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "urllib3",
-          "version": "2.5.0",
-          "cve": "CVE-2026-21441",
-          "severity": "HIGH",
-          "title": "urllib3: urllib3 vulnerable to decompression-bomb safeguard bypass when following HTTP redirects (streaming API)",
-          "fixedVersion": "2.6.3",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "werkzeug",
-          "version": "3.1.3",
-          "cve": "CVE-2025-66221",
-          "severity": "MEDIUM",
-          "title": "Werkzeug: Werkzeug: Denial of service via Windows device names in path segments",
-          "fixedVersion": "3.1.4",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "werkzeug",
-          "version": "3.1.3",
-          "cve": "CVE-2026-21860",
-          "severity": "MEDIUM",
-          "title": " Werkzeug safe_join() allows Windows special device names with compound extensions",
-          "fixedVersion": "3.1.5",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "werkzeug",
-          "version": "3.1.3",
-          "cve": "CVE-2026-27199",
-          "severity": "MEDIUM",
-          "title": " Werkzeug safe_join() allows Windows special device names",
-          "fixedVersion": "3.1.6",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        },
-        {
-          "pkg": "wheel",
-          "version": "0.45.1",
-          "cve": "CVE-2026-24049",
-          "severity": "HIGH",
-          "title": "wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking",
-          "fixedVersion": "0.46.2",
-          "type": "vuln",
-          "target": "uv.lock",
-          "targetUrl": "https://github.com/ActiveInferenceInstitute/GEO-INFER/blob/0012990b7009237594e83750befb9839042e36bf/uv.lock",
-          "scannedRef": "0012990b7009237594e83750befb9839042e36bf"
-        }
-      ],
-      "lastUpdated": "2026-02-26T05:13:22.544Z"
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-02-21T02:31:29.911Z"
     },
     {
       "full_name": "aha-hyeong/kumiho",
       "url": "https://github.com/aha-hyeong/kumiho",
       "description": "kumiho is self-hosting web media server.",
-      "stars": 30,
-      "commits": 655,
+      "stars": 27,
+      "commits": 638,
       "contributors": 1,
       "forks": 0,
-      "open_issues": 12,
+      "open_issues": 6,
       "license": "Apache License 2.0",
       "topics": [
         "comics",
@@ -756,7 +118,7 @@
         "web-viewer",
         "webtoon"
       ],
-      "size": 79029,
+      "size": 63973,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -772,10 +134,9 @@
       "language": "TypeScript",
       "languages": {
         "TypeScript": 479665,
-        "Go": 405652,
+        "Go": 405469,
         "CSS": 128106,
-        "Shell": 2209,
-        "Dockerfile": 2119,
+        "Dockerfile": 1965,
         "JavaScript": 632,
         "HTML": 410
       },
@@ -794,15 +155,15 @@
       "packageManager": null,
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 88,
+        "avgMessageLength": 105,
         "emDashCount": 0,
         "enDashCount": 0,
-        "aiMentionCount": 0
+        "aiMentionCount": 1
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 42,
-        "medianChanges": 25,
+        "avgChanges": 5,
+        "medianChanges": 6,
         "largeCommitCount": 0
       },
       "contributorSignals": {
@@ -825,17 +186,17 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:08.318Z"
+      "lastUpdated": "2026-02-21T02:31:29.555Z"
     },
     {
       "full_name": "ancsemi/Haven",
       "url": "https://github.com/ancsemi/Haven",
       "description": "Self-hosted private chat — No cloud, no telemetry, no Big Tech. Discord alternative that runs on your own machine.",
-      "stars": 212,
-      "commits": 184,
+      "stars": 161,
+      "commits": 154,
       "contributors": 4,
-      "forks": 13,
-      "open_issues": 17,
+      "forks": 10,
+      "open_issues": 10,
       "license": "Other",
       "topics": [
         "android-application",
@@ -845,7 +206,6 @@
         "discord-alternative",
         "docker",
         "encryption",
-        "linux",
         "messaging",
         "migration",
         "nodejs",
@@ -853,13 +213,14 @@
         "privacy",
         "self-hosted",
         "selfhosted",
-        "server",
+        "selfhosted-apps",
         "soundcloud",
         "streaming",
         "voice-chat",
+        "websocket",
         "youtube"
       ],
-      "size": 3285,
+      "size": 2338,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -898,12 +259,12 @@
       "created_at": "2026-02-11T05:16:20Z",
       "language": "JavaScript",
       "languages": {
-        "JavaScript": 1245271,
-        "CSS": 355336,
-        "HTML": 232580,
-        "PowerShell": 11866,
-        "Batchfile": 7670,
-        "Shell": 6595,
+        "JavaScript": 1033724,
+        "CSS": 304551,
+        "HTML": 183961,
+        "Shell": 6325,
+        "Batchfile": 6143,
+        "PowerShell": 2508,
         "Dockerfile": 1986
       },
       "is_archived": false,
@@ -915,7 +276,7 @@
         "followers": 3,
         "following": 2,
         "bio": "Just an average dude. I like games and guns. ",
-        "public_repos": 4,
+        "public_repos": 3,
         "is_private": false
       },
       "packageManager": {
@@ -925,26 +286,27 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 442,
-        "emDashCount": 0,
+        "avgMessageLength": 312,
+        "emDashCount": 1,
         "enDashCount": 0,
-        "aiMentionCount": 0
+        "aiMentionCount": 1
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 690,
-        "medianChanges": 31,
-        "largeCommitCount": 3
+        "avgChanges": 69,
+        "medianChanges": 13,
+        "largeCommitCount": 0
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
         "matchedBots": []
       },
       "detectionSummary": {
-        "score": 1,
+        "score": 3,
         "level": "low",
         "reasons": [
-          "large commits detected"
+          "1 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits"
         ]
       },
       "aiTools": [
@@ -954,18 +316,169 @@
           "evidence_url": "https://github.com/ancsemi/Haven/commit/430b3deea2fa9ab686e9ca7f01fb9855bf8a10fc"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:08.466Z"
+      "vulnerableDependencies": [
+        "axios@0.21.4 (CVE-2023-45857)",
+        "axios@0.21.4 (CVE-2025-27152)",
+        "axios@0.21.4 (CVE-2026-25639)",
+        "qs@6.14.1 (CVE-2026-2391)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2025-27152",
+          "severity": "HIGH",
+          "title": "axios: Possible SSRF and Credential Leakage via Absolute URL in axios Requests",
+          "fixedVersion": "1.8.2, 0.30.0",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        },
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2026-25639",
+          "severity": "HIGH",
+          "title": "axios: Axios affected by Denial of Service via __proto__ Key in mergeConfig",
+          "fixedVersion": "1.13.5, 0.30.3",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        },
+        {
+          "pkg": "axios",
+          "version": "0.21.4",
+          "cve": "CVE-2023-45857",
+          "severity": "MEDIUM",
+          "title": "axios: exposure of confidential data stored in cookies",
+          "fixedVersion": "1.6.0, 0.28.0",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        },
+        {
+          "pkg": "qs",
+          "version": "6.14.1",
+          "cve": "CVE-2026-2391",
+          "severity": "LOW",
+          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
+          "fixedVersion": "6.14.2",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/ancsemi/Haven/blob/56bbb5bca8858454306ff6b90281df6b61791b1f/package-lock.json",
+          "scannedRef": "56bbb5bca8858454306ff6b90281df6b61791b1f"
+        }
+      ],
+      "lastUpdated": "2026-02-21T02:31:25.285Z"
+    },
+    {
+      "full_name": "bytecube/DeDox",
+      "url": "https://github.com/bytecube/DeDox",
+      "description": "A self-hosted, privacy-first document ingestion service that captures, processes, extracts metadata, and archives documents to Paperless-ngx.",
+      "stars": 4,
+      "commits": 8,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "Apache License 2.0",
+      "topics": [
+        "ai",
+        "claude-code",
+        "dms",
+        "documents",
+        "extraction",
+        "openweb-ui",
+        "paperless-ngx",
+        "rag",
+        "scan",
+        "vibe-coded"
+      ],
+      "size": 15190,
+      "default_branch": "master",
+      "contributorDetails": [
+        {
+          "login": "bytecube",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2347676?v=4",
+          "url": "https://github.com/bytecube",
+          "created_at": "2012-09-14T15:42:20Z",
+          "followers": 1,
+          "following": 7
+        }
+      ],
+      "created_at": "2026-01-24T23:31:43Z",
+      "language": "Python",
+      "languages": {
+        "Python": 562035,
+        "HTML": 148062,
+        "CSS": 29071,
+        "JavaScript": 15007,
+        "Dockerfile": 1674
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/bytecube/DeDox/blob/master/.github/workflows/lint.yml",
+      "owner": {
+        "login": "bytecube",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2347676?v=4",
+        "url": "https://github.com/bytecube",
+        "created_at": "2012-09-14T15:42:20Z",
+        "followers": 1,
+        "following": 7,
+        "bio": null,
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pip",
+        "detected_via": "requirements.txt",
+        "evidence_url": "https://github.com/bytecube/DeDox/blob/master/requirements.txt"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 8,
+        "avgMessageLength": 216,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 3428,
+        "medianChanges": 16,
+        "largeCommitCount": 3
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/bytecube/DeDox/blob/master/CLAUDE.md"
+        }
+      ],
+      "lastUpdated": "2026-02-26T14:52:14.417Z"
     },
     {
       "full_name": "ClavixDev/Awesome-Vibecoding-Guide",
       "url": "https://github.com/ClavixDev/Awesome-Vibecoding-Guide",
       "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
-      "stars": 469,
+      "stars": 465,
       "commits": 176,
       "contributors": 3,
-      "forks": 57,
+      "forks": 55,
       "open_issues": 0,
       "license": "MIT License",
       "topics": [
@@ -994,7 +507,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 36027,
+          "followers": 34835,
           "following": 0
         },
         {
@@ -1060,19 +573,17 @@
           "evidence_url": "https://github.com/ClavixDev/Awesome-Vibecoding-Guide/commit/4336e027058ebac4ea5f5745b07e2d43ef3045f9"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:10.600Z"
+      "lastUpdated": "2026-02-24T01:54:23.987Z"
     },
     {
       "full_name": "cloudflare/vibesdk",
       "url": "https://github.com/cloudflare/vibesdk",
       "description": "An open-source vibe coding platform that helps you build your own vibe-coding platform, built entirely on Cloudflare stack ",
-      "stars": 4816,
+      "stars": 4787,
       "commits": 861,
       "contributors": 12,
-      "forks": 1128,
-      "open_issues": 41,
+      "forks": 1121,
+      "open_issues": 40,
       "license": "MIT License",
       "topics": [
         "ai",
@@ -1082,7 +593,7 @@
         "text-to-app",
         "vibe-coding"
       ],
-      "size": 3646,
+      "size": 3794,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -1091,7 +602,7 @@
           "url": "https://github.com/AshishKumar4",
           "created_at": "2015-01-18T03:47:06Z",
           "followers": 184,
-          "following": 66
+          "following": 65
         },
         {
           "login": "karishnu",
@@ -1122,7 +633,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/10666267?v=4",
           "url": "https://github.com/mysticrenji",
           "created_at": "2015-01-23T06:52:34Z",
-          "followers": 30,
+          "followers": 31,
           "following": 13
         },
         {
@@ -1130,7 +641,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/42958812?v=4",
           "url": "https://github.com/roerohan",
           "created_at": "2018-09-04T07:01:00Z",
-          "followers": 159,
+          "followers": 158,
           "following": 72
         },
         {
@@ -1184,10 +695,10 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/314135?v=4",
         "url": "https://github.com/cloudflare",
         "created_at": "2010-06-25T01:24:59Z",
-        "followers": 11756,
+        "followers": 11621,
         "following": 0,
         "bio": null,
-        "public_repos": 549,
+        "public_repos": 547,
         "is_private": false
       },
       "packageManager": {
@@ -1329,7 +840,7 @@
           "cve": "CVE-2025-69873",
           "severity": "MEDIUM",
           "title": "ajv: ReDoS via $data reference",
-          "fixedVersion": "8.18.0, 6.14.0",
+          "fixedVersion": "8.18.0",
           "type": "vuln",
           "target": "bun.lock",
           "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
@@ -1448,8 +959,8 @@
           "version": "3.1.2",
           "cve": "CVE-2026-26996",
           "severity": "HIGH",
-          "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
-          "fixedVersion": "10.2.1, 9.0.6, 8.0.5, 7.4.7, 6.2.1, 5.1.7, 4.2.4, 3.1.3",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "bun.lock",
           "targetUrl": "https://github.com/cloudflare/vibesdk/blob/27b7a9bf9e8fcced21e28f7c97d9134c120614f3/bun.lock",
@@ -1660,17 +1171,17 @@
           "scannedRef": "27b7a9bf9e8fcced21e28f7c97d9134c120614f3"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:12.489Z"
+      "lastUpdated": "2026-02-21T02:31:36.315Z"
     },
     {
       "full_name": "d3mocide/Sovereign_Watch",
       "url": "https://github.com/d3mocide/Sovereign_Watch",
       "description": "Distributed Multi-INT Fusion Center designed for decentralized situational awareness.",
-      "stars": 34,
-      "commits": 152,
-      "contributors": 3,
-      "forks": 5,
-      "open_issues": 1,
+      "stars": 23,
+      "commits": 83,
+      "contributors": 2,
+      "forks": 3,
+      "open_issues": 0,
       "license": null,
       "topics": [
         "adbs",
@@ -1683,7 +1194,7 @@
         "tactical",
         "vibe-coded"
       ],
-      "size": 4546,
+      "size": 4220,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -1695,34 +1206,26 @@
           "following": 2
         },
         {
-          "login": "google-labs-jules[bot]",
-          "avatar_url": "https://avatars.githubusercontent.com/in/842251?v=4",
-          "url": "https://github.com/apps/google-labs-jules",
-          "created_at": "2024-02-26T18:41:52Z",
-          "followers": 0,
-          "following": 0
-        },
-        {
           "login": "claude",
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 36027,
+          "followers": 35119,
           "following": 0
         }
       ],
       "created_at": "2026-02-03T06:47:33Z",
       "language": "Python",
       "languages": {
-        "Python": 415606,
-        "TypeScript": 361796,
-        "Shell": 16261,
-        "Dockerfile": 12326,
-        "PLpgSQL": 3797,
+        "Python": 368728,
+        "TypeScript": 283579,
         "PowerShell": 3623,
+        "PLpgSQL": 3547,
+        "Shell": 3414,
         "JavaScript": 2076,
+        "Dockerfile": 1574,
         "HTML": 1515,
-        "CSS": 1233
+        "CSS": 1061
       },
       "is_archived": false,
       "owner": {
@@ -1739,34 +1242,41 @@
       "packageManager": null,
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 242,
-        "emDashCount": 0,
-        "enDashCount": 0,
-        "aiMentionCount": 1
+        "avgMessageLength": 366,
+        "emDashCount": 4,
+        "enDashCount": 1,
+        "aiMentionCount": 12
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 260,
-        "medianChanges": 225,
-        "largeCommitCount": 1
+        "avgChanges": 1267,
+        "medianChanges": 715,
+        "largeCommitCount": 6
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
         "matchedBots": []
       },
       "detectionSummary": {
-        "score": 5,
+        "score": 8,
         "level": "medium",
         "reasons": [
-          "1 file-based AI signal(s)",
+          "2 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages",
           "large commits detected"
         ]
       },
       "aiTools": [
         {
           "name": "claude",
-          "detected_via": "file",
-          "evidence_url": "https://github.com/d3mocide/Sovereign_Watch/blob/main/AGENTS.md"
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/d3mocide/Sovereign_Watch/commit/d614b43576c7f78304151202d7ca216ef12fadbd"
+        },
+        {
+          "name": "gemini",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/d3mocide/Sovereign_Watch/commit/df35074ced3dca37ce8bc205979f35e47e95542c"
         }
       ],
       "vulnerableDependencies": [
@@ -1794,8 +1304,8 @@
           "fixedVersion": "1.34.42",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1806,8 +1316,8 @@
           "fixedVersion": "1.40.16",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1818,8 +1328,8 @@
           "fixedVersion": "1.53.1.dev1",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1829,8 +1339,8 @@
           "title": "litellm passes untrusted data to `eval` function without sanitization",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1841,8 +1351,8 @@
           "fixedVersion": "1.35.36",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1853,8 +1363,8 @@
           "fixedVersion": "1.44.8",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1865,8 +1375,8 @@
           "fixedVersion": "1.56.2",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1877,8 +1387,8 @@
           "fixedVersion": "1.44.12",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1888,8 +1398,8 @@
           "title": "LiteLLM Has a Leakage of Langfuse API Keys",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1900,8 +1410,8 @@
           "fixedVersion": "1.61.15",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1911,8 +1421,8 @@
           "title": "SQL injection in litellm",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1923,8 +1433,8 @@
           "fixedVersion": "1.40.0",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         },
         {
           "pkg": "litellm",
@@ -1935,21 +1445,21 @@
           "fixedVersion": "1.40.15",
           "type": "vuln",
           "target": "backend/api/requirements.txt",
-          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/080f9a5a859640113f60f8f5d14d814d80168cc2/backend/api/requirements.txt",
-          "scannedRef": "080f9a5a859640113f60f8f5d14d814d80168cc2"
+          "targetUrl": "https://github.com/d3mocide/Sovereign_Watch/blob/b7a32ce64f1e4aad12b765824af39374c7ce0945/backend/api/requirements.txt",
+          "scannedRef": "b7a32ce64f1e4aad12b765824af39374c7ce0945"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:13.295Z"
+      "lastUpdated": "2026-02-24T15:15:51.508Z"
     },
     {
       "full_name": "datawhalechina/easy-vibe",
       "url": "https://github.com/datawhalechina/easy-vibe",
-      "description": "vibe coding from 0 to 1 ｜深入浅出 AI 编程 ｜ vibecoding 零基础教程",
-      "stars": 2814,
-      "commits": 306,
+      "description": "Vibe coding from 0 to 1 ｜深入浅出 AI 编程",
+      "stars": 2801,
+      "commits": 298,
       "contributors": 6,
-      "forks": 244,
-      "open_issues": 19,
+      "forks": 242,
+      "open_issues": 17,
       "license": null,
       "topics": [
         "agent",
@@ -1973,7 +1483,7 @@
         "vscode",
         "workflow"
       ],
-      "size": 332668,
+      "size": 332428,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -2028,8 +1538,8 @@
       "created_at": "2025-12-28T16:45:28Z",
       "language": "JavaScript",
       "languages": {
-        "JavaScript": 9453,
-        "Shell": 1495
+        "JavaScript": 4684,
+        "Shell": 1012
       },
       "is_archived": false,
       "hasLinting": true,
@@ -2039,7 +1549,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/46047812?v=4",
         "url": "https://github.com/datawhalechina",
         "created_at": "2018-12-21T11:17:27Z",
-        "followers": 21849,
+        "followers": 21826,
         "following": 0,
         "bio": "for the learner，和学习者一起成长",
         "public_repos": 183,
@@ -2052,15 +1562,15 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 354,
+        "avgMessageLength": 333,
         "emDashCount": 0,
         "enDashCount": 0,
-        "aiMentionCount": 1
+        "aiMentionCount": 3
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 3407,
-        "medianChanges": 1401,
+        "avgChanges": 5661,
+        "medianChanges": 3349,
         "largeCommitCount": 5
       },
       "contributorSignals": {
@@ -2068,10 +1578,11 @@
         "matchedBots": []
       },
       "detectionSummary": {
-        "score": 5,
+        "score": 7,
         "level": "medium",
         "reasons": [
           "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
           "large commits detected"
         ]
       },
@@ -2082,19 +1593,47 @@
           "evidence_url": "https://github.com/datawhalechina/easy-vibe/blob/main/CLAUDE.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:17.748Z"
+      "vulnerableDependencies": [
+        "lodash-es@4.17.22 (CVE-2025-13465)",
+        "lodash@4.17.21 (CVE-2025-13465)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "lodash",
+          "version": "4.17.21",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/datawhalechina/easy-vibe/blob/48f2e60f7cd503ee26c50ff2797874d0ce0962a3/package-lock.json",
+          "scannedRef": "48f2e60f7cd503ee26c50ff2797874d0ce0962a3"
+        },
+        {
+          "pkg": "lodash-es",
+          "version": "4.17.22",
+          "cve": "CVE-2025-13465",
+          "severity": "MEDIUM",
+          "title": "lodash: prototype pollution in _.unset and _.omit functions",
+          "fixedVersion": "4.17.23",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/datawhalechina/easy-vibe/blob/48f2e60f7cd503ee26c50ff2797874d0ce0962a3/package-lock.json",
+          "scannedRef": "48f2e60f7cd503ee26c50ff2797874d0ce0962a3"
+        }
+      ],
+      "lastUpdated": "2026-02-25T15:18:03.033Z"
     },
     {
       "full_name": "erkexzcx/flightlesssomething",
       "url": "https://github.com/erkexzcx/flightlesssomething",
       "description": "flightlessmango.com clone, written in Go. Fully vibe coded!",
       "stars": 19,
-      "commits": 200,
+      "commits": 186,
       "contributors": 3,
       "forks": 3,
-      "open_issues": 1,
+      "open_issues": 14,
       "license": null,
       "topics": [
         "gin",
@@ -2103,7 +1642,7 @@
         "mangohud",
         "vibe-coded"
       ],
-      "size": 14932,
+      "size": 15031,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -2131,13 +1670,13 @@
       "created_at": "2024-06-29T19:27:15Z",
       "language": "Go",
       "languages": {
-        "Go": 395938,
-        "Vue": 248927,
+        "Go": 273510,
+        "Vue": 242033,
         "JavaScript": 70517,
         "Shell": 12739,
         "Makefile": 1606,
         "Dockerfile": 1547,
-        "HTML": 504
+        "HTML": 429
       },
       "is_archived": false,
       "hasLinting": true,
@@ -2160,27 +1699,26 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 786,
-        "emDashCount": 1,
+        "avgMessageLength": 1282,
+        "emDashCount": 0,
         "enDashCount": 0,
-        "aiMentionCount": 23
+        "aiMentionCount": 29
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 573,
-        "medianChanges": 78,
-        "largeCommitCount": 3
+        "avgChanges": 360,
+        "medianChanges": 86,
+        "largeCommitCount": 2
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
         "matchedBots": []
       },
       "detectionSummary": {
-        "score": 8,
+        "score": 7,
         "level": "medium",
         "reasons": [
           "1 file-based AI signal(s)",
-          "dash punctuation pattern present in commits",
           "multiple AI mentions in commit messages",
           "large commits detected"
         ]
@@ -2192,15 +1730,13 @@
           "evidence_url": "https://github.com/erkexzcx/flightlesssomething/blob/main/.github/copilot-instructions.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:20.002Z"
+      "lastUpdated": "2026-02-25T15:18:29.923Z"
     },
     {
       "full_name": "feiskyer/claude-code-settings",
       "url": "https://github.com/feiskyer/claude-code-settings",
       "description": "Claude Code settings, commands and agents for vibe coding",
-      "stars": 1233,
+      "stars": 1224,
       "commits": 67,
       "contributors": 3,
       "forks": 186,
@@ -2227,7 +1763,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/676637?v=4",
           "url": "https://github.com/feiskyer",
           "created_at": "2011-03-18T07:45:58Z",
-          "followers": 2715,
+          "followers": 2713,
           "following": 21
         },
         {
@@ -2235,7 +1771,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/17706099?v=4",
           "url": "https://github.com/imbajin",
           "created_at": "2016-03-07T15:24:16Z",
-          "followers": 113,
+          "followers": 109,
           "following": 2
         },
         {
@@ -2244,7 +1780,7 @@
           "url": "https://github.com/Kamalnrf",
           "created_at": "2015-06-09T07:52:10Z",
           "followers": 105,
-          "following": 106
+          "following": 105
         }
       ],
       "created_at": "2025-07-18T06:22:12Z",
@@ -2259,7 +1795,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/676637?v=4",
         "url": "https://github.com/feiskyer",
         "created_at": "2011-03-18T07:45:58Z",
-        "followers": 2715,
+        "followers": 2713,
         "following": 21,
         "bio": null,
         "public_repos": 101,
@@ -2305,9 +1841,7 @@
           "evidence_url": "https://github.com/feiskyer/claude-code-settings/commit/b78c98509c24e7b689ae742382ebde0087e55061"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:21.777Z"
+      "lastUpdated": "2026-02-24T01:54:44.348Z"
     },
     {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
@@ -2375,20 +1909,20 @@
       "aiTools": null,
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:21.363Z"
+      "lastUpdated": "2026-02-21T02:31:24.134Z"
     },
     {
       "full_name": "hyunjun6928-netizen/salmalm",
       "url": "https://github.com/hyunjun6928-netizen/salmalm",
       "description": "🧠 Personal AI Gateway — Single-file Python AI agent with multi-LLM, tools, vision, TTS, encrypted vault. Your own ChatGPT on localhost.",
-      "stars": 26,
-      "commits": 805,
+      "stars": 6,
+      "commits": 336,
       "contributors": 1,
-      "forks": 3,
+      "forks": 1,
       "open_issues": 0,
       "license": "MIT License",
       "topics": null,
-      "size": 5982,
+      "size": 3451,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -2396,19 +1930,17 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/253926759?v=4",
           "url": "https://github.com/hyunjun6928-netizen",
           "created_at": "2026-01-09T12:27:19Z",
-          "followers": 1,
+          "followers": 0,
           "following": 0
         }
       ],
       "created_at": "2026-02-18T04:46:00Z",
       "language": "Python",
       "languages": {
-        "Python": 2802180,
-        "HTML": 1615639,
-        "JavaScript": 775620,
-        "TypeScript": 268405,
-        "Shell": 7105,
-        "Dockerfile": 1406
+        "Python": 2176648,
+        "HTML": 294737,
+        "Shell": 1608,
+        "Dockerfile": 1415
       },
       "is_archived": false,
       "owner": {
@@ -2416,7 +1948,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/253926759?v=4",
         "url": "https://github.com/hyunjun6928-netizen",
         "created_at": "2026-01-09T12:27:19Z",
-        "followers": 1,
+        "followers": 0,
         "following": 0,
         "bio": null,
         "public_repos": 3,
@@ -2429,15 +1961,15 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 321,
-        "emDashCount": 22,
+        "avgMessageLength": 398,
+        "emDashCount": 19,
         "enDashCount": 0,
-        "aiMentionCount": 1
+        "aiMentionCount": 0
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 176,
-        "medianChanges": 127,
+        "avgChanges": 35,
+        "medianChanges": 16,
         "largeCommitCount": 0
       },
       "contributorSignals": {
@@ -2445,23 +1977,16 @@
         "matchedBots": []
       },
       "detectionSummary": {
-        "score": 3,
+        "score": 1,
         "level": "low",
         "reasons": [
-          "1 commit-message AI signal(s)",
           "dash punctuation pattern present in commits"
         ]
       },
-      "aiTools": [
-        {
-          "name": "gemini",
-          "detected_via": "commits",
-          "evidence_url": "https://github.com/hyunjun6928-netizen/salmalm/commit/7544d4173093c214fd9e8d6ad15fd4109da3b404"
-        }
-      ],
+      "aiTools": null,
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:24.354Z"
+      "lastUpdated": "2026-02-21T02:31:34.107Z"
     },
     {
       "full_name": "jetpack3331/ai-chat-history-manager",
@@ -2559,7 +2084,111 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:24.594Z"
+      "lastUpdated": "2026-02-21T02:31:35.829Z"
+    },
+    {
+      "full_name": "loppety/Awesome-Vibecoding-Guide",
+      "url": "https://github.com/loppety/Awesome-Vibecoding-Guide",
+      "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
+      "stars": 470,
+      "commits": 176,
+      "contributors": 3,
+      "forks": 57,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": [
+        "ai-agents",
+        "awesome",
+        "coding-standards",
+        "guide",
+        "vibe-coded",
+        "vibe-coding",
+        "vibecoder",
+        "vibecoding"
+      ],
+      "size": 968,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "loppety",
+          "avatar_url": "https://avatars.githubusercontent.com/u/48731762?v=4",
+          "url": "https://github.com/loppety",
+          "created_at": "2019-03-19T18:27:47Z",
+          "followers": 37,
+          "following": 1
+        },
+        {
+          "login": "claude",
+          "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+          "url": "https://github.com/claude",
+          "created_at": "2009-05-07T00:15:43Z",
+          "followers": 36293,
+          "following": 0
+        },
+        {
+          "login": "google-labs-jules[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/842251?v=4",
+          "url": "https://github.com/apps/google-labs-jules",
+          "created_at": "2024-02-26T18:41:52Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2025-10-28T13:21:50Z",
+      "language": null,
+      "languages": null,
+      "is_archived": false,
+      "owner": {
+        "login": "loppety",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48731762?v=4",
+        "url": "https://github.com/loppety",
+        "created_at": "2019-03-19T18:27:47Z",
+        "followers": 37,
+        "following": 1,
+        "bio": null,
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 481,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 13
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 3726,
+        "medianChanges": 1118,
+        "largeCommitCount": 4
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/loppety/Awesome-Vibecoding-Guide/commit/7451f690b29723e62cac2d0fef07f306d5478d8b"
+        },
+        {
+          "name": "vibe",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/loppety/Awesome-Vibecoding-Guide/commit/4336e027058ebac4ea5f5745b07e2d43ef3045f9"
+        }
+      ],
+      "lastUpdated": "2026-02-26T14:52:01.703Z"
     },
     {
       "full_name": "Nickqiaoo/chatcode",
@@ -2791,17 +2420,17 @@
           "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:24.942Z"
+      "lastUpdated": "2026-02-24T15:15:46.853Z"
     },
     {
       "full_name": "oisee/vibing-steampunk",
       "url": "https://github.com/oisee/vibing-steampunk",
       "description": "vs-punk: ADT to MCP bridge - Vibe code in ABAP / AMDP",
-      "stars": 130,
-      "commits": 199,
+      "stars": 122,
+      "commits": 198,
       "contributors": 3,
-      "forks": 36,
-      "open_issues": 16,
+      "forks": 32,
+      "open_issues": 15,
       "license": null,
       "topics": [
         "abap",
@@ -2809,7 +2438,7 @@
         "mcp",
         "vibe-coding"
       ],
-      "size": 22274,
+      "size": 22268,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -2817,7 +2446,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
           "url": "https://github.com/oisee",
           "created_at": "2009-02-10T17:29:21Z",
-          "followers": 165,
+          "followers": 163,
           "following": 53
         },
         {
@@ -2854,10 +2483,10 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
         "url": "https://github.com/oisee",
         "created_at": "2009-02-10T17:29:21Z",
-        "followers": 165,
+        "followers": 163,
         "following": 53,
         "bio": null,
-        "public_repos": 314,
+        "public_repos": 311,
         "is_private": false
       },
       "packageManager": {
@@ -2867,27 +2496,26 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 380,
+        "avgMessageLength": 388,
         "emDashCount": 0,
         "enDashCount": 0,
         "aiMentionCount": 24
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 1269,
-        "medianChanges": 306,
-        "largeCommitCount": 3
+        "avgChanges": 989,
+        "medianChanges": 145,
+        "largeCommitCount": 2
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
         "matchedBots": []
       },
       "detectionSummary": {
-        "score": 11,
-        "level": "high",
+        "score": 7,
+        "level": "medium",
         "reasons": [
           "1 file-based AI signal(s)",
-          "2 commit-message AI signal(s)",
           "multiple AI mentions in commit messages",
           "large commits detected"
         ]
@@ -2897,21 +2525,9 @@
           "name": "claude",
           "detected_via": "file",
           "evidence_url": "https://github.com/oisee/vibing-steampunk/blob/main/CLAUDE.md"
-        },
-        {
-          "name": "gemini",
-          "detected_via": "commits",
-          "evidence_url": "https://github.com/oisee/vibing-steampunk/commit/24b6334d0770848c125f48ab9af11f0c434f3f83"
-        },
-        {
-          "name": "copilot",
-          "detected_via": "commits",
-          "evidence_url": "https://github.com/oisee/vibing-steampunk/commit/24b6334d0770848c125f48ab9af11f0c434f3f83"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:27.149Z"
+      "lastUpdated": "2026-02-24T15:15:35.471Z"
     },
     {
       "full_name": "oisee/zork-abap",
@@ -2948,7 +2564,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
           "url": "https://github.com/oisee",
           "created_at": "2009-02-10T17:29:21Z",
-          "followers": 165,
+          "followers": 164,
           "following": 53
         }
       ],
@@ -2964,10 +2580,10 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/53392?v=4",
         "url": "https://github.com/oisee",
         "created_at": "2009-02-10T17:29:21Z",
-        "followers": 165,
+        "followers": 164,
         "following": 53,
         "bio": null,
-        "public_repos": 314,
+        "public_repos": 312,
         "is_private": false
       },
       "packageManager": {
@@ -3008,9 +2624,7 @@
           "evidence_url": "https://github.com/oisee/zork-abap/blob/main/CLAUDE.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:27.421Z"
+      "lastUpdated": "2026-02-25T15:18:37.860Z"
     },
     {
       "full_name": "pinto-org/interface",
@@ -3019,11 +2633,11 @@
       "stars": 7,
       "commits": 3224,
       "contributors": 13,
-      "forks": 5,
-      "open_issues": 3,
+      "forks": 4,
+      "open_issues": 2,
       "license": "MIT License",
       "topics": null,
-      "size": 36865,
+      "size": 36893,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -3185,7 +2799,6 @@
         "@metamask/sdk-communication-layer@0.32.0 (GHSA-qj3p-xc97-xw74)",
         "@metamask/sdk@0.32.0 (GHSA-qj3p-xc97-xw74)",
         "@remix-run/router@1.18.0 (CVE-2026-22029)",
-        "bn.js@5.2.1 (CVE-2026-2739)",
         "glob@10.4.5 (CVE-2025-64756)",
         "h3@1.12.0 (CVE-2026-23527)",
         "lodash@4.17.21 (CVE-2025-13465)",
@@ -3235,18 +2848,6 @@
           "severity": "HIGH",
           "title": "@remix-run/router: react-router: React Router vulnerable to XSS via Open Redirects",
           "fixedVersion": "1.23.2",
-          "type": "vuln",
-          "target": "yarn.lock",
-          "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
-          "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
-        },
-        {
-          "pkg": "bn.js",
-          "version": "5.2.1",
-          "cve": "CVE-2026-2739",
-          "severity": "MEDIUM",
-          "title": "bn.js: bn.js: Denial of Service via calling maskn(0)",
-          "fixedVersion": "4.12.3, 5.2.3",
           "type": "vuln",
           "target": "yarn.lock",
           "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
@@ -3305,8 +2906,8 @@
           "version": "9.0.5",
           "cve": "CVE-2026-26996",
           "severity": "HIGH",
-          "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
-          "fixedVersion": "10.2.1, 9.0.6, 8.0.5, 7.4.7, 6.2.1, 5.1.7, 4.2.4, 3.1.3",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "yarn.lock",
           "targetUrl": "https://github.com/pinto-org/interface/blob/812207dce4c126eb8924c06944b83bfc7a0c2b54/yarn.lock",
@@ -3437,7 +3038,7 @@
           "version": "6.2.1",
           "cve": "CVE-2026-26960",
           "severity": "HIGH",
-          "title": "tar: node-tar: node-tar: Arbitrary file read/write via malicious archive hardlink creation",
+          "title": "node-tar is a full-featured Tar for Node.js. When using default option ...",
           "fixedVersion": "7.5.8",
           "type": "vuln",
           "target": "yarn.lock",
@@ -3445,20 +3046,20 @@
           "scannedRef": "812207dce4c126eb8924c06944b83bfc7a0c2b54"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:34.426Z"
+      "lastUpdated": "2026-02-21T02:31:42.072Z"
     },
     {
       "full_name": "porthorian/openchat-backend",
       "url": "https://github.com/porthorian/openchat-backend",
       "description": null,
-      "stars": 10,
-      "commits": 28,
+      "stars": 11,
+      "commits": 26,
       "contributors": 1,
       "forks": 0,
       "open_issues": 3,
       "license": "GNU General Public License v2.0",
       "topics": null,
-      "size": 19574,
+      "size": 19559,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -3473,7 +3074,7 @@
       "created_at": "2026-02-09T18:24:21Z",
       "language": "Go",
       "languages": {
-        "Go": 158905,
+        "Go": 135375,
         "Go Template": 1816,
         "Dockerfile": 1371
       },
@@ -3495,16 +3096,16 @@
         "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/go.mod"
       },
       "commitMessageSignals": {
-        "sampleSize": 28,
-        "avgMessageLength": 31,
+        "sampleSize": 26,
+        "avgMessageLength": 30,
         "emDashCount": 0,
         "enDashCount": 0,
         "aiMentionCount": 0
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 274,
-        "medianChanges": 185,
+        "avgChanges": 222,
+        "medianChanges": 121,
         "largeCommitCount": 2
       },
       "contributorSignals": {
@@ -3539,21 +3140,21 @@
           "fixedVersion": "5.2.2",
           "type": "vuln",
           "target": "go.mod",
-          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/18c700cc2176b71196fde6820ac014c129f8d602/go.mod",
-          "scannedRef": "18c700cc2176b71196fde6820ac014c129f8d602"
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/c9130dfbe7e4029e297fe12a458af60a87aaaf84/go.mod",
+          "scannedRef": "c9130dfbe7e4029e297fe12a458af60a87aaaf84"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:29.019Z"
+      "lastUpdated": "2026-02-21T02:31:38.599Z"
     },
     {
       "full_name": "porthorian/openchat-client",
       "url": "https://github.com/porthorian/openchat-client",
       "description": "OpenChat is a discord alternative that is designed to be self hostable.",
-      "stars": 40,
-      "commits": 115,
+      "stars": 38,
+      "commits": 108,
       "contributors": 2,
       "forks": 0,
-      "open_issues": 3,
+      "open_issues": 5,
       "license": "GNU General Public License v2.0",
       "topics": [
         "chat",
@@ -3563,7 +3164,7 @@
         "video",
         "voice"
       ],
-      "size": 4701,
+      "size": 4811,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -3586,9 +3187,9 @@
       "created_at": "2026-02-09T18:36:27Z",
       "language": "TypeScript",
       "languages": {
-        "TypeScript": 346415,
-        "Vue": 239907,
-        "CSS": 91691,
+        "TypeScript": 325511,
+        "Vue": 220841,
+        "CSS": 89572,
         "JavaScript": 7299,
         "HTML": 532
       },
@@ -3611,15 +3212,15 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 140,
+        "avgMessageLength": 46,
         "emDashCount": 0,
         "enDashCount": 0,
         "aiMentionCount": 0
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 239,
-        "medianChanges": 64,
+        "avgChanges": 248,
+        "medianChanges": 59,
         "largeCommitCount": 1
       },
       "contributorSignals": {
@@ -3643,7 +3244,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:29.541Z"
+      "lastUpdated": "2026-02-21T02:31:43.427Z"
     },
     {
       "full_name": "run-llama/vibe-llama",
@@ -3664,7 +3265,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/133636879?v=4",
           "url": "https://github.com/AstraBert",
           "created_at": "2023-05-15T07:27:49Z",
-          "followers": 403,
+          "followers": 402,
           "following": 62
         },
         {
@@ -3688,7 +3289,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/4858925?v=4",
           "url": "https://github.com/jerryjliu",
           "created_at": "2013-06-28T01:46:57Z",
-          "followers": 4186,
+          "followers": 4184,
           "following": 2
         },
         {
@@ -3696,7 +3297,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/22285038?v=4",
           "url": "https://github.com/logan-markewich",
           "created_at": "2016-09-19T02:42:19Z",
-          "followers": 633,
+          "followers": 632,
           "following": 4
         }
       ],
@@ -3713,7 +3314,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/130722866?v=4",
         "url": "https://github.com/run-llama",
         "created_at": "2023-04-14T02:40:56Z",
-        "followers": 3405,
+        "followers": 3399,
         "following": 0,
         "bio": null,
         "public_repos": 106,
@@ -4055,7 +3656,6 @@
           "cve": "CVE-2025-14009",
           "severity": "CRITICAL",
           "title": "nltk: Zip Slip Vulnerability in nltk Leading to Code Execution",
-          "fixedVersion": "3.9.3",
           "type": "vuln",
           "target": "uv.lock",
           "targetUrl": "https://github.com/run-llama/vibe-llama/blob/cb28f060f3f3d6942202c48e594745511aaa2288/uv.lock",
@@ -4182,13 +3782,13 @@
           "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:35.968Z"
+      "lastUpdated": "2026-02-24T15:15:25.605Z"
     },
     {
       "full_name": "sahithvibudhi/vibe-tree",
       "url": "https://github.com/sahithvibudhi/vibe-tree",
       "description": "Vibe code with Claude in parallel git worktrees",
-      "stars": 242,
+      "stars": 241,
       "commits": 209,
       "contributors": 6,
       "forks": 26,
@@ -4386,7 +3986,7 @@
           "scannedRef": "638e9c57262179871efad98a073846583ae7cb05"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:35.509Z"
+      "lastUpdated": "2026-02-24T01:55:52.680Z"
     },
     {
       "full_name": "statico/meshtastic-cli",
@@ -4483,18 +4083,16 @@
           "evidence_url": "https://github.com/statico/meshtastic-cli/blob/main/CLAUDE.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-02-26T05:13:37.563Z"
+      "lastUpdated": "2026-02-25T15:18:54.638Z"
     },
     {
       "full_name": "tiann/hapi",
       "url": "https://github.com/tiann/hapi",
       "description": "App for Claude Code / Codex / Gemini / OpenCode, vibe coding anytime, anywhere",
-      "stars": 1819,
-      "commits": 470,
-      "contributors": 25,
-      "forks": 182,
+      "stars": 1609,
+      "commits": 467,
+      "contributors": 24,
+      "forks": 167,
       "open_issues": 23,
       "license": "GNU Affero General Public License v3.0",
       "topics": [
@@ -4505,7 +4103,7 @@
         "opencode",
         "remote-control"
       ],
-      "size": 94882,
+      "size": 95385,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -4513,7 +4111,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/4233744?v=4",
           "url": "https://github.com/tiann",
           "created_at": "2013-04-23T10:06:20Z",
-          "followers": 8070,
+          "followers": 8060,
           "following": 31
         },
         {
@@ -4549,14 +4147,6 @@
           "following": 18
         },
         {
-          "login": "Lihengwannafly",
-          "avatar_url": "https://avatars.githubusercontent.com/u/24928240?v=4",
-          "url": "https://github.com/Lihengwannafly",
-          "created_at": "2017-01-05T02:44:07Z",
-          "followers": 4,
-          "following": 31
-        },
-        {
           "login": "therainisme",
           "avatar_url": "https://avatars.githubusercontent.com/u/41776735?v=4",
           "url": "https://github.com/therainisme",
@@ -4587,12 +4177,20 @@
           "created_at": "2021-01-26T17:39:37Z",
           "followers": 0,
           "following": 0
+        },
+        {
+          "login": "instartlove",
+          "avatar_url": "https://avatars.githubusercontent.com/u/228172105?v=4",
+          "url": "https://github.com/instartlove",
+          "created_at": "2025-08-23T08:24:29Z",
+          "followers": 1,
+          "following": 0
         }
       ],
       "created_at": "2025-12-24T10:44:41Z",
       "language": "TypeScript",
       "languages": {
-        "TypeScript": 2576032,
+        "TypeScript": 2522656,
         "CSS": 14637,
         "HTML": 3171,
         "JavaScript": 1614
@@ -4603,7 +4201,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/4233744?v=4",
         "url": "https://github.com/tiann",
         "created_at": "2013-04-23T10:06:20Z",
-        "followers": 8070,
+        "followers": 8060,
         "following": 31,
         "bio": "You deserve a better life :)",
         "public_repos": 144,
@@ -4616,30 +4214,28 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 261,
-        "emDashCount": 1,
+        "avgMessageLength": 254,
+        "emDashCount": 0,
         "enDashCount": 0,
-        "aiMentionCount": 6
+        "aiMentionCount": 5
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 290,
-        "medianChanges": 67,
-        "largeCommitCount": 1
+        "avgChanges": 93,
+        "medianChanges": 30,
+        "largeCommitCount": 0
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
         "matchedBots": []
       },
       "detectionSummary": {
-        "score": 10,
-        "level": "high",
+        "score": 8,
+        "level": "medium",
         "reasons": [
           "1 file-based AI signal(s)",
           "1 commit-message AI signal(s)",
-          "dash punctuation pattern present in commits",
-          "multiple AI mentions in commit messages",
-          "large commits detected"
+          "multiple AI mentions in commit messages"
         ]
       },
       "aiTools": [
@@ -4694,8 +4290,8 @@
           "fixedVersion": "1.25.2",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "@modelcontextprotocol/sdk",
@@ -4706,8 +4302,8 @@
           "fixedVersion": "1.26.0",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "ajv",
@@ -4718,8 +4314,8 @@
           "fixedVersion": "8.18.0, 6.14.0",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "axios",
@@ -4730,8 +4326,8 @@
           "fixedVersion": "1.13.5, 0.30.3",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "bn.js",
@@ -4739,11 +4335,11 @@
           "cve": "CVE-2026-2739",
           "severity": "MEDIUM",
           "title": "bn.js: bn.js: Denial of Service via calling maskn(0)",
-          "fixedVersion": "4.12.3, 5.2.3",
+          "fixedVersion": "5.2.3",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "diff",
@@ -4754,8 +4350,8 @@
           "fixedVersion": "8.0.3, 5.2.2, 4.0.4, 3.5.1",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "fastify",
@@ -4766,8 +4362,8 @@
           "fixedVersion": "5.7.2",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "fastify",
@@ -4778,8 +4374,8 @@
           "fixedVersion": "5.7.3",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "hono",
@@ -4790,8 +4386,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "hono",
@@ -4802,8 +4398,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "hono",
@@ -4814,8 +4410,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "hono",
@@ -4826,8 +4422,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "hono",
@@ -4838,8 +4434,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "hono",
@@ -4850,8 +4446,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "hono",
@@ -4862,8 +4458,8 @@
           "fixedVersion": "4.11.10",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "lodash",
@@ -4874,8 +4470,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "lodash-es",
@@ -4886,8 +4482,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "qs",
@@ -4898,8 +4494,8 @@
           "fixedVersion": "6.14.1",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "qs",
@@ -4910,8 +4506,8 @@
           "fixedVersion": "6.14.2",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "tar",
@@ -4922,8 +4518,8 @@
           "fixedVersion": "7.5.3",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "tar",
@@ -4934,8 +4530,8 @@
           "fixedVersion": "7.5.4",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "tar",
@@ -4946,8 +4542,8 @@
           "fixedVersion": "7.5.7",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "tar",
@@ -4958,8 +4554,8 @@
           "fixedVersion": "7.5.8",
           "type": "vuln",
           "target": "bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "axios",
@@ -4970,8 +4566,8 @@
           "fixedVersion": "1.13.5, 0.30.3",
           "type": "vuln",
           "target": "website/bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/website/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/website/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "lodash-es",
@@ -4982,8 +4578,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "website/bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/website/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/website/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "mdast-util-to-hast",
@@ -4994,8 +4590,8 @@
           "fixedVersion": "13.2.1",
           "type": "vuln",
           "target": "website/bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/website/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/website/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "qs",
@@ -5006,8 +4602,8 @@
           "fixedVersion": "6.14.1",
           "type": "vuln",
           "target": "website/bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/website/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/website/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         },
         {
           "pkg": "qs",
@@ -5018,11 +4614,11 @@
           "fixedVersion": "6.14.2",
           "type": "vuln",
           "target": "website/bun.lock",
-          "targetUrl": "https://github.com/tiann/hapi/blob/a74dcc9477bdb4d271134b079c78ff6bc9b83385/website/bun.lock",
-          "scannedRef": "a74dcc9477bdb4d271134b079c78ff6bc9b83385"
+          "targetUrl": "https://github.com/tiann/hapi/blob/77cfa715f946e17b177add6a1aa3a1039c71af18/website/bun.lock",
+          "scannedRef": "77cfa715f946e17b177add6a1aa3a1039c71af18"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:41.094Z"
+      "lastUpdated": "2026-02-24T01:54:34.298Z"
     },
     {
       "full_name": "umpolungfish/cumpyl",
@@ -5193,7 +4789,7 @@
           "scannedRef": "92084c154b321ad4febc476613953e3377113eb1"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:44.113Z"
+      "lastUpdated": "2026-02-25T15:18:44.225Z"
     },
     {
       "full_name": "vincanger/envelope-budgeting-test",
@@ -5234,7 +4830,7 @@
         "followers": 334,
         "following": 9,
         "bio": null,
-        "public_repos": 94,
+        "public_repos": 93,
         "is_private": false
       },
       "packageManager": {
@@ -5289,7 +4885,6 @@
         "qs@6.13.0 (CVE-2025-15284)",
         "qs@6.13.0 (CVE-2026-2391)",
         "react-router@6.30.0 (CVE-2025-68470)",
-        "rollup@4.37.0 (CVE-2026-27606)",
         "tmp@0.0.33 (CVE-2025-54798)",
         "vite@5.4.15 (CVE-2025-31125)",
         "vite@5.4.15 (CVE-2025-31486)",
@@ -5414,7 +5009,7 @@
           "cve": "CVE-2026-26996",
           "severity": "HIGH",
           "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
-          "fixedVersion": "10.2.1, 9.0.6, 8.0.5, 7.4.7, 6.2.1, 5.1.7, 4.2.4, 3.1.3",
+          "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "package-lock.json",
           "targetUrl": "https://github.com/vincanger/envelope-budgeting-test/blob/458debd8cccd8115dcfd73da317fdb94aa90f572/package-lock.json",
@@ -5451,18 +5046,6 @@
           "severity": "MEDIUM",
           "title": "react-router: React Router unexpected external redirect",
           "fixedVersion": "6.30.2, 7.9.6",
-          "type": "vuln",
-          "target": "package-lock.json",
-          "targetUrl": "https://github.com/vincanger/envelope-budgeting-test/blob/458debd8cccd8115dcfd73da317fdb94aa90f572/package-lock.json",
-          "scannedRef": "458debd8cccd8115dcfd73da317fdb94aa90f572"
-        },
-        {
-          "pkg": "rollup",
-          "version": "4.37.0",
-          "cve": "CVE-2026-27606",
-          "severity": "HIGH",
-          "title": "Rollup is a module bundler for JavaScript. Versions prior to 2.80.0, 3 ...",
-          "fixedVersion": "2.80.0, 3.30.0, 4.59.0",
           "type": "vuln",
           "target": "package-lock.json",
           "targetUrl": "https://github.com/vincanger/envelope-budgeting-test/blob/458debd8cccd8115dcfd73da317fdb94aa90f572/package-lock.json",
@@ -5565,16 +5148,16 @@
           "scannedRef": "458debd8cccd8115dcfd73da317fdb94aa90f572"
         }
       ],
-      "lastUpdated": "2026-02-26T05:13:41.538Z"
+      "lastUpdated": "2026-02-24T15:15:41.886Z"
     },
     {
       "full_name": "wrtnlabs/autobe",
       "url": "https://github.com/wrtnlabs/autobe",
       "description": "AI Vibe Coding Agent of TS backend server, enhanced by compiler skills, generating 100% working code",
       "stars": 765,
-      "commits": 1471,
+      "commits": 1463,
       "contributors": 12,
-      "forks": 93,
+      "forks": 92,
       "open_issues": 19,
       "license": "GNU Affero General Public License v3.0",
       "topics": [
@@ -5593,7 +5176,7 @@
         "server",
         "vibe-coding"
       ],
-      "size": 2709058,
+      "size": 2699512,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -5601,7 +5184,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/13158709?v=4",
           "url": "https://github.com/samchon",
           "created_at": "2015-07-03T01:06:56Z",
-          "followers": 2183,
+          "followers": 2181,
           "following": 57
         },
         {
@@ -5657,7 +5240,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/1560508?v=4",
           "url": "https://github.com/ryoppippi",
           "created_at": "2012-03-21T10:34:16Z",
-          "followers": 642,
+          "followers": 639,
           "following": 122
         },
         {
@@ -5680,10 +5263,10 @@
       "created_at": "2025-04-28T09:57:52Z",
       "language": "TypeScript",
       "languages": {
-        "TypeScript": 3775804,
+        "TypeScript": 3775328,
         "MDX": 372882,
         "JavaScript": 26873,
-        "Shell": 20085,
+        "Shell": 20074,
         "HTML": 4839,
         "CSS": 84
       },
@@ -5708,15 +5291,15 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 325,
+        "avgMessageLength": 336,
         "emDashCount": 0,
         "enDashCount": 0,
-        "aiMentionCount": 3
+        "aiMentionCount": 2
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 665,
-        "medianChanges": 187,
+        "avgChanges": 1913,
+        "medianChanges": 213,
         "largeCommitCount": 3
       },
       "contributorSignals": {
@@ -5779,8 +5362,8 @@
           "fixedVersion": "5.0.1",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "ajv",
@@ -5791,8 +5374,8 @@
           "fixedVersion": "8.18.0, 6.14.0",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "diff",
@@ -5803,8 +5386,8 @@
           "fixedVersion": "8.0.3, 5.2.2, 4.0.4, 3.5.1",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "hono",
@@ -5815,8 +5398,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "hono",
@@ -5827,8 +5410,8 @@
           "fixedVersion": "4.11.4",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "hono",
@@ -5839,8 +5422,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "hono",
@@ -5851,8 +5434,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "hono",
@@ -5863,8 +5446,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "hono",
@@ -5875,8 +5458,8 @@
           "fixedVersion": "4.11.7",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "hono",
@@ -5887,8 +5470,8 @@
           "fixedVersion": "4.11.10",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "lodash",
@@ -5899,8 +5482,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "lodash-es",
@@ -5911,8 +5494,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "lodash-es",
@@ -5923,8 +5506,8 @@
           "fixedVersion": "4.17.23",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "minimatch",
@@ -5932,11 +5515,11 @@
           "cve": "CVE-2026-26996",
           "severity": "HIGH",
           "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
-          "fixedVersion": "10.2.1, 9.0.6, 8.0.5, 7.4.7, 6.2.1, 5.1.7, 4.2.4, 3.1.3",
+          "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "minimatch",
@@ -5944,11 +5527,11 @@
           "cve": "CVE-2026-26996",
           "severity": "HIGH",
           "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
-          "fixedVersion": "10.2.1, 9.0.6, 8.0.5, 7.4.7, 6.2.1, 5.1.7, 4.2.4, 3.1.3",
+          "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "minimatch",
@@ -5956,11 +5539,11 @@
           "cve": "CVE-2026-26996",
           "severity": "HIGH",
           "title": "minimatch: minimatch: Denial of Service via specially crafted glob patterns",
-          "fixedVersion": "10.2.1, 9.0.6, 8.0.5, 7.4.7, 6.2.1, 5.1.7, 4.2.4, 3.1.3",
+          "fixedVersion": "10.2.1",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "next",
@@ -5971,8 +5554,8 @@
           "fixedVersion": "15.0.8, 15.1.12, 15.2.9, 15.3.9, 15.4.11, 15.5.10, 15.6.0-canary.61, 16.0.11, 16.1.5",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "next",
@@ -5983,8 +5566,8 @@
           "fixedVersion": "15.5.10, 16.1.5",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "qs",
@@ -5995,8 +5578,8 @@
           "fixedVersion": "6.14.1",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "qs",
@@ -6007,8 +5590,8 @@
           "fixedVersion": "6.14.2",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "tar",
@@ -6019,8 +5602,8 @@
           "fixedVersion": "7.5.8",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         },
         {
           "pkg": "tmp",
@@ -6031,11 +5614,11 @@
           "fixedVersion": "0.2.4",
           "type": "vuln",
           "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7/pnpm-lock.yaml",
-          "scannedRef": "b9fd3ec9cb378be50ab74e34dbfc5138c9da7ab7"
+          "targetUrl": "https://github.com/wrtnlabs/autobe/blob/430c22119ca0dd2618cf8b07bf4f39cecb06bc63/pnpm-lock.yaml",
+          "scannedRef": "430c22119ca0dd2618cf8b07bf4f39cecb06bc63"
         }
       ],
-      "lastUpdated": "2026-02-26T05:14:40.433Z"
+      "lastUpdated": "2026-02-24T01:54:50.346Z"
     }
   ]
 }

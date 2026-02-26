@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "loppety/Awesome-Vibecoding-Guide",
+      "url": "https://github.com/loppety/Awesome-Vibecoding-Guide",
+      "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
+      "stars": 470,
+      "commits": 176,
+      "contributors": 3,
+      "forks": 57,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": [
+        "ai-agents",
+        "awesome",
+        "coding-standards",
+        "guide",
+        "vibe-coded",
+        "vibe-coding",
+        "vibecoder",
+        "vibecoding"
+      ],
+      "size": 968,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "loppety",
+          "avatar_url": "https://avatars.githubusercontent.com/u/48731762?v=4",
+          "url": "https://github.com/loppety",
+          "created_at": "2019-03-19T18:27:47Z",
+          "followers": 37,
+          "following": 1
+        },
+        {
+          "login": "claude",
+          "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+          "url": "https://github.com/claude",
+          "created_at": "2009-05-07T00:15:43Z",
+          "followers": 36293,
+          "following": 0
+        },
+        {
+          "login": "google-labs-jules[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/842251?v=4",
+          "url": "https://github.com/apps/google-labs-jules",
+          "created_at": "2024-02-26T18:41:52Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2025-10-28T13:21:50Z",
+      "language": null,
+      "languages": null,
+      "is_archived": false,
+      "owner": {
+        "login": "loppety",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48731762?v=4",
+        "url": "https://github.com/loppety",
+        "created_at": "2019-03-19T18:27:47Z",
+        "followers": 37,
+        "following": 1,
+        "bio": null,
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 481,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 13
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 3726,
+        "medianChanges": 1118,
+        "largeCommitCount": 4
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/loppety/Awesome-Vibecoding-Guide/commit/7451f690b29723e62cac2d0fef07f306d5478d8b"
+        },
+        {
+          "name": "vibe",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/loppety/Awesome-Vibecoding-Guide/commit/4336e027058ebac4ea5f5745b07e2d43ef3045f9"
+        }
+      ],
+      "lastUpdated": "2026-02-26T14:52:01.703Z"
+    }
+  ]
+}

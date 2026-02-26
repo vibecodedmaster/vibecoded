@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "bytecube/DeDox",
+      "url": "https://github.com/bytecube/DeDox",
+      "description": "A self-hosted, privacy-first document ingestion service that captures, processes, extracts metadata, and archives documents to Paperless-ngx.",
+      "stars": 4,
+      "commits": 8,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "Apache License 2.0",
+      "topics": [
+        "ai",
+        "claude-code",
+        "dms",
+        "documents",
+        "extraction",
+        "openweb-ui",
+        "paperless-ngx",
+        "rag",
+        "scan",
+        "vibe-coded"
+      ],
+      "size": 15190,
+      "default_branch": "master",
+      "contributorDetails": [
+        {
+          "login": "bytecube",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2347676?v=4",
+          "url": "https://github.com/bytecube",
+          "created_at": "2012-09-14T15:42:20Z",
+          "followers": 1,
+          "following": 7
+        }
+      ],
+      "created_at": "2026-01-24T23:31:43Z",
+      "language": "Python",
+      "languages": {
+        "Python": 562035,
+        "HTML": 148062,
+        "CSS": 29071,
+        "JavaScript": 15007,
+        "Dockerfile": 1674
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/bytecube/DeDox/blob/master/.github/workflows/lint.yml",
+      "owner": {
+        "login": "bytecube",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2347676?v=4",
+        "url": "https://github.com/bytecube",
+        "created_at": "2012-09-14T15:42:20Z",
+        "followers": 1,
+        "following": 7,
+        "bio": null,
+        "public_repos": 3,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pip",
+        "detected_via": "requirements.txt",
+        "evidence_url": "https://github.com/bytecube/DeDox/blob/master/requirements.txt"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 8,
+        "avgMessageLength": 216,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 3428,
+        "medianChanges": 16,
+        "largeCommitCount": 3
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/bytecube/DeDox/blob/master/CLAUDE.md"
+        }
+      ],
+      "lastUpdated": "2026-02-26T14:52:14.417Z"
+    }
+  ]
+}
