@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "kevinpbuckley/VibeUE",
+      "url": "https://github.com/kevinpbuckley/VibeUE",
+      "description": "Unreal Engine Vibe Coding tool",
+      "stars": 45,
+      "commits": 590,
+      "contributors": 2,
+      "forks": 13,
+      "open_issues": 10,
+      "license": null,
+      "topics": null,
+      "size": 4618,
+      "default_branch": "master",
+      "contributorDetails": [
+        {
+          "login": "kevinpbuckley",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2954744?v=4",
+          "url": "https://github.com/kevinpbuckley",
+          "created_at": "2012-12-03T19:24:15Z",
+          "followers": 5,
+          "following": 1
+        },
+        {
+          "login": "Copilot",
+          "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+          "url": "https://github.com/apps/copilot-swe-agent"
+        }
+      ],
+      "created_at": "2025-09-12T14:25:35Z",
+      "language": "C++",
+      "languages": {
+        "C++": 3010399,
+        "C": 26215,
+        "Batchfile": 10875,
+        "PowerShell": 8528,
+        "C#": 4025
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "kevinpbuckley",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2954744?v=4",
+        "url": "https://github.com/kevinpbuckley",
+        "created_at": "2012-12-03T19:24:15Z",
+        "followers": 5,
+        "following": 1,
+        "bio": null,
+        "public_repos": 14,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 426,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 3640,
+        "medianChanges": 2796,
+        "largeCommitCount": 6
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 17,
+        "level": "high",
+        "reasons": [
+          "3 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "cursor",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/kevinpbuckley/VibeUE/tree/master/.cursor"
+        },
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/kevinpbuckley/VibeUE/blob/master/CLAUDE.md"
+        },
+        {
+          "name": "copilot",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/kevinpbuckley/VibeUE/blob/master/.github/copilot-instructions.md"
+        },
+        {
+          "name": "gemini",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/kevinpbuckley/VibeUE/commit/0d95015c8e1588745d2109488a2b22313c57d3d7"
+        }
+      ],
+      "lastUpdated": "2026-02-28T13:56:11.949Z"
+    }
+  ]
+}
