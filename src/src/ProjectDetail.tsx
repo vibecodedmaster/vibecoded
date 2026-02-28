@@ -88,7 +88,7 @@ export default function ProjectDetail({
   ].filter((item): item is { label: string; url: string } => Boolean(item.url));
 
   return (
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-6">
+    <main class="w-full min-w-0 overflow-x-hidden max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 space-y-6 box-border">
       <a
         href={`${import.meta.env.BASE_URL}#/`}
         class="text-sm text-vibe-muted hover:text-vibe-fg mb-2 inline-block transition"
@@ -96,11 +96,11 @@ export default function ProjectDetail({
         Back to list
       </a>
 
-      <div class="rounded-2xl bg-vibe-elevated border border-vibe-border overflow-hidden">
+      <div class="w-full min-w-0 rounded-2xl bg-vibe-elevated border border-vibe-border overflow-hidden box-border">
         {/* Header Header */}
         <div class="p-6 sm:p-8 border-b border-vibe-border">
-          <div class="flex flex-wrap items-start justify-between gap-4">
-            <div class="space-y-1">
+          <div class="flex flex-wrap items-start justify-between gap-4 min-w-0">
+            <div class="space-y-1 min-w-0 flex-1">
               <h1 class="text-2xl sm:text-3xl font-bold font-mono text-vibe-fg break-all">
                 {project.full_name}
               </h1>
@@ -112,19 +112,19 @@ export default function ProjectDetail({
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-vibe-accent text-vibe-bg font-semibold hover:opacity-90 transition shadow-lg shadow-vibe-accent/10"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-vibe-accent text-vibe-bg font-semibold hover:opacity-90 transition shadow-lg shadow-vibe-accent/10 shrink-0"
             >
               <Github size={20} strokeWidth={2} />
               Open on GitHub
             </a>
           </div>
           {project.description && (
-            <p class="mt-6 text-lg text-vibe-muted leading-relaxed max-w-3xl">
+            <p class="mt-6 text-lg text-vibe-muted leading-relaxed max-w-full break-words">
               {project.description}
             </p>
           )}
 
-          <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+          <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 min-w-0">
             <div class="p-3 rounded-xl bg-vibe-bg border border-vibe-border">
               <div class="text-xs text-vibe-muted flex items-center gap-1 mb-1">
                 <Star size={12} /> Stars
@@ -176,9 +176,8 @@ export default function ProjectDetail({
           </div>
         </div>
 
-        <div class="p-6 sm:p-8 grid md:grid-cols-2 gap-8">
-          {/* Left Column: Tech Stack & Detection */}
-          <div class="space-y-8">
+        <div class="p-6 sm:p-8 grid md:grid-cols-2 gap-8 min-w-0">
+          <div class="space-y-8 min-w-0">
             <section>
               <h2 class="text-sm font-bold uppercase tracking-wider text-vibe-muted mb-4 flex items-center gap-2">
                 <Box size={16} /> Tech Stack & Metadata
@@ -245,18 +244,18 @@ export default function ProjectDetail({
               <h2 class="text-sm font-bold uppercase tracking-wider text-vibe-muted mb-4 flex items-center gap-2">
                 <Cpu size={16} /> Automated Detection
               </h2>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 min-w-0">
                 <div class="p-4 rounded-xl bg-vibe-bg border border-vibe-border space-y-3">
                   <div class="text-xs font-semibold text-vibe-muted uppercase">
                     Package Manager
                   </div>
                   {project.packageManager ? (
-                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2 min-w-0">
                       <a
                         href={project.packageManager.evidence_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="px-3 py-1.5 rounded-lg bg-orange-500/10 text-orange-600 dark:text-orange-400 font-bold border border-orange-500/20 hover:bg-orange-500/20 transition flex items-center gap-1.5 whitespace-nowrap"
+                        class="px-3 py-1.5 rounded-lg bg-orange-500/10 text-orange-600 dark:text-orange-400 font-bold border border-orange-500/20 hover:bg-orange-500/20 transition flex items-center gap-1.5 sm:whitespace-nowrap min-w-0"
                         title={`Detected via ${project.packageManager.detected_via} (Click to verify)`}
                       >
                         {project.packageManager.name}
@@ -379,14 +378,14 @@ export default function ProjectDetail({
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="flex items-center justify-between p-3 rounded-xl bg-vibe-bg border border-vibe-border hover:bg-vibe-accent/5 transition text-sm group"
+                    class="flex items-center justify-between gap-2 p-3 rounded-xl bg-vibe-bg border border-vibe-border hover:bg-vibe-accent/5 transition text-sm group min-w-0"
                   >
-                    <span class="text-vibe-fg font-medium truncate mr-2">
+                    <span class="text-vibe-fg font-medium truncate min-w-0">
                       {item.label}
                     </span>
                     <ExternalLink
                       size={14}
-                      class="text-vibe-muted group-hover:text-vibe-accent transition"
+                      class="text-vibe-muted group-hover:text-vibe-accent transition shrink-0"
                     />
                   </a>
                 ))}
@@ -394,8 +393,7 @@ export default function ProjectDetail({
             </section>
           </div>
 
-          {/* Right Column: Author & Contributors */}
-          <div class="space-y-8">
+          <div class="space-y-8 min-w-0">
             {project.owner && (
               <section>
                 <h2 class="text-sm font-bold uppercase tracking-wider text-vibe-muted mb-4">
@@ -486,14 +484,14 @@ export default function ProjectDetail({
                   <h2 class="text-sm font-bold uppercase tracking-wider text-vibe-muted mb-4">
                     Top Contributors
                   </h2>
-                  <div class="grid grid-cols-2 gap-3">
+                  <div class="grid grid-cols-2 gap-3 min-w-0">
                     {project.contributorDetails.slice(0, 10).map((c) => (
                       <a
                         key={c.login}
                         href={c.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="p-3 rounded-xl bg-vibe-bg border border-vibe-border flex items-center gap-3 hover:border-vibe-accent/50 transition group"
+                        class="p-3 rounded-xl bg-vibe-bg border border-vibe-border flex items-center gap-3 hover:border-vibe-accent/50 transition group min-w-0"
                       >
                         <img
                           src={c.avatar_url}
@@ -530,14 +528,14 @@ export default function ProjectDetail({
                       href={s.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="flex items-center justify-between p-3 rounded-xl bg-vibe-bg border border-vibe-border hover:bg-vibe-accent/5 transition text-sm group"
+                      class="flex items-center justify-between gap-2 p-3 rounded-xl bg-vibe-bg border border-vibe-border hover:bg-vibe-accent/5 transition text-sm group min-w-0"
                     >
-                      <span class="text-vibe-fg font-medium truncate mr-2">
+                      <span class="text-vibe-fg font-medium truncate min-w-0">
                         {s.label}
                       </span>
                       <ExternalLink
                         size={14}
-                        class="text-vibe-muted group-hover:text-vibe-accent transition"
+                        class="text-vibe-muted group-hover:text-vibe-accent transition shrink-0"
                       />
                     </a>
                   ))}
@@ -549,14 +547,14 @@ export default function ProjectDetail({
 
         {/* Security / Vulnerabilities Full Width Section */}
         {(project.vulnerableDependencies || []).length > 0 && (
-          <div class="p-6 sm:p-8 bg-vibe-bg border-t border-vibe-border">
-            <div class="flex items-center justify-between mb-6">
-              <h2 class="text-lg font-bold text-vibe-fg flex items-center gap-2">
-                <ShieldCheck class="text-red-500" />
+          <div class="p-6 sm:p-8 bg-vibe-bg border-t border-vibe-border min-w-0">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-6 min-w-0">
+              <h2 class="text-lg font-bold text-vibe-fg flex items-center gap-2 min-w-0">
+                <ShieldCheck class="text-red-500 shrink-0" />
                 Security Audit Findings (
                 {project.vulnerableDependencies!.length})
               </h2>
-              <div class="text-xs text-vibe-muted italic flex flex-col items-end">
+              <div class="text-xs text-vibe-muted italic flex flex-col items-end shrink-0">
                 <span>Scanned using Trivy</span>
                 {scanRef && (
                   <span class="font-mono">Ref: {scanRef.slice(0, 12)}</span>
@@ -565,8 +563,8 @@ export default function ProjectDetail({
               </div>
             </div>
 
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm text-left border-collapse">
+            <div class="overflow-x-auto min-w-0">
+              <table class="w-full min-w-[600px] text-sm text-left border-collapse">
                 <thead>
                   <tr class="text-vibe-muted border-b border-vibe-border">
                     <th class="pb-3 pr-4 font-semibold uppercase tracking-wider text-[10px]">

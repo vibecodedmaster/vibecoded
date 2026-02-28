@@ -176,11 +176,11 @@ function ProjectList({ projects }: { projects: Project[] }) {
   };
 
   return (
-    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+    <main class="w-full min-w-0 overflow-x-hidden max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
       <h1 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-vibe-fg">
         Open-source Vibe Coded projects
       </h1>
-      <div class="flex flex-wrap gap-3 mb-4">
+      <div class="flex flex-wrap gap-3 mb-4 min-w-0">
         <div class="flex items-center gap-2">
           <button
             type="button"
@@ -200,7 +200,7 @@ function ProjectList({ projects }: { projects: Project[] }) {
           </button>
         </div>
       </div>
-      <div class="relative mb-4">
+      <div class="relative mb-4 min-w-0 w-full">
         <Search
           size={20}
           strokeWidth={2}
@@ -218,14 +218,14 @@ function ProjectList({ projects }: { projects: Project[] }) {
           aria-label="Search projects"
         />
       </div>
-      <div class="flex flex-wrap gap-3 mb-4">
+      <div class="flex flex-wrap gap-3 mb-4 min-w-0">
         <select
           value={sort}
           onChange={(e) => {
             setSort((e.target as HTMLSelectElement).value as SortKey);
             setPage(1);
           }}
-          class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
+          class="min-w-0 max-w-full px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
         >
           <option value="stars">Sort: Stars</option>
           <option value="commits">Sort: Commits</option>
@@ -241,7 +241,7 @@ function ProjectList({ projects }: { projects: Project[] }) {
             }));
             setPage(1);
           }}
-          class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
+          class="min-w-0 max-w-full px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
         >
           <option value="">All languages</option>
           {languages.map((l) => (
@@ -262,7 +262,7 @@ function ProjectList({ projects }: { projects: Project[] }) {
             }));
             setPage(1);
           }}
-          class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
+          class="min-w-0 max-w-full px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
         >
           <option value="all">All (archived)</option>
           <option value="no">Active only</option>
@@ -277,7 +277,7 @@ function ProjectList({ projects }: { projects: Project[] }) {
             }));
             setPage(1);
           }}
-          class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
+          class="min-w-0 max-w-full px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
         >
           <option value="">All AI tools</option>
           {aiTools.map((t) => (
@@ -298,7 +298,7 @@ function ProjectList({ projects }: { projects: Project[] }) {
             }));
             setPage(1);
           }}
-          class="px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
+          class="min-w-0 max-w-full px-3 py-2 rounded-lg bg-vibe-elevated border border-vibe-border text-vibe-fg text-sm"
         >
           <option value="all">All (tests)</option>
           <option value="yes">Has tests</option>
@@ -320,9 +320,9 @@ function ProjectList({ projects }: { projects: Project[] }) {
           <p class="mt-4 text-sm text-vibe-muted">
             {sorted.length} project{sorted.length !== 1 ? "s" : ""} found
           </p>
-          <ul class="mt-4 sm:mt-5 space-y-3 sm:space-y-4">
+          <ul class="mt-4 sm:mt-5 space-y-3 sm:space-y-4 min-w-0 w-full list-none pl-0">
             {pageProjects.map((p) => (
-              <li key={p.full_name}>
+              <li key={p.full_name} class="w-full min-w-0 overflow-hidden">
                 <ProjectCard project={p} />
               </li>
             ))}
@@ -411,16 +411,16 @@ export default function App() {
   }, []);
 
   return (
-    <div class="min-h-screen bg-vibe-bg text-vibe-fg flex flex-col">
-      <header class="sticky top-0 z-10 border-b border-vibe-border bg-vibe-elevated/95 backdrop-blur-sm supports-[backdrop-filter]:bg-vibe-elevated/80">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-4">
+    <div class="min-h-screen bg-vibe-bg text-vibe-fg flex flex-col w-full max-w-full overflow-x-hidden">
+      <header class="sticky top-0 z-10 border-b border-vibe-border bg-vibe-elevated/95 backdrop-blur-sm supports-[backdrop-filter]:bg-vibe-elevated/80 w-full min-w-0">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-wrap items-center justify-between gap-3 sm:gap-4 min-w-0">
           <a
             href={import.meta.env.BASE_URL}
             class="text-lg sm:text-xl font-bold text-vibe-fg shrink-0 hover:opacity-80 transition"
           >
             Vibe Coded
           </a>
-          <nav class="flex items-center gap-4">
+          <nav class="flex flex-wrap items-center gap-3 sm:gap-4 min-w-0">
             <a
               href={SUBMIT_URL}
               target="_blank"
@@ -451,15 +451,15 @@ export default function App() {
         </div>
       </header>
       {loading ? (
-        <main class="max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+        <main class="w-full min-w-0 overflow-x-hidden max-w-3xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
           <p class="text-vibe-muted py-8">Loading...</p>
         </main>
       ) : (
         <AppContent projects={projects} />
       )}
-      <footer class="border-t border-vibe-border bg-vibe-elevated mt-auto">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center justify-between gap-3 text-center sm:text-left">
-          <p class="text-[10px] text-vibe-muted max-w-[380px] sm:max-w-none">
+      <footer class="border-t border-vibe-border bg-vibe-elevated mt-auto w-full min-w-0">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center justify-between gap-3 text-center sm:text-left min-w-0">
+          <p class="text-[10px] text-vibe-muted max-w-[380px] sm:max-w-none break-words">
             Vibe Coded is an independent public index and is not affiliated
             with, endorsed by, or sponsored by any listed project, maintainer,
             or AI vendor. No warranty. Data may be wrong. We list projects; we
@@ -468,7 +468,7 @@ export default function App() {
               href={`${import.meta.env.BASE_URL}policies.html`}
               target="_blank"
               rel="noopener noreferrer"
-              class="underline hover:text-vibe-fg transition whitespace-nowrap"
+              class="underline hover:text-vibe-fg transition sm:whitespace-nowrap"
             >
               Policies & Disclaimer
             </a>

@@ -113,7 +113,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const [owner, repo] = project.full_name.split("/");
 
   return (
-    <div class="group relative isolate block p-4 sm:p-5 rounded-xl bg-vibe-elevated border border-vibe-border hover:border-vibe-muted/60 transition-all touch-manipulation min-h-[160px] flex flex-col">
+    <div class="group relative isolate block w-full max-w-full min-w-0 p-4 sm:p-5 rounded-xl bg-vibe-elevated border border-vibe-border hover:border-vibe-muted/60 transition-all touch-manipulation min-h-[160px] overflow-hidden flex flex-col box-border">
       <a
         href={`#/project/${owner}/${repo}`}
         class="absolute inset-0 z-[5] rounded-xl cursor-pointer"
@@ -130,13 +130,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         />
       ) : null}
       <div
-        class={`${hasMultiLang || singleLangColor ? "pl-4 sm:pl-5" : ""} relative z-0 flex-grow pointer-events-none`}
+        class={`${hasMultiLang || singleLangColor ? "pl-4 sm:pl-5" : ""} relative z-0 flex-grow pointer-events-none min-w-0`}
       >
-        <div class="flex items-start justify-between gap-3 mb-2">
-          <span class="font-mono font-semibold text-vibe-fg text-sm sm:text-base break-words group-hover:text-vibe-accent transition-colors">
+        <div class="flex flex-wrap items-start justify-between gap-2 sm:gap-3 mb-2 min-w-0">
+          <span class="font-mono font-semibold text-vibe-fg text-sm sm:text-base break-words group-hover:text-vibe-accent transition-colors min-w-0 flex-1">
             {project.full_name}
           </span>
-          <span class="shrink-0 flex items-center gap-2 sm:gap-3 text-vibe-muted text-sm relative z-20 pointer-events-auto">
+          <span class="shrink-0 flex items-center flex-wrap gap-2 sm:gap-3 text-vibe-muted text-sm relative z-20 pointer-events-auto">
             {project.created_at && (
               <span
                 class="text-[10px] bg-vibe-muted/10 px-1.5 py-0.5 rounded"
@@ -189,8 +189,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {project.description}
           </p>
         )}
-        <div class="mt-3 flex flex-wrap items-start justify-between gap-2">
-          <div class="flex flex-col gap-2 pointer-events-auto relative z-20">
+        <div class="mt-3 flex flex-wrap items-start justify-between gap-2 min-w-0">
+          <div class="flex flex-col gap-2 pointer-events-auto relative z-20 min-w-0 flex-1">
             <div class="flex flex-wrap gap-2 items-center">
               {project.language && !hasMultiLang && (
                 <span class="text-xs px-2.5 py-1 rounded-lg bg-vibe-muted/20 text-vibe-fg">
