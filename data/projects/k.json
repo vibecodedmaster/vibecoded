@@ -2,6 +2,125 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "kenlasko/monize",
+      "url": "https://github.com/kenlasko/monize",
+      "description": "My unabashedly vibe-coded Microsoft Money replacement",
+      "stars": 95,
+      "commits": 775,
+      "contributors": 3,
+      "forks": 17,
+      "open_issues": 10,
+      "license": "GNU Affero General Public License v3.0",
+      "topics": null,
+      "size": 15512,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "kenlasko",
+          "avatar_url": "https://avatars.githubusercontent.com/u/44060527?v=4",
+          "url": "https://github.com/kenlasko",
+          "created_at": "2018-10-11T12:57:19Z",
+          "followers": 35,
+          "following": 1
+        },
+        {
+          "login": "claude",
+          "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+          "url": "https://github.com/claude",
+          "created_at": "2009-05-07T00:15:43Z",
+          "followers": 43294,
+          "following": 0
+        },
+        {
+          "login": "github-actions[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "url": "https://github.com/apps/github-actions",
+          "created_at": "2018-07-30T09:30:16Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-01-19T19:18:27Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 9206361,
+        "PLpgSQL": 38044,
+        "JavaScript": 4669,
+        "CSS": 4232,
+        "Dockerfile": 4001,
+        "Go Template": 2995,
+        "Shell": 1051
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "kenlasko",
+        "avatar_url": "https://avatars.githubusercontent.com/u/44060527?v=4",
+        "url": "https://github.com/kenlasko",
+        "created_at": "2018-10-11T12:57:19Z",
+        "followers": 35,
+        "following": 1,
+        "bio": "Ex-Microsoft Teams MVP, amateur coder and Hoff enthusiast.",
+        "public_repos": 13,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package-lock.json",
+        "evidence_url": "https://github.com/kenlasko/monize/blob/main/package-lock.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 285,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 16
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 1023,
+        "medianChanges": 38,
+        "largeCommitCount": 3
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/kenlasko/monize/blob/main/CLAUDE.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "ajv@8.17.1 (CVE-2025-69873)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "ajv",
+          "version": "8.17.1",
+          "cve": "CVE-2025-69873",
+          "severity": "MEDIUM",
+          "title": "ajv: ReDoS via $data reference",
+          "fixedVersion": "8.18.0, 6.14.0",
+          "type": "vuln",
+          "target": "backend/package-lock.json",
+          "targetUrl": "https://github.com/kenlasko/monize/blob/2828a262e532a65d2f778f2841d5161ed8689784/backend/package-lock.json",
+          "scannedRef": "2828a262e532a65d2f778f2841d5161ed8689784"
+        }
+      ],
+      "lastUpdated": "2026-03-09T14:45:23.627Z"
+    },
+    {
       "full_name": "kevinpbuckley/VibeUE",
       "url": "https://github.com/kevinpbuckley/VibeUE",
       "description": "Unreal Engine Vibe Coding tool",
