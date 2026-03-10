@@ -2,6 +2,184 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "J2TEAM/vibe.j2team.org",
+      "url": "https://github.com/J2TEAM/vibe.j2team.org",
+      "description": "Sẽ thế nào nếu cả nhóm J2TEAM Community vibe code cùng nhau?",
+      "stars": 164,
+      "commits": 276,
+      "contributors": 84,
+      "forks": 185,
+      "open_issues": 39,
+      "license": null,
+      "topics": null,
+      "size": 61201,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "J2TEAM",
+          "avatar_url": "https://avatars.githubusercontent.com/u/5250117?v=4",
+          "url": "https://github.com/J2TEAM",
+          "created_at": "2013-08-17T11:16:03Z",
+          "followers": 2904,
+          "following": 257
+        },
+        {
+          "login": "Hikaru67",
+          "avatar_url": "https://avatars.githubusercontent.com/u/54244121?v=4",
+          "url": "https://github.com/Hikaru67",
+          "created_at": "2019-08-18T16:06:28Z",
+          "followers": 1,
+          "following": 4
+        },
+        {
+          "login": "vigstudio",
+          "avatar_url": "https://avatars.githubusercontent.com/u/34742453?v=4",
+          "url": "https://github.com/vigstudio",
+          "created_at": "2017-12-21T12:29:58Z",
+          "followers": 18,
+          "following": 1
+        },
+        {
+          "login": "hoyvoh",
+          "avatar_url": "https://avatars.githubusercontent.com/u/96521788?v=4",
+          "url": "https://github.com/hoyvoh",
+          "created_at": "2021-12-22T09:08:52Z",
+          "followers": 2,
+          "following": 4
+        },
+        {
+          "login": "the-khiem7",
+          "avatar_url": "https://avatars.githubusercontent.com/u/150373630?v=4",
+          "url": "https://github.com/the-khiem7",
+          "created_at": "2023-11-09T16:44:24Z",
+          "followers": 13,
+          "following": 26
+        },
+        {
+          "login": "duckocancode",
+          "avatar_url": "https://avatars.githubusercontent.com/u/202531110?v=4",
+          "url": "https://github.com/duckocancode",
+          "created_at": "2025-03-09T15:44:41Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "ariushieu",
+          "avatar_url": "https://avatars.githubusercontent.com/u/144506842?v=4",
+          "url": "https://github.com/ariushieu",
+          "created_at": "2023-09-09T03:23:29Z",
+          "followers": 2,
+          "following": 3
+        },
+        {
+          "login": "XWasNotDeclared",
+          "avatar_url": "https://avatars.githubusercontent.com/u/122443962?v=4",
+          "url": "https://github.com/XWasNotDeclared",
+          "created_at": "2023-01-11T10:09:02Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "konnn04",
+          "avatar_url": "https://avatars.githubusercontent.com/u/85620049?v=4",
+          "url": "https://github.com/konnn04",
+          "created_at": "2021-06-09T11:11:07Z",
+          "followers": 11,
+          "following": 25
+        },
+        {
+          "login": "ngducnhatt",
+          "avatar_url": "https://avatars.githubusercontent.com/u/69428695?v=4",
+          "url": "https://github.com/ngducnhatt",
+          "created_at": "2020-08-09T15:39:53Z",
+          "followers": 7,
+          "following": 9
+        }
+      ],
+      "created_at": "2026-03-05T16:23:14Z",
+      "language": "Vue",
+      "languages": {
+        "Vue": 3499691,
+        "TypeScript": 2964456,
+        "JavaScript": 2462882,
+        "CSS": 10399,
+        "HTML": 1053
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "J2TEAM",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5250117?v=4",
+        "url": "https://github.com/J2TEAM",
+        "created_at": "2013-08-17T11:16:03Z",
+        "followers": 2904,
+        "following": 257,
+        "bio": "Creator of J2TEAM Security and J2TEAM Cookies (j2team.dev)",
+        "public_repos": 62,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pnpm",
+        "detected_via": "pnpm-lock.yaml",
+        "evidence_url": "https://github.com/J2TEAM/vibe.j2team.org/blob/main/pnpm-lock.yaml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 173,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 225,
+        "medianChanges": 62,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 9,
+        "level": "high",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/J2TEAM/vibe.j2team.org/blob/main/AGENTS.md"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/J2TEAM/vibe.j2team.org/commit/2ffa00606334057fa72fd74ba50d0ffaedb8ff0b"
+        }
+      ],
+      "vulnerableDependencies": [
+        "Secret: JWT token"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "repo",
+          "version": "",
+          "cve": "jwt-token",
+          "severity": "MEDIUM",
+          "title": "JWT token",
+          "type": "secret",
+          "target": "src/views/dev-pocket-tools/composables/useBuilderTools.ts",
+          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/1ff5ff69cb4ce850031ed677566b231335f4c850/src/views/dev-pocket-tools/composables/useBuilderTools.ts",
+          "scannedRef": "1ff5ff69cb4ce850031ed677566b231335f4c850"
+        }
+      ],
+      "lastUpdated": "2026-03-10T14:43:16.816Z"
+    },
+    {
       "full_name": "jetpack3331/ai-chat-history-manager",
       "url": "https://github.com/jetpack3331/ai-chat-history-manager",
       "description": "A local AI chat history manager with SQLite full‑text search and Next.js UI (Gemini/OpenAI/Claude exports).",
