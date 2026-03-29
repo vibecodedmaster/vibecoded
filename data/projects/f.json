@@ -113,6 +113,168 @@
       "lastUpdated": "2026-02-24T01:54:44.348Z"
     },
     {
+      "full_name": "filipecalegario/awesome-vibe-coding",
+      "url": "https://github.com/filipecalegario/awesome-vibe-coding",
+      "description": "A curated list of vibe coding references, collaborating with AI to write code.",
+      "stars": 3718,
+      "commits": 152,
+      "contributors": 23,
+      "forks": 403,
+      "open_issues": 56,
+      "license": "Creative Commons Zero v1.0 Universal",
+      "topics": [
+        "ai-agent",
+        "ai-agents",
+        "ai-coding-assistant",
+        "ai-coding-tools",
+        "awesome",
+        "awesome-list",
+        "cursor",
+        "lovable",
+        "vibe-coding"
+      ],
+      "size": 166,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "filipecalegario",
+          "avatar_url": "https://avatars.githubusercontent.com/u/299057?v=4",
+          "url": "https://github.com/filipecalegario",
+          "created_at": "2010-06-07T17:10:15Z",
+          "followers": 371,
+          "following": 46
+        },
+        {
+          "login": "Copilot",
+          "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+          "url": "https://github.com/apps/copilot-swe-agent"
+        },
+        {
+          "login": "zhimin-z",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8592144?v=4",
+          "url": "https://github.com/zhimin-z",
+          "created_at": "2014-08-29T15:59:23Z",
+          "followers": 303,
+          "following": 526
+        },
+        {
+          "login": "c0d33ngr",
+          "avatar_url": "https://avatars.githubusercontent.com/u/106184818?v=4",
+          "url": "https://github.com/c0d33ngr",
+          "created_at": "2022-05-24T18:39:28Z",
+          "followers": 74,
+          "following": 110
+        },
+        {
+          "login": "unib35",
+          "avatar_url": "https://avatars.githubusercontent.com/u/71157295?v=4",
+          "url": "https://github.com/unib35",
+          "created_at": "2020-09-11T23:07:36Z",
+          "followers": 17,
+          "following": 26
+        },
+        {
+          "login": "robkam",
+          "avatar_url": "https://avatars.githubusercontent.com/u/4047844?v=4",
+          "url": "https://github.com/robkam",
+          "created_at": "2013-04-03T12:09:54Z",
+          "followers": 20,
+          "following": 47
+        },
+        {
+          "login": "wingkwong",
+          "avatar_url": "https://avatars.githubusercontent.com/u/35857179?v=4",
+          "url": "https://github.com/wingkwong",
+          "created_at": "2018-01-27T01:59:08Z",
+          "followers": 848,
+          "following": 149
+        },
+        {
+          "login": "arafat-oparator",
+          "avatar_url": "https://avatars.githubusercontent.com/u/232757811?v=4",
+          "url": "https://github.com/arafat-oparator",
+          "created_at": "2025-09-17T07:22:47Z",
+          "followers": 0,
+          "following": 1
+        },
+        {
+          "login": "ahmadawais",
+          "avatar_url": "https://avatars.githubusercontent.com/u/960133?v=4",
+          "url": "https://github.com/ahmadawais",
+          "created_at": "2011-08-04T23:27:10Z",
+          "followers": 6627,
+          "following": 456
+        },
+        {
+          "login": "bhouston",
+          "avatar_url": "https://avatars.githubusercontent.com/u/588541?v=4",
+          "url": "https://github.com/bhouston",
+          "created_at": "2011-01-28T15:36:12Z",
+          "followers": 394,
+          "following": 45
+        }
+      ],
+      "created_at": "2025-03-13T17:46:56Z",
+      "language": null,
+      "languages": null,
+      "is_archived": false,
+      "owner": {
+        "login": "filipecalegario",
+        "avatar_url": "https://avatars.githubusercontent.com/u/299057?v=4",
+        "url": "https://github.com/filipecalegario",
+        "created_at": "2010-06-07T17:10:15Z",
+        "followers": 371,
+        "following": 46,
+        "bio": "assistant professor @ Centro de Informática, UFPE, Brazil.",
+        "public_repos": 171,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 171,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 11
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 3,
+        "medianChanges": 4,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 8,
+        "level": "medium",
+        "reasons": [
+          "3 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/filipecalegario/awesome-vibe-coding/commit/993dfa5f8a9672e31f04a1268e7be346407d2058"
+        },
+        {
+          "name": "vibe",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/filipecalegario/awesome-vibe-coding/commit/af860ca58fb3220bffca04e2140d92bc791285f0"
+        },
+        {
+          "name": "copilot",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/filipecalegario/awesome-vibe-coding/commit/2bd9241f917c5afc3983e6ccfc12f4b456826065"
+        }
+      ],
+      "lastUpdated": "2026-03-29T13:02:18.724Z"
+    },
+    {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
       "url": "https://github.com/FractumSeraph/Vibecoded-Vibe-Code-Detector",
       "description": "This vibe coded tool scans github repos to help determine if the code was AI generated. ",

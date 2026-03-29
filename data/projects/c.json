@@ -2,6 +2,157 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "chmouel/gh-news",
+      "url": "https://github.com/chmouel/gh-news",
+      "description": "gh cli tui extension to read GitHub notifications in the terminal ",
+      "stars": 22,
+      "commits": 136,
+      "contributors": 5,
+      "forks": 4,
+      "open_issues": 0,
+      "license": "Apache License 2.0",
+      "topics": [
+        "cli",
+        "gh-extension",
+        "gh-notifications",
+        "github",
+        "notifications",
+        "rust",
+        "rust-lang",
+        "terminal",
+        "terminal-user-interface",
+        "tui",
+        "vibe-coded"
+      ],
+      "size": 415,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "chmouel",
+          "avatar_url": "https://avatars.githubusercontent.com/u/98980?v=4",
+          "url": "https://github.com/chmouel",
+          "created_at": "2009-06-25T20:43:26Z",
+          "followers": 186,
+          "following": 2
+        },
+        {
+          "login": "maxbeizer",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2006658?v=4",
+          "url": "https://github.com/maxbeizer",
+          "created_at": "2012-07-19T17:40:23Z",
+          "followers": 99,
+          "following": 17
+        },
+        {
+          "login": "bendrucker",
+          "avatar_url": "https://avatars.githubusercontent.com/u/808808?v=4",
+          "url": "https://github.com/bendrucker",
+          "created_at": "2011-05-25T00:43:39Z",
+          "followers": 498,
+          "following": 36
+        },
+        {
+          "login": "Copilot",
+          "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+          "url": "https://github.com/apps/copilot-swe-agent"
+        },
+        {
+          "login": "vdemeester",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6508?v=4",
+          "url": "https://github.com/vdemeester",
+          "created_at": "2008-04-11T06:56:22Z",
+          "followers": 726,
+          "following": 168
+        }
+      ],
+      "created_at": "2026-01-18T08:47:48Z",
+      "language": "Rust",
+      "languages": {
+        "Rust": 407399,
+        "Shell": 5876,
+        "Makefile": 565
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "chmouel",
+        "avatar_url": "https://avatars.githubusercontent.com/u/98980?v=4",
+        "url": "https://github.com/chmouel",
+        "created_at": "2009-06-25T20:43:26Z",
+        "followers": 186,
+        "following": 2,
+        "bio": "Samuel, שמואל",
+        "public_repos": 178,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "cargo",
+        "detected_via": "Cargo.toml",
+        "evidence_url": "https://github.com/chmouel/gh-news/blob/main/Cargo.toml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 367,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 7
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 182,
+        "medianChanges": 98,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 11,
+        "level": "high",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "2 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/chmouel/gh-news/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "gemini",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/chmouel/gh-news/commit/10e30a151b577ef9214e65a777851519fb03a234"
+        },
+        {
+          "name": "copilot",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/chmouel/gh-news/commit/1657978958af464c20553537e742d817c037c04b"
+        }
+      ],
+      "vulnerableDependencies": [
+        "lru@0.12.5 (GHSA-rhfx-m35p-ff5j)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "lru",
+          "version": "0.12.5",
+          "cve": "GHSA-rhfx-m35p-ff5j",
+          "severity": "LOW",
+          "title": "`IterMut` violates Stacked Borrows by invalidating internal pointer",
+          "fixedVersion": "0.16.3",
+          "type": "vuln",
+          "target": "Cargo.lock",
+          "targetUrl": "https://github.com/chmouel/gh-news/blob/4ffaaf9e69766c3cf4cf5bb47e8c75f67267ca4c/Cargo.lock",
+          "scannedRef": "4ffaaf9e69766c3cf4cf5bb47e8c75f67267ca4c"
+        }
+      ],
+      "lastUpdated": "2026-03-29T13:02:27.989Z"
+    },
+    {
       "full_name": "ClavixDev/Awesome-Vibecoding-Guide",
       "url": "https://github.com/ClavixDev/Awesome-Vibecoding-Guide",
       "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
