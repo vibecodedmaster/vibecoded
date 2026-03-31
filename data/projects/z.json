@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "zarazhangrui/codebase-to-course",
+      "url": "https://github.com/zarazhangrui/codebase-to-course",
+      "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.",
+      "stars": 2679,
+      "commits": 19,
+      "contributors": 2,
+      "forks": 236,
+      "open_issues": 5,
+      "license": null,
+      "topics": null,
+      "size": 107,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "zarazhangrui",
+          "avatar_url": "https://avatars.githubusercontent.com/u/153693696?v=4",
+          "url": "https://github.com/zarazhangrui",
+          "created_at": "2023-12-13T01:15:16Z",
+          "followers": 2398,
+          "following": 0
+        },
+        {
+          "login": "oil-oil",
+          "avatar_url": "https://avatars.githubusercontent.com/u/57465570?v=4",
+          "url": "https://github.com/oil-oil",
+          "created_at": "2019-11-06T22:54:33Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-03-22T21:25:01Z",
+      "language": "CSS",
+      "languages": {
+        "CSS": 34781,
+        "JavaScript": 19539,
+        "HTML": 2265,
+        "Shell": 210
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "zarazhangrui",
+        "avatar_url": "https://avatars.githubusercontent.com/u/153693696?v=4",
+        "url": "https://github.com/zarazhangrui",
+        "created_at": "2023-12-13T01:15:16Z",
+        "followers": 2398,
+        "following": 0,
+        "bio": "AI tinkerer",
+        "public_repos": 8,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 19,
+        "avgMessageLength": 385,
+        "emDashCount": 6,
+        "enDashCount": 3,
+        "aiMentionCount": 15
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 477,
+        "medianChanges": 179,
+        "largeCommitCount": 3
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 8,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/zarazhangrui/codebase-to-course/commit/ff8837ecf8e9f6ce9874ffa42e42633394a52a00"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/zarazhangrui/codebase-to-course/commit/ba36e1f2f05f21ca304ead87f7cfca220b98b537"
+        }
+      ],
+      "lastUpdated": "2026-03-31T13:36:14.750Z"
+    }
+  ]
+}
