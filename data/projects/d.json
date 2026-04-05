@@ -452,6 +452,120 @@
         }
       ],
       "lastUpdated": "2026-02-25T15:18:03.033Z"
+    },
+    {
+      "full_name": "dhairyajangir/wellSync",
+      "url": "https://github.com/dhairyajangir/wellSync",
+      "description": "Aims to organize life in multiple aspects",
+      "stars": 10,
+      "commits": 9,
+      "contributors": 4,
+      "forks": 0,
+      "open_issues": 0,
+      "license": null,
+      "topics": [
+        "ai-hackathon",
+        "bolt",
+        "vibe-coded"
+      ],
+      "size": 1940,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "dhairyajangir",
+          "avatar_url": "https://avatars.githubusercontent.com/u/183471878?v=4",
+          "url": "https://github.com/dhairyajangir",
+          "created_at": "2024-10-01T07:25:36Z",
+          "followers": 41,
+          "following": 0
+        },
+        {
+          "login": "Elite1213",
+          "avatar_url": "https://avatars.githubusercontent.com/u/120333754?v=4",
+          "url": "https://github.com/Elite1213",
+          "created_at": "2022-12-11T18:42:57Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "claude",
+          "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+          "url": "https://github.com/claude",
+          "created_at": "2009-05-07T00:15:43Z",
+          "followers": 68210,
+          "following": 0
+        },
+        {
+          "login": "Mallu722",
+          "avatar_url": "https://avatars.githubusercontent.com/u/178502224?v=4",
+          "url": "https://github.com/Mallu722",
+          "created_at": "2024-08-15T16:20:05Z",
+          "followers": 0,
+          "following": 2
+        }
+      ],
+      "created_at": "2025-07-20T18:50:09Z",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 155903,
+        "Shell": 138667,
+        "TypeScript": 32307,
+        "HTML": 454,
+        "CSS": 59
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/dhairyajangir/wellSync/blob/main/eslint.config.js",
+      "owner": {
+        "login": "dhairyajangir",
+        "avatar_url": "https://avatars.githubusercontent.com/u/183471878?v=4",
+        "url": "https://github.com/dhairyajangir",
+        "created_at": "2024-10-01T07:25:36Z",
+        "followers": 41,
+        "following": 0,
+        "bio": "infinite ",
+        "public_repos": 19,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package.json",
+        "evidence_url": "https://github.com/dhairyajangir/wellSync/blob/main/package.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 9,
+        "avgMessageLength": 83,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 2
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 20233,
+        "medianChanges": 4,
+        "largeCommitCount": 3
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/dhairyajangir/wellSync/blob/main/CLAUDE.md"
+        }
+      ],
+      "lastUpdated": "2026-04-05T13:07:57.337Z"
     }
   ]
 }
