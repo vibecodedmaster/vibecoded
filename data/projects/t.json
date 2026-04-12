@@ -535,6 +535,109 @@
         }
       ],
       "lastUpdated": "2026-02-24T01:54:34.298Z"
+    },
+    {
+      "full_name": "tucktuckg00se/INTERSECT",
+      "url": "https://github.com/tucktuckg00se/INTERSECT",
+      "description": "A nondestructive, time-stretching, and intersecting sample slicer plugin with independent per-slice parameter control.",
+      "stars": 217,
+      "commits": 152,
+      "contributors": 2,
+      "forks": 12,
+      "open_issues": 4,
+      "license": "GNU General Public License v3.0",
+      "topics": [
+        "au-plugin",
+        "audio-plugin",
+        "audio-sampler",
+        "juce-framework",
+        "linux",
+        "macos",
+        "music-production",
+        "vibe-coded",
+        "vst-plugin",
+        "vst3",
+        "windows"
+      ],
+      "size": 13372,
+      "default_branch": "master",
+      "contributorDetails": [
+        {
+          "login": "tucktuckg00se",
+          "avatar_url": "https://avatars.githubusercontent.com/u/168123582?v=4",
+          "url": "https://github.com/tucktuckg00se",
+          "created_at": "2024-04-25T17:39:59Z",
+          "followers": 21,
+          "following": 7
+        },
+        {
+          "login": "crshrprt",
+          "avatar_url": "https://avatars.githubusercontent.com/u/114294020?v=4",
+          "url": "https://github.com/crshrprt",
+          "created_at": "2022-09-24T12:39:24Z",
+          "followers": 11,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-02-14T08:09:38Z",
+      "language": "C++",
+      "languages": {
+        "C++": 578598,
+        "C": 7408,
+        "CMake": 4364
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "tucktuckg00se",
+        "avatar_url": "https://avatars.githubusercontent.com/u/168123582?v=4",
+        "url": "https://github.com/tucktuckg00se",
+        "created_at": "2024-04-25T17:39:59Z",
+        "followers": 21,
+        "following": 7,
+        "bio": "im not ashamed to say im just a vibe coding scrub",
+        "public_repos": 5,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 95,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 12
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 108,
+        "medianChanges": 20,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/tucktuckg00se/INTERSECT/commit/9351581f9478ef613c1fa7b55919b699c59dd7ae"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/tucktuckg00se/INTERSECT/commit/aa4e1e2cc26ce794bba3edbc0f246efe7bf0ef0d"
+        }
+      ],
+      "lastUpdated": "2026-04-12T13:07:07.399Z"
     }
   ]
 }
