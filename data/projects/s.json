@@ -321,6 +321,103 @@
       "lastUpdated": "2026-04-14T13:33:21.081Z"
     },
     {
+      "full_name": "shanraisshan/codex-cli-best-practice",
+      "url": "https://github.com/shanraisshan/codex-cli-best-practice",
+      "description": "from vibe coding to agentic engineering - practice makes codex perfect",
+      "stars": 710,
+      "commits": 89,
+      "contributors": 1,
+      "forks": 34,
+      "open_issues": 0,
+      "license": null,
+      "topics": [
+        "agentic-ai",
+        "agentic-coding",
+        "agentic-engineering",
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "codex",
+        "codex-ai",
+        "codex-cli",
+        "codex-cli-agents",
+        "codex-cli-best-practices",
+        "codex-cli-commands",
+        "codex-cli-skills",
+        "codex-hooks",
+        "context-engineering",
+        "hooks",
+        "openai",
+        "pakistan",
+        "pakistani-developer",
+        "vibe-coding"
+      ],
+      "size": 6109,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "shanraisshan",
+          "avatar_url": "https://avatars.githubusercontent.com/u/11731897?v=4",
+          "url": "https://github.com/shanraisshan",
+          "created_at": "2015-03-31T05:37:30Z",
+          "followers": 991,
+          "following": 14
+        }
+      ],
+      "created_at": "2026-02-27T07:37:49Z",
+      "language": "Python",
+      "languages": {
+        "Python": 28720
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "shanraisshan",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11731897?v=4",
+        "url": "https://github.com/shanraisshan",
+        "created_at": "2015-03-31T05:37:30Z",
+        "followers": 991,
+        "following": 14,
+        "bio": "Software Architect @disrupt.com",
+        "public_repos": 30,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 184,
+        "emDashCount": 6,
+        "enDashCount": 0,
+        "aiMentionCount": 26
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 9,
+        "medianChanges": 5,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/shanraisshan/codex-cli-best-practice/blob/main/CLAUDE.md"
+        }
+      ],
+      "lastUpdated": "2026-04-29T14:04:42.667Z"
+    },
+    {
       "full_name": "SlopLabs/slopos",
       "url": "https://github.com/SlopLabs/slopos",
       "description": "An operating system fully designed and written by AI agents.",
