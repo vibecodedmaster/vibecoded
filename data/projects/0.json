@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "0Chencc/clawgod",
+      "url": "https://github.com/0Chencc/clawgod",
+      "description": "This is NOT a third-party Claude Code client. ClawGod is a runtime patch applied on top of the official Claude Code. It works with any version — as Claude Code updates, the patch continues to take effect",
+      "stars": 1015,
+      "commits": 46,
+      "contributors": 4,
+      "forks": 197,
+      "open_issues": 7,
+      "license": "GNU General Public License v3.0",
+      "topics": [
+        "ai",
+        "assistant",
+        "claude-ai",
+        "claude-code",
+        "claw",
+        "clawcode",
+        "limit",
+        "linux",
+        "macos",
+        "patch",
+        "skill",
+        "vibe-coded",
+        "vibe-coding",
+        "windows"
+      ],
+      "size": 262,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "0Chencc",
+          "avatar_url": "https://avatars.githubusercontent.com/u/19362246?v=4",
+          "url": "https://github.com/0Chencc",
+          "created_at": "2016-05-14T14:35:16Z",
+          "followers": 1069,
+          "following": 77
+        },
+        {
+          "login": "adming-zz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/5474434?v=4",
+          "url": "https://github.com/adming-zz",
+          "created_at": "2013-09-17T01:41:58Z",
+          "followers": 5,
+          "following": 0
+        },
+        {
+          "login": "keyblues",
+          "avatar_url": "https://avatars.githubusercontent.com/u/106880289?v=4",
+          "url": "https://github.com/keyblues",
+          "created_at": "2022-06-04T16:03:40Z",
+          "followers": 2,
+          "following": 3
+        },
+        {
+          "login": "b1ank1108",
+          "avatar_url": "https://avatars.githubusercontent.com/u/44739127?v=4",
+          "url": "https://github.com/b1ank1108",
+          "created_at": "2018-11-04T03:25:42Z",
+          "followers": 39,
+          "following": 74
+        }
+      ],
+      "created_at": "2026-04-01T11:09:07Z",
+      "language": "HTML",
+      "languages": {
+        "HTML": 166418,
+        "Shell": 58051,
+        "PowerShell": 56531,
+        "CSS": 20019,
+        "TypeScript": 7911
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "0Chencc",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19362246?v=4",
+        "url": "https://github.com/0Chencc",
+        "created_at": "2016-05-14T14:35:16Z",
+        "followers": 1069,
+        "following": 77,
+        "bio": "have fun",
+        "public_repos": 36,
+        "is_private": false
+      },
+      "packageManager": null,
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 872,
+        "emDashCount": 32,
+        "enDashCount": 0,
+        "aiMentionCount": 14
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 24,
+        "medianChanges": 16,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/0Chencc/clawgod/commit/bf3774af0e231c5b5c57e3cb24a4307a2e9d3ab6"
+        },
+        {
+          "name": "copilot",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/0Chencc/clawgod/commit/aafdca358d003d20000ed61ce6caf2df07eae708"
+        }
+      ],
+      "lastUpdated": "2026-05-13T14:41:41.925Z"
+    }
+  ]
+}

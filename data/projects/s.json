@@ -580,6 +580,105 @@
       "lastUpdated": "2026-03-12T14:45:07.977Z"
     },
     {
+      "full_name": "splitbrain/ndemo",
+      "url": "https://github.com/splitbrain/ndemo",
+      "description": "A claude skill to create a narrated demo video of a web application",
+      "stars": 5,
+      "commits": 49,
+      "contributors": 2,
+      "forks": 0,
+      "open_issues": 0,
+      "license": null,
+      "topics": [
+        "claude-code",
+        "claude-skill",
+        "vibe-coded",
+        "video"
+      ],
+      "size": 88,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "claude",
+          "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
+          "url": "https://github.com/claude",
+          "created_at": "2009-05-07T00:15:43Z",
+          "followers": 97054,
+          "following": 0
+        },
+        {
+          "login": "splitbrain",
+          "avatar_url": "https://avatars.githubusercontent.com/u/86426?v=4",
+          "url": "https://github.com/splitbrain",
+          "created_at": "2009-05-19T18:52:35Z",
+          "followers": 676,
+          "following": 74
+        }
+      ],
+      "created_at": "2026-03-29T09:45:05Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 56575,
+        "JavaScript": 7180
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "splitbrain",
+        "avatar_url": "https://avatars.githubusercontent.com/u/86426?v=4",
+        "url": "https://github.com/splitbrain",
+        "created_at": "2009-05-19T18:52:35Z",
+        "followers": 676,
+        "following": 74,
+        "bio": null,
+        "public_repos": 191,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package-lock.json",
+        "evidence_url": "https://github.com/splitbrain/ndemo/blob/main/package-lock.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 406,
+        "emDashCount": 5,
+        "enDashCount": 0,
+        "aiMentionCount": 15
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 85,
+        "medianChanges": 65,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/splitbrain/ndemo/commit/d60e17e84b524dc89e8145844a030c47f4b9537d"
+        },
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/splitbrain/ndemo/commit/3e4db9c37c58a0dc5b454200bc9d0326659c15ed"
+        }
+      ],
+      "lastUpdated": "2026-05-13T14:41:55.879Z"
+    },
+    {
       "full_name": "statico/meshtastic-cli",
       "url": "https://github.com/statico/meshtastic-cli",
       "description": "🌌 Terminal UI for monitoring Meshtastic mesh networks - view packets, nodes, and chat in real-time",
