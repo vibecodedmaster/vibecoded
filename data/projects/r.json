@@ -2,6 +2,103 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "rock3r/spectre",
+      "url": "https://github.com/rock3r/spectre",
+      "description": "Programmatically drive your real Compose UI on the desktop.",
+      "stars": 8,
+      "commits": 106,
+      "contributors": 1,
+      "forks": 0,
+      "open_issues": 5,
+      "license": "Apache License 2.0",
+      "topics": [
+        "compose",
+        "compose-desktop",
+        "compose-multiplatform",
+        "kotlin",
+        "ui-automation",
+        "vibe-coded"
+      ],
+      "size": 2478,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "rock3r",
+          "avatar_url": "https://avatars.githubusercontent.com/u/153802?v=4",
+          "url": "https://github.com/rock3r",
+          "created_at": "2009-11-16T08:32:08Z",
+          "followers": 625,
+          "following": 29
+        }
+      ],
+      "created_at": "2026-04-08T18:44:32Z",
+      "language": "Kotlin",
+      "languages": {
+        "Kotlin": 848709,
+        "Python": 106090,
+        "Rust": 57893,
+        "Swift": 26830
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "rock3r",
+        "avatar_url": "https://avatars.githubusercontent.com/u/153802?v=4",
+        "url": "https://github.com/rock3r",
+        "created_at": "2009-11-16T08:32:08Z",
+        "followers": 625,
+        "following": 29,
+        "bio": "🇮🇹  Android developer in a past life, I'm currently bashing on my keyboard really hard to craft great UIs in Android Studio at @Google. CWTI host 🤌",
+        "public_repos": 103,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "gradle",
+        "detected_via": "build.gradle.kts",
+        "evidence_url": "https://github.com/rock3r/spectre/blob/main/build.gradle.kts"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 1706,
+        "emDashCount": 45,
+        "enDashCount": 2,
+        "aiMentionCount": 17
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 206,
+        "medianChanges": 126,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 10,
+        "level": "high",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/rock3r/spectre/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/rock3r/spectre/commit/17b9434b209cf7f4e99d4524f2bd8cb8050c20d0"
+        }
+      ],
+      "lastUpdated": "2026-05-17T13:26:00.925Z"
+    },
+    {
       "full_name": "RocketChat/Opensource-Contribution-Leaderboard",
       "url": "https://github.com/RocketChat/Opensource-Contribution-Leaderboard",
       "description": "Open Source project contributors tracking leaderboard originally built with :heart:  in  NodeJS 😉 Vibecoded to new world standards from 2026 🚀",
