@@ -2,6 +2,196 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "vibe-code-tours/vibe-code-tours.github.io",
+      "url": "https://github.com/vibe-code-tours/vibe-code-tours.github.io",
+      "description": "Vibe Code Tours — public site (bilingual). vibecode.tours",
+      "stars": 11,
+      "commits": 289,
+      "contributors": 144,
+      "forks": 164,
+      "open_issues": 6,
+      "license": null,
+      "topics": null,
+      "size": 1173,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "kokoye2007",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3091754?v=4",
+          "url": "https://github.com/kokoye2007",
+          "created_at": "2012-12-20T17:43:07Z",
+          "followers": 327,
+          "following": 1
+        },
+        {
+          "login": "HtetLin27",
+          "avatar_url": "https://avatars.githubusercontent.com/u/105052327?v=4",
+          "url": "https://github.com/HtetLin27",
+          "created_at": "2022-05-06T11:03:13Z",
+          "followers": 12,
+          "following": 8
+        },
+        {
+          "login": "MileFisher",
+          "avatar_url": "https://avatars.githubusercontent.com/u/155565639?v=4",
+          "url": "https://github.com/MileFisher",
+          "created_at": "2024-01-03T16:16:03Z",
+          "followers": 1,
+          "following": 2
+        },
+        {
+          "login": "SiThuTun-mdy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/15166653?v=4",
+          "url": "https://github.com/SiThuTun-mdy",
+          "created_at": "2015-10-17T03:19:13Z",
+          "followers": 1,
+          "following": 3
+        },
+        {
+          "login": "haymannko",
+          "avatar_url": "https://avatars.githubusercontent.com/u/132817003?v=4",
+          "url": "https://github.com/haymannko",
+          "created_at": "2023-05-07T10:11:05Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "yannaingaung31",
+          "avatar_url": "https://avatars.githubusercontent.com/u/69661056?v=4",
+          "url": "https://github.com/yannaingaung31",
+          "created_at": "2020-08-14T02:52:18Z",
+          "followers": 5,
+          "following": 7
+        },
+        {
+          "login": "ZedZed34",
+          "avatar_url": "https://avatars.githubusercontent.com/u/149986224?v=4",
+          "url": "https://github.com/ZedZed34",
+          "created_at": "2023-11-06T02:53:13Z",
+          "followers": 1,
+          "following": 6
+        },
+        {
+          "login": "Jolly30",
+          "avatar_url": "https://avatars.githubusercontent.com/u/150994035?v=4",
+          "url": "https://github.com/Jolly30",
+          "created_at": "2023-11-16T05:07:02Z",
+          "followers": 0,
+          "following": 1
+        },
+        {
+          "login": "absolute-aungkomyint",
+          "avatar_url": "https://avatars.githubusercontent.com/u/288077201?v=4",
+          "url": "https://github.com/absolute-aungkomyint",
+          "created_at": "2026-05-26T16:24:52Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "bhonepyisone",
+          "avatar_url": "https://avatars.githubusercontent.com/u/218926983?v=4",
+          "url": "https://github.com/bhonepyisone",
+          "created_at": "2025-07-02T07:04:48Z",
+          "followers": 0,
+          "following": 2
+        }
+      ],
+      "created_at": "2026-05-25T14:18:58Z",
+      "language": "Astro",
+      "languages": {
+        "Astro": 88069,
+        "JavaScript": 27651,
+        "TypeScript": 6934,
+        "CSS": 3805
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "vibe-code-tours",
+        "avatar_url": "https://avatars.githubusercontent.com/u/287727796?v=4",
+        "url": "https://github.com/vibe-code-tours",
+        "created_at": "2026-05-25T14:17:57Z",
+        "followers": 24,
+        "following": 0,
+        "bio": null,
+        "public_repos": 2,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package-lock.json",
+        "evidence_url": "https://github.com/vibe-code-tours/vibe-code-tours.github.io/blob/main/package-lock.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 114,
+        "emDashCount": 3,
+        "enDashCount": 0,
+        "aiMentionCount": 3
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 102,
+        "medianChanges": 120,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "gemini",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/vibe-code-tours/vibe-code-tours.github.io/commit/3b017bd48c1948ab1a57d6866e26cd470d051f33"
+        },
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/vibe-code-tours/vibe-code-tours.github.io/commit/42a96473bf42d42931dabf855a9782ef895c4a68"
+        }
+      ],
+      "vulnerableDependencies": [
+        "astro@5.18.1 (CVE-2026-41067)",
+        "astro@5.18.1 (CVE-2026-45028)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "astro",
+          "version": "5.18.1",
+          "cve": "CVE-2026-41067",
+          "severity": "MEDIUM",
+          "title": "Astro: XSS in define:vars via incomplete </script> tag sanitization",
+          "fixedVersion": "6.1.6",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/vibe-code-tours/vibe-code-tours.github.io/blob/16258d09aceb89166867faba22ed2f5e168ba9bc/package-lock.json",
+          "scannedRef": "16258d09aceb89166867faba22ed2f5e168ba9bc"
+        },
+        {
+          "pkg": "astro",
+          "version": "5.18.1",
+          "cve": "CVE-2026-45028",
+          "severity": "LOW",
+          "title": "Astro: Server island encrypted parameters vulnerable to cross-component replay",
+          "fixedVersion": "6.1.10",
+          "type": "vuln",
+          "target": "package-lock.json",
+          "targetUrl": "https://github.com/vibe-code-tours/vibe-code-tours.github.io/blob/16258d09aceb89166867faba22ed2f5e168ba9bc/package-lock.json",
+          "scannedRef": "16258d09aceb89166867faba22ed2f5e168ba9bc"
+        }
+      ],
+      "lastUpdated": "2026-06-10T15:41:02.329Z"
+    },
+    {
       "full_name": "vincanger/envelope-budgeting-test",
       "url": "https://github.com/vincanger/envelope-budgeting-test",
       "description": "full-stack vibe coding template (envelope budgeting app)",
