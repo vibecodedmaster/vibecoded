@@ -2,6 +2,288 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "cabloy/cabloy",
+      "url": "https://github.com/cabloy/cabloy",
+      "description": "🚀 Cabloy is a Node.js fullstack framework for AI vibe coding.",
+      "stars": 966,
+      "commits": 28736,
+      "contributors": 5,
+      "forks": 132,
+      "open_issues": 0,
+      "license": "MIT License",
+      "topics": [
+        "full-stack",
+        "nodejs"
+      ],
+      "size": 260629,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "zhennann",
+          "avatar_url": "https://avatars.githubusercontent.com/u/24246985?v=4",
+          "url": "https://github.com/zhennann",
+          "created_at": "2016-11-29T11:16:13Z",
+          "followers": 79,
+          "following": 25
+        },
+        {
+          "login": "gitter-badger",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8518239?v=4",
+          "url": "https://github.com/gitter-badger",
+          "created_at": "2014-08-21T22:34:39Z",
+          "followers": 661,
+          "following": 0
+        },
+        {
+          "login": "dependabot[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+          "url": "https://github.com/apps/dependabot",
+          "created_at": "2019-04-16T22:34:25Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "zanderzhng",
+          "avatar_url": "https://avatars.githubusercontent.com/u/867749?v=4",
+          "url": "https://github.com/zanderzhng",
+          "created_at": "2011-06-22T18:04:27Z",
+          "followers": 12,
+          "following": 0
+        },
+        {
+          "login": "fangyuan-neko",
+          "avatar_url": "https://avatars.githubusercontent.com/u/68462995?v=4",
+          "url": "https://github.com/fangyuan-neko",
+          "created_at": "2020-07-18T09:20:35Z",
+          "followers": 14,
+          "following": 26
+        }
+      ],
+      "created_at": "2018-01-14T05:13:19Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 4083772,
+        "JavaScript": 43933,
+        "Mustache": 34413,
+        "HTML": 34004,
+        "Shell": 3894,
+        "EJS": 3891,
+        "CSS": 1955,
+        "SCSS": 266
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "cabloy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65003488?v=4",
+        "url": "https://github.com/cabloy",
+        "created_at": "2020-05-08T04:26:37Z",
+        "followers": 8,
+        "following": 0,
+        "bio": null,
+        "public_repos": 26,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "pnpm",
+        "detected_via": "pnpm-lock.yaml",
+        "evidence_url": "https://github.com/cabloy/cabloy/blob/main/pnpm-lock.yaml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 67,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 6
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 441,
+        "medianChanges": 16,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/cabloy/cabloy/blob/main/CLAUDE.md"
+        }
+      ],
+      "vulnerableDependencies": [
+        "esbuild@0.20.2 (GHSA-67mh-4wv8-2f99)",
+        "esbuild@0.20.2 (GHSA-gv7w-rqvm-qjhr)",
+        "esbuild@0.24.2 (GHSA-67mh-4wv8-2f99)",
+        "esbuild@0.24.2 (GHSA-gv7w-rqvm-qjhr)",
+        "esbuild@0.25.12 (GHSA-gv7w-rqvm-qjhr)",
+        "esbuild@0.25.2 (GHSA-gv7w-rqvm-qjhr)",
+        "esbuild@0.27.7 (GHSA-g7r4-m6w7-qqqr)",
+        "esbuild@0.27.7 (GHSA-gv7w-rqvm-qjhr)",
+        "postcss@8.1.10 (CVE-2021-23368)",
+        "postcss@8.1.10 (CVE-2021-23382)",
+        "postcss@8.1.10 (CVE-2023-44270)",
+        "postcss@8.1.10 (CVE-2026-41305)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "postcss",
+          "version": "8.1.10",
+          "cve": "CVE-2021-23368",
+          "severity": "MEDIUM",
+          "title": "nodejs-postcss: Regular expression denial of service during source map parsing",
+          "fixedVersion": "7.0.36, 8.2.10",
+          "type": "vuln",
+          "target": "vona/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/vona/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "postcss",
+          "version": "8.1.10",
+          "cve": "CVE-2021-23382",
+          "severity": "MEDIUM",
+          "title": "nodejs-postcss: ReDoS via getAnnotationURL() and loadAnnotation() in lib/previous-map.js",
+          "fixedVersion": "8.2.13, 7.0.36",
+          "type": "vuln",
+          "target": "vona/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/vona/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "postcss",
+          "version": "8.1.10",
+          "cve": "CVE-2023-44270",
+          "severity": "MEDIUM",
+          "title": "PostCSS: Improper input validation in PostCSS",
+          "fixedVersion": "8.4.31",
+          "type": "vuln",
+          "target": "vona/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/vona/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "postcss",
+          "version": "8.1.10",
+          "cve": "CVE-2026-41305",
+          "severity": "MEDIUM",
+          "title": "postcss: PostCSS: Cross-Site Scripting (XSS) via improper escaping of style closing tags",
+          "fixedVersion": "8.5.10",
+          "type": "vuln",
+          "target": "vona/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/vona/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.20.2",
+          "cve": "GHSA-gv7w-rqvm-qjhr",
+          "severity": "HIGH",
+          "title": "esbuild: Missing binary integrity verification in Deno module enables remote code execution via NPM_CONFIG_REGISTRY",
+          "fixedVersion": "0.28.1",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.20.2",
+          "cve": "GHSA-67mh-4wv8-2f99",
+          "severity": "MEDIUM",
+          "title": "esbuild enables any website to send any requests to the development server and read the response",
+          "fixedVersion": "0.25.0",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.24.2",
+          "cve": "GHSA-gv7w-rqvm-qjhr",
+          "severity": "HIGH",
+          "title": "esbuild: Missing binary integrity verification in Deno module enables remote code execution via NPM_CONFIG_REGISTRY",
+          "fixedVersion": "0.28.1",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.24.2",
+          "cve": "GHSA-67mh-4wv8-2f99",
+          "severity": "MEDIUM",
+          "title": "esbuild enables any website to send any requests to the development server and read the response",
+          "fixedVersion": "0.25.0",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.25.12",
+          "cve": "GHSA-gv7w-rqvm-qjhr",
+          "severity": "HIGH",
+          "title": "esbuild: Missing binary integrity verification in Deno module enables remote code execution via NPM_CONFIG_REGISTRY",
+          "fixedVersion": "0.28.1",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.25.2",
+          "cve": "GHSA-gv7w-rqvm-qjhr",
+          "severity": "HIGH",
+          "title": "esbuild: Missing binary integrity verification in Deno module enables remote code execution via NPM_CONFIG_REGISTRY",
+          "fixedVersion": "0.28.1",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.27.7",
+          "cve": "GHSA-gv7w-rqvm-qjhr",
+          "severity": "HIGH",
+          "title": "esbuild: Missing binary integrity verification in Deno module enables remote code execution via NPM_CONFIG_REGISTRY",
+          "fixedVersion": "0.28.1",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        },
+        {
+          "pkg": "esbuild",
+          "version": "0.27.7",
+          "cve": "GHSA-g7r4-m6w7-qqqr",
+          "severity": "LOW",
+          "title": "esbuild allows arbitrary file read when running the development server on Windows",
+          "fixedVersion": "0.28.1",
+          "type": "vuln",
+          "target": "zova/pnpm-lock.yaml",
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/81ddb8a503e821944988023b710813ebaba475b2/zova/pnpm-lock.yaml",
+          "scannedRef": "81ddb8a503e821944988023b710813ebaba475b2"
+        }
+      ],
+      "lastUpdated": "2026-06-13T14:05:04.519Z"
+    },
+    {
       "full_name": "chmouel/gh-news",
       "url": "https://github.com/chmouel/gh-news",
       "description": "gh cli tui extension to read GitHub notifications in the terminal ",
