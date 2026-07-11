@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "full_name": "michalstankiewicz4-cell/IPscanner",
+      "url": "https://github.com/michalstankiewicz4-cell/IPscanner",
+      "description": "Just simple IP scanner in javascript",
+      "stars": 13,
+      "commits": 311,
+      "contributors": 2,
+      "forks": 2,
+      "open_issues": 0,
+      "license": "Other",
+      "topics": [
+        "investigation",
+        "investigation-tool",
+        "ip",
+        "ip-scanner",
+        "ipscanner",
+        "ipsec",
+        "net",
+        "network-analysis",
+        "osint",
+        "osint-tool",
+        "osint-tools",
+        "powershell",
+        "scanner",
+        "security-tools",
+        "sniffer",
+        "sniffers",
+        "vibe-coded",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "size": 31521,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "michalstankiewicz4-cell",
+          "avatar_url": "https://avatars.githubusercontent.com/u/248485489?v=4",
+          "url": "https://github.com/michalstankiewicz4-cell",
+          "created_at": "2025-12-08T13:48:11Z",
+          "followers": 7,
+          "following": 3
+        },
+        {
+          "login": "github-actions[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "url": "https://github.com/apps/github-actions",
+          "created_at": "2018-07-30T09:30:16Z",
+          "followers": 0,
+          "following": 0
+        }
+      ],
+      "created_at": "2026-04-26T12:49:33Z",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 535153,
+        "Rust": 177045,
+        "CSS": 83313,
+        "HTML": 36933,
+        "NSIS": 31146,
+        "PowerShell": 6438
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "michalstankiewicz4-cell",
+        "avatar_url": "https://avatars.githubusercontent.com/u/248485489?v=4",
+        "url": "https://github.com/michalstankiewicz4-cell",
+        "created_at": "2025-12-08T13:48:11Z",
+        "followers": 7,
+        "following": 3,
+        "bio": "Vibecoder and analyst\r\nAutomation and work facilitation",
+        "public_repos": 14,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package.json",
+        "evidence_url": "https://github.com/michalstankiewicz4-cell/IPscanner/blob/main/package.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 929,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 28
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 272,
+        "medianChanges": 190,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/michalstankiewicz4-cell/IPscanner/commit/f6af68d3dba92b200dfaff6079851f6303067c6c"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/michalstankiewicz4-cell/IPscanner/commit/911508b854bec63a54e8c8134e00aa6e89d6bf30"
+        }
+      ],
+      "vulnerableDependencies": [
+        "glib@0.18.5 (GHSA-wrw7-89jp-8q8g)",
+        "tauri@2.11.0 (CVE-2026-42184)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "glib",
+          "version": "0.18.5",
+          "cve": "GHSA-wrw7-89jp-8q8g",
+          "severity": "MEDIUM",
+          "title": "Unsoundness in `Iterator` and `DoubleEndedIterator` impls for `glib::VariantStrIter`",
+          "fixedVersion": "0.20.0",
+          "type": "vuln",
+          "target": "src-tauri/Cargo.lock",
+          "targetUrl": "https://github.com/michalstankiewicz4-cell/IPscanner/blob/e9e77edefeca961225bd7b336616c0221302941a/src-tauri/Cargo.lock",
+          "scannedRef": "e9e77edefeca961225bd7b336616c0221302941a"
+        },
+        {
+          "pkg": "tauri",
+          "version": "2.11.0",
+          "cve": "CVE-2026-42184",
+          "severity": "MEDIUM",
+          "title": "Tauri has an Origin Confusion Issue that Allows Remote Pages to Invoke Local-Only IPC Commands",
+          "fixedVersion": "2.11.1",
+          "type": "vuln",
+          "target": "src-tauri/Cargo.lock",
+          "targetUrl": "https://github.com/michalstankiewicz4-cell/IPscanner/blob/e9e77edefeca961225bd7b336616c0221302941a/src-tauri/Cargo.lock",
+          "scannedRef": "e9e77edefeca961225bd7b336616c0221302941a"
+        }
+      ],
+      "lastUpdated": "2026-07-11T13:40:56.666Z"
+    }
+  ]
+}
