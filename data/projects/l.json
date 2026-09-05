@@ -2,6 +2,136 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "lnkiai/m3e-canvas",
+      "url": "https://github.com/lnkiai/m3e-canvas",
+      "description": "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.",
+      "stars": 3240,
+      "commits": 74,
+      "contributors": 5,
+      "forks": 258,
+      "open_issues": 1,
+      "license": "MIT License",
+      "topics": [
+        "design-tool",
+        "material-3-expressive",
+        "material-design",
+        "material3",
+        "nextjs",
+        "prompt",
+        "react",
+        "vibe-coding"
+      ],
+      "size": 9367,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "lnkiai",
+          "avatar_url": "https://avatars.githubusercontent.com/u/187016380?v=4",
+          "url": "https://github.com/lnkiai",
+          "created_at": "2024-11-01T10:27:01Z",
+          "followers": 69,
+          "following": 0
+        },
+        {
+          "login": "CQMHV",
+          "avatar_url": "https://avatars.githubusercontent.com/u/185041488?v=4",
+          "url": "https://github.com/CQMHV",
+          "created_at": "2024-10-15T07:25:19Z",
+          "followers": 24,
+          "following": 31
+        },
+        {
+          "login": "Cokedog320",
+          "avatar_url": "https://avatars.githubusercontent.com/u/262039078?v=4",
+          "url": "https://github.com/Cokedog320",
+          "created_at": "2026-02-17T02:47:20Z",
+          "followers": 1,
+          "following": 0
+        },
+        {
+          "login": "dependabot[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+          "url": "https://github.com/apps/dependabot",
+          "created_at": "2019-04-16T22:34:25Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "j-token",
+          "avatar_url": "https://avatars.githubusercontent.com/u/43957100?v=4",
+          "url": "https://github.com/j-token",
+          "created_at": "2018-10-08T11:42:40Z",
+          "followers": 13,
+          "following": 9
+        }
+      ],
+      "created_at": "2026-09-02T04:36:34Z",
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 802568,
+        "CSS": 4538,
+        "JavaScript": 94
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "lnkiai",
+        "avatar_url": "https://avatars.githubusercontent.com/u/187016380?v=4",
+        "url": "https://github.com/lnkiai",
+        "created_at": "2024-11-01T10:27:01Z",
+        "followers": 69,
+        "following": 0,
+        "bio": null,
+        "public_repos": 6,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package-lock.json",
+        "evidence_url": "https://github.com/lnkiai/m3e-canvas/blob/main/package-lock.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 308,
+        "emDashCount": 1,
+        "enDashCount": 0,
+        "aiMentionCount": 20
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 321,
+        "medianChanges": 95,
+        "largeCommitCount": 1
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 10,
+        "level": "high",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/lnkiai/m3e-canvas/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "copilot",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/lnkiai/m3e-canvas/commit/ade91a35b49f9df781f2c706a72d3e492d5379d4"
+        }
+      ],
+      "lastUpdated": "2026-09-05T14:47:48.894Z"
+    },
+    {
       "full_name": "loppety/Awesome-Vibecoding-Guide",
       "url": "https://github.com/loppety/Awesome-Vibecoding-Guide",
       "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
