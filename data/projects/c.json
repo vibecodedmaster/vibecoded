@@ -435,6 +435,220 @@
       "lastUpdated": "2026-03-29T13:02:27.989Z"
     },
     {
+      "full_name": "chmouel/liseur-sync",
+      "url": "https://github.com/chmouel/liseur-sync",
+      "description": "Self-hostable reading-position sync and statistics server for Liseur, KOReader, and friends",
+      "stars": 14,
+      "commits": 449,
+      "contributors": 2,
+      "forks": 1,
+      "open_issues": 4,
+      "license": "MIT License",
+      "topics": [
+        "content-server",
+        "ebook",
+        "epub",
+        "llm",
+        "vibe-coded",
+        "vibe-coding"
+      ],
+      "size": 25000,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "chmouel",
+          "avatar_url": "https://avatars.githubusercontent.com/u/98980?v=4",
+          "url": "https://github.com/chmouel",
+          "created_at": "2009-06-25T20:43:26Z",
+          "followers": 195,
+          "following": 2
+        },
+        {
+          "login": "Copilot",
+          "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+          "url": "https://github.com/apps/copilot-swe-agent"
+        }
+      ],
+      "created_at": "2026-08-10T11:06:55Z",
+      "language": "Go",
+      "languages": {
+        "Go": 2995312,
+        "JavaScript": 321949,
+        "templ": 138493,
+        "CSS": 74702,
+        "Shell": 38624,
+        "Python": 23538,
+        "Makefile": 5931,
+        "HTML": 1405,
+        "Dockerfile": 610
+      },
+      "is_archived": false,
+      "hasLinting": true,
+      "lintEvidenceUrl": "https://github.com/chmouel/liseur-sync/blob/main/.golangci.yml",
+      "owner": {
+        "login": "chmouel",
+        "avatar_url": "https://avatars.githubusercontent.com/u/98980?v=4",
+        "url": "https://github.com/chmouel",
+        "created_at": "2009-06-25T20:43:26Z",
+        "followers": 195,
+        "following": 2,
+        "bio": "Samuel, שמואל",
+        "public_repos": 178,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "go",
+        "detected_via": "go.mod",
+        "evidence_url": "https://github.com/chmouel/liseur-sync/blob/main/go.mod"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 293,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 1
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 335,
+        "medianChanges": 122,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/chmouel/liseur-sync/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "copilot",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/chmouel/liseur-sync/commit/7b9fad1b49779840b461092fc50ff5f7615c19c6"
+        }
+      ],
+      "vulnerableDependencies": [
+        "golang.org/x/crypto@v0.54.0 (CVE-2026-56854)",
+        "golang.org/x/crypto@v0.54.0 (CVE-2026-56855)",
+        "golang.org/x/crypto@v0.54.0 (CVE-2026-78662)",
+        "golang.org/x/crypto@v0.54.0 (GO-2026-5932)",
+        "golang.org/x/mod@v0.37.0 (CVE-2026-56864)",
+        "golang.org/x/mod@v0.37.0 (CVE-2026-56865)",
+        "google.golang.org/grpc@v1.81.1 (CVE-2026-84304)",
+        "google.golang.org/grpc@v1.81.1 (GHSA-hrxh-6v49-42gf)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.54.0",
+          "cve": "CVE-2026-56854",
+          "severity": "CRITICAL",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authentication bypass due to unenforced source-address restrictions",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.54.0",
+          "cve": "CVE-2026-56855",
+          "severity": "UNKNOWN",
+          "title": "Previously, after a channel has been established, a malicious peer cou ...",
+          "fixedVersion": "0.56.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.54.0",
+          "cve": "CVE-2026-78662",
+          "severity": "UNKNOWN",
+          "title": "Previously, a channel registered in the mux's chanList is not usable u ...",
+          "fixedVersion": "0.56.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.54.0",
+          "cve": "GO-2026-5932",
+          "severity": "UNKNOWN",
+          "title": "The golang.org/x/crypto/openpgp package is unmaintained, unsafe by design, and has known security issues",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        },
+        {
+          "pkg": "golang.org/x/mod",
+          "version": "v0.37.0",
+          "cve": "CVE-2026-56864",
+          "severity": "HIGH",
+          "title": "A malicious GOSUMDB was capable of serving arbitrary module content no ...",
+          "fixedVersion": "0.40.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        },
+        {
+          "pkg": "golang.org/x/mod",
+          "version": "v0.37.0",
+          "cve": "CVE-2026-56865",
+          "severity": "HIGH",
+          "title": "golang.org/x/mod/sumdb/tlog: golang.org/x/mod/sumdb/tlog: Supply chain compromise via transparency log tile verification bypass",
+          "fixedVersion": "0.40.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        },
+        {
+          "pkg": "google.golang.org/grpc",
+          "version": "v1.81.1",
+          "cve": "CVE-2026-84304",
+          "severity": "HIGH",
+          "title": "gRPC-Go is the Go language implementation of gRPC. Prior to 1.83.1, in ...",
+          "fixedVersion": "1.83.1",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        },
+        {
+          "pkg": "google.golang.org/grpc",
+          "version": "v1.81.1",
+          "cve": "GHSA-hrxh-6v49-42gf",
+          "severity": "HIGH",
+          "title": "gRPC-Go: xDS RBAC and HTTP/2 Vulnerabilities",
+          "fixedVersion": "1.82.1",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/chmouel/liseur-sync/blob/69e4ad1485fbf4ea4ea803db9a19cfe492d8f431/go.mod",
+          "scannedRef": "69e4ad1485fbf4ea4ea803db9a19cfe492d8f431"
+        }
+      ],
+      "lastUpdated": "2026-09-10T16:00:14.792Z"
+    },
+    {
       "full_name": "ClavixDev/Awesome-Vibecoding-Guide",
       "url": "https://github.com/ClavixDev/Awesome-Vibecoding-Guide",
       "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
