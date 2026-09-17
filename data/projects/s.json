@@ -774,6 +774,101 @@
         }
       ],
       "lastUpdated": "2026-02-25T15:18:54.638Z"
+    },
+    {
+      "full_name": "sylirre/ghostty-android-terminal",
+      "url": "https://github.com/sylirre/ghostty-android-terminal",
+      "description": "Linux shell for Android OS, backed by ARM64 userspace emulator and Ghostty lib.",
+      "stars": 14,
+      "commits": 212,
+      "contributors": 1,
+      "forks": 3,
+      "open_issues": 0,
+      "license": "Apache License 2.0",
+      "topics": [
+        "android",
+        "terminal",
+        "vibe-coded"
+      ],
+      "size": 9407,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "sylirre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/107305601?v=4",
+          "url": "https://github.com/sylirre",
+          "created_at": "2022-06-11T11:15:30Z",
+          "followers": 71,
+          "following": 3
+        }
+      ],
+      "created_at": "2026-06-12T13:28:32Z",
+      "language": "Java",
+      "languages": {
+        "Java": 898173,
+        "C": 437671,
+        "C++": 284733,
+        "Shell": 9318,
+        "CMake": 9154,
+        "Python": 1903
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "sylirre",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107305601?v=4",
+        "url": "https://github.com/sylirre",
+        "created_at": "2022-06-11T11:15:30Z",
+        "followers": 71,
+        "following": 3,
+        "bio": null,
+        "public_repos": 11,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "gradle",
+        "detected_via": "build.gradle",
+        "evidence_url": "https://github.com/sylirre/ghostty-android-terminal/blob/main/build.gradle"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 1028,
+        "emDashCount": 46,
+        "enDashCount": 0,
+        "aiMentionCount": 28
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 59,
+        "medianChanges": 35,
+        "largeCommitCount": 0
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 9,
+        "level": "high",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "1 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/sylirre/ghostty-android-terminal/blob/main/CLAUDE.md"
+        },
+        {
+          "name": "cursor",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/sylirre/ghostty-android-terminal/commit/ee5679b4631c94d8a26849112b8ebbdd5d70eba6"
+        }
+      ],
+      "lastUpdated": "2026-09-17T16:28:05.569Z"
     }
   ]
 }
