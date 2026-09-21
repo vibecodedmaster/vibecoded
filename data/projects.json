@@ -5,11 +5,11 @@
       "full_name": "0Chencc/clawgod",
       "url": "https://github.com/0Chencc/clawgod",
       "description": "ClawGod is a runtime patch applied to the official Claude Code. It continues to be supported with each version update.",
-      "stars": 2033,
+      "stars": 2038,
       "commits": 131,
       "contributors": 11,
       "forks": 329,
-      "open_issues": 7,
+      "open_issues": 6,
       "license": "GNU General Public License v3.0",
       "topics": [
         "ai",
@@ -27,7 +27,7 @@
         "vibe-coding",
         "windows"
       ],
-      "size": 821,
+      "size": 595,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -43,7 +43,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/23459592?v=4",
           "url": "https://github.com/plusls",
           "created_at": "2016-11-14T17:46:01Z",
-          "followers": 525,
+          "followers": 526,
           "following": 114
         },
         {
@@ -170,16 +170,14 @@
           "evidence_url": "https://github.com/0Chencc/clawgod/blob/main/AGENTS.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:43.288Z"
+      "lastUpdated": "2026-09-21T02:52:57.875Z"
     },
     {
       "full_name": "ActiveInferenceInstitute/GEO-INFER",
       "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
       "description": "GEO-INFER — a 44-module geospatial inference monorepo from the Active Inference Institute. Spatial analysis, active inference, domain modeling, agent workflows, and reproducible repository validation in one uv/Python workspace (H3, Bayesian models, place & risk).",
       "stars": 16,
-      "commits": 619,
+      "commits": 620,
       "contributors": 2,
       "forks": 3,
       "open_issues": 0,
@@ -197,7 +195,7 @@
         "spatial-analysis",
         "uv"
       ],
-      "size": 442294,
+      "size": 442295,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -249,8 +247,8 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 229,
-        "emDashCount": 14,
+        "avgMessageLength": 220,
+        "emDashCount": 12,
         "enDashCount": 0,
         "aiMentionCount": 0
       },
@@ -282,13 +280,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:46.516Z"
+      "lastUpdated": "2026-09-21T02:52:58.248Z"
     },
     {
       "full_name": "aha-hyeong/kumiho",
       "url": "https://github.com/aha-hyeong/kumiho",
       "description": "kumiho is self-hosting web media server.",
-      "stars": 89,
+      "stars": 90,
       "commits": 1618,
       "contributors": 2,
       "forks": 5,
@@ -383,15 +381,1432 @@
           "evidence_url": "https://github.com/aha-hyeong/kumiho/blob/main/.github/copilot-instructions.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:37.874Z"
+      "vulnerableDependencies": [
+        "@xmldom/xmldom@0.7.13 (CVE-2026-34601)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-41672)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-41673)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-41674)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-41675)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83605)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83607)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83608)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83610)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83611)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83613)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83614)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83615)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83616)",
+        "@xmldom/xmldom@0.7.13 (CVE-2026-83619)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-41672)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-41673)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-41674)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-41675)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83605)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83607)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83608)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83610)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83611)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83613)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83614)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83615)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83616)",
+        "@xmldom/xmldom@0.8.12 (CVE-2026-83619)",
+        "axios@1.15.0 (CVE-2026-42033)",
+        "axios@1.15.0 (CVE-2026-42034)",
+        "axios@1.15.0 (CVE-2026-42035)",
+        "axios@1.15.0 (CVE-2026-42036)",
+        "axios@1.15.0 (CVE-2026-42037)",
+        "axios@1.15.0 (CVE-2026-42038)",
+        "axios@1.15.0 (CVE-2026-42039)",
+        "axios@1.15.0 (CVE-2026-42040)",
+        "axios@1.15.0 (CVE-2026-42041)",
+        "axios@1.15.0 (CVE-2026-42042)",
+        "axios@1.15.0 (CVE-2026-42043)",
+        "axios@1.15.0 (CVE-2026-42044)",
+        "axios@1.15.0 (CVE-2026-42264)",
+        "axios@1.15.0 (CVE-2026-44486)",
+        "axios@1.15.0 (CVE-2026-44487)",
+        "axios@1.15.0 (CVE-2026-44488)",
+        "axios@1.15.0 (CVE-2026-44490)",
+        "axios@1.15.0 (CVE-2026-44492)",
+        "axios@1.15.0 (CVE-2026-44494)",
+        "axios@1.15.0 (CVE-2026-44495)",
+        "axios@1.15.0 (CVE-2026-44496)",
+        "axios@1.15.0 (CVE-2026-67312)",
+        "axios@1.15.0 (CVE-2026-67313)",
+        "axios@1.15.0 (CVE-2026-67315)",
+        "axios@1.15.0 (CVE-2026-67316)",
+        "axios@1.15.0 (CVE-2026-67317)",
+        "axios@1.15.0 (CVE-2026-67318)",
+        "axios@1.15.0 (CVE-2026-67319)",
+        "follow-redirects@1.15.11 (GHSA-r4q5-vmmm-2653)",
+        "form-data@4.0.5 (CVE-2026-12143)",
+        "github.com/disintegration/imaging@v1.6.2 (CVE-2023-36308)",
+        "github.com/gofiber/fiber/v2@v2.52.10 (CVE-2025-66630)",
+        "github.com/gofiber/fiber/v2@v2.52.10 (CVE-2026-25882)",
+        "github.com/gofiber/fiber/v2@v2.52.10 (CVE-2026-42554)",
+        "github.com/gofiber/fiber/v2@v2.52.10 (CVE-2026-45045)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39827)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39828)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39829)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39830)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39831)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39832)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39833)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39834)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-39835)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-42508)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-46595)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-46597)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-46598)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-56854)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-56855)",
+        "golang.org/x/crypto@v0.47.0 (CVE-2026-78662)",
+        "golang.org/x/crypto@v0.47.0 (GO-2026-5932)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2022-41727)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2023-29407)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2023-29408)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2024-24792)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-33809)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-33812)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-33813)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-42500)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-46599)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-46601)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-46602)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-46603)",
+        "golang.org/x/image@v0.0.0-20191009234506-e7c1f5e7dbb8 (CVE-2026-46604)",
+        "golang.org/x/sys@v0.40.0 (CVE-2026-39824)",
+        "golang.org/x/text@v0.33.0 (CVE-2026-56852)",
+        "react-router@7.12.0 (CVE-2026-33244)",
+        "react-router@7.12.0 (CVE-2026-33245)",
+        "react-router@7.12.0 (CVE-2026-34077)",
+        "react-router@7.12.0 (CVE-2026-40181)",
+        "react-router@7.12.0 (CVE-2026-42211)",
+        "react-router@7.12.0 (CVE-2026-42342)",
+        "react-router@7.12.0 (CVE-2026-53663)",
+        "react-router@7.12.0 (CVE-2026-53666)",
+        "react-router@7.12.0 (CVE-2026-53667)",
+        "react-router@7.12.0 (CVE-2026-53668)",
+        "react-router@7.12.0 (CVE-2026-53669)",
+        "react-router@7.12.0 (CVE-2026-55685)",
+        "react-router@7.12.0 (GHSA-qwww-vcr4-c8h2)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "github.com/disintegration/imaging",
+          "version": "v1.6.2",
+          "cve": "CVE-2023-36308",
+          "severity": "LOW",
+          "title": "disintegration Imaging 1.6.2 allows attackers to cause a panic (becaus ...",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "github.com/gofiber/fiber/v2",
+          "version": "v2.52.10",
+          "cve": "CVE-2025-66630",
+          "severity": "CRITICAL",
+          "title": "github.com/gofiber/fiber/v2: Fiber: Predictable UUIDs from randomness source errors can lead to security bypasses",
+          "fixedVersion": "2.52.11",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "github.com/gofiber/fiber/v2",
+          "version": "v2.52.10",
+          "cve": "CVE-2026-25882",
+          "severity": "MEDIUM",
+          "title": "Fiber has a Denial of Service Vulnerability via Route Parameter Overflow",
+          "fixedVersion": "2.52.12",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "github.com/gofiber/fiber/v2",
+          "version": "v2.52.10",
+          "cve": "CVE-2026-42554",
+          "severity": "MEDIUM",
+          "title": "Fiber vulnerable to XSS in AutoFormat Content Negotiation",
+          "fixedVersion": "2.52.13",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "github.com/gofiber/fiber/v2",
+          "version": "v2.52.10",
+          "cve": "CVE-2026-45045",
+          "severity": "MEDIUM",
+          "title": "GoFiber Vulnerable to X-Real-IP Spoofing via Header.Add() in BalancerForward",
+          "fixedVersion": "2.52.14",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39828",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Unauthorized command execution via discarded SSH permissions",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39829",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted public key with excessive parameters",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39830",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via resource leak from unsolicited SSH responses",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39831",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Security key bypass due to missing user presence check",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39832",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to improper handling of key restrictions",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39835",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service via crafted SSH certificate",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-42508",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh/knownhosts: golang: golang.org/x/crypto/ssh/knownhosts: Revocation bypass via unchecked SignatureKey",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-46595",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authorization bypass due to skipped source-address validation",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-46597",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted AES-GCM packet decoder inputs",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-56854",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authentication bypass due to unenforced source-address restrictions",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39827",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service via repeated rejected channel openings",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39833",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to unenforced key confirmation",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-39834",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service due to integer overflow in SSH channel write",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-46598",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh/agent: golang: golang.org/x/crypto/ssh/agent: Denial of Service via malformed input",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-56855",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted messages",
+          "fixedVersion": "0.56.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "CVE-2026-78662",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via channel request flooding",
+          "fixedVersion": "0.56.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.47.0",
+          "cve": "GO-2026-5932",
+          "severity": "UNKNOWN",
+          "title": "The golang.org/x/crypto/openpgp package is unmaintained, unsafe by design, and has known security issues",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-46602",
+          "severity": "HIGH",
+          "title": "The TIFF decoder does not set a limit on the size of tiles in tiled im ...",
+          "fixedVersion": "0.43.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-46603",
+          "severity": "HIGH",
+          "title": "golang.org/x/image/vp8l: golang.org/x/image/vp8l: Denial of Service via excessive memory allocation",
+          "fixedVersion": "0.45.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2022-41727",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image: Uncontrolled Resource Consumption",
+          "fixedVersion": "0.5.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2023-29407",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/tiff: excessive CPU consumption in decoding",
+          "fixedVersion": "0.10.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2023-29408",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/tiff: TIFF decoder does not place a limit on the size of compressed tile data",
+          "fixedVersion": "0.10.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-33809",
+          "severity": "MEDIUM",
+          "title": "golang: golang.org/x/image/tiff: golang.org/x/image/tiff: Denial of Service via maliciously crafted TIFF file",
+          "fixedVersion": "0.38.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-33812",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image: golang: golang.org/x/image: Denial of Service due to excessive memory allocation when parsing malicious font files",
+          "fixedVersion": "0.39.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-33813",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image: golang: golang.org/x/image: Denial of Service via malformed WEBP image parsing",
+          "fixedVersion": "0.42.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-42500",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/bmp: golang: golang.org/x/image/bmp: Denial of Service via out-of-range palette index in BMP decoding",
+          "fixedVersion": "0.41.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-46599",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/tiff: golang.org/x/image/tiff: Denial of Service via crafted PackBits-compressed data",
+          "fixedVersion": "0.41.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-46601",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/webp: golang.org/x/image/webp: Denial of Service via malformed VP8 chunk in WebP images",
+          "fixedVersion": "0.43.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2026-46604",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/image/tiff: golang.org/x/image/tiff: Denial of Service via invalid TIFF image",
+          "fixedVersion": "0.43.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/image",
+          "version": "v0.0.0-20191009234506-e7c1f5e7dbb8",
+          "cve": "CVE-2024-24792",
+          "severity": "UNKNOWN",
+          "title": "Parsing a corrupt or malicious image with invalid color indices can ca ...",
+          "fixedVersion": "0.18.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/sys",
+          "version": "v0.40.0",
+          "cve": "CVE-2026-39824",
+          "severity": "UNKNOWN",
+          "title": "Invoking integer overflow in NewNTUnicodeString in golang.org/x/sys/windows",
+          "fixedVersion": "0.44.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "golang.org/x/text",
+          "version": "v0.33.0",
+          "cve": "CVE-2026-56852",
+          "severity": "HIGH",
+          "title": "golang.org/x/text: golang.org/x/text: Denial of Service via invalid UTF-8 input",
+          "fixedVersion": "0.39.0",
+          "type": "vuln",
+          "target": "backend/go.mod",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/backend/go.mod",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-34601",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: XML structure injection via CDATA terminator",
+          "fixedVersion": "0.8.12, 0.9.9",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-41672",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Arbitrary XML Node Injection",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-41673",
+          "severity": "HIGH",
+          "title": "@xmldom/xmldom: xmldom: xmldom: Denial of Service via deeply nested XML documents",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-41674",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: Arbitrary XML markup injection",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-41675",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: Arbitrary XML node injection via crafted processing instructions",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83605",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Attribute injection allows client-side script execution",
+          "fixedVersion": "0.9.11, 0.8.14",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83607",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: Cross-site scripting via unvalidated element name injection",
+          "fixedVersion": "0.9.11, 0.8.14",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83608",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: XML Markup Injection via DocType Name Bypass",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83613",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Denial of Service due to quadratic-time attribute processing",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83614",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Denial of Service via quadratic-time XML parsing",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83615",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Denial of Service via quadratic memory consumption",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83616",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: XML Structure Injection via Unvalidated Processing Instruction Targets",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83619",
+          "severity": "HIGH",
+          "title": "@xmldom/xmldom: xmldom: Denial of Service via crafted XML input",
+          "fixedVersion": "0.8.15",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83610",
+          "severity": "MEDIUM",
+          "title": "xmldom: @xmldom/xmldom: xmldom: XML fragment injection via invalid EntityReference serialization",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.7.13",
+          "cve": "CVE-2026-83611",
+          "severity": "MEDIUM",
+          "title": "xmldom: xmldom: Malformed XML end tag parsing leads to content discard and security bypass",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-41672",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Arbitrary XML Node Injection",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-41673",
+          "severity": "HIGH",
+          "title": "@xmldom/xmldom: xmldom: xmldom: Denial of Service via deeply nested XML documents",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-41674",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: Arbitrary XML markup injection",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-41675",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: Arbitrary XML node injection via crafted processing instructions",
+          "fixedVersion": "0.8.13, 0.9.10",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83605",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Attribute injection allows client-side script execution",
+          "fixedVersion": "0.9.11, 0.8.14",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83607",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: Cross-site scripting via unvalidated element name injection",
+          "fixedVersion": "0.9.11, 0.8.14",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83608",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: XML Markup Injection via DocType Name Bypass",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83613",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Denial of Service due to quadratic-time attribute processing",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83614",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Denial of Service via quadratic-time XML parsing",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83615",
+          "severity": "HIGH",
+          "title": "xmldom: @xmldom/xmldom: xmldom: Denial of Service via quadratic memory consumption",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83616",
+          "severity": "HIGH",
+          "title": "xmldom: xmldom: XML Structure Injection via Unvalidated Processing Instruction Targets",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83619",
+          "severity": "HIGH",
+          "title": "@xmldom/xmldom: xmldom: Denial of Service via crafted XML input",
+          "fixedVersion": "0.8.15",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83610",
+          "severity": "MEDIUM",
+          "title": "xmldom: @xmldom/xmldom: xmldom: XML fragment injection via invalid EntityReference serialization",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "@xmldom/xmldom",
+          "version": "0.8.12",
+          "cve": "CVE-2026-83611",
+          "severity": "MEDIUM",
+          "title": "xmldom: xmldom: Malformed XML end tag parsing leads to content discard and security bypass",
+          "fixedVersion": "0.8.15, 0.9.12",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42033",
+          "severity": "HIGH",
+          "title": "axios: Axios: HTTP Transport Hijacking via Prototype Pollution",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42035",
+          "severity": "HIGH",
+          "title": "axios: Axios: Arbitrary HTTP header injection via prototype pollution",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42043",
+          "severity": "HIGH",
+          "title": "axios: Axios: NO_PROXY bypass via crafted URL",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42264",
+          "severity": "HIGH",
+          "title": "axios: Axios: Prototype pollution allows information disclosure and request manipulation",
+          "fixedVersion": "1.15.2",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44486",
+          "severity": "HIGH",
+          "title": "axios: Axios: Information disclosure of proxy credentials via HTTP redirects",
+          "fixedVersion": "1.16.0, 0.32.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44487",
+          "severity": "HIGH",
+          "title": "axios: Axios: Information disclosure of proxy credentials via redirect flows",
+          "fixedVersion": "1.16.0, 0.32.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44488",
+          "severity": "HIGH",
+          "title": "axios: Axios: Denial of Service due to unenforced request and response size limits",
+          "fixedVersion": "1.16.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44492",
+          "severity": "HIGH",
+          "title": "axios: Axios: Proxy bypass via IPv4-mapped IPv6 address non-normalization",
+          "fixedVersion": "1.16.0, 0.32.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44494",
+          "severity": "HIGH",
+          "title": "axios: Axios: Man-in-the-Middle (MITM) attack via Prototype Pollution",
+          "fixedVersion": "1.16.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44495",
+          "severity": "HIGH",
+          "title": "axios: Axios: Information disclosure due to prototype pollution vulnerability",
+          "fixedVersion": "1.15.2, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44496",
+          "severity": "HIGH",
+          "title": "axios: Axios: Client-side Denial of Service via unescaped regex metacharacters in XSRF cookie name",
+          "fixedVersion": "1.16.0, 0.32.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42034",
+          "severity": "MEDIUM",
+          "title": "axios: Axios: Denial of Service via oversized streamed uploads bypassing body limits",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42036",
+          "severity": "MEDIUM",
+          "title": "axios: Axios: Denial of Service via unbounded stream consumption when 'responseType: 'stream'' is used",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42037",
+          "severity": "MEDIUM",
+          "title": "axios: Node.js: Axios: Information disclosure via CRLF injection in multipart Content-Type header",
+          "fixedVersion": "1.15.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42038",
+          "severity": "MEDIUM",
+          "title": "axios: Axios: Information disclosure due to `no_proxy` bypass",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42039",
+          "severity": "MEDIUM",
+          "title": "axios: Node.js: Axios: Denial of Service via unbounded recursion in toFormData with deeply nested request data",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42041",
+          "severity": "MEDIUM",
+          "title": "axios: Axios: Authentication bypass due to prototype pollution of HTTP error handling",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42042",
+          "severity": "MEDIUM",
+          "title": "axios: Axios: XSRF token bypass leading to information disclosure",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42044",
+          "severity": "MEDIUM",
+          "title": "axios: Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget",
+          "fixedVersion": "1.15.2",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-44490",
+          "severity": "MEDIUM",
+          "title": "axios: Axios: Information disclosure and denial of service due to prototype pollution",
+          "fixedVersion": "1.16.0, 0.32.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-67312",
+          "severity": "MEDIUM",
+          "title": "axios: axios: Denial of Service via uncontrolled recursion in form data processing",
+          "fixedVersion": "0.33.0, 1.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-67313",
+          "severity": "MEDIUM",
+          "title": "axios: axios: Denial of Service via uncontrolled recursion in formDataToJSON",
+          "fixedVersion": "0.33.0, 1.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-67315",
+          "severity": "MEDIUM",
+          "title": "axios: axios: NO_PROXY bypass allows exposure of local services",
+          "fixedVersion": "1.18.0, 0.33.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-67316",
+          "severity": "MEDIUM",
+          "title": "axios: axios: Prototype Pollution allows unauthorized data transmission and network redirection",
+          "fixedVersion": "1.18.0, 0.33.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-67317",
+          "severity": "MEDIUM",
+          "title": "axios: axios: Denial of Service via maxBodyLength bypass with ReadableStream",
+          "fixedVersion": "1.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-67318",
+          "severity": "MEDIUM",
+          "title": "axios: axios: Denial of Service due to maxBodyLength bypass in HTTP/2 requests",
+          "fixedVersion": "1.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-67319",
+          "severity": "MEDIUM",
+          "title": "axios: axios: Information disclosure and data manipulation via prototype pollution",
+          "fixedVersion": "0.33.0, 1.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "axios",
+          "version": "1.15.0",
+          "cve": "CVE-2026-42040",
+          "severity": "LOW",
+          "title": "axios: Axios: Incorrect null byte handling can lead to data integrity issues",
+          "fixedVersion": "1.15.1, 0.31.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "follow-redirects",
+          "version": "1.15.11",
+          "cve": "GHSA-r4q5-vmmm-2653",
+          "severity": "MEDIUM",
+          "title": "follow-redirects leaks Custom Authentication Headers to Cross-Domain Redirect Targets",
+          "fixedVersion": "1.16.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "form-data",
+          "version": "4.0.5",
+          "cve": "CVE-2026-12143",
+          "severity": "HIGH",
+          "title": "form-data: form-data: Form field override via CRLF injection",
+          "fixedVersion": "2.5.6, 3.0.5, 4.0.6",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-33245",
+          "severity": "HIGH",
+          "title": "react-router: React Router: Cross-Site Scripting vulnerability via untrusted React Server Component redirects",
+          "fixedVersion": "7.13.2",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-34077",
+          "severity": "HIGH",
+          "title": "react-router: React Router: Denial of Service via client-side Cross-Site Scripting in RSC redirect handling",
+          "fixedVersion": "7.14.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-42211",
+          "severity": "HIGH",
+          "title": "react-router: React Router: Remote Code Execution via prototype pollution in Framework Mode",
+          "fixedVersion": "7.14.2",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-42342",
+          "severity": "HIGH",
+          "title": "react-router: @remix-run/server-runtime: React Router / Remix: Denial of Service via unbounded path expansion in __manifest endpoint",
+          "fixedVersion": "7.15.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-55685",
+          "severity": "HIGH",
+          "title": "react-router: @remix-run/server-runtime: React Router: Denial of Service via unauthenticated manifest endpoint requests",
+          "fixedVersion": "7.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "GHSA-qwww-vcr4-c8h2",
+          "severity": "HIGH",
+          "title": "React Router: RSC Mode CSRF Bypass Allows Action Execution Before 400 Response",
+          "fixedVersion": "7.18.2, 8.3.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-33244",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router: Cross-Site Scripting (XSS) via improper HTTP Location header neutralization",
+          "fixedVersion": "7.13.2",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-40181",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router: Open redirect vulnerability via specially crafted URLs",
+          "fixedVersion": "7.14.1, 6.30.4",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-53666",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router: Information disclosure via client-side constructor execution",
+          "fixedVersion": "7.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-53667",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router: Untrusted redirects due to missing protocol validation",
+          "fixedVersion": "7.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-53668",
+          "severity": "MEDIUM",
+          "title": "react-router: react-router-dom: React Router: Cross-Site Scripting (XSS) via open redirects",
+          "fixedVersion": "7.13.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-53669",
+          "severity": "MEDIUM",
+          "title": "react-router: React Router: Open Redirect vulnerability via backslashes in navigation components",
+          "fixedVersion": "7.18.0",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        },
+        {
+          "pkg": "react-router",
+          "version": "7.12.0",
+          "cve": "CVE-2026-53663",
+          "severity": "LOW",
+          "title": "react-router: @remix-run/server-runtime: React Router: Insufficient CSRF protection allows integrity impact",
+          "fixedVersion": "7.15.1",
+          "type": "vuln",
+          "target": "web/package-lock.json",
+          "targetUrl": "https://github.com/aha-hyeong/kumiho/blob/7f116de3d6bfa608dfab7ac12c960966e59ebf81/web/package-lock.json",
+          "scannedRef": "7f116de3d6bfa608dfab7ac12c960966e59ebf81"
+        }
+      ],
+      "lastUpdated": "2026-09-21T02:53:00.611Z"
     },
     {
       "full_name": "ancsemi/Haven",
       "url": "https://github.com/ancsemi/Haven",
       "description": "Self-hosted private chat: no cloud, no telemetry, no Big Tech. Discord alternative that runs on your own machine.",
-      "stars": 541,
+      "stars": 543,
       "commits": 1355,
       "contributors": 20,
       "forks": 69,
@@ -564,13 +1979,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:41.639Z"
+      "lastUpdated": "2026-09-21T02:52:58.487Z"
     },
     {
       "full_name": "bobvibes/Awesome-Vibecoding-Guide",
       "url": "https://github.com/bobvibes/Awesome-Vibecoding-Guide",
       "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
-      "stars": 776,
+      "stars": 777,
       "commits": 176,
       "contributors": 3,
       "forks": 83,
@@ -602,7 +2017,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -670,7 +2085,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:38.173Z"
+      "lastUpdated": "2026-09-21T02:53:01.508Z"
     },
     {
       "full_name": "bytecube/DeDox",
@@ -702,7 +2117,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -778,14 +2193,14 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:48.456Z"
+      "lastUpdated": "2026-09-21T02:53:04.986Z"
     },
     {
       "full_name": "cabloy/cabloy",
       "url": "https://github.com/cabloy/cabloy",
       "description": "Cabloy is a Node.js fullstack framework for AI vibe coding, with AI Spec-Driven Development for traceable, evidence-backed delivery.",
       "stars": 971,
-      "commits": 30284,
+      "commits": 30298,
       "contributors": 5,
       "forks": 133,
       "open_issues": 0,
@@ -794,7 +2209,7 @@
         "full-stack",
         "nodejs"
       ],
-      "size": 296247,
+      "size": 296651,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -841,7 +2256,7 @@
       "created_at": "2018-01-14T05:13:19Z",
       "language": "TypeScript",
       "languages": {
-        "TypeScript": 11326763,
+        "TypeScript": 11339555,
         "JavaScript": 94165,
         "Mustache": 34413,
         "HTML": 34004,
@@ -870,15 +2285,15 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 40,
+        "avgMessageLength": 51,
         "emDashCount": 0,
         "enDashCount": 0,
         "aiMentionCount": 0
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 9,
-        "medianChanges": 5,
+        "avgChanges": 82,
+        "medianChanges": 32,
         "largeCommitCount": 0
       },
       "contributorSignals": {
@@ -953,8 +2368,8 @@
           "fixedVersion": "3.30.5",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "@tiptap/core",
@@ -965,8 +2380,8 @@
           "fixedVersion": "3.30.4",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "baseline-browser-mapping",
@@ -977,8 +2392,8 @@
           "fixedVersion": "2.11.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "brace-expansion",
@@ -989,8 +2404,8 @@
           "fixedVersion": "5.0.7, 1.1.16, 2.1.2",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "brace-expansion",
@@ -1001,8 +2416,8 @@
           "fixedVersion": "5.0.8, 3.0.3, 2.1.3, 1.1.17",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "brace-expansion",
@@ -1013,8 +2428,8 @@
           "fixedVersion": "1.1.18, 2.1.4, 3.0.6, 5.0.9",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "brace-expansion",
@@ -1025,8 +2440,8 @@
           "fixedVersion": "5.0.7, 1.1.16, 2.1.2",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "brace-expansion",
@@ -1037,8 +2452,8 @@
           "fixedVersion": "5.0.8, 3.0.3, 2.1.3, 1.1.17",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "brace-expansion",
@@ -1049,8 +2464,8 @@
           "fixedVersion": "1.1.18, 2.1.4, 3.0.6, 5.0.9",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "browserslist",
@@ -1061,8 +2476,8 @@
           "fixedVersion": "4.28.7",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "browserslist",
@@ -1073,8 +2488,8 @@
           "fixedVersion": "4.28.7",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "find-my-way",
@@ -1085,8 +2500,8 @@
           "fixedVersion": "9.7.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "mysql2",
@@ -1097,8 +2512,8 @@
           "fixedVersion": "3.23.1",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "nanoid",
@@ -1109,8 +2524,8 @@
           "fixedVersion": "3.3.18, 5.1.6",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "nanoid",
@@ -1121,8 +2536,8 @@
           "fixedVersion": "3.3.16, 5.1.16",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "nodemailer",
@@ -1133,8 +2548,8 @@
           "fixedVersion": "9.1.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "nodemailer",
@@ -1145,8 +2560,8 @@
           "fixedVersion": "9.1.1",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "nodemailer",
@@ -1157,8 +2572,8 @@
           "fixedVersion": "9.1.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "nodemailer",
@@ -1169,8 +2584,8 @@
           "fixedVersion": "9.1.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1181,8 +2596,8 @@
           "fixedVersion": "8.5.12",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1193,8 +2608,8 @@
           "fixedVersion": "8.5.18",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1205,8 +2620,8 @@
           "fixedVersion": "7.0.36, 8.2.10",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1217,8 +2632,8 @@
           "fixedVersion": "8.2.13, 7.0.36",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1229,8 +2644,8 @@
           "fixedVersion": "8.4.31",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1241,8 +2656,8 @@
           "fixedVersion": "8.5.10",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1253,8 +2668,8 @@
           "fixedVersion": "8.5.23",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1265,8 +2680,8 @@
           "fixedVersion": "8.5.18",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "postcss",
@@ -1277,8 +2692,8 @@
           "fixedVersion": "8.5.23",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "qs",
@@ -1289,8 +2704,8 @@
           "fixedVersion": "6.16.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "qs",
@@ -1301,8 +2716,8 @@
           "fixedVersion": "6.16.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "sanitize-html",
@@ -1313,8 +2728,8 @@
           "fixedVersion": "2.17.7",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "sharp",
@@ -1325,8 +2740,8 @@
           "fixedVersion": "0.35.4",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "undici",
@@ -1337,8 +2752,8 @@
           "fixedVersion": "7.29.0, 8.9.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "undici",
@@ -1349,8 +2764,8 @@
           "fixedVersion": "7.29.0, 8.9.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "undici",
@@ -1361,8 +2776,8 @@
           "fixedVersion": "6.28.0, 7.29.0, 8.9.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "undici",
@@ -1373,8 +2788,8 @@
           "fixedVersion": "6.28.0, 7.29.0, 8.9.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "undici",
@@ -1385,8 +2800,8 @@
           "fixedVersion": "6.28.0, 7.29.0, 8.9.0",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "urllib",
@@ -1397,8 +2812,8 @@
           "fixedVersion": "4.9.1, 2.44.1",
           "type": "vuln",
           "target": "vona/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/vona/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/vona/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "@faker-js/faker",
@@ -1409,8 +2824,8 @@
           "fixedVersion": "10.5.0",
           "type": "vuln",
           "target": "zova/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/zova/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/zova/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "esbuild",
@@ -1421,8 +2836,8 @@
           "fixedVersion": "0.25.0",
           "type": "vuln",
           "target": "zova/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/zova/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/zova/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "esbuild",
@@ -1433,8 +2848,8 @@
           "fixedVersion": "0.25.0",
           "type": "vuln",
           "target": "zova/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/zova/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/zova/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         },
         {
           "pkg": "esbuild",
@@ -1445,11 +2860,11 @@
           "fixedVersion": "0.28.1",
           "type": "vuln",
           "target": "zova/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/cabloy/cabloy/blob/beac630e2567b0d562d9df59495cc8278b9974d8/zova/pnpm-lock.yaml",
-          "scannedRef": "beac630e2567b0d562d9df59495cc8278b9974d8"
+          "targetUrl": "https://github.com/cabloy/cabloy/blob/2fadb1359c08d1b0354725ccdbd079f332f23d38/zova/pnpm-lock.yaml",
+          "scannedRef": "2fadb1359c08d1b0354725ccdbd079f332f23d38"
         }
       ],
-      "lastUpdated": "2026-09-20T02:56:19.850Z"
+      "lastUpdated": "2026-09-21T02:53:32.748Z"
     },
     {
       "full_name": "chmouel/gh-news",
@@ -1498,7 +2913,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/808808?v=4",
           "url": "https://github.com/bendrucker",
           "created_at": "2011-05-25T00:43:39Z",
-          "followers": 514,
+          "followers": 513,
           "following": 36
         },
         {
@@ -1519,7 +2934,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/in/2248422?v=4",
           "url": "https://github.com/apps/openai-code-agent",
           "created_at": "2026-03-11T00:47:19Z",
-          "followers": 5193,
+          "followers": 5219,
           "following": 0
         }
       ],
@@ -1587,7 +3002,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:52.244Z"
+      "lastUpdated": "2026-09-21T02:53:10.552Z"
     },
     {
       "full_name": "chmouel/liseur-sync",
@@ -1690,13 +3105,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:53.332Z"
+      "lastUpdated": "2026-09-21T02:53:10.837Z"
     },
     {
       "full_name": "ClavixDev/Awesome-Vibecoding-Guide",
       "url": "https://github.com/ClavixDev/Awesome-Vibecoding-Guide",
       "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
-      "stars": 776,
+      "stars": 777,
       "commits": 176,
       "contributors": 3,
       "forks": 83,
@@ -1728,7 +3143,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -1796,7 +3211,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:01.343Z"
+      "lastUpdated": "2026-09-21T02:53:16.341Z"
     },
     {
       "full_name": "cloudflare/vibesdk",
@@ -1805,7 +3220,7 @@
       "stars": 5371,
       "commits": 1129,
       "contributors": 18,
-      "forks": 1258,
+      "forks": 1259,
       "open_issues": 18,
       "license": "MIT License",
       "topics": [
@@ -1920,7 +3335,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/314135?v=4",
         "url": "https://github.com/cloudflare",
         "created_at": "2010-06-25T01:24:59Z",
-        "followers": 16649,
+        "followers": 16720,
         "following": 0,
         "bio": null,
         "public_repos": 575,
@@ -1965,7 +3380,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:55:59.787Z"
+      "lastUpdated": "2026-09-21T02:53:16.169Z"
     },
     {
       "full_name": "comol/ai_rules_1c",
@@ -1986,7 +3401,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/56004685?v=4",
           "url": "https://github.com/comol",
           "created_at": "2019-09-30T22:00:28Z",
-          "followers": 108,
+          "followers": 110,
           "following": 3
         },
         {
@@ -2037,7 +3452,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/56004685?v=4",
         "url": "https://github.com/comol",
         "created_at": "2019-09-30T22:00:28Z",
-        "followers": 108,
+        "followers": 110,
         "following": 3,
         "bio": "CTO, Developer, Solution architect",
         "public_repos": 39,
@@ -2086,7 +3501,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:03.316Z"
+      "lastUpdated": "2026-09-21T02:53:21.763Z"
     },
     {
       "full_name": "d3mocide/Sovereign_Watch",
@@ -2126,7 +3541,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -2215,13 +3630,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:03.810Z"
+      "lastUpdated": "2026-09-21T02:53:21.632Z"
     },
     {
       "full_name": "datawhalechina/easy-vibe",
       "url": "https://github.com/datawhalechina/easy-vibe",
       "description": "💻  vibe coding 101｜The first course for AI-native product builders.",
-      "stars": 19467,
+      "stars": 19482,
       "commits": 685,
       "contributors": 28,
       "forks": 1868,
@@ -2257,7 +3672,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/96160062?v=4",
           "url": "https://github.com/sanbuphy",
           "created_at": "2021-12-15T03:40:55Z",
-          "followers": 1067,
+          "followers": 1071,
           "following": 197
         },
         {
@@ -2289,7 +3704,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -2329,7 +3744,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/234879698?v=4",
           "url": "https://github.com/liulx25xx",
           "created_at": "2025-09-28T05:41:15Z",
-          "followers": 8,
+          "followers": 9,
           "following": 9
         }
       ],
@@ -2348,7 +3763,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/46047812?v=4",
         "url": "https://github.com/datawhalechina",
         "created_at": "2018-12-21T11:17:27Z",
-        "followers": 33253,
+        "followers": 33291,
         "following": 0,
         "bio": "for the learner，和学习者一起成长",
         "public_repos": 221,
@@ -2393,7 +3808,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:10.190Z"
+      "lastUpdated": "2026-09-21T02:53:26.839Z"
     },
     {
       "full_name": "dhairyajangir/wellSync",
@@ -2615,7 +4030,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:12.113Z"
+      "lastUpdated": "2026-09-21T02:53:27.090Z"
     },
     {
       "full_name": "feezal/feezal",
@@ -2717,7 +4132,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:14.053Z"
+      "lastUpdated": "2026-09-21T02:53:32.239Z"
     },
     {
       "full_name": "feiskyer/claude-code-settings",
@@ -2790,7 +4205,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/152970?v=4",
           "url": "https://github.com/xiaolai",
           "created_at": "2009-11-13T18:29:42Z",
-          "followers": 23615,
+          "followers": 23619,
           "following": 41
         }
       ],
@@ -2856,13 +4271,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:14.807Z"
+      "lastUpdated": "2026-09-21T02:53:31.998Z"
     },
     {
       "full_name": "filipecalegario/awesome-vibe-coding",
       "url": "https://github.com/filipecalegario/awesome-vibe-coding",
       "description": "A curated list of vibe coding references, collaborating with AI to write code.",
-      "stars": 5267,
+      "stars": 5269,
       "commits": 167,
       "contributors": 28,
       "forks": 696,
@@ -2887,7 +4302,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/299057?v=4",
           "url": "https://github.com/filipecalegario",
           "created_at": "2010-06-07T17:10:15Z",
-          "followers": 429,
+          "followers": 428,
           "following": 46
         },
         {
@@ -2900,7 +4315,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/8592144?v=4",
           "url": "https://github.com/zhimin-z",
           "created_at": "2014-08-29T15:59:23Z",
-          "followers": 704,
+          "followers": 706,
           "following": 486
         },
         {
@@ -2916,7 +4331,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -2932,7 +4347,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/1456265?v=4",
           "url": "https://github.com/johannesjo",
           "created_at": "2012-02-21T06:03:54Z",
-          "followers": 1010,
+          "followers": 1011,
           "following": 144
         },
         {
@@ -2969,7 +4384,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/299057?v=4",
         "url": "https://github.com/filipecalegario",
         "created_at": "2010-06-07T17:10:15Z",
-        "followers": 429,
+        "followers": 428,
         "following": 46,
         "bio": "assistant professor @ Centro de Informática, UFPE, Brazil.",
         "public_repos": 181,
@@ -3016,7 +4431,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:20.307Z"
+      "lastUpdated": "2026-09-21T02:53:33.572Z"
     },
     {
       "full_name": "FractumSeraph/Vibecoded-Vibe-Code-Detector",
@@ -3084,7 +4499,7 @@
       "aiTools": null,
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:20.689Z"
+      "lastUpdated": "2026-09-21T02:53:33.139Z"
     },
     {
       "full_name": "Git-Romer/pokecollector",
@@ -3260,7 +4675,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:24.980Z"
+      "lastUpdated": "2026-09-21T02:53:42.484Z"
     },
     {
       "full_name": "hyunjun6928-netizen/salmalm",
@@ -3347,17 +4762,17 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:23.073Z"
+      "lastUpdated": "2026-09-21T02:53:40.215Z"
     },
     {
       "full_name": "J2TEAM/vibe.j2team.org",
       "url": "https://github.com/J2TEAM/vibe.j2team.org",
       "description": "Sẽ thế nào nếu cả nhóm J2TEAM Community vibe code cùng nhau?",
-      "stars": 865,
+      "stars": 866,
       "commits": 632,
       "contributors": 163,
       "forks": 304,
-      "open_issues": 57,
+      "open_issues": 58,
       "license": null,
       "topics": [
         "giscus",
@@ -3378,7 +4793,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/5250117?v=4",
           "url": "https://github.com/J2TEAM",
           "created_at": "2013-08-17T11:16:03Z",
-          "followers": 3022,
+          "followers": 3024,
           "following": 254
         },
         {
@@ -3469,7 +4884,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/5250117?v=4",
         "url": "https://github.com/J2TEAM",
         "created_at": "2013-08-17T11:16:03Z",
-        "followers": 3022,
+        "followers": 3024,
         "following": 254,
         "bio": "Creator of J2TEAM Security and J2TEAM Cookies (j2team.dev)",
         "public_repos": 64,
@@ -3512,166 +4927,9 @@
           "evidence_url": "https://github.com/J2TEAM/vibe.j2team.org/blob/main/AGENTS.md"
         }
       ],
-      "vulnerableDependencies": [
-        "Secret: JWT token",
-        "nanoid@3.3.11 (CVE-2026-67213)",
-        "nanoid@3.3.11 (CVE-2026-67214)",
-        "nanoid@3.3.11 (CVE-2026-73086)",
-        "picomatch@4.0.3 (CVE-2026-33671)",
-        "picomatch@4.0.3 (CVE-2026-33672)",
-        "postcss@8.5.8 (CVE-2026-41305)",
-        "postcss@8.5.8 (CVE-2026-45623)",
-        "postcss@8.5.8 (CVE-2026-69153)",
-        "postcss@8.5.8 (CVE-2026-73646)",
-        "unhead@2.1.12 (CVE-2026-39315)",
-        "yaml@2.8.2 (CVE-2026-33532)"
-      ],
-      "vulnerabilities": [
-        {
-          "pkg": "nanoid",
-          "version": "3.3.11",
-          "cve": "CVE-2026-67213",
-          "severity": "HIGH",
-          "title": "nanoid: nanoid: Denial of Service via infinite loop in random ID generation",
-          "fixedVersion": "3.3.18, 5.1.6",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "nanoid",
-          "version": "3.3.11",
-          "cve": "CVE-2026-67214",
-          "severity": "HIGH",
-          "title": "nanoid: nanoid: Denial of Service via negative size input in non-secure module functions",
-          "fixedVersion": "3.3.16, 5.1.16",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "nanoid",
-          "version": "3.3.11",
-          "cve": "CVE-2026-73086",
-          "severity": "HIGH",
-          "title": "nanoid: nanoid: Predictable ID generation due to integer overflow",
-          "fixedVersion": "3.3.12, 5.1.11",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "picomatch",
-          "version": "4.0.3",
-          "cve": "CVE-2026-33671",
-          "severity": "HIGH",
-          "title": "picomatch: Picomatch: Regular Expression Denial of Service via crafted extglob patterns",
-          "fixedVersion": "4.0.4, 3.0.2, 2.3.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "picomatch",
-          "version": "4.0.3",
-          "cve": "CVE-2026-33672",
-          "severity": "MEDIUM",
-          "title": "picomatch: Picomatch: Data integrity compromised via method injection with crafted POSIX bracket expressions",
-          "fixedVersion": "4.0.4, 3.0.2, 2.3.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "postcss",
-          "version": "8.5.8",
-          "cve": "CVE-2026-45623",
-          "severity": "HIGH",
-          "title": "postcss: PostCSS: Information disclosure and denial of service via crafted CSS input",
-          "fixedVersion": "8.5.12",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "postcss",
-          "version": "8.5.8",
-          "cve": "CVE-2026-73646",
-          "severity": "HIGH",
-          "title": "postcss: PostCSS: Information disclosure via path traversal in source map auto-loading",
-          "fixedVersion": "8.5.18",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "postcss",
-          "version": "8.5.8",
-          "cve": "CVE-2026-41305",
-          "severity": "MEDIUM",
-          "title": "postcss: PostCSS: Cross-Site Scripting (XSS) via improper escaping of style closing tags",
-          "fixedVersion": "8.5.10",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "postcss",
-          "version": "8.5.8",
-          "cve": "CVE-2026-69153",
-          "severity": "MEDIUM",
-          "title": "postcss: PostCSS: Information disclosure via crafted sourceMappingURL",
-          "fixedVersion": "8.5.23",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "unhead",
-          "version": "2.1.12",
-          "cve": "CVE-2026-39315",
-          "severity": "MEDIUM",
-          "title": "Unhead has a hasDangerousProtocol() bypass via leading-zero padded HTML entities in useHeadSafe()",
-          "fixedVersion": "2.1.13",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "yaml",
-          "version": "2.8.2",
-          "cve": "CVE-2026-33532",
-          "severity": "MEDIUM",
-          "title": "yaml: yaml: Denial of Service via deeply nested YAML document parsing",
-          "fixedVersion": "2.8.3, 1.10.3",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/pnpm-lock.yaml",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        },
-        {
-          "pkg": "repo",
-          "version": "",
-          "cve": "jwt-token",
-          "severity": "MEDIUM",
-          "title": "JWT token",
-          "type": "secret",
-          "target": "src/views/dev-pocket-tools/composables/useBuilderTools.ts",
-          "targetUrl": "https://github.com/J2TEAM/vibe.j2team.org/blob/c1a318ce37ef196fa3ee7e05140285261d0cb342/src/views/dev-pocket-tools/composables/useBuilderTools.ts",
-          "scannedRef": "c1a318ce37ef196fa3ee7e05140285261d0cb342"
-        }
-      ],
-      "lastUpdated": "2026-09-20T02:56:32.067Z"
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-09-21T02:53:45.178Z"
     },
     {
       "full_name": "jetpack3331/ai-chat-history-manager",
@@ -4291,20 +5549,20 @@
           "scannedRef": "2292af457bd8a958b47198b91c1dcbbe81b31150"
         }
       ],
-      "lastUpdated": "2026-09-20T02:56:26.014Z"
+      "lastUpdated": "2026-09-21T02:53:40.750Z"
     },
     {
       "full_name": "kenlasko/monize",
       "url": "https://github.com/kenlasko/monize",
       "description": "My unabashedly AI-coded Microsoft Money/Quicken replacement",
       "stars": 234,
-      "commits": 5767,
+      "commits": 5773,
       "contributors": 8,
       "forks": 40,
-      "open_issues": 4,
+      "open_issues": 5,
       "license": "GNU Affero General Public License v3.0",
       "topics": null,
-      "size": 78034,
+      "size": 76485,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -4312,7 +5570,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -4375,8 +5633,8 @@
       "created_at": "2026-01-19T19:18:27Z",
       "language": "TypeScript",
       "languages": {
-        "TypeScript": 41320843,
-        "PLpgSQL": 440419,
+        "TypeScript": 41414547,
+        "PLpgSQL": 441971,
         "JavaScript": 278951,
         "CSS": 73813,
         "Shell": 20175,
@@ -4405,16 +5663,16 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 908,
+        "avgMessageLength": 938,
         "emDashCount": 0,
         "enDashCount": 0,
-        "aiMentionCount": 28
+        "aiMentionCount": 29
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 1154,
-        "medianChanges": 198,
-        "largeCommitCount": 3
+        "avgChanges": 1338,
+        "medianChanges": 641,
+        "largeCommitCount": 5
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
@@ -4438,13 +5696,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:32.861Z"
+      "lastUpdated": "2026-09-21T02:53:59.740Z"
     },
     {
       "full_name": "kevinpbuckley/VibeUE",
       "url": "https://github.com/kevinpbuckley/VibeUE",
       "description": "Unreal Engine Vibe Coding tool",
-      "stars": 691,
+      "stars": 694,
       "commits": 1287,
       "contributors": 20,
       "forks": 150,
@@ -4612,17 +5870,17 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:35.764Z"
+      "lastUpdated": "2026-09-21T02:53:51.953Z"
     },
     {
       "full_name": "lnkiai/m3e-canvas",
       "url": "https://github.com/lnkiai/m3e-canvas",
       "description": "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.",
-      "stars": 7595,
-      "commits": 166,
+      "stars": 7803,
+      "commits": 168,
       "contributors": 10,
-      "forks": 793,
-      "open_issues": 9,
+      "forks": 814,
+      "open_issues": 4,
       "license": "MIT License",
       "topics": [
         "design-tool",
@@ -4642,7 +5900,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/187016380?v=4",
           "url": "https://github.com/lnkiai",
           "created_at": "2024-11-01T10:27:01Z",
-          "followers": 191,
+          "followers": 194,
           "following": 1
         },
         {
@@ -4721,7 +5979,7 @@
       "created_at": "2026-09-02T04:36:34Z",
       "language": "TypeScript",
       "languages": {
-        "TypeScript": 1368869,
+        "TypeScript": 1373729,
         "CSS": 10883,
         "JavaScript": 94
       },
@@ -4731,7 +5989,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/187016380?v=4",
         "url": "https://github.com/lnkiai",
         "created_at": "2024-11-01T10:27:01Z",
-        "followers": 191,
+        "followers": 194,
         "following": 1,
         "bio": null,
         "public_repos": 4,
@@ -4744,16 +6002,16 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 694,
+        "avgMessageLength": 713,
         "emDashCount": 0,
         "enDashCount": 0,
-        "aiMentionCount": 15
+        "aiMentionCount": 17
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 1369,
+        "avgChanges": 1228,
         "medianChanges": 1177,
-        "largeCommitCount": 7
+        "largeCommitCount": 5
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
@@ -4783,13 +6041,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:33.799Z"
+      "lastUpdated": "2026-09-21T02:53:51.328Z"
     },
     {
       "full_name": "loppety/Awesome-Vibecoding-Guide",
       "url": "https://github.com/loppety/Awesome-Vibecoding-Guide",
       "description": "A compendium drawn from real commercial projects and hundreds of thousands of lines of AI‑assisted code. Read it end‑to‑end or feed this repo to your AI agent for summaries and Q&A. Stars and watches appreciated! ⭐",
-      "stars": 776,
+      "stars": 777,
       "commits": 176,
       "contributors": 3,
       "forks": 83,
@@ -4821,7 +6079,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -4889,7 +6147,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:36.545Z"
+      "lastUpdated": "2026-09-21T02:53:56.779Z"
     },
     {
       "full_name": "michalstankiewicz4-cell/IPscanner",
@@ -5002,63 +6260,9 @@
           "evidence_url": "https://github.com/michalstankiewicz4-cell/IPscanner/commit/5161c598d3a8c06c9ec163c075faa3049e6f4343"
         }
       ],
-      "vulnerableDependencies": [
-        "glib@0.18.5 (GHSA-wrw7-89jp-8q8g)",
-        "quinn-proto@0.11.14 (GHSA-4w2j-m93h-cj5j)",
-        "serde_with@3.18.0 (GHSA-7gcf-g7xr-8hxj)",
-        "tauri@2.11.0 (CVE-2026-42184)"
-      ],
-      "vulnerabilities": [
-        {
-          "pkg": "glib",
-          "version": "0.18.5",
-          "cve": "GHSA-wrw7-89jp-8q8g",
-          "severity": "MEDIUM",
-          "title": "Unsoundness in `Iterator` and `DoubleEndedIterator` impls for `glib::VariantStrIter`",
-          "fixedVersion": "0.20.0",
-          "type": "vuln",
-          "target": "src-tauri/Cargo.lock",
-          "targetUrl": "https://github.com/michalstankiewicz4-cell/IPscanner/blob/5161c598d3a8c06c9ec163c075faa3049e6f4343/src-tauri/Cargo.lock",
-          "scannedRef": "5161c598d3a8c06c9ec163c075faa3049e6f4343"
-        },
-        {
-          "pkg": "quinn-proto",
-          "version": "0.11.14",
-          "cve": "GHSA-4w2j-m93h-cj5j",
-          "severity": "HIGH",
-          "title": "Quinn: Remote memory exhaustion in quinn-proto from unbounded out-of-order stream reassembly",
-          "fixedVersion": "0.11.15",
-          "type": "vuln",
-          "target": "src-tauri/Cargo.lock",
-          "targetUrl": "https://github.com/michalstankiewicz4-cell/IPscanner/blob/5161c598d3a8c06c9ec163c075faa3049e6f4343/src-tauri/Cargo.lock",
-          "scannedRef": "5161c598d3a8c06c9ec163c075faa3049e6f4343"
-        },
-        {
-          "pkg": "serde_with",
-          "version": "3.18.0",
-          "cve": "GHSA-7gcf-g7xr-8hxj",
-          "severity": "MEDIUM",
-          "title": "serde_with: KeyValueMap serialization panics on empty sequence or map entries",
-          "fixedVersion": "3.21.0",
-          "type": "vuln",
-          "target": "src-tauri/Cargo.lock",
-          "targetUrl": "https://github.com/michalstankiewicz4-cell/IPscanner/blob/5161c598d3a8c06c9ec163c075faa3049e6f4343/src-tauri/Cargo.lock",
-          "scannedRef": "5161c598d3a8c06c9ec163c075faa3049e6f4343"
-        },
-        {
-          "pkg": "tauri",
-          "version": "2.11.0",
-          "cve": "CVE-2026-42184",
-          "severity": "MEDIUM",
-          "title": "Tauri has an Origin Confusion Issue that Allows Remote Pages to Invoke Local-Only IPC Commands",
-          "fixedVersion": "2.11.1",
-          "type": "vuln",
-          "target": "src-tauri/Cargo.lock",
-          "targetUrl": "https://github.com/michalstankiewicz4-cell/IPscanner/blob/5161c598d3a8c06c9ec163c075faa3049e6f4343/src-tauri/Cargo.lock",
-          "scannedRef": "5161c598d3a8c06c9ec163c075faa3049e6f4343"
-        }
-      ],
-      "lastUpdated": "2026-09-20T02:56:41.156Z"
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-09-21T02:53:55.519Z"
     },
     {
       "full_name": "Nickqiaoo/chatcode",
@@ -5143,414 +6347,9 @@
           "evidence_url": "https://github.com/Nickqiaoo/chatcode/blob/main/CLAUDE.md"
         }
       ],
-      "vulnerableDependencies": [
-        "@modelcontextprotocol/sdk@1.17.0 (CVE-2025-66414)",
-        "@modelcontextprotocol/sdk@1.17.0 (CVE-2026-0621)",
-        "@modelcontextprotocol/sdk@1.17.0 (CVE-2026-25536)",
-        "ajv@6.12.6 (CVE-2025-69873)",
-        "body-parser@1.20.3 (CVE-2026-12590)",
-        "body-parser@2.2.0 (CVE-2025-13466)",
-        "body-parser@2.2.0 (CVE-2026-12590)",
-        "diff@8.0.2 (CVE-2026-24001)",
-        "linkify-it@5.0.0 (CVE-2026-48801)",
-        "linkify-it@5.0.0 (CVE-2026-59887)",
-        "markdown-it@14.1.0 (CVE-2026-2327)",
-        "markdown-it@14.1.0 (CVE-2026-48988)",
-        "nanoid@5.1.5 (CVE-2026-67213)",
-        "nanoid@5.1.5 (CVE-2026-67214)",
-        "nanoid@5.1.5 (CVE-2026-73086)",
-        "path-to-regexp@0.1.12 (CVE-2026-4867)",
-        "path-to-regexp@8.2.0 (CVE-2026-4923)",
-        "path-to-regexp@8.2.0 (CVE-2026-4926)",
-        "qs@6.13.0 (CVE-2025-15284)",
-        "qs@6.13.0 (CVE-2026-2391)",
-        "qs@6.13.0 (CVE-2026-82417)",
-        "qs@6.13.0 (CVE-2026-8723)",
-        "qs@6.14.0 (CVE-2025-15284)",
-        "qs@6.14.0 (CVE-2026-2391)",
-        "qs@6.14.0 (CVE-2026-82417)",
-        "qs@6.14.0 (CVE-2026-8723)",
-        "simple-git@3.28.0 (CVE-2026-28291)",
-        "simple-git@3.28.0 (CVE-2026-28292)",
-        "simple-git@3.28.0 (CVE-2026-6951)",
-        "ws@8.18.3 (CVE-2026-45736)",
-        "ws@8.18.3 (CVE-2026-48779)"
-      ],
-      "vulnerabilities": [
-        {
-          "pkg": "@modelcontextprotocol/sdk",
-          "version": "1.17.0",
-          "cve": "CVE-2025-66414",
-          "severity": "HIGH",
-          "title": "Model Context Protocol (MCP) TypeScript SDK does not enable DNS rebinding protection by default",
-          "fixedVersion": "1.24.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "@modelcontextprotocol/sdk",
-          "version": "1.17.0",
-          "cve": "CVE-2026-0621",
-          "severity": "HIGH",
-          "title": "Anthropic's MCP TypeScript SDK has a ReDoS vulnerability",
-          "fixedVersion": "1.25.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "@modelcontextprotocol/sdk",
-          "version": "1.17.0",
-          "cve": "CVE-2026-25536",
-          "severity": "HIGH",
-          "title": "@modelcontextprotocol/sdk: @modelcontextprotocol/sdk cross-client data leak",
-          "fixedVersion": "1.26.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "ajv",
-          "version": "6.12.6",
-          "cve": "CVE-2025-69873",
-          "severity": "MEDIUM",
-          "title": "ajv: ReDoS via $data reference",
-          "fixedVersion": "8.18.0, 6.14.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "body-parser",
-          "version": "1.20.3",
-          "cve": "CVE-2026-12590",
-          "severity": "LOW",
-          "title": "body-parser: body-parser: Denial of Service via invalid limit option",
-          "fixedVersion": "1.20.6, 2.3.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "body-parser",
-          "version": "2.2.0",
-          "cve": "CVE-2025-13466",
-          "severity": "MEDIUM",
-          "title": "body-parser: body-parser denial of service",
-          "fixedVersion": "2.2.1",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "body-parser",
-          "version": "2.2.0",
-          "cve": "CVE-2026-12590",
-          "severity": "LOW",
-          "title": "body-parser: body-parser: Denial of Service via invalid limit option",
-          "fixedVersion": "1.20.6, 2.3.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "diff",
-          "version": "8.0.2",
-          "cve": "CVE-2026-24001",
-          "severity": "LOW",
-          "title": "jsdiff: denial of service vulnerability in parsePatch and applyPatch",
-          "fixedVersion": "8.0.3, 5.2.2, 4.0.4, 3.5.1",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "linkify-it",
-          "version": "5.0.0",
-          "cve": "CVE-2026-48801",
-          "severity": "HIGH",
-          "title": "linkify-it: linkify-it: Denial of Service via algorithmic complexity vulnerability",
-          "fixedVersion": "5.0.1",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "linkify-it",
-          "version": "5.0.0",
-          "cve": "CVE-2026-59887",
-          "severity": "HIGH",
-          "title": "linkify-it: linkify-it: Denial of Service via crafted mailto: links",
-          "fixedVersion": "5.0.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "markdown-it",
-          "version": "14.1.0",
-          "cve": "CVE-2026-2327",
-          "severity": "MEDIUM",
-          "title": "markdown-it: markdown-it: Denial of Service via Regular Expression Denial of Service in linkify function",
-          "fixedVersion": "14.1.1",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "markdown-it",
-          "version": "14.1.0",
-          "cve": "CVE-2026-48988",
-          "severity": "MEDIUM",
-          "title": "markdown-it: markdown-it: Denial of Service via quadratic processing of smartquotes with typographer enabled",
-          "fixedVersion": "14.2.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "path-to-regexp",
-          "version": "0.1.12",
-          "cve": "CVE-2026-4867",
-          "severity": "HIGH",
-          "title": "path-to-regexp: path-to-regexp: Denial of Service via catastrophic backtracking from malformed URL parameters",
-          "fixedVersion": "0.1.13",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "path-to-regexp",
-          "version": "8.2.0",
-          "cve": "CVE-2026-4926",
-          "severity": "HIGH",
-          "title": "path-to-regexp: path-to-regexp: Denial of Service via crafted regular expressions",
-          "fixedVersion": "8.4.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "path-to-regexp",
-          "version": "8.2.0",
-          "cve": "CVE-2026-4923",
-          "severity": "MEDIUM",
-          "title": "path-to-regexp: path-to-regexp: Denial of Service via specially crafted paths with multiple wildcards",
-          "fixedVersion": "8.4.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.13.0",
-          "cve": "CVE-2025-15284",
-          "severity": "MEDIUM",
-          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
-          "fixedVersion": "6.14.1",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.13.0",
-          "cve": "CVE-2026-82417",
-          "severity": "MEDIUM",
-          "title": "qs: qs: Denial of Service via improper validation in stringify function",
-          "fixedVersion": "6.16.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.13.0",
-          "cve": "CVE-2026-8723",
-          "severity": "MEDIUM",
-          "title": "qs: qs: Denial of Service due to improper handling of null/undefined array elements",
-          "fixedVersion": "6.15.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.13.0",
-          "cve": "CVE-2026-2391",
-          "severity": "LOW",
-          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
-          "fixedVersion": "6.14.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.14.0",
-          "cve": "CVE-2025-15284",
-          "severity": "MEDIUM",
-          "title": "qs: qs: Denial of Service via improper input validation in array parsing",
-          "fixedVersion": "6.14.1",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.14.0",
-          "cve": "CVE-2026-82417",
-          "severity": "MEDIUM",
-          "title": "qs: qs: Denial of Service via improper validation in stringify function",
-          "fixedVersion": "6.16.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.14.0",
-          "cve": "CVE-2026-8723",
-          "severity": "MEDIUM",
-          "title": "qs: qs: Denial of Service due to improper handling of null/undefined array elements",
-          "fixedVersion": "6.15.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "qs",
-          "version": "6.14.0",
-          "cve": "CVE-2026-2391",
-          "severity": "LOW",
-          "title": "qs: qs's arrayLimit bypass in comma parsing allows denial of service",
-          "fixedVersion": "6.14.2",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "simple-git",
-          "version": "3.28.0",
-          "cve": "CVE-2026-28292",
-          "severity": "CRITICAL",
-          "title": "simple-git: simple-git: Remote Code Execution via bypass of prior security fixes",
-          "fixedVersion": "3.32.3",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "simple-git",
-          "version": "3.28.0",
-          "cve": "CVE-2026-28291",
-          "severity": "HIGH",
-          "title": "simple-git: simple-git: Command Execution via Option-Parsing Bypass in simple-git",
-          "fixedVersion": "3.32.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "simple-git",
-          "version": "3.28.0",
-          "cve": "CVE-2026-6951",
-          "severity": "HIGH",
-          "title": "simple-git: simple-git: Remote Code Execution due to incomplete fix bypass",
-          "fixedVersion": "3.36.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "ws",
-          "version": "8.18.3",
-          "cve": "CVE-2026-48779",
-          "severity": "HIGH",
-          "title": "ws: ws: Denial of Service via memory exhaustion from small WebSocket fragments",
-          "fixedVersion": "5.2.5, 6.2.4, 7.5.11, 8.21.0",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "ws",
-          "version": "8.18.3",
-          "cve": "CVE-2026-45736",
-          "severity": "MEDIUM",
-          "title": "ws: ws: Uninitialized memory disclosure via `websocket.close()` with `TypedArray`",
-          "fixedVersion": "8.20.1",
-          "type": "vuln",
-          "target": "pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "nanoid",
-          "version": "5.1.5",
-          "cve": "CVE-2026-67213",
-          "severity": "HIGH",
-          "title": "nanoid: nanoid: Denial of Service via infinite loop in random ID generation",
-          "fixedVersion": "3.3.18, 5.1.6",
-          "type": "vuln",
-          "target": "workers/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/workers/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "nanoid",
-          "version": "5.1.5",
-          "cve": "CVE-2026-67214",
-          "severity": "HIGH",
-          "title": "nanoid: nanoid: Denial of Service via negative size input in non-secure module functions",
-          "fixedVersion": "3.3.16, 5.1.16",
-          "type": "vuln",
-          "target": "workers/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/workers/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        },
-        {
-          "pkg": "nanoid",
-          "version": "5.1.5",
-          "cve": "CVE-2026-73086",
-          "severity": "HIGH",
-          "title": "nanoid: nanoid: Predictable ID generation due to integer overflow",
-          "fixedVersion": "3.3.12, 5.1.11",
-          "type": "vuln",
-          "target": "workers/pnpm-lock.yaml",
-          "targetUrl": "https://github.com/Nickqiaoo/chatcode/blob/4b6e774d2f108e0f144ce5258691285fcdfc0049/workers/pnpm-lock.yaml",
-          "scannedRef": "4b6e774d2f108e0f144ce5258691285fcdfc0049"
-        }
-      ],
-      "lastUpdated": "2026-09-20T02:56:42.295Z"
+      "vulnerableDependencies": [],
+      "vulnerabilities": [],
+      "lastUpdated": "2026-09-21T02:54:00.977Z"
     },
     {
       "full_name": "oisee/vibing-steampunk",
@@ -5560,7 +6359,7 @@
       "commits": 1034,
       "contributors": 18,
       "forks": 117,
-      "open_issues": 43,
+      "open_issues": 45,
       "license": "MIT License",
       "topics": [
         "abap",
@@ -5608,7 +6407,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/47891579?v=4",
           "url": "https://github.com/kts982",
           "created_at": "2019-02-22T13:13:50Z",
-          "followers": 5,
+          "followers": 6,
           "following": 4
         },
         {
@@ -5624,7 +6423,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/13335743?v=4",
           "url": "https://github.com/marianfoo",
           "created_at": "2015-07-14T16:02:35Z",
-          "followers": 448,
+          "followers": 449,
           "following": 263
         },
         {
@@ -5869,7 +6668,7 @@
           "scannedRef": "9886d2727f47506368b0a3c2f1c1766f1200f747"
         }
       ],
-      "lastUpdated": "2026-09-20T02:56:45.918Z"
+      "lastUpdated": "2026-09-21T02:54:03.256Z"
     },
     {
       "full_name": "oisee/zork-abap",
@@ -5898,7 +6697,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/5888506?v=4",
           "url": "https://github.com/larshp",
           "created_at": "2013-11-08T13:03:32Z",
-          "followers": 1008,
+          "followers": 1009,
           "following": 71
         },
         {
@@ -5968,7 +6767,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:41.694Z"
+      "lastUpdated": "2026-09-21T02:54:03.802Z"
     },
     {
       "full_name": "pinto-org/interface",
@@ -6014,7 +6813,7 @@
           "url": "https://github.com/feyyazcigim",
           "created_at": "2019-07-10T13:10:47Z",
           "followers": 27,
-          "following": 27
+          "following": 28
         },
         {
           "login": "alyralabs",
@@ -7091,7 +7890,7 @@
           "scannedRef": "60f611d5bd5b6b700fa0122277c7c4e7247d0524"
         }
       ],
-      "lastUpdated": "2026-09-20T02:56:50.356Z"
+      "lastUpdated": "2026-09-21T02:54:07.478Z"
     },
     {
       "full_name": "porthorian/openchat-backend",
@@ -7181,19 +7980,384 @@
           "evidence_url": "https://github.com/porthorian/openchat-backend/blob/main/AGENTS.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:51.486Z"
+      "vulnerableDependencies": [
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39827)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39828)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39829)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39830)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39831)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39832)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39833)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39834)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-39835)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-42508)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-46595)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-46597)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-46598)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-56854)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-56855)",
+        "golang.org/x/crypto@v0.48.0 (CVE-2026-78662)",
+        "golang.org/x/crypto@v0.48.0 (GO-2026-5932)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-25680)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-25681)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-27136)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-27141)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-33814)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-39821)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-42502)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-42506)",
+        "golang.org/x/net@v0.50.0 (CVE-2026-46600)",
+        "golang.org/x/sys@v0.41.0 (CVE-2026-39824)",
+        "golang.org/x/text@v0.34.0 (CVE-2026-56852)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39828",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Unauthorized command execution via discarded SSH permissions",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39829",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted public key with excessive parameters",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39830",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via resource leak from unsolicited SSH responses",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39831",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Security key bypass due to missing user presence check",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39832",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to improper handling of key restrictions",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39835",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service via crafted SSH certificate",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-42508",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh/knownhosts: golang: golang.org/x/crypto/ssh/knownhosts: Revocation bypass via unchecked SignatureKey",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-46595",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authorization bypass due to skipped source-address validation",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-46597",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted AES-GCM packet decoder inputs",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-56854",
+          "severity": "HIGH",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Authentication bypass due to unenforced source-address restrictions",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39827",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service via repeated rejected channel openings",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39833",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh/agent: golang.org/x/crypto/ssh/agent: Security bypass due to unenforced key confirmation",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-39834",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang: golang.org/x/crypto/ssh: Denial of Service due to integer overflow in SSH channel write",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-46598",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh/agent: golang: golang.org/x/crypto/ssh/agent: Denial of Service via malformed input",
+          "fixedVersion": "0.52.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-56855",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via crafted messages",
+          "fixedVersion": "0.56.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "CVE-2026-78662",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/crypto/ssh: golang.org/x/crypto/ssh: Denial of Service via channel request flooding",
+          "fixedVersion": "0.56.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/crypto",
+          "version": "v0.48.0",
+          "cve": "GO-2026-5932",
+          "severity": "UNKNOWN",
+          "title": "The golang.org/x/crypto/openpgp package is unmaintained, unsafe by design, and has known security issues",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-25681",
+          "severity": "HIGH",
+          "title": "golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-27136",
+          "severity": "HIGH",
+          "title": "golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via HTML parsing bypass",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-33814",
+          "severity": "HIGH",
+          "title": "net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame",
+          "fixedVersion": "0.53.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-39821",
+          "severity": "HIGH",
+          "title": "golang.org/x/net/idna: golang: net/http: golang.org/x/net/idna: Privilege escalation via incorrect Punycode label processing",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-46600",
+          "severity": "HIGH",
+          "title": "golang.org/x/net/dns/dnsmessage: golang.org/x/net/dns/dnsmessage: Denial of Service via invalid DNS record parsing",
+          "fixedVersion": "0.56.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-25680",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/net/html: golang.org/x/net/html: Denial of Service due to excessive HTML parsing",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-27141",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/net/http2: golang.org/x/net/http2: Denial of Service due to malformed HTTP/2 frames",
+          "fixedVersion": "0.51.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-42502",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/net/html: golang: golang.org/x/net/html: Cross-Site Scripting via unexpected HTML tree rendering",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/net",
+          "version": "v0.50.0",
+          "cve": "CVE-2026-42506",
+          "severity": "MEDIUM",
+          "title": "golang.org/x/net/html: golang.org/x/net/html: Cross-Site Scripting (XSS) via arbitrary HTML parsing",
+          "fixedVersion": "0.55.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/sys",
+          "version": "v0.41.0",
+          "cve": "CVE-2026-39824",
+          "severity": "UNKNOWN",
+          "title": "Invoking integer overflow in NewNTUnicodeString in golang.org/x/sys/windows",
+          "fixedVersion": "0.44.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        },
+        {
+          "pkg": "golang.org/x/text",
+          "version": "v0.34.0",
+          "cve": "CVE-2026-56852",
+          "severity": "HIGH",
+          "title": "golang.org/x/text: golang.org/x/text: Denial of Service via invalid UTF-8 input",
+          "fixedVersion": "0.39.0",
+          "type": "vuln",
+          "target": "go.mod",
+          "targetUrl": "https://github.com/porthorian/openchat-backend/blob/f7cf4150428a418cffb3510f41755c93c0d81cf3/go.mod",
+          "scannedRef": "f7cf4150428a418cffb3510f41755c93c0d81cf3"
+        }
+      ],
+      "lastUpdated": "2026-09-21T02:54:09.484Z"
     },
     {
       "full_name": "porthorian/openchat-client",
       "url": "https://github.com/porthorian/openchat-client",
       "description": "OpenChat is a discord alternative that is designed to be self hostable.",
       "stars": 48,
-      "commits": 189,
+      "commits": 190,
       "contributors": 2,
       "forks": 0,
-      "open_issues": 50,
+      "open_issues": 49,
       "license": "GNU General Public License v2.0",
       "topics": [
         "chat",
@@ -7203,7 +8367,7 @@
         "video",
         "voice"
       ],
-      "size": 5134,
+      "size": 5148,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -7251,15 +8415,15 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 870,
+        "avgMessageLength": 852,
         "emDashCount": 0,
         "enDashCount": 0,
         "aiMentionCount": 0
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 697,
-        "medianChanges": 231,
+        "avgChanges": 691,
+        "medianChanges": 205,
         "largeCommitCount": 3
       },
       "contributorSignals": {
@@ -7283,7 +8447,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:52.663Z"
+      "lastUpdated": "2026-09-21T02:54:08.253Z"
     },
     {
       "full_name": "prosperity-solutions/veld",
@@ -7321,7 +8485,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/32174276?v=4",
           "url": "https://github.com/semantic-release-bot",
           "created_at": "2017-09-21T17:06:24Z",
-          "followers": 1496,
+          "followers": 1498,
           "following": 0
         },
         {
@@ -8830,17 +9994,17 @@
           "scannedRef": "a83d2f91a981d2ac01ea03acd845eb7f1b1b68c4"
         }
       ],
-      "lastUpdated": "2026-09-20T02:56:54.661Z"
+      "lastUpdated": "2026-09-21T02:54:13.291Z"
     },
     {
       "full_name": "rock3r/spectre",
       "url": "https://github.com/rock3r/spectre",
       "description": "Programmatically drive your real Compose UI on the desktop.",
       "stars": 35,
-      "commits": 400,
+      "commits": 408,
       "contributors": 3,
       "forks": 0,
-      "open_issues": 21,
+      "open_issues": 10,
       "license": "Apache License 2.0",
       "topics": [
         "compose",
@@ -8850,7 +10014,7 @@
         "ui-automation",
         "vibe-coded"
       ],
-      "size": 5786,
+      "size": 6664,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -8874,21 +10038,21 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         }
       ],
       "created_at": "2026-04-08T18:44:32Z",
       "language": "Kotlin",
       "languages": {
-        "Kotlin": 4096137,
-        "Python": 244138,
+        "Kotlin": 4448599,
+        "Python": 293807,
+        "Rust": 179178,
         "Swift": 130696,
-        "Rust": 106735,
-        "PowerShell": 66528,
+        "PowerShell": 69833,
         "C#": 39401,
-        "Ruby": 2440,
-        "Java": 1549
+        "Java": 2870,
+        "Ruby": 2440
       },
       "is_archived": false,
       "owner": {
@@ -8899,7 +10063,7 @@
         "followers": 638,
         "following": 29,
         "bio": "🇮🇹  Android developer in a past life, I'm currently bashing on my keyboard really hard to craft great UIs in Android Studio at @Google. CWTI host 🤌",
-        "public_repos": 126,
+        "public_repos": 128,
         "is_private": false
       },
       "packageManager": {
@@ -8909,16 +10073,16 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 1169,
-        "emDashCount": 10,
+        "avgMessageLength": 1984,
+        "emDashCount": 2,
         "enDashCount": 0,
-        "aiMentionCount": 10
+        "aiMentionCount": 8
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 483,
-        "medianChanges": 268,
-        "largeCommitCount": 3
+        "avgChanges": 2255,
+        "medianChanges": 1815,
+        "largeCommitCount": 8
       },
       "contributorSignals": {
         "hasClaudeBotContributor": false,
@@ -8948,7 +10112,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:56:56.481Z"
+      "lastUpdated": "2026-09-21T02:54:15.958Z"
     },
     {
       "full_name": "RocketChat/Opensource-Contribution-Leaderboard",
@@ -9067,7 +10231,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/12508788?v=4",
         "url": "https://github.com/RocketChat",
         "created_at": "2015-05-19T07:33:29Z",
-        "followers": 3129,
+        "followers": 3128,
         "following": 0,
         "bio": "The Secure CommsOS™ for mission-critical operations.",
         "public_repos": 335,
@@ -10541,7 +11705,7 @@
           "scannedRef": "75d742513df6f809d15d68d1b51fd4eb31d91455"
         }
       ],
-      "lastUpdated": "2026-09-20T02:56:57.524Z"
+      "lastUpdated": "2026-09-21T02:54:14.270Z"
     },
     {
       "full_name": "run-llama/vibe-llama",
@@ -10586,7 +11750,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/4858925?v=4",
           "url": "https://github.com/jerryjliu",
           "created_at": "2013-06-28T01:46:57Z",
-          "followers": 4397,
+          "followers": 4401,
           "following": 2
         },
         {
@@ -10594,7 +11758,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/22285038?v=4",
           "url": "https://github.com/logan-markewich",
           "created_at": "2016-09-19T02:42:19Z",
-          "followers": 763,
+          "followers": 768,
           "following": 4
         }
       ],
@@ -10611,7 +11775,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/130722866?v=4",
         "url": "https://github.com/run-llama",
         "created_at": "2023-04-14T02:40:56Z",
-        "followers": 4218,
+        "followers": 4221,
         "following": 0,
         "bio": null,
         "public_repos": 151,
@@ -12676,7 +13840,7 @@
           "scannedRef": "cb28f060f3f3d6942202c48e594745511aaa2288"
         }
       ],
-      "lastUpdated": "2026-09-20T02:56:58.317Z"
+      "lastUpdated": "2026-09-21T02:54:18.905Z"
     },
     {
       "full_name": "sahithvibudhi/vibe-tree",
@@ -13022,17 +14186,17 @@
           "scannedRef": "f88907703af1d9b287c5dd1ae93c01645c7dab78"
         }
       ],
-      "lastUpdated": "2026-09-20T02:57:00.432Z"
+      "lastUpdated": "2026-09-21T02:54:18.074Z"
     },
     {
       "full_name": "shanraisshan/claude-code-best-practice",
       "url": "https://github.com/shanraisshan/claude-code-best-practice",
       "description": "from vibe coding to agentic engineering - practice makes claude perfect",
-      "stars": 66122,
-      "commits": 2198,
+      "stars": 66133,
+      "commits": 2211,
       "contributors": 5,
-      "forks": 6559,
-      "open_issues": 36,
+      "forks": 6564,
+      "open_issues": 37,
       "license": "MIT License",
       "topics": [
         "agentic-ai",
@@ -13056,7 +14220,7 @@
         "pakistani-developer",
         "vibe-coding"
       ],
-      "size": 76293,
+      "size": 75751,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -13064,7 +14228,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -13121,15 +14285,15 @@
       "packageManager": null,
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 308,
+        "avgMessageLength": 296,
         "emDashCount": 12,
         "enDashCount": 4,
         "aiMentionCount": 30
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 63,
-        "medianChanges": 11,
+        "avgChanges": 10,
+        "medianChanges": 7,
         "largeCommitCount": 0
       },
       "contributorSignals": {
@@ -13157,13 +14321,13 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:06.084Z"
+      "lastUpdated": "2026-09-21T02:54:25.733Z"
     },
     {
       "full_name": "shanraisshan/codex-cli-best-practice",
       "url": "https://github.com/shanraisshan/codex-cli-best-practice",
       "description": "from vibe coding to agentic engineering - practice makes codex perfect",
-      "stars": 994,
+      "stars": 995,
       "commits": 91,
       "contributors": 1,
       "forks": 67,
@@ -13256,14 +14420,14 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:07.098Z"
+      "lastUpdated": "2026-09-21T02:54:25.628Z"
     },
     {
       "full_name": "SlopLabs/slopos",
       "url": "https://github.com/SlopLabs/slopos",
       "description": "An operating system fully designed and written by AI agents.",
       "stars": 24,
-      "commits": 2218,
+      "commits": 2224,
       "contributors": 11,
       "forks": 1,
       "open_issues": 1,
@@ -13274,7 +14438,7 @@
         "rust",
         "vibe-coded"
       ],
-      "size": 38305,
+      "size": 35942,
       "default_branch": "develop",
       "contributorDetails": [
         {
@@ -13290,7 +14454,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -13358,13 +14522,14 @@
       "created_at": "2025-10-10T18:20:19Z",
       "language": "Rust",
       "languages": {
-        "Rust": 14534508,
-        "Shell": 622266,
+        "Rust": 14812980,
+        "Shell": 689277,
         "Go": 114710,
-        "C": 57376,
-        "Just": 35911,
-        "Python": 25934,
+        "C": 109678,
+        "Just": 36944,
+        "Python": 26546,
         "Assembly": 19740,
+        "C++": 13405,
         "GDB": 7094,
         "Linker Script": 5199,
         "RenderScript": 1
@@ -13375,7 +14540,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/256111513?v=4",
         "url": "https://github.com/SlopLabs",
         "created_at": "2026-01-20T13:04:42Z",
-        "followers": 3,
+        "followers": 4,
         "following": 0,
         "bio": null,
         "public_repos": 5,
@@ -13388,15 +14553,15 @@
       },
       "commitMessageSignals": {
         "sampleSize": 30,
-        "avgMessageLength": 1861,
-        "emDashCount": 39,
+        "avgMessageLength": 1817,
+        "emDashCount": 34,
         "enDashCount": 0,
         "aiMentionCount": 5
       },
       "commitSizeSignals": {
         "sampledCommits": 8,
-        "avgChanges": 6759,
-        "medianChanges": 3963,
+        "avgChanges": 3272,
+        "medianChanges": 2455,
         "largeCommitCount": 5
       },
       "contributorSignals": {
@@ -13439,11 +14604,11 @@
           "fixedVersion": "0.44.0",
           "type": "vuln",
           "target": "tools/run_tests/go.mod",
-          "targetUrl": "https://github.com/SlopLabs/slopos/blob/076250e7dee930f55a7019162eca81c831d9e9bd/tools/run_tests/go.mod",
-          "scannedRef": "076250e7dee930f55a7019162eca81c831d9e9bd"
+          "targetUrl": "https://github.com/SlopLabs/slopos/blob/a04898d09fbec0be0ffcaad384d20464edf48fa9/tools/run_tests/go.mod",
+          "scannedRef": "a04898d09fbec0be0ffcaad384d20464edf48fa9"
         }
       ],
-      "lastUpdated": "2026-09-20T02:57:10.852Z"
+      "lastUpdated": "2026-09-21T02:54:28.659Z"
     },
     {
       "full_name": "splitbrain/ndemo",
@@ -13469,7 +14634,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/81847?v=4",
           "url": "https://github.com/claude",
           "created_at": "2009-05-07T00:15:43Z",
-          "followers": 174650,
+          "followers": 175188,
           "following": 0
         },
         {
@@ -13544,7 +14709,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:07.618Z"
+      "lastUpdated": "2026-09-21T02:54:29.083Z"
     },
     {
       "full_name": "statico/meshtastic-cli",
@@ -13639,9 +14804,76 @@
           "evidence_url": "https://github.com/statico/meshtastic-cli/blob/main/CLAUDE.md"
         }
       ],
-      "vulnerableDependencies": [],
-      "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:10.744Z"
+      "vulnerableDependencies": [
+        "shell-quote@1.8.3 (CVE-2026-13311)",
+        "shell-quote@1.8.3 (CVE-2026-9277)",
+        "ws@7.5.10 (CVE-2026-48779)",
+        "ws@8.20.0 (CVE-2026-45736)",
+        "ws@8.20.0 (CVE-2026-48779)"
+      ],
+      "vulnerabilities": [
+        {
+          "pkg": "ws",
+          "version": "7.5.10",
+          "cve": "CVE-2026-48779",
+          "severity": "HIGH",
+          "title": "ws: ws: Denial of Service via memory exhaustion from small WebSocket fragments",
+          "fixedVersion": "5.2.5, 6.2.4, 7.5.11, 8.21.0",
+          "type": "vuln",
+          "target": "bun.lock",
+          "targetUrl": "https://github.com/statico/meshtastic-cli/blob/2e68d0e00a9cebdbc7f4e76e2441b30120d53c20/bun.lock",
+          "scannedRef": "2e68d0e00a9cebdbc7f4e76e2441b30120d53c20"
+        },
+        {
+          "pkg": "shell-quote",
+          "version": "1.8.3",
+          "cve": "CVE-2026-9277",
+          "severity": "CRITICAL",
+          "title": "shell-quote: shell-quote: Arbitrary code execution via command injection due to unescaped line terminators",
+          "fixedVersion": "1.8.4",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/statico/meshtastic-cli/blob/2e68d0e00a9cebdbc7f4e76e2441b30120d53c20/pnpm-lock.yaml",
+          "scannedRef": "2e68d0e00a9cebdbc7f4e76e2441b30120d53c20"
+        },
+        {
+          "pkg": "shell-quote",
+          "version": "1.8.3",
+          "cve": "CVE-2026-13311",
+          "severity": "HIGH",
+          "title": "shell-quote: shell-quote/parse: shell-quote: Denial of Service due to inefficient input parsing",
+          "fixedVersion": "1.9.0",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/statico/meshtastic-cli/blob/2e68d0e00a9cebdbc7f4e76e2441b30120d53c20/pnpm-lock.yaml",
+          "scannedRef": "2e68d0e00a9cebdbc7f4e76e2441b30120d53c20"
+        },
+        {
+          "pkg": "ws",
+          "version": "8.20.0",
+          "cve": "CVE-2026-48779",
+          "severity": "HIGH",
+          "title": "ws: ws: Denial of Service via memory exhaustion from small WebSocket fragments",
+          "fixedVersion": "5.2.5, 6.2.4, 7.5.11, 8.21.0",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/statico/meshtastic-cli/blob/2e68d0e00a9cebdbc7f4e76e2441b30120d53c20/pnpm-lock.yaml",
+          "scannedRef": "2e68d0e00a9cebdbc7f4e76e2441b30120d53c20"
+        },
+        {
+          "pkg": "ws",
+          "version": "8.20.0",
+          "cve": "CVE-2026-45736",
+          "severity": "MEDIUM",
+          "title": "ws: ws: Uninitialized memory disclosure via `websocket.close()` with `TypedArray`",
+          "fixedVersion": "8.20.1",
+          "type": "vuln",
+          "target": "pnpm-lock.yaml",
+          "targetUrl": "https://github.com/statico/meshtastic-cli/blob/2e68d0e00a9cebdbc7f4e76e2441b30120d53c20/pnpm-lock.yaml",
+          "scannedRef": "2e68d0e00a9cebdbc7f4e76e2441b30120d53c20"
+        }
+      ],
+      "lastUpdated": "2026-09-21T02:54:29.705Z"
     },
     {
       "full_name": "sylirre/ghostty-android-terminal",
@@ -13738,7 +14970,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:13.729Z"
+      "lastUpdated": "2026-09-21T02:54:33.030Z"
     },
     {
       "full_name": "thinhdanggroup/livekit-dashboard",
@@ -14550,17 +15782,17 @@
           "scannedRef": "248b67c5afa9e1093eb00207bb63b0166923acb9"
         }
       ],
-      "lastUpdated": "2026-09-20T02:57:14.596Z"
+      "lastUpdated": "2026-09-21T02:54:33.905Z"
     },
     {
       "full_name": "tiann/hapi",
       "url": "https://github.com/tiann/hapi",
       "description": "App for Codex / Claude Code / Pi / OpenCode / Kimi Code / Grok Build, vibe coding anytime, anywhere",
-      "stars": 5093,
+      "stars": 5101,
       "commits": 1524,
       "contributors": 105,
-      "forks": 570,
-      "open_issues": 240,
+      "forks": 572,
+      "open_issues": 245,
       "license": "GNU Affero General Public License v3.0",
       "topics": [
         "app",
@@ -14570,7 +15802,7 @@
         "opencode",
         "remote-control"
       ],
-      "size": 110298,
+      "size": 110355,
       "default_branch": "main",
       "contributorDetails": [
         {
@@ -14578,7 +15810,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/4233744?v=4",
           "url": "https://github.com/tiann",
           "created_at": "2013-04-23T10:06:20Z",
-          "followers": 8615,
+          "followers": 8616,
           "following": 31
         },
         {
@@ -14586,7 +15818,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/49574926?v=4",
           "url": "https://github.com/swear01",
           "created_at": "2019-04-13T00:11:02Z",
-          "followers": 7,
+          "followers": 8,
           "following": 4
         },
         {
@@ -14673,7 +15905,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/4233744?v=4",
         "url": "https://github.com/tiann",
         "created_at": "2013-04-23T10:06:20Z",
-        "followers": 8615,
+        "followers": 8616,
         "following": 31,
         "bio": "You deserve a better life :)",
         "public_repos": 147,
@@ -17110,7 +18342,7 @@
           "scannedRef": "2f72a8012ebe8632eb6a7ac697264ba970e7edde"
         }
       ],
-      "lastUpdated": "2026-09-20T02:57:24.304Z"
+      "lastUpdated": "2026-09-21T02:54:43.809Z"
     },
     {
       "full_name": "tucktuckg00se/INTERSECT",
@@ -17216,7 +18448,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:21.903Z"
+      "lastUpdated": "2026-09-21T02:54:40.175Z"
     },
     {
       "full_name": "umpolungfish/cumpyl",
@@ -17333,7 +18565,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:23.016Z"
+      "lastUpdated": "2026-09-21T02:54:41.388Z"
     },
     {
       "full_name": "vibe-code-tours/vibe-code-tours.github.io",
@@ -17495,7 +18727,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:24.818Z"
+      "lastUpdated": "2026-09-21T02:54:43.917Z"
     },
     {
       "full_name": "vincanger/envelope-budgeting-test",
@@ -18972,7 +20204,7 @@
           "scannedRef": "458debd8cccd8115dcfd73da317fdb94aa90f572"
         }
       ],
-      "lastUpdated": "2026-09-20T02:57:25.060Z"
+      "lastUpdated": "2026-09-21T02:54:44.482Z"
     },
     {
       "full_name": "wrtnlabs/autobe",
@@ -19072,7 +20304,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/1560508?v=4",
           "url": "https://github.com/ryoppippi",
           "created_at": "2012-03-21T10:34:16Z",
-          "followers": 912,
+          "followers": 910,
           "following": 152
         },
         {
@@ -21871,13 +23103,13 @@
           "scannedRef": "f5de9927c8eee6805afa3aeafd204f4c45037e49"
         }
       ],
-      "lastUpdated": "2026-09-20T02:57:41.621Z"
+      "lastUpdated": "2026-09-21T02:55:00.973Z"
     },
     {
       "full_name": "zarazhangrui/codebase-to-course",
       "url": "https://github.com/zarazhangrui/codebase-to-course",
       "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course for non-technical vibe coders.",
-      "stars": 5569,
+      "stars": 5576,
       "commits": 19,
       "contributors": 2,
       "forks": 557,
@@ -21892,7 +23124,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/153693696?v=4",
           "url": "https://github.com/zarazhangrui",
           "created_at": "2023-12-13T01:15:16Z",
-          "followers": 14306,
+          "followers": 14330,
           "following": 0
         },
         {
@@ -21900,7 +23132,7 @@
           "avatar_url": "https://avatars.githubusercontent.com/u/57465570?v=4",
           "url": "https://github.com/oil-oil",
           "created_at": "2019-11-06T22:54:33Z",
-          "followers": 1157,
+          "followers": 1169,
           "following": 0
         }
       ],
@@ -21918,7 +23150,7 @@
         "avatar_url": "https://avatars.githubusercontent.com/u/153693696?v=4",
         "url": "https://github.com/zarazhangrui",
         "created_at": "2023-12-13T01:15:16Z",
-        "followers": 14306,
+        "followers": 14330,
         "following": 0,
         "bio": "AI tinkerer",
         "public_repos": 19,
@@ -21966,7 +23198,7 @@
       ],
       "vulnerableDependencies": [],
       "vulnerabilities": [],
-      "lastUpdated": "2026-09-20T02:57:29.445Z"
+      "lastUpdated": "2026-09-21T02:54:48.139Z"
     }
   ]
 }
