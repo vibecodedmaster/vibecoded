@@ -2,6 +2,166 @@
   "schemaVersion": 1,
   "projects": [
     {
+      "full_name": "termux/proot-distro",
+      "url": "https://github.com/termux/proot-distro",
+      "description": "A utility for managing proot containers.",
+      "stars": 3579,
+      "commits": 1243,
+      "contributors": 35,
+      "forks": 495,
+      "open_issues": 4,
+      "license": "GNU General Public License v3.0",
+      "topics": [
+        "linux",
+        "proot",
+        "proot-distro",
+        "python",
+        "termux",
+        "vibe-coded"
+      ],
+      "size": 4738,
+      "default_branch": "master",
+      "contributorDetails": [
+        {
+          "login": "sylirre",
+          "avatar_url": "https://avatars.githubusercontent.com/u/107305601?v=4",
+          "url": "https://github.com/sylirre",
+          "created_at": "2022-06-11T11:15:30Z",
+          "followers": 78,
+          "following": 3
+        },
+        {
+          "login": "termuxbot2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/99250145?v=4",
+          "url": "https://github.com/termuxbot2",
+          "created_at": "2022-02-08T09:29:17Z",
+          "followers": 594,
+          "following": 0
+        },
+        {
+          "login": "dependabot[bot]",
+          "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+          "url": "https://github.com/apps/dependabot",
+          "created_at": "2019-04-16T22:34:25Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "Biswa96",
+          "avatar_url": "https://avatars.githubusercontent.com/u/31443074?v=4",
+          "url": "https://github.com/Biswa96",
+          "created_at": "2017-08-29T13:28:47Z",
+          "followers": 359,
+          "following": 30
+        },
+        {
+          "login": "Momi-V",
+          "avatar_url": "https://avatars.githubusercontent.com/u/83947761?v=4",
+          "url": "https://github.com/Momi-V",
+          "created_at": "2021-05-10T08:14:16Z",
+          "followers": 32,
+          "following": 3
+        },
+        {
+          "login": "TheKingFireS",
+          "avatar_url": "https://avatars.githubusercontent.com/u/71936968?v=4",
+          "url": "https://github.com/TheKingFireS",
+          "created_at": "2020-09-26T15:30:12Z",
+          "followers": 33,
+          "following": 2
+        },
+        {
+          "login": "chenchongbiao",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52627687?v=4",
+          "url": "https://github.com/chenchongbiao",
+          "created_at": "2019-07-07T13:18:04Z",
+          "followers": 43,
+          "following": 38
+        },
+        {
+          "login": "WeirdGumi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/219617512?v=4",
+          "url": "https://github.com/WeirdGumi",
+          "created_at": "2025-07-07T05:58:21Z",
+          "followers": 0,
+          "following": 0
+        },
+        {
+          "login": "ZhymabekRoman",
+          "avatar_url": "https://avatars.githubusercontent.com/u/61125068?v=4",
+          "url": "https://github.com/ZhymabekRoman",
+          "created_at": "2020-02-16T21:32:51Z",
+          "followers": 407,
+          "following": 15
+        },
+        {
+          "login": "twaik",
+          "avatar_url": "https://avatars.githubusercontent.com/u/9674930?v=4",
+          "url": "https://github.com/twaik",
+          "created_at": "2014-11-11T11:22:35Z",
+          "followers": 278,
+          "following": 3
+        }
+      ],
+      "created_at": "2020-07-20T20:46:15Z",
+      "language": "Python",
+      "languages": {
+        "Python": 2184757,
+        "Shell": 51774
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "termux",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8104776?v=4",
+        "url": "https://github.com/termux",
+        "created_at": "2014-07-08T16:02:31Z",
+        "followers": 25433,
+        "following": 0,
+        "bio": "Android terminal emulator and Linux environment.",
+        "public_repos": 63,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "poetry",
+        "detected_via": "pyproject.toml",
+        "evidence_url": "https://github.com/termux/proot-distro/blob/master/pyproject.toml"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 1607,
+        "emDashCount": 0,
+        "enDashCount": 0,
+        "aiMentionCount": 21
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 314,
+        "medianChanges": 55,
+        "largeCommitCount": 3
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 7,
+        "level": "medium",
+        "reasons": [
+          "1 file-based AI signal(s)",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "claude",
+          "detected_via": "file",
+          "evidence_url": "https://github.com/termux/proot-distro/blob/master/AGENTS.md"
+        }
+      ],
+      "lastUpdated": "2026-10-24T15:33:43.454Z"
+    },
+    {
       "full_name": "thinhdanggroup/livekit-dashboard",
       "url": "https://github.com/thinhdanggroup/livekit-dashboard",
       "description": "Vibe Coding version for Livekit Dashboard",

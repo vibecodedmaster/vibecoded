@@ -127,6 +127,103 @@
         }
       ],
       "lastUpdated": "2026-05-15T14:14:25.631Z"
+    },
+    {
+      "full_name": "GyaneshSamanta/NotebookLM-for-Windows",
+      "url": "https://github.com/GyaneshSamanta/NotebookLM-for-Windows",
+      "description": "Native Windows desktop app for Google NotebookLM — Ghost Mode, global Quick-Clip, Split View, and drag-and-drop uploads.",
+      "stars": 43,
+      "commits": 43,
+      "contributors": 1,
+      "forks": 12,
+      "open_issues": 7,
+      "license": "GNU General Public License v3.0",
+      "topics": [
+        "desktop-app",
+        "electron",
+        "notebooklm",
+        "productivity",
+        "research-tool",
+        "vibe-coded",
+        "windows",
+        "windows-app"
+      ],
+      "size": 6609,
+      "default_branch": "main",
+      "contributorDetails": [
+        {
+          "login": "GyaneshSamanta",
+          "avatar_url": "https://avatars.githubusercontent.com/u/52783096?v=4",
+          "url": "https://github.com/GyaneshSamanta",
+          "created_at": "2019-07-11T10:17:15Z",
+          "followers": 65,
+          "following": 19
+        }
+      ],
+      "created_at": "2026-02-08T11:22:18Z",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 48546,
+        "HTML": 25426,
+        "Batchfile": 1130
+      },
+      "is_archived": false,
+      "owner": {
+        "login": "GyaneshSamanta",
+        "avatar_url": "https://avatars.githubusercontent.com/u/52783096?v=4",
+        "url": "https://github.com/GyaneshSamanta",
+        "created_at": "2019-07-11T10:17:15Z",
+        "followers": 65,
+        "following": 19,
+        "bio": "I think in systems. I build in products. I write about both.",
+        "public_repos": 55,
+        "is_private": false
+      },
+      "packageManager": {
+        "name": "npm",
+        "detected_via": "package.json",
+        "evidence_url": "https://github.com/GyaneshSamanta/NotebookLM-for-Windows/blob/main/package.json"
+      },
+      "commitMessageSignals": {
+        "sampleSize": 30,
+        "avgMessageLength": 141,
+        "emDashCount": 2,
+        "enDashCount": 0,
+        "aiMentionCount": 6
+      },
+      "commitSizeSignals": {
+        "sampledCommits": 8,
+        "avgChanges": 155,
+        "medianChanges": 27,
+        "largeCommitCount": 2
+      },
+      "contributorSignals": {
+        "hasClaudeBotContributor": false,
+        "matchedBots": []
+      },
+      "detectionSummary": {
+        "score": 8,
+        "level": "medium",
+        "reasons": [
+          "2 commit-message AI signal(s)",
+          "dash punctuation pattern present in commits",
+          "multiple AI mentions in commit messages",
+          "large commits detected"
+        ]
+      },
+      "aiTools": [
+        {
+          "name": "gemini",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/GyaneshSamanta/NotebookLM-for-Windows/commit/f1f6f3cd9cb2958af280a0f73bf6c10f65794b61"
+        },
+        {
+          "name": "claude",
+          "detected_via": "commits",
+          "evidence_url": "https://github.com/GyaneshSamanta/NotebookLM-for-Windows/commit/f4b99fba16aa33cbeb25477cd9de2fbbdc509d73"
+        }
+      ],
+      "lastUpdated": "2026-10-24T15:33:55.099Z"
     }
   ]
 }
